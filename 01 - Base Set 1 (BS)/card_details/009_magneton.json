@@ -1,0 +1,114 @@
+{
+  "id": "base1-009",
+  "name": "Magneton",
+  "number": 9,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 60,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Magnemite",
+  "evolvesTo": ["Magnezone"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thunder Wave",
+      "cost": ["Lightning", "Lightning"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokemon is now Paralyzed.",
+      "effect": {
+        "type": "status_condition",
+        "condition": "Paralyzed",
+        "trigger": "coin_flip",
+        "triggerCondition": "heads"
+      }
+    },
+    {
+      "name": "Selfdestruct",
+      "cost": ["Lightning", "Lightning", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "80",
+      "baseDamage": 80,
+      "text": "Does 20 damage to each Pokemon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokemon.) Magneton does 80 damage to itself.",
+      "effect": {
+        "type": "self_destruct",
+        "benchDamage": 20,
+        "benchTargets": "all_benched_pokemon",
+        "selfDamage": 80,
+        "ignoresWeaknessResistanceBench": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Magnet Pokemon",
+    "height": "3'3\"",
+    "weight": "132 lbs",
+    "nationalNumber": 82,
+    "level": 28
+  },
+  "flavorText": "Formed by several Magnemites linked together. It frequently appears when sunspots flare up.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "009_magneton.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Thunder Wave can lock opponents with Paralysis",
+      "Selfdestruct deals massive damage to active and bench",
+      "Only Stage 1 evolution",
+      "Low retreat cost of 1",
+      "Can swing games with well-timed Selfdestruct"
+    ],
+    "weaknesses": [
+      "Only 60 HP is very fragile for a Stage 1",
+      "Fighting weakness against Haymaker",
+      "Selfdestruct KOs Magneton and damages your own bench",
+      "4 energy for Selfdestruct is expensive"
+    ],
+    "synergies": [
+      "Mr. Mime",
+      "Defender",
+      "Electabuzz"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness one-shots",
+      "Any Fighting type",
+      "High HP Pokemon - Can survive Selfdestruct"
+    ]
+  },
+  "competitiveHistory": "Magneton saw limited competitive play due to its fragile HP and the self-destructive nature of its signature attack. However, well-timed Selfdestructs could swing games, making it a situational but memorable card.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Selfdestruct damages all Benched Pokemon on both sides, but doesn't apply Weakness or Resistance to bench damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Magneton takes 80 damage from Selfdestruct, which will Knock it Out.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

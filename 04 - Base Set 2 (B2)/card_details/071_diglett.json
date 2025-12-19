@@ -1,0 +1,98 @@
+{
+  "id": "base2-071",
+  "name": "Diglett",
+  "number": 71,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dugtrio"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Dig",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Mud Slap",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Mole Pokemon",
+    "height": "0' 8\"",
+    "weight": "2 lbs",
+    "nationalNumber": 50,
+    "level": 8
+  },
+  "flavorText": "Lives about three feet underground, where it feeds on plant roots. It sometimes appears above ground.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "071_diglett-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Free retreat cost",
+      "Mud Slap does solid 30 damage",
+      "Lightning resistance",
+      "Efficient damage for energy cost"
+    ],
+    "weaknesses": [
+      "30 HP is extremely fragile",
+      "Grass weakness"
+    ],
+    "synergies": [
+      "Dugtrio - Evolution target"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness",
+      "Any high damage attacker"
+    ]
+  },
+  "competitiveHistory": "Diglett was used as the basic for Dugtrio. Its free retreat was valuable, and Lightning resistance helped against Electabuzz.",
+  "rulings": [
+    {
+      "ruling": "Dig and Mud Slap have no additional effects.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "rocket-062",
+  "name": "Meowth",
+  "number": 62,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Persian", "Persian"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Coin Hurl",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of your opponent's Pokémon and flip a coin. If heads, this attack does 20 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "targetChoice": "any_opponent_pokemon",
+        "damage": 20,
+        "ignoreWeakness": true,
+        "ignoreResistance": true,
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "onFailure": {
+              "damage": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Scratch Cat Pokemon",
+    "height": "1' 4\"",
+    "weight": "9 lbs",
+    "nationalNumber": 52,
+    "level": 10
+  },
+  "flavorText": "A popular Pokémon that earns money for its owner with its 'Pay Day' ability.",
+  "illustrator": "Atsuko Nishida",
+  "imageUrl": "062_meowth-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Coin Hurl can snipe any Pokemon",
+      "Psychic resistance",
+      "Colorless - works with any energy"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Fighting weakness vs Hitmonchan",
+      "Coin Hurl is coin flip dependent"
+    ],
+    "synergies": [
+      "Dark Persian"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Meowth had Coin Hurl, which could target any Pokemon including benched. The coin flip and damage ignoring Weakness/Resistance made it a sniping option.",
+  "rulings": [
+    {
+      "ruling": "Coin Hurl can target any of your opponent's Pokemon - Active or Benched.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

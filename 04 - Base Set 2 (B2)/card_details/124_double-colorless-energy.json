@@ -1,0 +1,74 @@
+{
+  "id": "base2-124",
+  "name": "Double Colorless Energy",
+  "number": 124,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Special"],
+  "rarity": "Uncommon",
+  "energyType": "Special",
+  "provides": [
+    {
+      "type": "Colorless",
+      "amount": 2
+    }
+  ],
+  "text": "Provides 2 Colorless Energy. Doesn't count as a basic Energy card.",
+  "effect": {
+    "text": "Provides 2 Colorless energy. Doesn't count as a basic Energy card.",
+    "effectType": "multi_energy",
+    "specialRules": {
+      "countsAsBasic": false,
+      "canBeSearched": false,
+      "canBeRetrieved": false
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "124_double-colorless-energy-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy Acceleration",
+    "strengths": [
+      "Provides 2 Energy with 1 attachment",
+      "Powers up attacks faster",
+      "Works with any Colorless cost"
+    ],
+    "weaknesses": [
+      "Not a basic Energy - can't be searched by some effects",
+      "Can't fulfill specific type requirements"
+    ],
+    "synergies": [
+      "Wigglytuff Do the Wave - Fast setup",
+      "High Colorless cost attacks"
+    ],
+    "counters": [
+      "Energy Removal discards both energy at once"
+    ]
+  },
+  "competitiveHistory": "Double Colorless Energy was essential for many aggressive decks, particularly Wigglytuff which could use Do the Wave faster with DCE.",
+  "rulings": [
+    {
+      "ruling": "DCE provides 2 Colorless Energy but counts as 1 card.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "DCE is not a basic Energy and cannot be searched by Energy Retrieval.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If DCE is discarded for an attack cost that requires 2 Energy, the whole card is discarded.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

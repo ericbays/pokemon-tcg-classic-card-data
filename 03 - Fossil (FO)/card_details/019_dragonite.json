@@ -1,0 +1,138 @@
+{
+  "id": "fossil-019",
+  "name": "Dragonite",
+  "number": 19,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 100,
+  "types": ["Colorless"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Dragonair",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Step In",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), if Dragonite is on your Bench, you may switch it with your Active Pokémon.",
+      "effect": {
+        "effectType": "special",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "target": "self",
+        "parameters": {
+          "switchFromBench": true,
+          "becomesActive": true,
+          "onlyFromBench": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Slam",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "40x",
+      "baseDamage": 40,
+      "text": "Flip 2 coins. This attack does 40 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "flipCount": 2,
+            "damagePerHead": 40
+          }
+        ],
+        "parameters": {
+          "minimumDamage": 0,
+          "maximumDamage": 80
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Dragon Pokemon",
+    "height": "7' 3\"",
+    "weight": "463 lbs",
+    "nationalNumber": 149,
+    "level": 45
+  },
+  "flavorText": "An extremely rarely seen marine Pokémon. Its intelligence is said to match that of humans.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "019_dragonite.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Step In provides excellent mobility and tactical options",
+      "No weakness is extremely valuable",
+      "Fighting resistance protects against Haymaker",
+      "100 HP is very high for the era",
+      "Low retreat cost of 1",
+      "Colorless energy cost allows any energy type",
+      "Non-holo version is more accessible"
+    ],
+    "weaknesses": [
+      "Stage 2 requires significant setup (Dratini -> Dragonair -> Dragonite)",
+      "Slam is coin flip dependent and unreliable",
+      "4 energy for potentially 0 damage is inefficient",
+      "The Dragonair line doesn't exist in Fossil (requires Base Set or other sets)"
+    ],
+    "synergies": [
+      "Pokemon Breeder (skip Dragonair)",
+      "Double Colorless Energy",
+      "Switch (can use Step In then switch something else in)",
+      "Pokemon with high retreat costs"
+    ],
+    "counters": [
+      "Aerodactyl prevents evolution to Dragonite",
+      "Energy Removal slows the 4-energy attack",
+      "Gust of Wind to force out before ready",
+      "Targeting the Dratini/Dragonair before evolution"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Dragonite is functionally identical to the holo version (#4). Dragonite's Step In power was innovative but the Stage 2 requirement and unreliable attack limited its competitive impact. The non-holo printing made it more accessible for players wanting to experiment with the card.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Step In can be used even if your Active Pokemon is affected by a status condition.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Step In is considered switching, so effects that trigger on switching apply.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You cannot use Step In if Dragonite is your Active Pokemon - it must be on your Bench.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Slam does 0 damage if both coin flips are tails.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

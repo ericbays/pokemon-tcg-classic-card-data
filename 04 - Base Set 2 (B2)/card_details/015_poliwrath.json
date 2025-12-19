@@ -1,0 +1,122 @@
+{
+  "id": "base2-015",
+  "name": "Poliwrath",
+  "number": 15,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 90,
+  "types": ["Water"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Poliwhirl",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Water Gun",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "30+",
+      "baseDamage": 30,
+      "text": "Does 30 damage plus 10 more damage for each Water Energy attached to Poliwrath but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "parameters": {
+          "bonusDamage": 10,
+          "bonusPerExtraEnergy": "Water",
+          "maxBonus": 20,
+          "maxDamage": 50
+        }
+      }
+    },
+    {
+      "name": "Whirlpool",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it.",
+      "effect": {
+        "effectType": "energy_manipulation",
+        "parameters": {
+          "target": "defending_pokemon",
+          "action": "discard",
+          "count": 1,
+          "choice": "attacker"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Tadpole Pokemon",
+    "height": "4' 3\"",
+    "weight": "119 lbs",
+    "nationalNumber": 62,
+    "level": 48
+  },
+  "flavorText": "An adept swimmer at both the front crawl and breaststroke. Easily overtakes the best human swimmers.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "015_poliwrath-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Whirlpool discards opponent's energy - built-in disruption",
+      "Water Gun scales with extra energy (up to 50 damage)",
+      "90 HP is solid for Stage 2",
+      "Benefits from Rain Dance energy acceleration"
+    ],
+    "weaknesses": [
+      "Grass weakness (uncommon type)",
+      "Stage 2 requires significant setup",
+      "3 retreat cost is expensive"
+    ],
+    "synergies": [
+      "Blastoise - Rain Dance powers up Water Gun",
+      "Pokemon Breeder - Skip Poliwhirl",
+      "Energy Removal - Combined with Whirlpool for energy denial"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness",
+      "Venusaur - Grass type with good HP"
+    ]
+  },
+  "competitiveHistory": "Poliwrath was occasionally used in Rain Dance decks as an alternative attacker to the main threats. Whirlpool's built-in energy removal provided utility, and Water Gun benefited from Rain Dance's energy acceleration.",
+  "rulings": [
+    {
+      "ruling": "Water Gun's bonus damage is calculated based on Water Energy attached beyond the 2 needed to pay for the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The +20 damage cap on Water Gun means maximum damage is 50.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "For Whirlpool, the attacking player chooses which Energy card to discard from the Defending Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Defending Pokemon has no Energy cards attached, Whirlpool still does its damage but has no discard effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

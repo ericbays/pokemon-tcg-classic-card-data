@@ -1,0 +1,95 @@
+{
+  "id": "base1-088",
+  "name": "Professor Oak",
+  "number": 88,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Uncommon",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer in Base Set. Would be classified as Supporter by modern rules due to powerful hand refresh effect."
+  },
+  "effect": {
+    "text": "Discard your hand, then draw 7 cards.",
+    "effectType": "hand_refresh",
+    "actions": [
+      {
+        "action": "discard_hand"
+      },
+      {
+        "action": "draw_cards",
+        "amount": 7
+      }
+    ],
+    "cost": {
+      "type": "discard_hand",
+      "description": "Must discard entire hand"
+    },
+    "requirements": [
+      {
+        "type": "cards_in_deck",
+        "minimum": 7,
+        "description": "Must have at least 7 cards in deck"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "088_professor-oak.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Refresh",
+    "powerLevel": "Format-Defining",
+    "timing": "any_time",
+    "deckInclusion": "Universal Staple",
+    "synergies": ["Item Finder", "Computer Search", "Energy Retrieval", "Maintenance"],
+    "antiSynergies": ["Cards you want to keep in hand"],
+    "tips": [
+      "Play out useful cards from hand before using",
+      "One of the most powerful draw cards ever printed",
+      "Almost always run 4 copies",
+      "Use aggressively early game to find Energy and setup pieces",
+      "Before using Oak, play out cards from your hand that you want to use",
+      "In the late game, count your deck before Oak to avoid decking yourself"
+    ]
+  },
+  "competitiveHistory": "Professor Oak is one of the most iconic and powerful cards in Pokemon TCG history. It was an automatic 4-of staple in virtually every competitive Base Set deck. The ability to draw 7 cards with no real downside (discarding is often advantageous) made it indispensable for consistency. Oak defined the aggressive playstyle of early Pokemon TCG, enabling decks like Haymaker to explode out of the gate with turn 1 setups.",
+  "rulings": [
+    {
+      "ruling": "You must discard your entire hand before drawing the 7 cards"
+    },
+    {
+      "ruling": "If you have no cards in hand besides Professor Oak, you simply draw 7 cards"
+    },
+    {
+      "ruling": "You must have at least 7 cards remaining in your deck to play Professor Oak"
+    },
+    {
+      "ruling": "All cards discarded by Professor Oak go to your discard pile (face-up, public knowledge)"
+    },
+    {
+      "ruling": "You cannot choose to discard only some cards - it's all or nothing"
+    },
+    {
+      "ruling": "Cards discarded can be recovered with Energy Retrieval, Item Finder, or similar effects"
+    },
+    {
+      "ruling": "If an effect prevents you from discarding, you cannot play Professor Oak"
+    },
+    {
+      "ruling": "Professor Oak counts as playing a Trainer card for effects that track Trainer usage"
+    }
+  ]
+}

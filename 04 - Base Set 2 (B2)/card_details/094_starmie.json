@@ -1,0 +1,119 @@
+{
+  "id": "base2-094",
+  "name": "Starmie",
+  "number": 94,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Common",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Staryu",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Recover",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Water Energy card attached to Starmie in order to use this attack. Remove all damage counters from Starmie.",
+      "effect": {
+        "effectType": "healing",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Water"
+        },
+        "parameters": {
+          "healAmount": "all"
+        }
+      }
+    },
+    {
+      "name": "Star Freeze",
+      "cost": ["Water", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mysterious Pokemon",
+    "height": "3' 7\"",
+    "weight": "176 lbs",
+    "nationalNumber": 121,
+    "level": 28
+  },
+  "flavorText": "Its central core glows with the seven colors of the rainbow. Some people value this core as a gem.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "094_starmie-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Wall",
+    "strengths": [
+      "Recover removes all damage counters",
+      "Star Freeze can Paralyze",
+      "Good sustain capability"
+    ],
+    "weaknesses": [
+      "60 HP is low for Stage 1",
+      "Lightning weakness",
+      "No resistance",
+      "Recover requires energy discard"
+    ],
+    "synergies": [
+      "Staryu - Evolves from",
+      "Energy Retrieval - Recover discarded energy"
+    ],
+    "counters": [
+      "Lightning Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Starmie saw some play as a tank that could heal itself repeatedly with Recover. Star Freeze provided disruption potential.",
+  "rulings": [
+    {
+      "ruling": "You must discard 1 Water Energy to use Recover.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Recover removes ALL damage counters from Starmie.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Star Freeze's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

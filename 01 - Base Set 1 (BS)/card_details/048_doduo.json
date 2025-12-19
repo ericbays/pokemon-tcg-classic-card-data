@@ -1,0 +1,86 @@
+{
+  "id": "base1-048",
+  "name": "Doduo",
+  "number": 48,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesTo": ["Dodrio"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Fury Attack",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10x",
+      "baseDamage": 10,
+      "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "nationalNumber": 84,
+    "category": "Twin Bird Pokemon",
+    "height": "4' 7\"",
+    "weight": "86 lbs.",
+    "level": 10
+  },
+  "flavorText": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints. LV. 10 #84",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "048_doduo.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Zero retreat cost provides complete mobility and flexibility",
+      "50 HP is solid for a Basic Pokemon",
+      "Fury Attack requires only 1 Colorless energy, working with any energy type",
+      "Fighting resistance (-30) provides excellent defense against Fighting Pokemon",
+      "Can potentially deal 0, 10, or 20 damage, with 20 being competitive for a Basic",
+      "Evolves into Dodrio"
+    ],
+    "weaknesses": [
+      "Weak to Lightning-type attacks (x2 damage)",
+      "Damage output is completely coin-flip dependent and inconsistent",
+      "Average damage of 10 (with two flips) is below par for competitive play",
+      "Can flip two tails and deal 0 damage, wasting a turn",
+      "No guaranteed damage output makes it unreliable"
+    ],
+    "synergies": [
+      "PlusPower can add 10 damage to whatever Fury Attack deals",
+      "Defender helps Doduo survive longer despite coin flip inconsistency",
+      "Item Finder can retrieve Trainer cards to support Doduo",
+      "Works well with decks that need flexible, low-cost attackers",
+      "Computer Search can help find evolution cards for Dodrio"
+    ],
+    "counters": [
+      "Lightning-type Pokemon that exploit weakness",
+      "Consistent attackers that don't rely on coin flips",
+      "Energy removal to prevent attacking"
+    ]
+  }
+}

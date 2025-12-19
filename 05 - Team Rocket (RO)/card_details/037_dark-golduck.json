@@ -1,0 +1,108 @@
+{
+  "id": "rocket-037",
+  "name": "Dark Golduck",
+  "number": 37,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Psyduck",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Third Eye",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Energy card attached to Dark Golduck in order to draw up to 3 cards.",
+      "effect": {
+        "effectType": "draw",
+        "cost": {
+          "type": "discard_energy",
+          "count": 1,
+          "energyType": "any"
+        },
+        "drawCount": 3,
+        "upTo": true
+      }
+    },
+    {
+      "name": "Super Psy",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Duck Pokemon",
+    "height": "5' 7\"",
+    "weight": "169 lbs",
+    "nationalNumber": 55,
+    "level": 23
+  },
+  "flavorText": "When Psyducks evolve, their headaches disappear and they find themselves in possession of formidable mental powers.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "037_dark-golduck-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Super Psy deals 50 damage for just 2 energy - excellent efficiency",
+      "Third Eye provides card draw",
+      "Free retreat cost",
+      "Uses Psychic energy despite being Water type"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Lightning weakness",
+      "Third Eye requires discarding energy"
+    ],
+    "synergies": [
+      "Psyduck",
+      "Psychic Energy"
+    ],
+    "counters": [
+      "Electabuzz",
+      "Lightning-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Golduck was one of the most efficient attackers in Team Rocket. Super Psy dealing 50 damage for just 2 energy was exceptional value. The free retreat cost added flexibility. It was a solid, no-frills attacker that saw reasonable competitive play.",
+  "rulings": [
+    {
+      "ruling": "Third Eye lets you draw up to 3 cards - you can choose to draw fewer.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Dark Golduck is a Water-type Pokemon but uses Psychic energy for its attacks.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

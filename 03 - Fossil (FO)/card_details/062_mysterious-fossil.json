@@ -1,0 +1,109 @@
+{
+  "id": "fossil-062",
+  "name": "Mysterious Fossil",
+  "number": 62,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "hp": 10,
+  "effect": {
+    "text": "Play Mysterious Fossil as if it were a Basic Pokémon. While in play, Mysterious Fossil counts as a Pokémon (instead of a Trainer card). Mysterious Fossil has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Mysterious Fossil is Knocked Out, it doesn't count as a Knocked Out Pokémon. (Discard it anyway.) At any time during your turn before your attack, you may discard Mysterious Fossil from play.",
+    "effectType": "special_trainer",
+    "parameters": {
+      "playsAsBasicPokemon": true,
+      "countsAsPokemon": true,
+      "hp": 10,
+      "noAttacks": true,
+      "cantRetreat": true,
+      "immuneToStatusConditions": true,
+      "noKOPrize": true,
+      "canVoluntarilyDiscard": true
+    }
+  },
+  "evolvesTo": ["Aerodactyl", "Kabuto", "Omanyte"],
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "062_mysterious-fossil.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Required to play Aerodactyl, Kabuto, and Omanyte",
+      "If knocked out, opponent doesn't take a prize",
+      "Can be discarded at any time to free bench space",
+      "Immune to all status conditions",
+      "Fills bench while waiting to evolve"
+    ],
+    "weaknesses": [
+      "Only 10 HP is extremely fragile",
+      "No attacks and can't retreat",
+      "Takes up bench space",
+      "Must survive a turn to evolve"
+    ],
+    "synergies": [
+      "Aerodactyl (evolution)",
+      "Kabuto -> Kabutops (evolution line)",
+      "Omanyte -> Omastar (evolution line)",
+      "Pokemon Breeder (skip middle evolution)"
+    ],
+    "counters": [
+      "Any attack doing 10+ damage",
+      "Bench damage attacks",
+      "Aerodactyl itself (prevents evolution)"
+    ]
+  },
+  "competitiveHistory": "Mysterious Fossil was essential for the fossil Pokemon evolution lines. Its most important role was enabling Aerodactyl, which was a format-defining card with Prehistoric Power. The 10 HP made it extremely vulnerable, but the lack of prize penalty for knockouts mitigated this somewhat. The ability to discard at will prevented it from clogging the bench.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Mysterious Fossil is played from your hand as if it were a Basic Pokemon - it goes directly into play.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "While in play, Mysterious Fossil is treated as a Pokemon for all purposes except prizes when knocked out.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Mysterious Fossil cannot be affected by Asleep, Confused, Paralyzed, or Poisoned status conditions.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Mysterious Fossil is knocked out, it is discarded but your opponent does not take a prize card.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You may discard Mysterious Fossil from play at any time during your turn before attacking.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Mysterious Fossil can evolve into Aerodactyl, Kabuto, or Omanyte following normal evolution rules.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Mysterious Fossil cannot be your only Pokemon - you must have at least one real Basic Pokemon in play.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Pokemon Breeder can be used on Mysterious Fossil to evolve directly to Kabutops or Omastar.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "rocket-038",
+  "name": "Dark Jolteon",
+  "number": 38,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 50,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Eevee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Lightning Flash",
+      "cost": ["Lightning", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing.",
+      "effect": {
+        "effectType": "special",
+        "preventAttack": {
+          "condition": "coin_flip_tails",
+          "duration": "opponents_next_turn"
+        }
+      }
+    },
+    {
+      "name": "Thunder Attack",
+      "cost": ["Lightning", "Lightning", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, Dark Jolteon does 10 damage to itself.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": {
+            "selfDamage": 10
+          }
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Lightning Pokemon",
+    "height": "2' 7\"",
+    "weight": "54 lbs",
+    "nationalNumber": 135,
+    "level": 23
+  },
+  "flavorText": "A dangerous Pokémon when angered. It likes to playfully shock people with the electricity it stores within its body.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "038_dark-jolteon-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Lightning Flash can prevent opponent's attack 50% of the time",
+      "Thunder Attack can Paralyze",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Very low HP of 50",
+      "Fighting weakness vs Hitmonchan",
+      "Thunder Attack has self-damage risk"
+    ],
+    "synergies": [
+      "Eevee"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Jolteon was an Eeveelution focused on disruption. Lightning Flash's ability to potentially negate the opponent's next attack was useful for buying time. However, its low HP made it fragile.",
+  "rulings": [
+    {
+      "ruling": "Lightning Flash's effect lasts until the opponent successfully attacks or their turn ends.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

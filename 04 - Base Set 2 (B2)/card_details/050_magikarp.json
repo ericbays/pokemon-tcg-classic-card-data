@@ -1,0 +1,109 @@
+{
+  "id": "base2-050",
+  "name": "Magikarp",
+  "number": 50,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 30,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Gyarados"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Tackle",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Flail",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10x",
+      "baseDamage": 10,
+      "text": "Does 10 damage times the number of damage counters on Magikarp.",
+      "effect": {
+        "effectType": "damage_multiplier",
+        "parameters": {
+          "damagePerCounter": 10,
+          "countersOn": "self"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Fish Pokemon",
+    "height": "2' 11\"",
+    "weight": "22 lbs",
+    "nationalNumber": 129,
+    "level": 8
+  },
+  "flavorText": "In the distant past, it was stronger than its horribly weak descendants that exist today.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "050_magikarp-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Evolves into powerful Gyarados",
+      "Low retreat cost of 1",
+      "Flail can do surprising damage when damaged"
+    ],
+    "weaknesses": [
+      "30 HP is the lowest in the game",
+      "Lightning weakness",
+      "Extremely fragile - dies to almost anything",
+      "Tackle only does 10 damage"
+    ],
+    "synergies": [
+      "Gyarados - Evolution target",
+      "Blastoise - Rain Dance for Water Energy"
+    ],
+    "counters": [
+      "Any attacker - 30 HP is extremely vulnerable",
+      "Electabuzz - Lightning weakness, easy KO"
+    ]
+  },
+  "competitiveHistory": "Magikarp was notoriously weak, with only 30 HP making it one of the easiest Pokemon to knock out. However, it evolved into the powerful Gyarados, so players would try to protect it long enough to evolve. The challenge of keeping Magikarp alive was part of using the Gyarados line.",
+  "rulings": [
+    {
+      "ruling": "Tackle has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Flail does 10 damage times the number of damage counters on Magikarp. With 2 damage counters, it does 20 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Magikarp has no damage counters, Flail does 0 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

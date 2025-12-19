@@ -1,0 +1,89 @@
+{
+  "id": "base2-038",
+  "name": "Dratini",
+  "number": 38,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dragonair"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Pound",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Dragon Pokemon",
+    "height": "5' 11\"",
+    "weight": "7 lbs",
+    "nationalNumber": 147,
+    "level": 10
+  },
+  "flavorText": "Long considered a mythical Pokémon until recently, when a small colony was found living underwater.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "038_dratini-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "No weakness - very rare",
+      "Psychic resistance",
+      "Colorless type uses any energy",
+      "Evolves into powerful Dragonair/Dragonite line"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Only 10 damage attack",
+      "Low retreat cost of 1"
+    ],
+    "synergies": [
+      "Dragonair/Dragonite - Evolution targets",
+      "Any energy type deck"
+    ],
+    "counters": [
+      "Any fast attacker can KO the low HP"
+    ]
+  },
+  "competitiveHistory": "Dratini was used as the starting point for the Dragonair/Dragonite evolution line. Its lack of weakness was notable but the 40 HP made it fragile. Players tried to evolve it quickly.",
+  "rulings": [
+    {
+      "ruling": "Dratini has no weakness.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pound has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

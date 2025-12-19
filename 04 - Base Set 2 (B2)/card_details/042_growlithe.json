@@ -1,0 +1,83 @@
+{
+  "id": "base2-042",
+  "name": "Growlithe",
+  "number": 42,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Arcanine"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Flare",
+      "cost": ["Fire", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Puppy Pokemon",
+    "height": "2' 4\"",
+    "weight": "42 lbs",
+    "nationalNumber": 58,
+    "level": 18
+  },
+  "flavorText": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "042_growlithe-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "60 HP is decent for a Basic",
+      "Low retreat cost of 1",
+      "Flare is simple and reliable"
+    ],
+    "weaknesses": [
+      "Water weakness",
+      "Only one attack",
+      "No resistance"
+    ],
+    "synergies": [
+      "Arcanine - Evolution target"
+    ],
+    "counters": [
+      "Water Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Growlithe was used as the basic for the Arcanine evolution line. On its own, it was a simple Fire-type basic with average stats.",
+  "rulings": [
+    {
+      "ruling": "Flare has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

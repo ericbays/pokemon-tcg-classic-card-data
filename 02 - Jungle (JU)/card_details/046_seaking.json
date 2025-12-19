@@ -1,0 +1,91 @@
+{
+  "id": "jungle-046",
+  "name": "Seaking",
+  "number": 46,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Goldeen",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Horn Attack",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Waterfall",
+      "cost": ["Water", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Goldfish Pokemon",
+    "height": "4' 3\"",
+    "weight": "86 lbs",
+    "nationalNumber": 119,
+    "level": 28
+  },
+  "flavorText": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "046_seaking.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Waterfall is efficient - 30 damage for 2 energy",
+      "Low retreat cost",
+      "Simple, straightforward attacks"
+    ],
+    "weaknesses": [
+      "70 HP is moderate",
+      "Lightning weakness",
+      "No resistance",
+      "No special effects"
+    ],
+    "synergies": [
+      "Water decks",
+      "Rain Dance support"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness"
+    ]
+  },
+  "competitiveHistory": "Seaking from Jungle was not competitively viable. While Waterfall was efficient, there were better Water-type options available for Rain Dance decks.",
+  "rulings": []
+}

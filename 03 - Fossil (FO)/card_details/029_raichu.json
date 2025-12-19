@@ -1,0 +1,118 @@
+{
+  "id": "fossil-029",
+  "name": "Raichu",
+  "number": 29,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 90,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Pikachu",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Gigashock",
+      "cost": ["Lightning", "Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 4,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Choose 3 of your opponent's Benched Pokémon and this attack does 10 damage to each of them. (Don't apply Weakness and Resistance for Benched Pokémon.) If your opponent has fewer than 3 Benched Pokémon, do the damage to each of them.",
+      "effect": {
+        "effectType": "bench_damage",
+        "benchDamage": {
+          "target": "opponent_bench",
+          "damage": 10,
+          "count": "up_to_three"
+        },
+        "parameters": {
+          "ignoreWeaknessResistance": true,
+          "chooseTargets": true,
+          "maxTargets": 3
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mouse Pokemon",
+    "height": "2' 7\"",
+    "weight": "66 lbs",
+    "nationalNumber": 26,
+    "level": 45
+  },
+  "flavorText": "Its long tail serves as a ground to protect itself from its own high voltage power.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "029_raichu.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Gigashock spreads damage to multiple benched Pokemon",
+      "90 HP is very good for Stage 1",
+      "Low retreat cost of 1",
+      "Lightning type is effective against Water Pokemon",
+      "Non-holo version is more accessible"
+    ],
+    "weaknesses": [
+      "Fighting weakness against popular Haymaker Pokemon",
+      "30 damage to Active is very low for 4 energy",
+      "High energy cost for modest damage output",
+      "No resistance"
+    ],
+    "synergies": [
+      "Gengar (Curse to finish off damaged bench Pokemon)",
+      "Spread damage strategies",
+      "Gust of Wind (bring damaged bench Pokemon active)",
+      "Energy acceleration"
+    ],
+    "counters": [
+      "Fighting Pokemon (Hitmonchan) exploit weakness",
+      "Mr. Mime blocks the 30 damage",
+      "Energy Removal prevents setup",
+      "Aggressive decks that win before spread damage matters"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Raichu is functionally identical to the holo version (#14). Raichu was designed for spread damage but its inefficient attack cost limited competitive viability. The non-holo printing made it accessible for casual players.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "If opponent has exactly 3 Benched Pokemon, you must choose all 3 for the 10 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If opponent has fewer than 3 Benched Pokemon, deal 10 damage to each of them (you can't hit the same one multiple times).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If opponent has no Benched Pokemon, Gigashock still does 30 damage to the Active Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Weakness and Resistance are not applied to the bench damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

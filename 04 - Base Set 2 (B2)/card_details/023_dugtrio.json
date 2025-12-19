@@ -1,0 +1,115 @@
+{
+  "id": "base2-023",
+  "name": "Dugtrio",
+  "number": 23,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Diglett",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slash",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Earthquake",
+      "cost": ["Fighting", "Fighting", "Fighting", "Fighting"],
+      "convertedEnergyCost": 4,
+      "damage": "70",
+      "baseDamage": 70,
+      "text": "Does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "effectType": "bench_damage",
+        "benchDamage": {
+          "target": "your_bench",
+          "damage": 10,
+          "count": "all",
+          "ignoreWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Mole Pokemon",
+    "height": "2' 4\"",
+    "weight": "73 lbs",
+    "nationalNumber": 51,
+    "level": 36
+  },
+  "flavorText": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "023_dugtrio-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Earthquake deals massive 70 damage",
+      "Lightning resistance helps against Electabuzz",
+      "Fighting type hits Colorless weakness",
+      "Slash provides solid 40 damage option"
+    ],
+    "weaknesses": [
+      "Grass weakness",
+      "Earthquake damages your own bench",
+      "70 HP is low for an evolved Pokemon",
+      "4 energy for Earthquake is expensive"
+    ],
+    "synergies": [
+      "Mr. Mime - Immune to Earthquake bench damage",
+      "Pokemon with no bench presence - Avoid self-damage"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness",
+      "Scyther - Grass type attacker"
+    ]
+  },
+  "competitiveHistory": "Dugtrio saw some play as a Fighting-type attacker. Earthquake's 70 damage was impressive, but damaging your own bench was a significant downside. The Lightning resistance was useful against Electabuzz-heavy metagames.",
+  "rulings": [
+    {
+      "ruling": "Earthquake damages ALL of your own Benched Pokemon for 10 damage each.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Weakness and Resistance are not applied to the bench damage from Earthquake.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you have no Benched Pokemon, Earthquake still does its full damage to the Defending Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

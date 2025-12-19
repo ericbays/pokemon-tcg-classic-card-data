@@ -1,0 +1,117 @@
+{
+  "id": "base2-022",
+  "name": "Dragonair",
+  "number": 22,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Dratini",
+  "evolvesTo": ["Dragonite"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slam",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "parameters": {
+          "coinFlips": 2,
+          "damagePerHeads": 30,
+          "maxDamage": 60
+        }
+      }
+    },
+    {
+      "name": "Hyper Beam",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it.",
+      "effect": {
+        "effectType": "energy_manipulation",
+        "parameters": {
+          "target": "defending_pokemon",
+          "action": "discard",
+          "count": 1,
+          "choice": "attacker"
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Dragon Pokemon",
+    "height": "13' 1\"",
+    "weight": "36 lbs",
+    "nationalNumber": 148,
+    "level": 33
+  },
+  "flavorText": "A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "022_dragonair-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "No weakness - very rare",
+      "Psychic resistance",
+      "Colorless type uses any energy",
+      "Hyper Beam provides energy disruption"
+    ],
+    "weaknesses": [
+      "Slam damage is coin-flip dependent",
+      "Hyper Beam costs 4 energy for only 20 damage",
+      "80 HP is moderate",
+      "Primarily used as stepping stone to Dragonite"
+    ],
+    "synergies": [
+      "Dratini - Required basic",
+      "Dragonite - Evolution target",
+      "Double Colorless Energy - Powers attacks"
+    ],
+    "counters": [
+      "Fast attackers - Dragonair is slow to set up"
+    ]
+  },
+  "competitiveHistory": "Dragonair was primarily used as the middle evolution to reach Dragonite. Its lack of weakness was notable but the coin-flip dependent attacks limited standalone viability.",
+  "rulings": [
+    {
+      "ruling": "Slam flips 2 coins and does 30 damage per heads.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "For Hyper Beam, the attacking player chooses which Energy to discard from the Defending Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Dragonair has no weakness - attacks against it apply normal damage without weakness multiplier.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

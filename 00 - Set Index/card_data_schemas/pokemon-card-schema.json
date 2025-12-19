@@ -1,0 +1,606 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "pokemon-card-schema.json",
+  "title": "Pokemon Card Schema",
+  "description": "Schema for Pokemon TCG Pokemon cards, designed for digital game implementation",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "number",
+    "set",
+    "cardType",
+    "supertype",
+    "subtypes",
+    "rarity",
+    "hp",
+    "types",
+    "stage",
+    "attacks",
+    "weakness",
+    "resistance",
+    "retreatCost",
+    "imageUrl"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in format: {setCode}-{paddedNumber}",
+      "pattern": "^[a-z0-9]+-[0-9]{3}$",
+      "examples": ["base1-001", "base1-058"]
+    },
+    "name": {
+      "type": "string",
+      "description": "The Pokemon's name as printed on the card",
+      "examples": ["Pikachu", "Charizard"]
+    },
+    "number": {
+      "type": "integer",
+      "description": "Card number within the set (numeric only)",
+      "minimum": 1,
+      "examples": [1, 58, 102]
+    },
+    "set": {
+      "type": "object",
+      "description": "Information about the card set",
+      "required": ["id", "name", "series", "releaseDate", "totalCards"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Set identifier code",
+          "examples": ["base1", "jungle", "fossil"]
+        },
+        "name": {
+          "type": "string",
+          "description": "Full set name",
+          "examples": ["Base Set", "Jungle", "Fossil"]
+        },
+        "series": {
+          "type": "string",
+          "description": "Series the set belongs to",
+          "examples": ["Original", "Neo", "E-Card"]
+        },
+        "releaseDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Set release date in ISO format",
+          "examples": ["1999-01-09"]
+        },
+        "totalCards": {
+          "type": "integer",
+          "description": "Total number of cards in the set",
+          "minimum": 1
+        }
+      }
+    },
+    "cardType": {
+      "type": "string",
+      "const": "pokemon",
+      "description": "The type of card - always 'pokemon' for this schema"
+    },
+    "supertype": {
+      "type": "string",
+      "const": "Pokemon",
+      "description": "Card supertype classification"
+    },
+    "subtypes": {
+      "type": "array",
+      "description": "Card subtypes (stage, special classifications)",
+      "items": {
+        "type": "string",
+        "enum": ["Basic", "Stage 1", "Stage 2", "Baby", "BREAK", "EX", "GX", "V", "VMAX", "Restored", "Level-Up"]
+      },
+      "minItems": 1,
+      "examples": [["Basic"], ["Stage 1"], ["Stage 2"]]
+    },
+    "rarity": {
+      "type": "string",
+      "description": "Card rarity",
+      "enum": ["Common", "Uncommon", "Rare", "Rare Holo", "Rare Holo EX", "Rare Secret", "Promo"],
+      "examples": ["Common", "Rare Holo"]
+    },
+    "hp": {
+      "type": "integer",
+      "description": "Hit Points - the amount of damage the Pokemon can take before being knocked out",
+      "minimum": 10,
+      "maximum": 400,
+      "multipleOf": 10,
+      "examples": [40, 70, 120]
+    },
+    "types": {
+      "type": "array",
+      "description": "Pokemon type(s) - determines weakness/resistance interactions",
+      "items": {
+        "type": "string",
+        "enum": ["Colorless", "Fire", "Water", "Lightning", "Grass", "Fighting", "Psychic", "Darkness", "Metal", "Dragon", "Fairy"]
+      },
+      "minItems": 1,
+      "maxItems": 2,
+      "examples": [["Lightning"], ["Fire"], ["Water", "Psychic"]]
+    },
+    "stage": {
+      "type": "string",
+      "description": "Evolution stage of the Pokemon",
+      "enum": ["Basic", "Stage 1", "Stage 2", "Baby", "BREAK", "Restored", "Level-Up"],
+      "examples": ["Basic", "Stage 1", "Stage 2"]
+    },
+    "evolvesFrom": {
+      "type": ["string", "null"],
+      "description": "Name of the Pokemon this card evolves from (null if Basic)",
+      "examples": ["Pikachu", "Charmeleon", null]
+    },
+    "evolvesTo": {
+      "type": "array",
+      "description": "Names of Pokemon this card can evolve into",
+      "items": {
+        "type": "string"
+      },
+      "examples": [["Raichu"], ["Charmeleon"], []]
+    },
+    "abilities": {
+      "type": "array",
+      "description": "Pokemon Powers, Poke-Powers, Poke-Bodies, or Abilities",
+      "items": {
+        "$ref": "#/$defs/ability"
+      },
+      "default": []
+    },
+    "attacks": {
+      "type": "array",
+      "description": "Attacks the Pokemon can use",
+      "items": {
+        "$ref": "#/$defs/attack"
+      },
+      "minItems": 0,
+      "maxItems": 4
+    },
+    "weakness": {
+      "oneOf": [
+        { "$ref": "#/$defs/typeModifier" },
+        { "type": "null" }
+      ],
+      "description": "Type weakness - damage modifier when attacked by this type"
+    },
+    "resistance": {
+      "oneOf": [
+        { "$ref": "#/$defs/typeModifier" },
+        { "type": "null" }
+      ],
+      "description": "Type resistance - damage reduction when attacked by this type"
+    },
+    "retreatCost": {
+      "type": "array",
+      "description": "Energy required to retreat (array of energy types)",
+      "items": {
+        "type": "string",
+        "enum": ["Colorless", "Fire", "Water", "Lightning", "Grass", "Fighting", "Psychic", "Darkness", "Metal"]
+      },
+      "examples": [["Colorless"], ["Colorless", "Colorless", "Colorless"], []]
+    },
+    "convertedRetreatCost": {
+      "type": "integer",
+      "description": "Total number of energy required to retreat",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "pokedex": {
+      "type": "object",
+      "description": "Pokedex information for flavor and reference",
+      "properties": {
+        "nationalNumber": {
+          "type": "integer",
+          "description": "National Pokedex number",
+          "minimum": 1,
+          "examples": [25, 6, 150]
+        },
+        "category": {
+          "type": "string",
+          "description": "Pokemon species category",
+          "examples": ["Mouse Pokemon", "Flame Pokemon"]
+        },
+        "height": {
+          "type": "string",
+          "description": "Pokemon height as printed",
+          "examples": ["1' 4\"", "5' 7\""]
+        },
+        "weight": {
+          "type": "string",
+          "description": "Pokemon weight as printed",
+          "examples": ["13 lbs.", "200 lbs."]
+        },
+        "level": {
+          "type": "integer",
+          "description": "Level as printed on card (Base Set era)",
+          "minimum": 1,
+          "examples": [12, 76]
+        }
+      }
+    },
+    "flavorText": {
+      "type": "string",
+      "description": "Flavor text / Pokedex entry printed on card",
+      "examples": ["When several of these Pokemon gather, their electricity can cause lightning storms."]
+    },
+    "illustrator": {
+      "type": "string",
+      "description": "Card illustrator name",
+      "examples": ["Mitsuhiro Arita", "Ken Sugimori"]
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "Relative path to card image file",
+      "pattern": "^[0-9]{3}_[a-z0-9.-]+\\.(jpg|png)$",
+      "examples": ["058_pikachu.jpg", "004_charizard.jpg", "006_mr.-mime.jpg"]
+    },
+    "rules": {
+      "type": "array",
+      "description": "Special rules text (for EX, GX, V cards, etc.)",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "legality": {
+      "type": "object",
+      "description": "Format legality for the card",
+      "properties": {
+        "standard": { "type": "boolean" },
+        "expanded": { "type": "boolean" },
+        "unlimited": { "type": "boolean" }
+      },
+      "default": {
+        "standard": false,
+        "expanded": false,
+        "unlimited": true
+      }
+    },
+    "gameplay": {
+      "type": "object",
+      "description": "Gameplay analysis and strategy information",
+      "properties": {
+        "role": {
+          "type": "string",
+          "description": "Primary role in gameplay",
+          "enum": ["Attacker", "Support", "Tank", "Setup", "Disruptor", "Energy Acceleration", "Evolution", "Evolution Starter", "Bench Sniper", "Stall", "Tech", "Sweeper", "Utility", "Wall", "Defender"],
+          "examples": ["Attacker", "Support"]
+        },
+        "strengths": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Key strengths of the card"
+        },
+        "weaknesses": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Key weaknesses of the card"
+        },
+        "synergies": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Cards that work well with this Pokemon"
+        },
+        "counters": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Cards that counter this Pokemon"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "energyType": {
+      "type": "string",
+      "enum": ["Colorless", "Fire", "Water", "Lightning", "Grass", "Fighting", "Psychic", "Darkness", "Metal", "Dragon", "Fairy"]
+    },
+    "statusCondition": {
+      "type": "string",
+      "enum": ["Asleep", "Burned", "Confused", "Paralyzed", "Poisoned"]
+    },
+    "typeModifier": {
+      "type": "object",
+      "required": ["type", "value"],
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/energyType",
+          "description": "The type that triggers this modifier"
+        },
+        "value": {
+          "type": "string",
+          "description": "The modifier value",
+          "pattern": "^(x2|\\+[0-9]+|-[0-9]+)$",
+          "examples": ["x2", "+30", "-30"]
+        }
+      }
+    },
+    "ability": {
+      "type": "object",
+      "required": ["name", "type", "text"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Ability name",
+          "examples": ["Damage Swap", "Energy Burn", "Rain Dance"]
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of ability",
+          "enum": ["Pokemon Power", "Poke-Power", "Poke-Body", "Ability"],
+          "examples": ["Pokemon Power", "Ability"]
+        },
+        "text": {
+          "type": "string",
+          "description": "Full ability text as printed"
+        },
+        "effect": {
+          "type": "object",
+          "description": "Structured effect data for game logic",
+          "properties": {
+            "effectType": {
+              "type": "string",
+              "description": "Categorized effect type for game implementation",
+              "enum": [
+                "damage_transfer",
+                "energy_conversion",
+                "energy_acceleration",
+                "energy_manipulation",
+                "healing",
+                "draw",
+                "search",
+                "damage_prevention",
+                "damage_boost",
+                "damage_reduction",
+                "damage_modifier",
+                "status_immunity",
+                "status_inflict",
+                "bench_protection",
+                "retreat_modifier",
+                "retreat_cost_reduction",
+                "attack_modifier",
+                "special",
+                "prize_manipulation",
+                "trainer_lock",
+                "power_lock",
+                "attack_copy",
+                "discard_manipulation",
+                "information",
+                "recovery",
+                "evolution_lock"
+              ]
+            },
+            "trigger": {
+              "type": "string",
+              "description": "When the ability can be activated",
+              "enum": ["once_per_turn", "unlimited_per_turn", "on_attack", "on_damage", "passive", "on_play", "on_evolve", "when_damaged_by_attack", "on_knockout", "between_turns", "while_active", "while_benched", "always", "as_often_as_you_like", "on_opponent_retreat", "on_retreat", "on_energy_attach", "any_time"]
+            },
+            "timing": {
+              "type": "string",
+              "description": "When during turn the ability is used",
+              "enum": ["before_attack", "after_attack", "any_time", "between_turns", "opponents_turn", "after_weakness_resistance", "on_damage_calculation", "during_attack", "on_play", "on_evolve"]
+            },
+            "target": {
+              "type": "string",
+              "description": "What the ability affects",
+              "enum": ["self", "your_pokemon", "your_active", "your_bench", "opponent_pokemon", "opponent_active", "opponent_bench", "any_pokemon", "all_pokemon", "your_water_pokemon", "your_fire_pokemon", "your_grass_pokemon", "your_lightning_pokemon", "your_psychic_pokemon", "your_fighting_pokemon", "active_pokemon", "any_opponent_pokemon", "attacking_pokemon", "discard_pile", "deck", "defending_pokemon", "opponent", "retreating_pokemon"]
+            },
+            "restrictions": {
+              "type": "array",
+              "description": "Conditions that prevent ability use",
+              "items": {
+                "type": "string",
+                "enum": ["not_asleep", "not_confused", "not_paralyzed", "not_poisoned", "not_burned", "once_per_game", "requires_energy", "cannot_ko_self", "only_once_per_turn", "not_first_turn_in_play"]
+              }
+            },
+            "parameters": {
+              "type": "object",
+              "description": "Effect-specific parameters",
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    },
+    "attack": {
+      "type": "object",
+      "required": ["name", "cost", "damage", "text"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Attack name",
+          "examples": ["Thunder Jolt", "Fire Spin", "Tackle"]
+        },
+        "cost": {
+          "type": "array",
+          "description": "Energy cost to use the attack",
+          "items": {
+            "$ref": "#/$defs/energyType"
+          },
+          "examples": [["Lightning", "Colorless"], ["Fire", "Fire", "Fire", "Fire"]]
+        },
+        "convertedEnergyCost": {
+          "type": "integer",
+          "description": "Total energy cost (sum of all energy in cost array)",
+          "minimum": 0
+        },
+        "damage": {
+          "type": "string",
+          "description": "Damage dealt as printed on card (may include modifiers)",
+          "pattern": "^([0-9]+|[0-9]+[+x-]|[0-9]+x|variable|\\?)?$",
+          "examples": ["30", "100", "30+", "10x", "50-", "", "variable"]
+        },
+        "baseDamage": {
+          "type": "integer",
+          "description": "Base numeric damage value for calculations",
+          "minimum": 0,
+          "examples": [30, 100, 10]
+        },
+        "text": {
+          "type": ["string", "null"],
+          "description": "Full attack text describing effects (null if no text)"
+        },
+        "effect": {
+          "type": "object",
+          "description": "Structured effect data for game logic",
+          "properties": {
+            "effectType": {
+              "type": "string",
+              "description": "Primary effect type",
+              "enum": [
+                "none",
+                "status_condition",
+                "self_damage",
+                "energy_discard",
+                "coin_flip_damage",
+                "coin_flip_effect",
+                "coin_flip_recoil",
+                "bench_damage",
+                "healing",
+                "draw",
+                "energy_manipulation",
+                "energy_disruption",
+                "switch",
+                "damage_multiplier",
+                "damage_modifier",
+                "damage_reduction",
+                "damage_prevention",
+                "attack_copy",
+                "discard",
+                "search",
+                "search_deck",
+                "search_evolve",
+                "deck_manipulation",
+                "self_shuffle",
+                "weakness_manipulation",
+                "damage_boost",
+                "extra_energy_damage",
+                "recoil",
+                "scaling_damage",
+                "complex",
+                "self_ko",
+                "optional_discard",
+                "reflect_damage",
+                "hand_manipulation",
+                "force_switch",
+                "energy_return",
+                "discard_cost",
+                "conditional",
+                "attack_prevention",
+                "coin_flip_multiplier",
+                "destiny_bond",
+                "self_destruct",
+                "attack_disruption",
+                "mirror_move",
+                "drain",
+                "special"
+              ]
+            },
+            "coinFlip": {
+              "type": "object",
+              "description": "Coin flip mechanics for the attack",
+              "properties": {
+                "count": {
+                  "type": "integer",
+                  "description": "Number of coins to flip",
+                  "minimum": 1,
+                  "default": 1
+                },
+                "onHeads": {
+                  "type": ["object", "null"],
+                  "description": "Effect when coin flip results in heads",
+                  "properties": {
+                    "damage": { "type": "integer", "description": "Damage dealt on heads" },
+                    "damagePerHead": { "type": "integer", "description": "Damage per heads when flipping multiple coins" },
+                    "effect": { "type": "string", "description": "Additional effect on heads" },
+                    "statusCondition": { "$ref": "#/$defs/statusCondition" },
+                    "preventDamage": { "type": "boolean", "description": "Prevents damage on heads" },
+                    "preventEffects": { "type": "boolean", "description": "Prevents all effects on heads" }
+                  }
+                },
+                "onTails": {
+                  "type": ["object", "null"],
+                  "description": "Effect when coin flip results in tails",
+                  "properties": {
+                    "damage": { "type": "integer", "description": "Damage dealt on tails" },
+                    "selfDamage": { "type": "integer", "description": "Damage to self on tails" },
+                    "effect": { "type": "string", "description": "Additional effect on tails" },
+                    "fail": { "type": "boolean", "description": "Attack fails on tails" }
+                  }
+                }
+              }
+            },
+            "conditions": {
+              "type": "array",
+              "description": "Conditions that modify the attack",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["energy_attached", "damage_counters", "bench_count", "cards_in_hand", "opponent_condition", "coin_flip"]
+                  },
+                  "scaling": {
+                    "type": "object",
+                    "description": "How the condition scales the effect"
+                  },
+                  "onSuccess": {
+                    "type": "object",
+                    "description": "Effect when condition is met (for coin_flip: heads)"
+                  },
+                  "onFailure": {
+                    "type": "object",
+                    "description": "Effect when condition is not met (for coin_flip: tails)"
+                  }
+                }
+              }
+            },
+            "statusCondition": {
+              "$ref": "#/$defs/statusCondition",
+              "description": "Status condition inflicted"
+            },
+            "selfDamage": {
+              "oneOf": [
+                { "type": "integer", "description": "Simple damage amount to self", "minimum": 0 },
+                {
+                  "type": "object",
+                  "description": "Complex self-damage with conditions",
+                  "properties": {
+                    "damage": { "type": "integer" },
+                    "perTail": { "type": "integer" },
+                    "target": { "type": "array", "items": { "type": "string" } },
+                    "ignoreWeakness": { "type": "boolean" },
+                    "ignoreResistance": { "type": "boolean" }
+                  }
+                }
+              ]
+            },
+            "energyDiscard": {
+              "type": "object",
+              "properties": {
+                "count": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string", "enum": ["all", "heads_flipped"] }] },
+                "type": { "type": "string", "enum": ["any", "specific", "Fire", "Water", "Grass", "Lightning", "Psychic", "Fighting", "Colorless"] },
+                "specificType": { "$ref": "#/$defs/energyType" }
+              }
+            },
+            "benchDamage": {
+              "oneOf": [
+                { "type": "integer", "description": "Simple damage amount to bench" },
+                {
+                  "type": "object",
+                  "properties": {
+                    "target": { "type": "string", "enum": ["your_bench", "opponent_bench", "all_bench", "same_type_as_defending", "opponent_benched_choice"] },
+                    "damage": { "type": "integer" },
+                    "count": { "type": "string", "enum": ["one", "all", "choice", "up_to_three", "up_to"] }
+                  }
+                }
+              ]
+            },
+            "parameters": {
+              "type": "object",
+              "description": "Additional effect-specific parameters",
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

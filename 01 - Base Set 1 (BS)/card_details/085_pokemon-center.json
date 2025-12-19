@@ -1,0 +1,89 @@
+{
+  "id": "base1-085",
+  "name": "Pokémon Center",
+  "number": 85,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Remove all damage counters from all of your own Pokémon with damage counters on them, then discard all Energy cards attached to those Pokémon.",
+    "effectType": "healing",
+    "actions": [
+      {
+        "action": "heal_damage",
+        "amount": 0,
+        "target": "all_own_pokemon_with_damage",
+        "parameters": {
+          "healAmount": "all"
+        }
+      },
+      {
+        "action": "discard_cards",
+        "target": "energy_from_healed_pokemon",
+        "parameters": {
+          "cardType": "Energy",
+          "amount": "all"
+        }
+      }
+    ],
+    "cost": {
+      "type": "discard_energy",
+      "target": "energy_from_pokemon",
+      "description": "Discard all Energy from all Pokemon that were healed"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "085_pokemon-center.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Healing",
+    "timing": "situational",
+    "synergies": ["Venusaur (Energy Trans)", "Mewtwo", "Chansey", "Double Colorless Energy", "Mr. Mime"],
+    "tips": [
+      "Only use when you have multiple damaged Pokemon and the healing is critical",
+      "Try to move Energy to undamaged Pokemon before using Pokemon Center",
+      "Best in control/stall decks that can afford the tempo loss",
+      "Excellent in Venusaur decks with Energy Trans to preserve Energy",
+      "Avoid using when you need to maintain offensive pressure",
+      "In most decks, this card is too slow and costly to be worth including"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must remove damage counters from ALL of your Pokemon that have damage counters on them"
+    },
+    {
+      "ruling": "You cannot choose to heal only some of your Pokemon - the effect is mandatory for all damaged Pokemon"
+    },
+    {
+      "ruling": "After removing all damage counters, you must discard ALL Energy cards attached to those Pokemon"
+    },
+    {
+      "ruling": "Pokemon without damage counters are not affected and keep their Energy"
+    },
+    {
+      "ruling": "If a Pokemon has damage counters but no Energy attached, it is still fully healed"
+    },
+    {
+      "ruling": "All types of Energy cards must be discarded (Basic Energy and Special Energy like Double Colorless Energy)"
+    },
+    {
+      "ruling": "The healing happens first, then Energy is discarded"
+    },
+    {
+      "ruling": "This does not affect your opponent's Pokemon"
+    }
+  ]
+}

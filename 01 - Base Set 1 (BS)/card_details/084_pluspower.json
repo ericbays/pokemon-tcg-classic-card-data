@@ -1,0 +1,91 @@
+{
+  "id": "base1-084",
+  "name": "PlusPower",
+  "number": 84,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Attach PlusPower to your Active Pokémon. At the end of your turn, discard PlusPower. If this Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon.",
+    "effectType": "damage_boost",
+    "actions": [
+      {
+        "action": "attach_to_pokemon",
+        "target": "active_pokemon",
+        "parameters": {
+          "damageBoost": 10,
+          "duration": "end_of_turn"
+        }
+      },
+      {
+        "action": "boost_damage",
+        "amount": 10,
+        "target": "defending_pokemon"
+      }
+    ],
+    "cost": {
+      "type": "none"
+    }
+  },
+  "specialRules": {
+    "attachesToPokemon": true,
+    "attachmentDuration": "end_of_turn"
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "084_pluspower.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "any_time",
+    "synergies": ["Hitmonchan", "Electabuzz", "Scyther", "Gust of Wind", "Multiple PlusPowers"],
+    "tips": [
+      "Calculate exact damage before using to avoid wasting PlusPower on overkill",
+      "Save PlusPowers for crucial KOs rather than using them casually",
+      "Multiple PlusPowers can be attached to the same Pokemon in one turn",
+      "Very effective in aggressive, fast-paced decks like Haymaker",
+      "Against Pokemon with Resistance, PlusPower helps overcome the damage reduction",
+      "Can turn 2HKOs into OHKOs, dramatically increasing offensive pressure"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "PlusPower is attached to your Active Pokemon when you play it from your hand"
+    },
+    {
+      "ruling": "You can attach multiple PlusPowers to the same Pokemon in a single turn"
+    },
+    {
+      "ruling": "Each PlusPower adds 10 damage, so 2 PlusPowers add 20 damage total"
+    },
+    {
+      "ruling": "PlusPower is discarded at the end of your turn, after you attack"
+    },
+    {
+      "ruling": "If your Active Pokemon is Knocked Out or retreats, attached PlusPowers are discarded"
+    },
+    {
+      "ruling": "The damage is added after Weakness and Resistance calculations"
+    },
+    {
+      "ruling": "PlusPower only affects damage done to the Defending (Active) Pokemon, not Benched Pokemon"
+    },
+    {
+      "ruling": "If the attack does no damage (misses, fails, or does 0 base damage), PlusPower has no effect"
+    },
+    {
+      "ruling": "PlusPower does not help with attacks that place damage counters rather than doing damage"
+    }
+  ]
+}

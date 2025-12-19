@@ -1,0 +1,106 @@
+{
+  "id": "base1-039",
+  "name": "Porygon",
+  "number": 39,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original Series",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 30,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Conversion 1",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If the Defending Pokémon has a Weakness, you may change it to a type of your choice other than Colorless.",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "weaknessModification": true,
+          "target": "opponent_active",
+          "restriction": "exclude_colorless"
+        }
+      }
+    },
+    {
+      "name": "Conversion 2",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Change Porygon's Resistance to a type of your choice other than Colorless.",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "resistanceModification": true,
+          "target": "self",
+          "restriction": "exclude_colorless"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 137,
+    "category": "Virtual Pokémon",
+    "height": "2'7\"",
+    "weight": "80 lbs",
+    "level": 12
+  },
+  "flavorText": "A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace.",
+  "illustrator": "Tomoaki Imakuni",
+  "imageUrl": "039_porygon.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Can manipulate type matchups with Conversion attacks",
+      "Conversion 1 allows changing opponent's weakness to match your attacker",
+      "Extremely low energy cost for utility effects",
+      "Single retreat cost"
+    ],
+    "weaknesses": [
+      "Only 30 HP makes it extremely fragile",
+      "No damage output whatsoever",
+      "Conversion effects are highly situational",
+      "Provides easy prize for opponent",
+      "Conversion 1 useless against Pokémon without weaknesses"
+    ],
+    "synergies": [
+      "Defender",
+      "Switch"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Machamp",
+      "Gust of Wind"
+    ]
+  }
+}

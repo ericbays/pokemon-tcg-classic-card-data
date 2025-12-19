@@ -1,0 +1,72 @@
+{
+  "id": "fossil-058",
+  "name": "Mr. Fuji",
+  "number": 58,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Choose a Pokémon on your Bench. Shuffle it and any cards attached to it into your deck.",
+    "effectType": "pokemon_manipulation",
+    "parameters": {
+      "target": "your_bench",
+      "action": "shuffle_into_deck",
+      "includesAttachedCards": true
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "058_mr.-fuji.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Saves damaged Pokemon from being knocked out",
+      "Denies prize cards",
+      "Shuffles attached energy back into deck",
+      "Can reset evolution lines"
+    ],
+    "weaknesses": [
+      "Can only target Benched Pokemon",
+      "Loses all attached cards temporarily",
+      "Must redraw and replay the Pokemon"
+    ],
+    "synergies": [
+      "Damaged Pokemon",
+      "Prize denial strategies",
+      "Pokemon with expensive energy attachments"
+    ],
+    "counters": [
+      "Gust of Wind to force Pokemon active before Mr. Fuji"
+    ]
+  },
+  "competitiveHistory": "Mr. Fuji was a useful utility Trainer for saving damaged Pokemon and denying prizes. Unlike Scoop Up (which returns to hand), Mr. Fuji shuffles into the deck, making the Pokemon harder to replay but preserving all attached cards. It saw play in control and stall decks.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Mr. Fuji can only target a Pokemon on your Bench, not your Active Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "All cards attached to the Pokemon (Energy, Tools, etc.) are shuffled into the deck along with it.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You cannot use Mr. Fuji if you have no Pokemon on your Bench.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

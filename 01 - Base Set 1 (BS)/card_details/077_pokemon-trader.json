@@ -1,0 +1,113 @@
+{
+  "id": "base1-077",
+  "name": "Pokémon Trader",
+  "number": 77,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward.",
+    "effectType": "search",
+    "actions": [
+      {
+        "action": "search_deck",
+        "amount": 1,
+        "target": "pokemon_card",
+        "parameters": {
+          "destination": "hand",
+          "searchTypes": ["Basic", "Evolution"]
+        }
+      },
+      {
+        "action": "shuffle_into_deck",
+        "amount": 1,
+        "target": "pokemon_from_hand"
+      },
+      {
+        "action": "shuffle_deck"
+      }
+    ],
+    "cost": {
+      "type": "return_cards",
+      "amount": 1,
+      "target": "hand",
+      "description": "Trade a Basic Pokemon or Evolution card from hand"
+    },
+    "requirements": [
+      {
+        "type": "cards_in_hand",
+        "minimum": 1,
+        "description": "Must have at least one Basic Pokemon or Evolution card in hand"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "077_pokemon-trader.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Search",
+    "timing": "any_time",
+    "synergies": ["Evolution lines", "Computer Search", "Professor Oak", "Bill"],
+    "tips": [
+      "Use to convert late-game Basic Pokemon into evolution cards",
+      "Trade away evolution cards you can't use for Basics you can play immediately",
+      "Most effective in decks running multiple evolution lines",
+      "In early game, trade evolutions for Basics to establish your board",
+      "In late game, trade Basics for evolutions to complete your setup"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must have at least one Basic Pokemon or Evolution card in your hand to use Pokemon Trader",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can search for any Basic Pokemon or Evolution card in your deck (Stage 1 or Stage 2)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must show both the card you're trading away and the card you're searching for to your opponent",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The card you trade away goes to your deck, and you shuffle your deck afterward",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Pokemon Trader to search for Trainer or Energy cards",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you don't have the type of Pokemon card you want in your deck, you must still trade and show your deck to prove it",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot choose not to search after trading away a Pokemon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Energy cards attached to Pokemon in hand stay in hand (you're trading the card only)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon Trader can search for or trade away any Basic Pokemon, including evolved forms printed as Basics (like Baby Pokemon in later sets)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must shuffle your deck even if you don't find what you're looking for",
+      "source": "WotC Rulings"
+    }
+  ]
+}

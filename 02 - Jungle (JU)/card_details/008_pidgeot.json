@@ -1,0 +1,119 @@
+{
+  "id": "jungle-008",
+  "name": "Pidgeot",
+  "number": 8,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Colorless"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Pidgeotto",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Wing Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Hurricane",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Unless this attack Knocks Out the Defending Pokémon, return the Defending Pokémon and all cards attached to it to your opponent's hand.",
+      "effect": {
+        "effectType": "special",
+        "returnToHand": {
+          "target": "defending_pokemon",
+          "includesAttachedCards": true,
+          "condition": "unless_knocked_out"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Bird Pokemon",
+    "height": "4' 11\"",
+    "weight": "87 lbs",
+    "nationalNumber": 18,
+    "level": 40
+  },
+  "flavorText": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "008_pidgeot.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Hurricane bounces opponent's Pokemon and all attached cards to hand",
+      "Free retreat cost provides excellent mobility",
+      "Colorless type fits any deck",
+      "Fighting resistance protects against Hitmonchan",
+      "Hurricane disrupts opponent's energy and evolution progress"
+    ],
+    "weaknesses": [
+      "80 HP is low for a Stage 2",
+      "Hurricane only does 30 damage",
+      "Hurricane doesn't work if it knocks out the target",
+      "Stage 2 evolution is slow to set up",
+      "4 energy for Hurricane is expensive",
+      "Lightning weakness is problematic against Electabuzz"
+    ],
+    "synergies": [
+      "Double Colorless Energy - powers up attacks faster",
+      "Gust of Wind - choose what to Hurricane back",
+      "Any deck needing evolution disruption"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness hits hard",
+      "Low HP Pokemon - Hurricane won't work if it KOs",
+      "Decks with quick setup - can recover from Hurricane"
+    ]
+  },
+  "competitiveHistory": "Pidgeot from Jungle had an interesting niche with its Hurricane attack, which could reset an opponent's evolved Pokemon and all their attached energy. However, the Stage 2 evolution requirement, 4 energy cost, and the limitation that it doesn't work on KOs limited its competitive viability. The free retreat was appreciated but not enough to make it a tournament staple. It saw occasional play in control-oriented decks but was not a meta-defining card.",
+  "rulings": [
+    {
+      "ruling": "Hurricane returns the Defending Pokemon and ALL cards attached to it (Energy, Trainer cards like Defender, etc.) to the opponent's hand.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Hurricane knocks out the Defending Pokemon, the Pokemon and attached cards are discarded as normal, not returned to hand.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Hurricane's effect happens even if the opponent's Pokemon has 0 HP from the damage, as long as it's not technically 'Knocked Out' by that damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

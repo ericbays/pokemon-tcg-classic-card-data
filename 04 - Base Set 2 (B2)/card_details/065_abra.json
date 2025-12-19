@@ -1,0 +1,90 @@
+{
+  "id": "base2-065",
+  "name": "Abra",
+  "number": 65,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Kadabra"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Psyshock",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Psi Pokemon",
+    "height": "2' 11\"",
+    "weight": "43 lbs",
+    "nationalNumber": 63,
+    "level": 10
+  },
+  "flavorText": "Using its ability to read minds, it will identify impending danger and teleport to safety.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "065_abra-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Free retreat cost",
+      "Psyshock can Paralyze",
+      "Evolves into Alakazam line"
+    ],
+    "weaknesses": [
+      "30 HP is extremely fragile",
+      "Psychic weakness",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Kadabra/Alakazam - Evolution line"
+    ],
+    "counters": [
+      "Any attacker - 30 HP is very vulnerable"
+    ]
+  },
+  "competitiveHistory": "Abra was the starting point for the powerful Alakazam evolution line. The 30 HP made it extremely fragile, so players tried to evolve it quickly or protect it on the bench.",
+  "rulings": [
+    {
+      "ruling": "Psyshock's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

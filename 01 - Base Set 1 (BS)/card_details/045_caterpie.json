@@ -1,0 +1,81 @@
+{
+  "id": "base1-045",
+  "name": "Caterpie",
+  "number": 45,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesTo": ["Metapod"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "String Shot",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 10,
+    "category": "Worm Pokemon",
+    "height": "1' 0\"",
+    "weight": "6 lbs.",
+    "level": 13
+  },
+  "flavorText": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls. LV. 13 #10",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "045_caterpie.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Only requires 1 Grass energy to attack, making it fast to deploy",
+      "String Shot can paralyze opponents on a successful coin flip",
+      "Low retreat cost of 1 provides mobility",
+      "40 HP is reasonable for a Basic Pokemon",
+      "Paralysis can buy time to evolve or set up your bench"
+    ],
+    "weaknesses": [
+      "Weak to Fire-type attacks (x2 damage)",
+      "Only deals 10 damage, which is quite low",
+      "Paralysis effect is unreliable (50% chance)",
+      "Metapod evolution doesn't provide much improvement in competitive play",
+      "No resistance to mitigate damage"
+    ],
+    "synergies": [
+      "PlusPower can boost String Shot damage to 20",
+      "Switch allows you to retreat without paying retreat cost after paralyzing opponent",
+      "Defender reduces incoming damage while you set up paralysis locks",
+      "Scoop Up can reset Caterpie if it takes too much damage"
+    ],
+    "counters": [
+      "Fire-type Pokemon that exploit weakness",
+      "Full Heal or Switch to remove paralysis",
+      "High HP Pokemon that can survive paralysis lock"
+    ]
+  }
+}

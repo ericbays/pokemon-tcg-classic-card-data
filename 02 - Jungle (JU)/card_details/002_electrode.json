@@ -1,0 +1,115 @@
+{
+  "id": "jungle-002",
+  "name": "Electrode",
+  "number": 2,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 90,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Voltorb",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Tackle",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Chain Lightning",
+      "cost": ["Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If the Defending Pokémon isn't Colorless, this attack does 10 damage to each Benched Pokémon of the same type as the Defending Pokémon (including your own).",
+      "effect": {
+        "effectType": "bench_damage",
+        "condition": "defending_not_colorless",
+        "benchDamage": {
+          "target": "same_type_as_defending",
+          "damage": 10,
+          "includesOwn": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Ball Pokemon",
+    "height": "3' 11\"",
+    "weight": "147 lbs",
+    "nationalNumber": 101,
+    "level": 42
+  },
+  "flavorText": "It stores electrical energy under very high pressure. It often explodes with little or no provocation.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "002_electrode.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "90 HP is solid for a Stage 1",
+      "Chain Lightning can spread damage to opponent's bench",
+      "Only 1 retreat cost for easy switching",
+      "Tackle provides early game chip damage"
+    ],
+    "weaknesses": [
+      "Chain Lightning also damages your own benched Pokemon of the same type",
+      "Fighting weakness is problematic in Haymaker meta",
+      "3 energy for only 20 base damage is inefficient",
+      "No resistance",
+      "Colorless Pokemon immune to Chain Lightning spread"
+    ],
+    "synergies": [
+      "Electabuzz - provides Lightning support but be careful of self-damage",
+      "Plus Power - boost Chain Lightning damage",
+      "Defender - protect from retaliation"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Colorless Pokemon - immune to Chain Lightning spread",
+      "High HP Pokemon - 20 damage is underwhelming"
+    ]
+  },
+  "competitiveHistory": "Jungle Electrode was not considered a competitive staple. While its Chain Lightning attack had interesting spread damage potential, the 3 energy cost for only 20 base damage was inefficient compared to other options. The self-damage clause when hitting same-type benched Pokemon made it risky in Lightning-focused decks. Base Set Electrode with its Buzzap Pokemon Power was generally preferred for competitive play.",
+  "rulings": [
+    {
+      "ruling": "Chain Lightning does not damage benched Pokemon if the Defending Pokemon is Colorless type.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Chain Lightning damages ALL benched Pokemon of the same type as the Defending Pokemon, including your own.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The bench damage from Chain Lightning is not affected by Weakness or Resistance.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

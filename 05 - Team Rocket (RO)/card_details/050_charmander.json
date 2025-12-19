@@ -1,0 +1,101 @@
+{
+  "id": "rocket-050",
+  "name": "Charmander",
+  "number": 50,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Charmeleon", "Charmeleon"],
+  "abilities": [
+    {
+      "name": "Gather Fire",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may take 1 Fire Energy card attached to 1 of your other Pokémon and attach it to Charmander. This power can't be used if Charmander is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "energy_manipulation",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "action": "move_energy",
+        "energyType": "Fire",
+        "count": 1,
+        "source": "your_other_pokemon",
+        "destination": "self",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Fire Tail",
+      "cost": ["Fire"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Lizard Pokemon",
+    "height": "2' 0\"",
+    "weight": "19 lbs",
+    "nationalNumber": 4,
+    "level": 9
+  },
+  "flavorText": "Many people find it cute and try to hold it, only to be burned by its tail.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "050_charmander-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Gather Fire moves energy from other Pokemon",
+      "Can accelerate its own energy attachment",
+      "Fire Tail is efficient - 20 for 1 energy"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Water weakness"
+    ],
+    "synergies": [
+      "Dark Charmeleon",
+      "Dark Charizard",
+      "Fire Pokemon"
+    ],
+    "counters": [
+      "Water-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Charmander had Gather Fire, allowing it to pull Fire Energy from other Pokemon. This was useful for consolidating energy onto Charmander to evolve with energy ready.",
+  "rulings": [
+    {
+      "ruling": "Gather Fire takes energy from your other Pokemon - not from your opponent's.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

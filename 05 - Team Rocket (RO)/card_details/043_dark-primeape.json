@@ -1,0 +1,99 @@
+{
+  "id": "rocket-043",
+  "name": "Dark Primeape",
+  "number": 43,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Mankey",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Frenzy",
+      "type": "Pokemon Power",
+      "text": "If Dark Primeape does any damage while it's Confused (even to itself), it does 30 more damage.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "condition": "self_confused",
+        "bonusDamage": 30,
+        "appliesTo": "all_damage"
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Frenzied Attack",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Dark Primeape is now Confused (after doing damage).",
+      "effect": {
+        "effectType": "status_condition",
+        "selfStatus": "Confused",
+        "timing": "after_damage"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Pig Monkey Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs",
+    "nationalNumber": 57,
+    "level": 23
+  },
+  "flavorText": "Although Primeapes have always been mean, lately they seem to be becoming even more vicious and frenzied.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "043_dark-primeape-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Frenzy boosts all damage by 30 while Confused",
+      "Frenzied Attack deals 40 + 30 = 70 damage when Confused",
+      "Self-Confusion synergizes with Frenzy",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Confusion can backfire",
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Mankey",
+      "Cards that cure Confusion when needed"
+    ],
+    "counters": [
+      "Psychic-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Primeape had a unique mechanic where being Confused actually made it stronger. Frenzy adding 30 damage while Confused meant Frenzied Attack could deal 70 damage, and even hitting yourself did 30 extra. It was a high-risk, high-reward attacker.",
+  "rulings": [
+    {
+      "ruling": "Frenzy adds 30 damage to ALL damage Dark Primeape does while Confused, including self-damage from Confusion.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

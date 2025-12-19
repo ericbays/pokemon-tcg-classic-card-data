@@ -1,0 +1,85 @@
+{
+  "id": "base1-057",
+  "name": "Pidgey",
+  "number": 57,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Pidgeotto"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Whirlwind",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 16,
+    "category": "Tiny Bird Pokemon",
+    "height": "1' 0\"",
+    "weight": "4 lbs.",
+    "level": 8
+  },
+  "flavorText": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "057_pidgey.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Whirlwind provides valuable disruption by forcing opponent switches",
+      "Colorless typing allows it to fit into any deck composition",
+      "Fighting resistance gives it durability against Fighting-type Pokemon",
+      "Low retreat cost of 1 provides flexibility in positioning",
+      "Evolves into the strong Pidgeotto which has excellent utility"
+    ],
+    "weaknesses": [
+      "Low 40 HP makes it vulnerable to one-hit knockouts",
+      "Lightning weakness is problematic against popular Electric Pokemon",
+      "Whirlwind's energy cost is high relative to its damage output",
+      "Opponent controls which benched Pokemon to switch in",
+      "Limited offensive capability on its own"
+    ],
+    "synergies": [
+      "Evolve quickly into Pidgeotto to access Mirror Move and higher HP",
+      "Use Whirlwind to bring out unprepared benched Pokemon for easy KOs",
+      "Pair with Gust of Wind for complete control over opponent's active Pokemon",
+      "Works well in stall decks to disrupt opponent's setup strategies"
+    ],
+    "counters": [
+      "Pikachu - Lightning weakness means quick knockouts",
+      "Magnemite - Electric attacks exploit weakness",
+      "Electabuzz - Can one-shot Pidgey with ease"
+    ]
+  }
+}

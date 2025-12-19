@@ -1,0 +1,99 @@
+{
+  "id": "base1-073",
+  "name": "Impostor Professor Oak",
+  "number": 73,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Rare",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer in Base Set. Would be classified as Supporter by modern rules due to affecting opponent's hand."
+  },
+  "effect": {
+    "text": "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards.",
+    "effectType": "hand_disruption",
+    "affectsOpponent": true,
+    "targetPlayer": "opponent",
+    "actions": [
+      {
+        "action": "opponent_shuffle_hand",
+        "target": "opponent"
+      },
+      {
+        "action": "draw_cards",
+        "amount": 7,
+        "target": "opponent"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "073_impostor-professor-oak.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "powerLevel": "Low",
+    "timing": "situational",
+    "deckInclusion": "Niche",
+    "synergies": ["Lass", "Energy Removal"],
+    "antiSynergies": ["Most strategies - generally helps opponent too much"],
+    "tips": [
+      "Best when opponent has a large hand of key cards",
+      "Can backfire by giving opponent fresh cards",
+      "Use to disrupt opponent's setup",
+      "Only use if opponent has 9+ cards in hand",
+      "Generally considered one of the worst rare cards in Base Set"
+    ]
+  },
+  "competitiveHistory": "Impostor Professor Oak is infamous in competitive Pokemon TCG as one of the most overrated cards by new players. While hand disruption sounds appealing in theory, giving your opponent 7 fresh cards almost always benefits them more than it hurts them. Competitive players quickly identified it as a trap card and avoided it entirely. The card became a running joke in the community and an educational example of why giving your opponent resources is generally a bad idea.",
+  "rulings": [
+    {
+      "ruling": "Your opponent must shuffle their entire hand into their deck",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Your opponent then draws exactly 7 cards",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If your opponent has fewer than 7 cards in their deck, they draw as many as possible and do not lose the game until they cannot draw at their next turn",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "This effect is mandatory once played; you cannot choose not to have opponent draw 7",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The shuffling and drawing are both part of the single effect",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Your opponent cannot choose not to shuffle or draw",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Any cards in your opponent's hand are shuffled in, regardless of their content",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "This does not count as your opponent's draw for their turn",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Cards drawn this way can be played immediately if it's your turn and you play other cards afterward",
+      "source": "WotC Rulings"
+    }
+  ]
+}

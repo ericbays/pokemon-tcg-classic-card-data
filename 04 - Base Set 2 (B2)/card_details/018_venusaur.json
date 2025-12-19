@@ -1,0 +1,119 @@
+{
+  "id": "base2-018",
+  "name": "Venusaur",
+  "number": 18,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 100,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Ivysaur",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Energy Trans",
+      "type": "Pokemon Power",
+      "text": "As often as you like during your turn (before your attack), you may take 1 Grass Energy card attached to 1 of your Pokémon and attach it to a different one. This power can't be used if Venusaur is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "energy_manipulation",
+        "trigger": "unlimited_per_turn",
+        "timing": "before_attack",
+        "target": "your_pokemon",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "energyType": "Grass",
+          "action": "move",
+          "count": 1
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Solarbeam",
+      "cost": ["Grass", "Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Seed Pokemon",
+    "height": "6' 7\"",
+    "weight": "221 lbs",
+    "nationalNumber": 3,
+    "level": 67
+  },
+  "flavorText": "This plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "018_venusaur-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Energy Trans moves Grass Energy freely between Pokemon",
+      "100 HP is excellent",
+      "Solarbeam deals solid 60 damage",
+      "Can redirect energy to whoever needs it"
+    ],
+    "weaknesses": [
+      "Fire weakness to Charizard",
+      "Stage 2 requires significant setup",
+      "Energy Trans only works with Grass Energy",
+      "4 energy for Solarbeam is expensive"
+    ],
+    "synergies": [
+      "Pokemon Center - Heal damage, redistribute energy after",
+      "Grass-type attackers - Share energy pool",
+      "Pokemon Breeder - Skip Ivysaur"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness",
+      "Charizard - Fire type",
+      "Energy Removal - Remove transferred energy"
+    ]
+  },
+  "competitiveHistory": "Venusaur was sometimes paired with Pokemon Center in control strategies. Energy Trans allowed you to move all Grass Energy off a damaged Pokemon, use Pokemon Center to heal it for free, then redistribute the energy. This combo saw some tournament play.",
+  "rulings": [
+    {
+      "ruling": "Energy Trans can only move Grass Energy cards, not Special Energy.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can use Energy Trans as many times as you like during your turn, moving one Grass Energy at a time.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Energy Trans can move Grass Energy to and from Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Venusaur becomes Asleep, Confused, or Paralyzed, Energy Trans cannot be used until those conditions are removed.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "rocket-040",
+  "name": "Dark Machoke",
+  "number": 40,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Machop",
+  "evolvesTo": ["Dark Machamp"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Drag Off",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Before doing damage, choose 1 of your opponent's Benched Pokémon and switch it with the Defending Pokémon. Do the damage to the new Defending Pokémon. This attack can't be used if your opponent has no Benched Pokémon.",
+      "effect": {
+        "effectType": "switch",
+        "timing": "before_damage",
+        "target": "opponent_benched",
+        "forceSwitch": true,
+        "requirement": "opponent_has_benched_pokemon"
+      }
+    },
+    {
+      "name": "Knock Back",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)",
+      "effect": {
+        "effectType": "switch",
+        "timing": "after_damage",
+        "target": "opponent_active",
+        "forceSwitch": true,
+        "chooser": "opponent",
+        "requirement": "opponent_has_benched_pokemon"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Superpower Pokemon",
+    "height": "4' 11\"",
+    "weight": "155 lbs",
+    "nationalNumber": 67,
+    "level": 28
+  },
+  "flavorText": "While normally peaceful and friendly, the number of incidents involving cruel Machokes is rising.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "040_dark-machoke-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Drag Off lets you choose which Pokemon to attack",
+      "Can target weak benched Pokemon",
+      "Knock Back forces switching after damage"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Both attacks require opponent to have bench",
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Machop",
+      "Dark Machamp"
+    ],
+    "counters": [
+      "Psychic-type Pokemon",
+      "Single Pokemon strategies"
+    ]
+  },
+  "competitiveHistory": "Dark Machoke had interesting switching mechanics. Drag Off was like a built-in Gust of Wind effect, letting you target weak benched Pokemon. This made it useful for picking off damaged or vulnerable Pokemon hiding on the bench.",
+  "rulings": [
+    {
+      "ruling": "Drag Off switches before damage, so you deal damage to the new Active Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Knock Back switches after damage, so you damage the original Defending Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

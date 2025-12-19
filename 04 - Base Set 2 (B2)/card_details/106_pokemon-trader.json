@@ -1,0 +1,75 @@
+{
+  "id": "base2-106",
+  "name": "Pokémon Trader",
+  "number": 106,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "text": "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward.",
+  "effect": {
+    "text": "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward.",
+    "effectType": "search",
+    "cost": {
+      "trade": 1,
+      "cardType": "Pokemon",
+      "from": "hand"
+    },
+    "parameters": {
+      "searchTarget": "deck",
+      "cardType": "Pokemon",
+      "count": 1,
+      "destination": "hand",
+      "reveal": true,
+      "shuffle": true
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "106_pokemon-trader-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Search",
+    "strengths": [
+      "Search for any Pokemon in deck",
+      "No card disadvantage (1 for 1 trade)",
+      "Consistent Pokemon access"
+    ],
+    "weaknesses": [
+      "Requires a Pokemon in hand to trade",
+      "Must reveal both cards"
+    ],
+    "synergies": [
+      "Evolution lines - Find specific evolutions",
+      "Combo decks needing specific Pokemon"
+    ],
+    "counters": [
+      "Lass - Shuffles Trader back into deck"
+    ]
+  },
+  "competitiveHistory": "Pokémon Trader was valuable for finding key Pokemon without card disadvantage, making evolution decks more consistent.",
+  "rulings": [
+    {
+      "ruling": "You must trade a Basic or Evolution Pokemon from your hand.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can search for any Basic or Evolution Pokemon from your deck.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Both the traded Pokemon and the searched Pokemon must be revealed.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "base2-125",
+  "name": "Fighting Energy",
+  "number": 125,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Basic",
+  "provides": [
+    {
+      "type": "Fighting",
+      "amount": 1
+    }
+  ],
+  "text": "Provides 1 Fighting Energy.",
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "125_fighting-energy-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy",
+    "strengths": [
+      "Basic Energy - searchable and retrievable",
+      "Powers Fighting-type attacks"
+    ],
+    "weaknesses": [
+      "Only provides 1 Energy"
+    ],
+    "synergies": [
+      "Fighting Pokemon",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Fighting Energy was used in Fighting-type decks featuring Pokemon like Hitmonchan and Machamp.",
+  "rulings": [
+    {
+      "ruling": "Fighting Energy provides 1 Fighting Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

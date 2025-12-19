@@ -1,0 +1,77 @@
+{
+  "id": "rocket-069",
+  "name": "Voltorb",
+  "number": 69,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Electrode", "Electrode"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Speed Ball",
+      "cost": ["Lightning"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Ball Pokemon",
+    "height": "1' 8\"",
+    "weight": "23 lbs",
+    "nationalNumber": 100,
+    "level": 13
+  },
+  "flavorText": "Usually seen only in power plants, it is sometimes seen in towns, apparently using the power lines to travel.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "069_voltorb-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Speed Ball is efficient - 20 for 1 energy",
+      "Great early-game damage"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Fighting weakness vs Hitmonchan"
+    ],
+    "synergies": [
+      "Dark Electrode"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Voltorb had Speed Ball, which dealt an impressive 20 damage for just 1 Lightning energy. This was excellent early-game efficiency.",
+  "rulings": []
+}

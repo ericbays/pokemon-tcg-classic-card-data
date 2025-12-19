@@ -1,0 +1,112 @@
+{
+  "id": "base1-076",
+  "name": "Pokémon Breeder",
+  "number": 76,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can only play this card when you would be allowed to evolve that Pokémon anyway.",
+    "effectType": "pokemon_manipulation",
+    "actions": [
+      {
+        "action": "revive_pokemon",
+        "target": "stage_2_evolution",
+        "parameters": {
+          "skipStage1": true,
+          "normalTimingRequired": true
+        }
+      }
+    ],
+    "requirements": [
+      {
+        "type": "pokemon_in_play",
+        "minimum": 1,
+        "description": "Must have a Basic Pokemon that has been in play since beginning of turn"
+      },
+      {
+        "type": "cards_in_hand",
+        "minimum": 1,
+        "description": "Must have matching Stage 2 Evolution card in hand"
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one",
+      "restrictions": ["Basic Pokemon only", "Must match Stage 2 evolution", "Normal evolution timing applies"]
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "076_pokemon-breeder.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "mid_game",
+    "synergies": ["Blastoise", "Charizard", "Alakazam", "Computer Search", "Item Finder"],
+    "tips": [
+      "Include in decks with strong Stage 2 Pokemon like Blastoise or Charizard",
+      "Reduce Stage 1 count if running Breeder, but keep 2-3 as backup",
+      "Use Breeder on turn 2 if you have Basic in play turn 1",
+      "Don't wait for Breeder if you have Stage 1 and Stage 2 in hand",
+      "Breeder saves you from being vulnerable at Stage 1 for a turn"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You can only use Pokemon Breeder during your turn, and only if the Basic Pokemon has been in play since the beginning of your turn",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Breeder on the first turn of the game",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Breeder on a Basic Pokemon you just played this turn",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon Breeder counts as evolving the Pokemon (it is treated as an evolution)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Breeder on a Pokemon that already evolved this turn",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Stage 1 is completely skipped; you go directly from Basic to Stage 2",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must have the correct Stage 2 for the specific Basic Pokemon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon Breeder does not work with Mysterious Fossil or Clefairy Doll",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All normal evolution rules apply except for the Stage 1 requirement",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Pokemon keeps all damage counters, attached Energy, and other effects when evolved with Breeder",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Basic Pokemon is affected by an attack that prevents evolution, Breeder cannot be used",
+      "source": "WotC Rulings"
+    }
+  ]
+}

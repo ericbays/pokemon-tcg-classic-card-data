@@ -1,0 +1,124 @@
+{
+  "id": "base1-025",
+  "name": "Dewgong",
+  "number": 25,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Seel",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Aurora Beam",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": ""
+    },
+    {
+      "name": "Ice Beam",
+      "cost": ["Water", "Water", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "nationalNumber": 87,
+    "category": "Sea Lion Pokemon",
+    "height": "5'7\"",
+    "weight": "265 lbs",
+    "level": 42
+  },
+  "flavorText": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "025_dewgong.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Aurora Beam's 50 damage for 3 energy is efficient",
+      "Ice Beam paralysis can lock down key threats",
+      "Paralysis prevents opponent from attacking or retreating",
+      "Works well in Rain Dance decks with Blastoise",
+      "Can exploit Fire-type weaknesses common in the meta",
+      "Two attacking options provide tactical flexibility",
+      "High retreat cost makes it resistant to forced switching"
+    ],
+    "weaknesses": [
+      "Ice Beam relies on coin flips, making it unreliable",
+      "Only 30 damage on Ice Beam is low for 4 energy",
+      "80 HP is average and can be knocked out by strong attackers",
+      "High retreat cost of 3 makes it difficult to switch out",
+      "Lightning weakness leaves it vulnerable to Zapdos and Electabuzz",
+      "Requires energy commitment before being effective",
+      "Coin flip failure leaves you with just 30 damage for 4 energy"
+    ],
+    "synergies": [
+      "Blastoise",
+      "Seel",
+      "Lapras",
+      "Energy Retrieval",
+      "Switch",
+      "PlusPower",
+      "Pokemon Center"
+    ],
+    "counters": [
+      "Electabuzz - Fast Lightning attacker that exploits weakness",
+      "Zapdos - Can OHKO Dewgong with Thunder",
+      "Hitmonchan - Can deal significant damage before Dewgong sets up",
+      "Gust of Wind - Forces Dewgong out due to high retreat cost",
+      "Energy Removal - Prevents reaching 4 energy for Ice Beam",
+      "Full Heal - Removes paralysis from Ice Beam"
+    ]
+  },
+  "description": "Dewgong is a Stage 1 Water-type Pokémon that offers a unique combination of solid damage output and status condition disruption. With 80 HP and two distinct attacking strategies, Dewgong can adapt to different game situations - using Aurora Beam for consistent damage or Ice Beam for paralysis lock potential. Its high retreat cost and coin-flip mechanics make it a high-risk, high-reward option in Water-type strategies.",
+  "competitiveHistory": "Dewgong saw limited competitive play in the Base Set era, primarily appearing in Rain Dance decks as a budget or alternative option. While the paralysis from Ice Beam was appealing in theory, the coin flip dependency and low damage output made it unreliable in tournament settings. Most competitive Rain Dance decks preferred more consistent attackers like Lapras or simply used multiple Blastoises. Dewgong remained a solid casual card but struggled to find a place in top-tier competitive play.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "If Ice Beam's coin flip is heads and the Defending Pokémon is already Paralyzed, the Pokemon remains Paralyzed. A Pokémon cannot be 'double paralyzed' or have the duration extended.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If the Defending Pokémon is Knocked Out by Ice Beam, the paralysis effect does not apply as there is no Pokémon to paralyze.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Paralysis prevents both attacking and retreating. The Pokémon must be switched out by a Trainer card like Switch or Gust of Wind, or the paralysis must be removed.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Paralysis is removed at the end of the turn of the player whose Pokémon is Paralyzed (after they attack or pass), unless prevented by another effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

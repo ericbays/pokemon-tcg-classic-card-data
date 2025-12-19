@@ -1,0 +1,114 @@
+{
+  "id": "base2-058",
+  "name": "Raticate",
+  "number": 58,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Rattata",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Super Fang",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "?",
+      "baseDamage": 0,
+      "text": "Does damage to the Defending Pokémon equal to half the Defending Pokémon's remaining HP (rounded up to the nearest 10).",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "damageType": "half_remaining_hp",
+          "roundUp": true,
+          "roundTo": 10
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Rat Pokemon",
+    "height": "2' 4\"",
+    "weight": "41 lbs",
+    "nationalNumber": 20,
+    "level": 41
+  },
+  "flavorText": "It uses its whiskers to maintain its balance. It seems to slow down if they are cut off.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "058_raticate-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Super Fang always does half remaining HP",
+      "Bite is efficient at 20 for 1 energy",
+      "Psychic resistance",
+      "Low retreat cost",
+      "Colorless attacks work with any energy"
+    ],
+    "weaknesses": [
+      "60 HP is low",
+      "Fighting weakness to Hitmonchan",
+      "Super Fang less effective as damage stacks"
+    ],
+    "synergies": [
+      "Rattata - Required basic",
+      "Double Colorless Energy - Powers Super Fang"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Low HP Pokemon - Super Fang does little damage"
+    ]
+  },
+  "competitiveHistory": "Raticate's Super Fang was a unique attack that always dealt half the defender's remaining HP. This made it excellent against high-HP Pokemon but less useful as damage accumulated. It saw occasional tech use.",
+  "rulings": [
+    {
+      "ruling": "Super Fang does damage equal to half the Defending Pokemon's REMAINING HP, rounded up to nearest 10.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If defender has 100 HP remaining, Super Fang does 50 damage. If defender has 70 HP, Super Fang does 40 damage (35 rounded up).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Bite has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

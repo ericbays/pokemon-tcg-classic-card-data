@@ -1,0 +1,121 @@
+{
+  "id": "jungle-014",
+  "name": "Victreebel",
+  "number": 14,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Weepinbell",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Lure",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If your opponent has any Benched Pokémon, choose 1 of them and switch it with his or her Active Pokémon.",
+      "effect": {
+        "effectType": "switch",
+        "target": "opponent_benched",
+        "forcedSwitch": true
+      }
+    },
+    {
+      "name": "Acid",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon can't retreat during your opponent's next turn.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventRetreat": true,
+            "duration": "opponent_next_turn"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Flycatcher Pokemon",
+    "height": "5' 7\"",
+    "weight": "34 lbs",
+    "nationalNumber": 71,
+    "level": 42
+  },
+  "flavorText": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "014_victreebel.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Lure forces opponent to switch in benched Pokemon",
+      "Can target and trap vulnerable Pokemon",
+      "Acid can prevent retreat for follow-up KO",
+      "Grass type is effective against Water Pokemon",
+      "Low energy costs for attacks"
+    ],
+    "weaknesses": [
+      "80 HP is low for a Stage 2",
+      "Fire weakness is problematic",
+      "Stage 2 evolution is slow to set up",
+      "Acid's retreat prevention is coin-flip dependent",
+      "Low damage output overall",
+      "No resistance"
+    ],
+    "synergies": [
+      "Pokemon with high damage attacks - Lure sets up KOs",
+      "Status condition inflicting Pokemon",
+      "Gust of Wind - similar switch effect"
+    ],
+    "counters": [
+      "Fire Pokemon - double damage from weakness",
+      "Pokemon with free retreat - immune to Acid's effect",
+      "Switch Trainer card - escapes trap"
+    ]
+  },
+  "competitiveHistory": "Victreebel from Jungle was an interesting control option but saw limited competitive play. The Lure attack provided a Gust of Wind-like effect on a Pokemon, allowing players to drag up weak benched Pokemon for easy knockouts. However, the Stage 2 evolution requirement and low damage output made it too slow and weak for serious tournament play. Gust of Wind Trainer card was simply more efficient for the same effect.",
+  "rulings": [
+    {
+      "ruling": "Lure can only be used if your opponent has at least one Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Lure is not affected by effects that prevent switching (like Acid) since it forces the switch from your side.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Acid's retreat prevention lasts until the end of your opponent's next turn, even if Victreebel leaves play.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

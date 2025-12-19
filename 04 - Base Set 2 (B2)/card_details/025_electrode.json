@@ -1,0 +1,125 @@
+{
+  "id": "base2-025",
+  "name": "Electrode",
+  "number": 25,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Voltorb",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Buzzap",
+      "type": "Pokemon Power",
+      "text": "At any time during your turn (before your attack), you may Knock Out Electrode and attach it to 1 of your other Pokémon. If you do, choose a type of Energy. Electrode is now an Energy card (instead of a Pokémon) that provides 2 energy of that type. This power can't be used if Electrode is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "special",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "knocksOutSelf": true,
+          "becomesEnergy": true,
+          "energyProvided": 2,
+          "energyTypeChoice": "any"
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Electric Shock",
+      "cost": ["Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Flip a coin. If tails, Electrode does 10 damage to itself.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "onFailure": {
+              "selfDamage": 10
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Ball Pokemon",
+    "height": "3' 11\"",
+    "weight": "147 lbs",
+    "nationalNumber": 101,
+    "level": 40
+  },
+  "flavorText": "It stores electrical energy under very high pressure. It often explodes with little or no provocation.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "025_electrode-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy Acceleration",
+    "strengths": [
+      "Buzzap provides instant 2 energy of any type",
+      "Can power up any Pokemon type",
+      "Low retreat cost of 1",
+      "Electric Shock deals solid 50 damage"
+    ],
+    "weaknesses": [
+      "Buzzap Knocks Out Electrode - gives opponent a prize",
+      "Fighting weakness",
+      "Electric Shock has self-damage risk"
+    ],
+    "synergies": [
+      "Charizard - Buzzap provides Fire energy",
+      "Any high-cost attacker - Energy acceleration",
+      "Computer Search - Find Electrode when needed"
+    ],
+    "counters": [
+      "Prize denial strategies - Buzzap gives up a prize",
+      "Fighting Pokemon - Weakness"
+    ]
+  },
+  "competitiveHistory": "Electrode's Buzzap was a unique energy acceleration option. While it sacrificed a prize, the ability to instantly provide 2 energy of ANY type made it versatile. It saw play in decks needing quick energy acceleration despite the prize cost.",
+  "rulings": [
+    {
+      "ruling": "When you use Buzzap, Electrode is Knocked Out and counts as a prize for your opponent.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Electrode becomes an Energy card providing 2 energy of the chosen type. It is no longer a Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Pokemon Electrode is attached to is Knocked Out, Electrode (as Energy) goes to the discard pile.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You choose the energy type when you use Buzzap. It cannot be changed later.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

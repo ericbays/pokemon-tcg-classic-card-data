@@ -1,0 +1,112 @@
+{
+  "id": "rocket-009",
+  "name": "Dark Hypno",
+  "number": 9,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 60,
+  "types": ["Psychic"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Drowzee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Psypunch",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Bench Manipulation",
+      "cost": ["Psychic", "Psychic", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20x",
+      "baseDamage": 20,
+      "text": "Your opponent flips a number of coins equal to the number of Pokémon on his or her Bench. This attack does 20 damage times the number of tails. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinCount": "opponent_bench_count",
+        "flipper": "opponent",
+        "damagePerTails": 20,
+        "ignoreWeakness": true,
+        "ignoreResistance": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Hypnosis Pokemon",
+    "height": "5' 3\"",
+    "weight": "167 lbs",
+    "nationalNumber": 97,
+    "level": 26
+  },
+  "flavorText": "Carries a pendulum with it always. Sometimes appears near less-traveled roads and schools at dusk.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "009_dark-hypno-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Psypunch is efficient - 20 damage for 1 energy",
+      "Bench Manipulation can deal massive damage against full benches",
+      "Opponent flips coins, so their bad luck helps you",
+      "Good early pressure with Psypunch"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Bench Manipulation is highly variable",
+      "Psychic weakness is common",
+      "Against empty bench, Bench Manipulation does nothing"
+    ],
+    "synergies": [
+      "Drowzee",
+      "Cards that force opponent to bench Pokemon"
+    ],
+    "counters": [
+      "Psychic-type Pokemon",
+      "Decks with minimal bench",
+      "High HP Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Hypno was a solid but not exceptional card. Psypunch offered good early-game efficiency at 20 damage for one energy. Bench Manipulation could theoretically deal up to 100 damage against a full 5-Pokemon bench if all coins came up tails, but the variance made it unreliable. It saw some play but was outclassed by other Psychic options.",
+  "rulings": [
+    {
+      "ruling": "Bench Manipulation deals damage based on tails flipped by your opponent. If they have 5 benched Pokemon and flip 5 tails, it deals 100 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If opponent has no benched Pokemon, Bench Manipulation does 0 damage - no coins are flipped.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Bench Manipulation ignores Weakness and Resistance, but still triggers 'when damaged' effects.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

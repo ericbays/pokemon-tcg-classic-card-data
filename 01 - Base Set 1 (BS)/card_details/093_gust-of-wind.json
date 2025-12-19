@@ -1,0 +1,94 @@
+{
+  "id": "base1-093",
+  "name": "Gust of Wind",
+  "number": 93,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon.",
+    "effectType": "board_control",
+    "actions": [
+      {
+        "action": "force_switch",
+        "target": "opponent_pokemon",
+        "parameters": {
+          "yourChoice": true,
+          "source": "opponent_bench",
+          "forced": true
+        }
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "pokemon_in_play",
+        "minimum": 1,
+        "description": "Opponent must have at least one benched Pokemon"
+      }
+    ],
+    "targeting": {
+      "targetType": "opponent_pokemon",
+      "count": "one",
+      "restrictions": ["Must be on opponent's bench"]
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "093_gust-of-wind.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "timing": "any_time",
+    "synergies": ["PlusPower", "Hitmonchan", "Energy Removal", "Pokemon Flute", "Scyther"],
+    "tips": [
+      "Always run 3-4 copies in competitive decks - this card is essential",
+      "Target benched Pokemon with low HP for easy prize knockouts",
+      "Gust up unevolved Basics to deny opponent's evolution strategy",
+      "Calculate damage to ensure you can KO the Pokemon you Gust up",
+      "Combine with Energy Removal to trap expensive-retreat Pokemon active",
+      "Save Gust for crucial turns rather than using it casually",
+      "Excellent for taking multiple prizes in one turn by chaining Gusts",
+      "Can force up Pokemon with high retreat costs to put opponent in difficult positions"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You choose 1 Pokemon from your opponent's bench"
+    },
+    {
+      "ruling": "That Pokemon switches places with your opponent's Active Pokemon"
+    },
+    {
+      "ruling": "The previously Active Pokemon goes to the bench"
+    },
+    {
+      "ruling": "You cannot play Gust of Wind if your opponent has no benched Pokemon"
+    },
+    {
+      "ruling": "You choose which benched Pokemon to switch - not your opponent"
+    },
+    {
+      "ruling": "This does not count as retreating (no retreat cost is paid)"
+    },
+    {
+      "ruling": "Any effects on the Active Pokemon that reference it as 'Active Pokemon' end when it moves to bench"
+    },
+    {
+      "ruling": "This can force up Pokemon that have high retreat costs or are unable to retreat"
+    }
+  ]
+}

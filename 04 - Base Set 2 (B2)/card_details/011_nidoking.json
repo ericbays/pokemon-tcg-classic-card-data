@@ -1,0 +1,123 @@
+{
+  "id": "base2-011",
+  "name": "Nidoking",
+  "number": 11,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 90,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Nidorino",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thrash",
+      "cost": ["Grass", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30+",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage and Nidoking does 10 damage to itself.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 40
+          },
+          "onTails": {
+            "damage": 30,
+            "selfDamage": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "Toxic",
+      "cost": ["Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "The Defending Pokémon is now Poisoned. It now takes 20 Poison damage instead of 10 after each player's turn (even if it was already Poisoned).",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Poisoned",
+        "parameters": {
+          "poisonDamage": 20,
+          "replacesExistingPoison": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Drill Pokemon",
+    "height": "4' 7\"",
+    "weight": "137 lbs",
+    "nationalNumber": 34,
+    "level": 48
+  },
+  "flavorText": "Uses its powerful tail in battle to smash, constrict, then break its prey's bones.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "011_nidoking-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Toxic deals double poison damage (20 per turn)",
+      "90 HP is solid for Stage 2",
+      "Grass type can hit Water Pokemon weakness",
+      "Thrash can deal 40 damage on heads"
+    ],
+    "weaknesses": [
+      "Psychic weakness to Mewtwo/Alakazam",
+      "Stage 2 requires significant setup",
+      "Thrash has self-damage risk on tails",
+      "3 retreat cost is expensive"
+    ],
+    "synergies": [
+      "Nidoqueen - Partner evolution line",
+      "Pokemon Breeder - Skip Nidorino",
+      "Double Colorless Energy - Powers Thrash faster"
+    ],
+    "counters": [
+      "Mewtwo - Psychic weakness",
+      "Alakazam - Psychic weakness",
+      "Full Heal - Removes Toxic poison"
+    ]
+  },
+  "competitiveHistory": "Nidoking saw occasional play due to Toxic's powerful double poison damage. The 20 damage per turn from Toxic added significant pressure, but the Stage 2 requirement and Psychic weakness limited its competitive viability.",
+  "rulings": [
+    {
+      "ruling": "Toxic replaces any existing Poison condition with the enhanced 20-damage-per-turn Poison.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Toxic Poison deals 20 damage after EACH player's turn, not just the Nidoking player's turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If a Pokemon is already Poisoned and hit by Toxic, the Poison becomes Toxic (20 damage).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

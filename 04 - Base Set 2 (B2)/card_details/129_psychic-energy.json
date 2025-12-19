@@ -1,0 +1,58 @@
+{
+  "id": "base2-129",
+  "name": "Psychic Energy",
+  "number": 129,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Basic",
+  "provides": [
+    {
+      "type": "Psychic",
+      "amount": 1
+    }
+  ],
+  "text": "Provides 1 Psychic Energy.",
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "129_psychic-energy-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy",
+    "strengths": [
+      "Basic Energy - searchable and retrievable",
+      "Powers Psychic-type attacks"
+    ],
+    "weaknesses": [
+      "Only provides 1 Energy"
+    ],
+    "synergies": [
+      "Psychic Pokemon",
+      "Alakazam",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Psychic Energy was used in Psychic-type decks featuring powerful Pokemon like Alakazam and Mewtwo.",
+  "rulings": [
+    {
+      "ruling": "Psychic Energy provides 1 Psychic Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

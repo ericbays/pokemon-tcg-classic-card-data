@@ -1,0 +1,127 @@
+{
+  "id": "base2-001",
+  "name": "Alakazam",
+  "number": 1,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Psychic"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Kadabra",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Damage Swap",
+      "type": "Pokemon Power",
+      "text": "As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon to another as long as you don't Knock Out that Pokémon. This power can't be used if Alakazam is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "damage_transfer",
+        "trigger": "unlimited_per_turn",
+        "timing": "before_attack",
+        "target": "your_pokemon",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "damageCounters": 1,
+          "cannotKnockOut": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Confuse Ray",
+      "cost": ["Psychic", "Psychic", "Psychic"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Psi Pokemon",
+    "height": "4' 11\"",
+    "weight": "106 lbs",
+    "nationalNumber": 65,
+    "level": 42
+  },
+  "flavorText": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5000.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "001_alakazam-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Damage Swap allows unlimited damage redistribution per turn",
+      "Can keep key Pokemon alive by moving damage away",
+      "Excellent synergy with high-HP Pokemon like Chansey",
+      "Confuse Ray provides utility disruption"
+    ],
+    "weaknesses": [
+      "80 HP is relatively low for a Stage 2",
+      "Psychic weakness is problematic against Mewtwo",
+      "3 retreat cost is expensive",
+      "Attack is underwhelming at 30 damage for 3 energy",
+      "Requires setup as Stage 2 evolution"
+    ],
+    "synergies": [
+      "Chansey - High HP tank to absorb moved damage",
+      "Pokemon Center - Heal all damage from Pokemon with no energy",
+      "Mr. Mime - Invisible Wall blocks big attacks",
+      "Scoop Up - Remove heavily damaged Pokemon entirely"
+    ],
+    "counters": [
+      "Mewtwo - Psychic weakness",
+      "Gust of Wind - Force Alakazam active before ready",
+      "Energy Removal - Slow down setup"
+    ]
+  },
+  "competitiveHistory": "Alakazam was a cornerstone of the famous 'Damage Swap' archetype, one of the most iconic decks in early Pokemon TCG. Combined with Chansey and Pokemon Center, players could effectively heal all damage each turn while slowly whittling down opponents. The deck required skill to pilot but was highly competitive.",
+  "rulings": [
+    {
+      "ruling": "You may use Damage Swap as many times as you like during your turn, as long as you don't Knock Out any of your Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot move a damage counter to a Pokemon if it would Knock Out that Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Damage Swap moves damage counters, not damage. This distinction matters for some card effects.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Alakazam becomes Asleep, Confused, or Paralyzed, you cannot use Damage Swap until those conditions are removed.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "base2-040",
+  "name": "Farfetch'd",
+  "number": 40,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Leek Slap",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If tails, this attack does nothing. Either way, you can't use this attack again as long as Farfetch'd stays in play (even putting Farfetch'd on the Bench won't let you use it again).",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 30
+          },
+          "onTails": {
+            "damage": 0
+          }
+        },
+        "restrictions": {
+          "oncePerGame": true,
+          "whileInPlay": true
+        }
+      }
+    },
+    {
+      "name": "Pot Smash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Wild Duck Pokemon",
+    "height": "2' 7\"",
+    "weight": "33 lbs",
+    "nationalNumber": 83,
+    "level": 20
+  },
+  "flavorText": "The sprig of green onions it holds is its weapon. This sprig is used much like a metal sword.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "040_farfetchd-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Leek Slap can do 30 damage for 1 energy",
+      "Fighting resistance",
+      "Low retreat cost of 1",
+      "Colorless type uses any energy"
+    ],
+    "weaknesses": [
+      "Lightning weakness",
+      "Leek Slap is coin flip AND can only be used once",
+      "50 HP is fragile",
+      "Pot Smash is inefficient at 3 energy for 30"
+    ],
+    "synergies": [
+      "Scoop Up - Reset Leek Slap by returning to hand"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Any consistent attacker"
+    ]
+  },
+  "competitiveHistory": "Farfetch'd was rarely played competitively. Leek Slap's restriction of only being usable once per game (while in play) made it unreliable, and Pot Smash was inefficient compared to other options.",
+  "rulings": [
+    {
+      "ruling": "Leek Slap can only be used ONCE while Farfetch'd is in play. Even benching it doesn't reset this.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Farfetch'd is returned to your hand (Scoop Up) and played again, it's considered a new Pokemon and can use Leek Slap again.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Leek Slap fails (tails), you still cannot use it again while Farfetch'd remains in play.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pot Smash has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

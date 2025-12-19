@@ -1,0 +1,77 @@
+{
+  "id": "rocket-076",
+  "name": "Imposter Oak's Revenge",
+  "number": 76,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Uncommon",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer. Would be classified as Supporter by modern rules due to its powerful hand disruption effect."
+  },
+  "effect": {
+    "text": "Discard a card from your hand in order to play this card. Your opponent shuffles his or her hand into his or her deck, then draws 4 cards.",
+    "effectType": "hand_disruption",
+    "affectsOpponent": true,
+    "targetPlayer": "opponent",
+    "cost": {
+      "action": "discard",
+      "count": 1,
+      "from": "hand"
+    },
+    "actions": [
+      {
+        "action": "shuffle_hand_into_deck",
+        "target": "opponent"
+      },
+      {
+        "action": "draw",
+        "target": "opponent",
+        "count": 4
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "076_imposter-oaks-revenge-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "powerLevel": "High",
+    "timing": "mid_game",
+    "synergies": [
+      "Rocket's Sneak Attack",
+      "Lass",
+      "Hand control strategies"
+    ],
+    "tips": [
+      "Use when opponent has a large hand",
+      "The discard cost can be turned into an advantage with cards like Item Finder",
+      "Forces opponent to shuffle away their carefully drawn cards",
+      "Reduces opponent to only 4 cards"
+    ]
+  },
+  "competitiveHistory": "Imposter Oak's Revenge was a powerful hand disruption card. The discard cost was minor compared to potentially wiping out an opponent's hand of 7+ cards down to just 4. It saw play in control decks alongside other disruption cards like Rocket's Sneak Attack and Lass.",
+  "rulings": [
+    {
+      "ruling": "You must discard a card from your hand to play this card. If you have no other cards in hand, you cannot play it.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Your opponent shuffles their entire hand into the deck before drawing 4 new cards.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

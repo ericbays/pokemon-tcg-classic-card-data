@@ -1,0 +1,100 @@
+{
+  "id": "base2-086",
+  "name": "Pidgey",
+  "number": 86,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Pidgeotto"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Whirlwind",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)",
+      "effect": {
+        "effectType": "switch",
+        "parameters": {
+          "target": "opponent",
+          "chooser": "opponent",
+          "timing": "after_damage"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Tiny Bird Pokemon",
+    "height": "1' 0\"",
+    "weight": "4 lbs",
+    "nationalNumber": 16,
+    "level": 8
+  },
+  "flavorText": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "086_pidgey-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Fighting resistance",
+      "Whirlwind can disrupt opponent's setup",
+      "Colorless - works with any energy"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Lightning weakness",
+      "Low damage output",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Pidgeotto/Pidgeot - Evolution line"
+    ],
+    "counters": [
+      "Lightning Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Pidgey was used as the basic for the Pidgeot evolution line. Whirlwind could occasionally disrupt an opponent's strategy.",
+  "rulings": [
+    {
+      "ruling": "Whirlwind does damage before the switch happens.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Your opponent chooses which of their Benched Pokemon to switch in.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If your opponent has no Benched Pokemon, Whirlwind just does 10 damage with no switch.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

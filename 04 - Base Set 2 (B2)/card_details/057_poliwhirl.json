@@ -1,0 +1,113 @@
+{
+  "id": "base2-057",
+  "name": "Poliwhirl",
+  "number": 57,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Poliwag",
+  "evolvesTo": ["Poliwrath", "Politoed"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Amnesia",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of the Defending Pokémon's attacks. That Pokémon can't use that attack during your opponent's next turn.",
+      "effect": {
+        "effectType": "attack_prevention",
+        "parameters": {
+          "target": "defending_pokemon",
+          "attackCount": 1,
+          "duration": "opponents_next_turn"
+        }
+      }
+    },
+    {
+      "name": "Doubleslap",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "parameters": {
+          "coinFlips": 2,
+          "damagePerHeads": 30,
+          "maxDamage": 60
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Tadpole Pokemon",
+    "height": "3' 4\"",
+    "weight": "44 lbs",
+    "nationalNumber": 61,
+    "level": 28
+  },
+  "flavorText": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "057_poliwhirl-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Amnesia can lock out opponent's best attack",
+      "Doubleslap can deal 60 damage",
+      "Low retreat cost"
+    ],
+    "weaknesses": [
+      "60 HP is low",
+      "Grass weakness",
+      "Doubleslap is coin-flip dependent"
+    ],
+    "synergies": [
+      "Poliwag - Required basic",
+      "Poliwrath - Evolution target"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Poliwhirl was used as a middle evolution to Poliwrath. Amnesia was an interesting disruption tool but the low HP limited standalone use.",
+  "rulings": [
+    {
+      "ruling": "Amnesia lets you choose one of the Defending Pokemon's attacks. That attack cannot be used during opponent's next turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Defending Pokemon evolves or is benched, the Amnesia effect ends.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Doubleslap flips 2 coins and does 30 damage per heads.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

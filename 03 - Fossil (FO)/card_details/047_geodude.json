@@ -1,0 +1,102 @@
+{
+  "id": "fossil-047",
+  "name": "Geodude",
+  "number": 47,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Graveler"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Stone Barrage",
+      "cost": ["Fighting", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10x",
+      "baseDamage": 10,
+      "text": "Flip a coin until you get tails. This attack does 10 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "flipUntilTails": true,
+            "damagePerHead": 10
+          }
+        ],
+        "parameters": {
+          "minimumDamage": 0,
+          "maximumDamage": "unlimited"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Rock Pokemon",
+    "height": "1' 4\"",
+    "weight": "44 lbs",
+    "nationalNumber": 74,
+    "level": 16
+  },
+  "flavorText": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "047_geodude.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Stone Barrage has unlimited damage potential",
+      "50 HP is good for a Basic",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Grass weakness",
+      "Stone Barrage is highly inconsistent",
+      "Average damage will be low"
+    ],
+    "synergies": [
+      "Graveler (evolution)",
+      "Golem (final evolution)",
+      "Fighting decks"
+    ],
+    "counters": [
+      "Grass Pokemon"
+    ]
+  },
+  "competitiveHistory": "Fossil Geodude featured the unique 'flip until tails' mechanic. While theoretically unlimited, the average damage was about 10 (50% chance of immediate tails). It was primarily used as evolution fodder for the Golem line.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Stone Barrage flips coins until you get tails, then does 10 damage per heads flipped.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If the first flip is tails, Stone Barrage does 0 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "jungle-024",
+  "name": "Pidgeot",
+  "number": 24,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Colorless"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Pidgeotto",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Wing Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Hurricane",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Unless this attack Knocks Out the Defending Pokémon, return the Defending Pokémon and all cards attached to it to your opponent's hand.",
+      "effect": {
+        "effectType": "special",
+        "returnToHand": {
+          "target": "defending_pokemon",
+          "includesAttachedCards": true,
+          "condition": "unless_knocked_out"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Bird Pokemon",
+    "height": "4' 11\"",
+    "weight": "87 lbs",
+    "nationalNumber": 18,
+    "level": 40
+  },
+  "flavorText": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "024_pidgeot.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Hurricane bounces Pokemon back to hand",
+      "Free retreat cost",
+      "Fighting resistance"
+    ],
+    "weaknesses": [
+      "80 HP is low for Stage 2",
+      "Hurricane only does 30 damage",
+      "Lightning weakness"
+    ],
+    "synergies": [
+      "Double Colorless Energy",
+      "Control strategies"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Low HP Pokemon"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Pidgeot, identical to card #8. Hurricane's bounce effect was interesting but the Stage 2 requirement limited competitive viability.",
+  "rulings": [
+    {
+      "ruling": "Hurricane returns the Defending Pokemon and ALL cards attached to it to the opponent's hand.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

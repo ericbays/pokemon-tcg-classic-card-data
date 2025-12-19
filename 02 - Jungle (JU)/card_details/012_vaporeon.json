@@ -1,0 +1,123 @@
+{
+  "id": "jungle-012",
+  "name": "Vaporeon",
+  "number": 12,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Eevee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Quick Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 30
+          },
+          "onTails": {
+            "damage": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "Water Gun",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30+",
+      "baseDamage": 30,
+      "text": "Does 30 damage plus 10 more damage for each Water Energy attached to Vaporeon but not used to pay for this attack's Energy cost. Extra Water Energy after the 2nd doesn't count.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamage": 10,
+        "bonusCondition": "per_extra_water_energy",
+        "maxBonusEnergy": 2
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Bubble Jet Pokemon",
+    "height": "3' 3\"",
+    "weight": "64 lbs",
+    "nationalNumber": 134,
+    "level": 42
+  },
+  "flavorText": "Lives close to water. Its long tail is ridged with a fin that is often mistaken for a mermaid's.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "012_vaporeon.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "80 HP is solid for a Stage 1",
+      "Water Gun can reach 50 damage with extra energy",
+      "Quick Attack works with Double Colorless Energy",
+      "Only 1 retreat cost",
+      "Water type is strong against Fire Pokemon",
+      "Eevee provides flexible evolution options"
+    ],
+    "weaknesses": [
+      "Lightning weakness is dangerous against Electabuzz",
+      "Water Gun requires significant energy investment for max damage",
+      "No resistance",
+      "Requires evolution setup"
+    ],
+    "synergies": [
+      "Double Colorless Energy - powers Quick Attack",
+      "Blastoise Rain Dance - accelerate Water energy",
+      "Eevee - required for evolution",
+      "Super Energy Retrieval - recover discarded energy"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Jolteon - Lightning type",
+      "Energy Removal - disrupts Water Gun damage"
+    ]
+  },
+  "competitiveHistory": "Vaporeon from Jungle was considered the most competitive of the three Eeveelutions due to its synergy with Blastoise's Rain Dance. With Rain Dance accelerating Water energy, Vaporeon could quickly power up Water Gun to deal 50 damage per turn. However, it faced stiff competition from other Water Pokemon in Rain Dance builds, and the Lightning weakness made it vulnerable to Electabuzz. It saw occasional play in Eeveelution-themed decks and as a Rain Dance attacker option.",
+  "rulings": [
+    {
+      "ruling": "Water Gun's bonus damage only counts Water Energy beyond the 2 required to pay for the attack. With 4 Water Energy attached, you get +20 damage (50 total).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The 'Extra Water Energy after the 2nd doesn't count' means only the 3rd and 4th Water Energy provide bonus damage, not the 5th or beyond.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Quick Attack's coin flip determines the damage before applying Weakness and Resistance.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "jungle-056",
+  "name": "Meowth",
+  "number": 56,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Persian"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Pay Day",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, draw a card.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "draw": 1
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Scratch Cat Pokemon",
+    "height": "1' 4\"",
+    "weight": "9 lbs",
+    "nationalNumber": 52,
+    "level": 15
+  },
+  "flavorText": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "056_meowth.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "50 HP is decent for a Basic",
+      "Psychic resistance",
+      "Pay Day can draw cards"
+    ],
+    "weaknesses": [
+      "Fighting weakness",
+      "Low damage output",
+      "Card draw is coin-flip dependent"
+    ],
+    "synergies": [
+      "Persian evolution"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness"
+    ]
+  },
+  "competitiveHistory": "Meowth from Jungle was used as a basic for Persian. The Pay Day card draw was a nice bonus but unreliable.",
+  "rulings": []
+}

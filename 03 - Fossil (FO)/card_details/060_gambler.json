@@ -1,0 +1,66 @@
+{
+  "id": "fossil-060",
+  "name": "Gambler",
+  "number": 60,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Shuffle your hand into your deck. Flip a coin. If heads, draw 8 cards. If tails, draw 1 card.",
+    "effectType": "draw",
+    "parameters": {
+      "shuffleHandFirst": true,
+      "coinFlip": true,
+      "onHeads": 8,
+      "onTails": 1
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "060_gambler.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Draw Support",
+    "strengths": [
+      "Can draw 8 cards on heads",
+      "Useful when hand is bad anyway",
+      "Shuffles dead cards back into deck"
+    ],
+    "weaknesses": [
+      "50% chance of drawing only 1 card",
+      "Risky and inconsistent",
+      "Professor Oak is generally better"
+    ],
+    "synergies": [
+      "Low hand count situations",
+      "Decks comfortable with risk"
+    ],
+    "counters": [
+      "Psyduck's Headache prevents playing"
+    ]
+  },
+  "competitiveHistory": "Gambler was a high-variance draw card that was generally considered inferior to Professor Oak (guaranteed 7 cards without the coin flip risk). However, it saw play in decks that wanted additional draw options beyond Oak or couldn't afford the Oak discard. The possibility of drawing only 1 card made it a risky choice.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "You must shuffle your entire hand into your deck before flipping the coin.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You must use Gambler even if tails - you cannot choose not to draw the 1 card.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

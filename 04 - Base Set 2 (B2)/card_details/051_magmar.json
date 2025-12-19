@@ -1,0 +1,106 @@
+{
+  "id": "base2-051",
+  "name": "Magmar",
+  "number": 51,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 50,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Magmortar"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Fire Punch",
+      "cost": ["Fire", "Fire"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Flamethrower",
+      "cost": ["Fire", "Fire", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Discard 1 Fire Energy card attached to Magmar in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Fire"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Spitfire Pokemon",
+    "height": "4' 3\"",
+    "weight": "98 lbs",
+    "nationalNumber": 126,
+    "level": 24
+  },
+  "flavorText": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "051_magmar-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Fire Punch is efficient at 30 for 2 energy",
+      "Flamethrower does solid 50 damage",
+      "Basic Pokemon - no evolution required"
+    ],
+    "weaknesses": [
+      "50 HP is low",
+      "Water weakness",
+      "Flamethrower requires energy discard",
+      "2 retreat cost"
+    ],
+    "synergies": [
+      "Fire decks",
+      "Energy Retrieval - Recover discarded energy"
+    ],
+    "counters": [
+      "Water Pokemon - 2x weakness",
+      "Blastoise - Rain Dance"
+    ]
+  },
+  "competitiveHistory": "Magmar was a decent Fire-type Basic. Fire Punch's efficiency made it usable, but the low HP and Water weakness (with Blastoise being so popular) limited competitive play.",
+  "rulings": [
+    {
+      "ruling": "Fire Punch has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must discard 1 Fire Energy to use Flamethrower.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

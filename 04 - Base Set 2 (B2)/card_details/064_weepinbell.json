@@ -1,0 +1,107 @@
+{
+  "id": "base2-064",
+  "name": "Weepinbell",
+  "number": 64,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Common",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Bellsprout",
+  "evolvesTo": ["Victreebel"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Poisonpowder",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Poisoned"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Razor Leaf",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Flycatcher Pokemon",
+    "height": "3' 3\"",
+    "weight": "14 lbs",
+    "nationalNumber": 70,
+    "level": 28
+  },
+  "flavorText": "It spits out poisonpowder to immobilize the enemy, and then finishes the enemy with a spray of acid.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "064_weepinbell-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Razor Leaf is efficient at 30 for 2 energy",
+      "Poisonpowder can inflict Poison",
+      "70 HP is decent",
+      "Low retreat cost"
+    ],
+    "weaknesses": [
+      "Fire weakness",
+      "Poisonpowder is coin-flip dependent",
+      "Primarily stepping stone to Victreebel"
+    ],
+    "synergies": [
+      "Bellsprout - Required basic",
+      "Victreebel - Evolution target"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Weepinbell was used as the middle evolution to reach Victreebel. It was typically bypassed with Pokemon Breeder.",
+  "rulings": [
+    {
+      "ruling": "Poisonpowder's Poison only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Razor Leaf has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

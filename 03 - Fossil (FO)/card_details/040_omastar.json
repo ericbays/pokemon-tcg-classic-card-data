@@ -1,0 +1,128 @@
+{
+  "id": "fossil-040",
+  "name": "Omastar",
+  "number": 40,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Water"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Omanyte",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Water Gun",
+      "cost": ["Water", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20+",
+      "baseDamage": 20,
+      "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Omastar but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "parameters": {
+          "bonusDamagePerEnergy": 10,
+          "energyType": "Water",
+          "maxBonusDamage": 20,
+          "excludesCost": true
+        }
+      }
+    },
+    {
+      "name": "Spike Cannon",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "flipCount": 2,
+            "damagePerHead": 30
+          }
+        ],
+        "parameters": {
+          "minimumDamage": 0,
+          "maximumDamage": 60
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Spiral Pokemon",
+    "height": "3' 3\"",
+    "weight": "77 lbs",
+    "nationalNumber": 139,
+    "level": 32
+  },
+  "flavorText": "A prehistoric Pokémon that died out when its heavy shell made it impossible for it to catch prey.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "040_omastar.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Water Gun scales with extra energy",
+      "Spike Cannon can do up to 60 damage",
+      "Low retreat cost of 1",
+      "Low energy costs"
+    ],
+    "weaknesses": [
+      "70 HP is low for Stage 2",
+      "Stage 2 from Mysterious Fossil is slow",
+      "Grass weakness",
+      "Spike Cannon is coin flip dependent"
+    ],
+    "synergies": [
+      "Mysterious Fossil",
+      "Omanyte",
+      "Blastoise (Rain Dance)",
+      "Water decks"
+    ],
+    "counters": [
+      "Grass Pokemon",
+      "Aerodactyl prevents evolution"
+    ]
+  },
+  "competitiveHistory": "Omastar suffered from being a Stage 2 with only 70 HP. The evolution line starting from Mysterious Fossil made setup slow and vulnerable. While the attacks were decent, the fragility of the card limited competitive play.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Water Gun's bonus damage only counts Water Energy beyond what was used to pay the cost.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Spike Cannon does 0 damage if both coins are tails.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Omastar evolves from Omanyte, which evolves from Mysterious Fossil.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

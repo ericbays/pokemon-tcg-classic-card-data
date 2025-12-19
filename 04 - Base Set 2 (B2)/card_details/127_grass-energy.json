@@ -1,0 +1,58 @@
+{
+  "id": "base2-127",
+  "name": "Grass Energy",
+  "number": 127,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Basic",
+  "provides": [
+    {
+      "type": "Grass",
+      "amount": 1
+    }
+  ],
+  "text": "Provides 1 Grass Energy.",
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "127_grass-energy-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy",
+    "strengths": [
+      "Basic Energy - searchable and retrievable",
+      "Powers Grass-type attacks"
+    ],
+    "weaknesses": [
+      "Only provides 1 Energy"
+    ],
+    "synergies": [
+      "Grass Pokemon",
+      "Venusaur Energy Trans",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Grass Energy was used in Grass-type decks, particularly with Venusaur whose Energy Trans could move Grass energy between Pokemon.",
+  "rulings": [
+    {
+      "ruling": "Grass Energy provides 1 Grass Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "jungle-033",
+  "name": "Butterfree",
+  "number": 33,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Metapod",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Whirlwind",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)",
+      "effect": {
+        "effectType": "switch",
+        "target": "opponent_benched",
+        "opponentChooses": true,
+        "timing": "after_damage"
+      }
+    },
+    {
+      "name": "Mega Drain",
+      "cost": ["Grass", "Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 4,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Remove a number of damage counters from Butterfree equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10).",
+      "effect": {
+        "effectType": "healing",
+        "healAmount": "half_damage_dealt",
+        "roundUp": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Butterfly Pokemon",
+    "height": "3' 7\"",
+    "weight": "71 lbs",
+    "nationalNumber": 12,
+    "level": 28
+  },
+  "flavorText": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "033_butterfree.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost",
+      "Mega Drain provides self-healing",
+      "Fighting resistance"
+    ],
+    "weaknesses": [
+      "70 HP is low for Stage 2",
+      "Fire weakness",
+      "4 energy for Mega Drain is slow"
+    ],
+    "synergies": [
+      "Grass energy acceleration"
+    ],
+    "counters": [
+      "Fire Pokemon"
+    ]
+  },
+  "competitiveHistory": "Butterfree from Jungle was not competitively viable. The Stage 2 evolution requirement combined with low HP and high energy costs made it impractical for tournament play.",
+  "rulings": [
+    {
+      "ruling": "Mega Drain heals based on damage after Weakness and Resistance. Against a Fire Pokemon, 40 x 2 = 80 damage, so heal 40 HP.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Whirlwind forces your opponent to choose which benched Pokemon switches in.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

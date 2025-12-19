@@ -1,0 +1,119 @@
+{
+  "id": "jungle-038",
+  "name": "Lickitung",
+  "number": 38,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 90,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Lickilicky"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Tongue Wrap",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Supersonic",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Licking Pokemon",
+    "height": "3' 11\"",
+    "weight": "144 lbs",
+    "nationalNumber": 108,
+    "level": 26
+  },
+  "flavorText": "Its tongue can be extended like a chameleon's. It leaves a stinging sensation when it licks enemies.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "038_lickitung.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "90 HP is excellent for a Basic",
+      "Tongue Wrap does only 10 damage - bypasses Mr. Mime's Invisible Wall",
+      "Psychic resistance",
+      "Status effects can lock opponent"
+    ],
+    "weaknesses": [
+      "Fighting weakness",
+      "Heavy 3 retreat cost",
+      "Low damage output",
+      "Status effects are coin-flip dependent"
+    ],
+    "synergies": [
+      "Mr. Mime counter strategy",
+      "Stall decks"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Fighting Pokemon"
+    ]
+  },
+  "competitiveHistory": "Lickitung from Jungle gained notoriety as a counter to Mr. Mime. Since Tongue Wrap only deals 10 damage, it bypasses Invisible Wall (which only blocks 30+ damage). Combined with its high 90 HP and potential Paralysis, Lickitung could slowly chip away at Mr. Mime while surviving counterattacks. It was also used in stall strategies.",
+  "rulings": [
+    {
+      "ruling": "Tongue Wrap's 10 damage is not blocked by Mr. Mime's Invisible Wall since it's less than 30.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Both Tongue Wrap's Paralysis and Supersonic's Confusion require successful coin flips.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

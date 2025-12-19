@@ -1,0 +1,98 @@
+{
+  "id": "base1-090",
+  "name": "Super Potion",
+  "number": 90,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Discard 1 Energy card attached to 1 of your own Pokémon in order to remove up to 4 damage counters from that Pokémon.",
+    "effectType": "healing",
+    "actions": [
+      {
+        "action": "heal_damage",
+        "amount": 40,
+        "target": "own_pokemon",
+        "parameters": {
+          "maxDamageCounters": 4
+        }
+      }
+    ],
+    "cost": {
+      "type": "discard_energy",
+      "amount": 1,
+      "target": "energy_from_pokemon",
+      "description": "Discard 1 Energy card from one of your Pokemon"
+    },
+    "requirements": [
+      {
+        "type": "energy_attached",
+        "minimum": 1,
+        "description": "At least one of your Pokemon must have Energy attached"
+      },
+      {
+        "type": "pokemon_with_damage",
+        "minimum": 1,
+        "description": "Must have at least one Pokemon with damage counters"
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "090_super-potion.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Healing",
+    "timing": "situational",
+    "synergies": ["Rain Dance (Blastoise)", "Venusaur (Energy Trans)", "Mewtwo", "Double Colorless Energy", "Energy Retrieval"],
+    "tips": [
+      "Only include in decks with reliable Energy generation or recovery",
+      "Best used on Pokemon that have more Energy than needed for their attack",
+      "Calculate if the healing extends survival enough to justify the Energy loss",
+      "Excellent in Rain Dance and Energy Trans decks",
+      "Consider discarding Energy types you have in excess rather than needed colors",
+      "Avoid using in Haymaker or other aggressive decks - Energy is too precious"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must discard exactly 1 Energy card attached to one of your Pokemon to play Super Potion"
+    },
+    {
+      "ruling": "The Energy can be discarded from any of your Pokemon, not just the one being healed"
+    },
+    {
+      "ruling": "Remove up to 4 damage counters (40 damage) from the Pokemon"
+    },
+    {
+      "ruling": "If the Pokemon has fewer than 4 damage counters, remove all of them"
+    },
+    {
+      "ruling": "You can discard any type of Energy card (Basic Energy or Special Energy like Double Colorless Energy)"
+    },
+    {
+      "ruling": "You cannot play Super Potion if none of your Pokemon have any Energy attached"
+    },
+    {
+      "ruling": "The Pokemon being healed can be your Active Pokemon or any Benched Pokemon"
+    },
+    {
+      "ruling": "You must have at least one Pokemon with Energy attached to play this card"
+    }
+  ]
+}

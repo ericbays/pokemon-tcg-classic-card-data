@@ -1,0 +1,131 @@
+{
+  "id": "fossil-010",
+  "name": "Lapras",
+  "number": 10,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Water Gun",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Lapras but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "parameters": {
+          "bonusDamagePerEnergy": 10,
+          "energyType": "Water",
+          "maxBonusDamage": 20,
+          "excludesCost": true
+        }
+      }
+    },
+    {
+      "name": "Confuse Ray",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Transport Pokemon",
+    "height": "8' 2\"",
+    "weight": "485 lbs",
+    "nationalNumber": 131,
+    "level": 31
+  },
+  "flavorText": "A Pokémon that has been overhunted almost to extinction. It can ferry people across water.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "010_lapras.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Basic Pokemon with high 80 HP",
+      "Water Gun scales with energy for up to 30 damage",
+      "Low energy cost attacks (1-2 energy)",
+      "Confuse Ray provides disruption",
+      "Works well with Blastoise Rain Dance"
+    ],
+    "weaknesses": [
+      "Lightning weakness is problematic against Electabuzz",
+      "No resistance",
+      "Damage output caps at 30 for Water Gun",
+      "Retreat cost of 2 is inconvenient"
+    ],
+    "synergies": [
+      "Blastoise (Rain Dance for energy acceleration)",
+      "Water Energy acceleration",
+      "Pokemon Center (heal high HP tank)",
+      "Status condition strategies"
+    ],
+    "counters": [
+      "Electabuzz and Lightning Pokemon exploit weakness",
+      "Energy Removal reduces Water Gun damage",
+      "Higher damage attackers can overwhelm"
+    ]
+  },
+  "competitiveHistory": "Lapras was a solid component of Rain Dance decks. Its high 80 HP for a Basic Pokemon made it a reliable tank, and Water Gun's scalability with extra Water Energy meant it could threaten early while building up. Confuse Ray added disruption utility. While not as flashy as Blastoise itself, Lapras served as a consistent attacker in Water-based strategies.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Water Gun's bonus damage only counts Water Energy attached beyond the one required to use the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The maximum bonus from Water Gun is 20 damage, for a maximum total of 30 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "With 3 or more Water Energy attached, Water Gun does 30 damage (10 base + 20 max bonus).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Confuse Ray only confuses on heads - the 10 damage is dealt regardless of the coin flip result.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

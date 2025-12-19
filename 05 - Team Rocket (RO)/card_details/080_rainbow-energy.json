@@ -1,0 +1,75 @@
+{
+  "id": "rocket-080",
+  "name": "Rainbow Energy",
+  "number": 80,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Special"],
+  "rarity": "Rare",
+  "energyType": "Special",
+  "provides": [
+    {
+      "type": "Any",
+      "amount": 1
+    }
+  ],
+  "effect": {
+    "text": "Attach Rainbow Energy to 1 of your Pokémon. While in play, Rainbow Energy counts as every type of basic Energy but only provides 1 Energy at a time. (Doesn't count as a basic Energy card when not in play.) When you attach this card from your hand to 1 of your Pokémon, it does 10 damage to that Pokémon. (Don't apply Weakness and Resistance.)",
+    "providesEnergy": "all_types",
+    "energyAmount": 1,
+    "attachmentEffect": {
+      "action": "damage",
+      "amount": 10,
+      "target": "attached_pokemon",
+      "applyWeakness": false,
+      "applyResistance": false
+    },
+    "inPlayBehavior": "Counts as every type of basic Energy",
+    "notInPlayBehavior": "Does not count as basic Energy"
+  },
+  "illustrator": "Takumi Akabane",
+  "imageUrl": "080_rainbow-energy-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Special Energy",
+    "powerLevel": "High",
+    "deckInclusion": "Staple in multi-type decks",
+    "synergies": [
+      "Multi-type decks",
+      "Pokemon with colorful attack costs",
+      "Pokemon that benefit from damage counters"
+    ],
+    "tips": [
+      "Essential for decks running multiple Energy types",
+      "The 10 damage can be used strategically with certain Pokemon",
+      "Only provides 1 Energy despite counting as all types",
+      "Can be searched with cards that find Special Energy"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo reprint of Rainbow Energy (#17). Rainbow Energy was one of the most important Special Energy cards ever printed. Its ability to provide any type of Energy made multi-type decks viable and remained a staple card for years.",
+  "rulings": [
+    {
+      "ruling": "Rainbow Energy only provides 1 Energy, even though it counts as all types.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The 10 damage is dealt when you attach it from your hand. Moving it with cards like Energy Trans doesn't trigger the damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "When not in play (in deck, hand, or discard pile), Rainbow Energy is not a basic Energy card.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

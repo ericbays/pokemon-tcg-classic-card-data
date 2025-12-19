@@ -1,0 +1,101 @@
+{
+  "id": "base1-089",
+  "name": "Revive",
+  "number": 89,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Put 1 Basic Pokémon card from your discard pile onto your Bench. Put damage counters on that Pokémon equal to half its HP (rounded down to the nearest 10). (You can't play Revive if your Bench is full.)",
+    "effectType": "discard_manipulation",
+    "actions": [
+      {
+        "action": "revive_pokemon",
+        "amount": 1,
+        "target": "own_bench",
+        "parameters": {
+          "source": "own_discard_pile",
+          "pokemonType": "Basic",
+          "damageApplied": "half_hp",
+          "rounding": "down_to_10"
+        }
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "pokemon_in_play",
+        "description": "Your bench must not be full (must have fewer than 5 Pokemon)"
+      },
+      {
+        "type": "cards_in_discard",
+        "minimum": 1,
+        "description": "Must have at least 1 Basic Pokemon in discard pile"
+      }
+    ],
+    "targeting": {
+      "targetType": "your_discard",
+      "count": "one",
+      "restrictions": ["Basic Pokemon only"]
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "089_revive.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Recovery",
+    "timing": "mid_game",
+    "synergies": ["Chansey", "Mr. Mime", "Scyther", "Mewtwo", "Pokemon Breeder"],
+    "tips": [
+      "Best used on high-HP Basics where half HP still leaves them viable",
+      "Excellent for recovering Pokemon with useful Pokemon Powers",
+      "Can provide bench space for evolutions if you need specific pre-evolutions",
+      "Great in control decks that play long games and need sustained resources",
+      "Less valuable in aggressive decks that aim to win quickly",
+      "Revived Pokemon can be immediately evolved if you have the Evolution card"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You can only play Revive if your bench has fewer than 5 Pokemon on it"
+    },
+    {
+      "ruling": "You can only choose a Basic Pokemon card from your discard pile (not Evolution cards)"
+    },
+    {
+      "ruling": "The Pokemon is placed directly on your bench"
+    },
+    {
+      "ruling": "Damage counters equal to half its maximum HP (rounded down to the nearest 10) are immediately placed on it"
+    },
+    {
+      "ruling": "For example, a Pokemon with 70 HP would have 30 damage counters placed on it (half of 70 = 35, rounded down to 30)"
+    },
+    {
+      "ruling": "The Pokemon has no Energy cards attached when it comes into play"
+    },
+    {
+      "ruling": "You cannot use Revive if you have no Basic Pokemon in your discard pile"
+    },
+    {
+      "ruling": "The revived Pokemon can be evolved on the same turn if you have the Evolution card (it's a new Pokemon that just came into play)"
+    },
+    {
+      "ruling": "If the Pokemon's maximum HP is less than 20, it would have 10 damage (rounded down from half of 10-19)"
+    }
+  ]
+}

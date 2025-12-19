@@ -1,0 +1,114 @@
+{
+  "id": "base2-079",
+  "name": "Magnemite",
+  "number": 79,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Magneton"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thunder Wave",
+      "cost": ["Lightning"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Selfdestruct",
+      "cost": ["Lightning", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Does 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magnemite does 40 damage to itself.",
+      "effect": {
+        "effectType": "self_destruct",
+        "parameters": {
+          "benchDamage": 10,
+          "selfDamage": 40,
+          "appliesToBothPlayers": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Magnet Pokemon",
+    "height": "1' 0\"",
+    "weight": "13 lbs",
+    "nationalNumber": 81,
+    "level": 13
+  },
+  "flavorText": "Uses anti-gravity to stay suspended. Appears without warning and uses attacks like Thunder Wave.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "079_magnemite-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Thunder Wave can Paralyze",
+      "Selfdestruct does high damage for the cost"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fighting weakness",
+      "Selfdestruct KOs itself",
+      "No resistance"
+    ],
+    "synergies": [
+      "Magneton - Evolution target"
+    ],
+    "counters": [
+      "Fighting Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Magnemite was used as the basic for Magneton. Selfdestruct was occasionally used as a surprise finisher.",
+  "rulings": [
+    {
+      "ruling": "Thunder Wave's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Selfdestruct damages all Benched Pokemon on both sides, but doesn't apply Weakness or Resistance to Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Magnemite does 40 damage to itself with Selfdestruct, which will Knock it Out.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

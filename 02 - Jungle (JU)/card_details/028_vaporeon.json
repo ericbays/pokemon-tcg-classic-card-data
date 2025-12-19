@@ -1,0 +1,107 @@
+{
+  "id": "jungle-028",
+  "name": "Vaporeon",
+  "number": 28,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Eevee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Quick Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 30
+          },
+          "onTails": {
+            "damage": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "Water Gun",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30+",
+      "baseDamage": 30,
+      "text": "Does 30 damage plus 10 more damage for each Water Energy attached to Vaporeon but not used to pay for this attack's Energy cost. Extra Water Energy after the 2nd doesn't count.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamage": 10,
+        "bonusCondition": "per_extra_water_energy",
+        "maxBonusEnergy": 2
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Bubble Jet Pokemon",
+    "height": "3' 3\"",
+    "weight": "64 lbs",
+    "nationalNumber": 134,
+    "level": 42
+  },
+  "flavorText": "Lives close to water. Its long tail is ridged with a fin that is often mistaken for a mermaid's.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "028_vaporeon.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "80 HP solid for Stage 1",
+      "Water Gun scales with energy",
+      "Only 1 retreat cost"
+    ],
+    "weaknesses": [
+      "Lightning weakness",
+      "Requires energy investment"
+    ],
+    "synergies": [
+      "Blastoise Rain Dance",
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "Electabuzz",
+      "Jolteon"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Vaporeon, identical to card #12. Vaporeon was the most competitive Eeveelution due to Rain Dance synergy.",
+  "rulings": [
+    {
+      "ruling": "Water Gun's bonus damage only counts Water Energy beyond the 2 required to pay for the attack.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

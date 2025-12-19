@@ -1,0 +1,103 @@
+{
+  "id": "jungle-062",
+  "name": "Spearow",
+  "number": 62,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Fearow"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Peck",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Mirror Move",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If Spearow was attacked last turn, do the final result of that attack on Spearow to the Defending Pokémon.",
+      "effect": {
+        "effectType": "special",
+        "copyLastAttack": true,
+        "condition": "if_attacked_last_turn"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Tiny Bird Pokemon",
+    "height": "1' 0\"",
+    "weight": "4 lbs",
+    "nationalNumber": 21,
+    "level": 13
+  },
+  "flavorText": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "062_spearow.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "50 HP is decent",
+      "Free retreat cost",
+      "Fighting resistance",
+      "Mirror Move can return powerful attacks"
+    ],
+    "weaknesses": [
+      "Lightning weakness",
+      "Mirror Move requires being attacked"
+    ],
+    "synergies": [
+      "Fearow evolution"
+    ],
+    "counters": [
+      "Lightning Pokemon"
+    ]
+  },
+  "competitiveHistory": "Spearow from Jungle was used as a basic for Fearow. Mirror Move was interesting but situational.",
+  "rulings": [
+    {
+      "ruling": "Mirror Move copies the final result of the attack, including damage and all effects that happened.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Spearow wasn't attacked last turn, Mirror Move does nothing.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

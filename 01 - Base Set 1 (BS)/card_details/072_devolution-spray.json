@@ -1,0 +1,105 @@
+{
+  "id": "base1-072",
+  "name": "Devolution Spray",
+  "number": 72,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Choose 1 of your own Pokémon in play and a Stage of Evolution. Discard all Evolution cards of that Stage or higher attached to that Pokémon. That Pokémon is no longer Asleep, Confused, Paralyzed, Poisoned, or anything else that might be the result of an attack (just as if you had evolved it).",
+    "effectType": "pokemon_manipulation",
+    "actions": [
+      {
+        "action": "return_pokemon",
+        "target": "your_pokemon",
+        "parameters": {
+          "removeEvolutions": true,
+          "removeStatus": true,
+          "retainDamage": true
+        }
+      },
+      {
+        "action": "remove_status",
+        "target": "devolved_pokemon"
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one",
+      "restrictions": ["Must be evolved Pokemon"]
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "072_devolution-spray.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "situational",
+    "synergies": ["Alakazam", "Pokemon Breeder", "Damage Swap effects"],
+    "tips": [
+      "Check the damage on your Pokemon before devolving; make sure the lower stage can survive",
+      "Use proactively to remove status conditions before they become game-losing",
+      "Consider keeping evolutions in hand to re-evolve after devolving",
+      "Devolving can save a Pokemon your opponent thought they'd knock out",
+      "The status removal effect is sometimes more valuable than the devolution itself"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You choose which stage of evolution to remove; you can devolve from Stage 2 to Stage 1, or Stage 1 to Basic",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All damage counters remain on the Pokemon after devolving",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the remaining Pokemon (after devolution) has damage equal to or exceeding its HP, it is immediately knocked out",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All special conditions and attack effects are removed when you devolve",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Energy cards and other attached cards remain attached to the Pokemon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The discarded evolution cards go to your discard pile",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot devolve a Basic Pokemon (it has no evolution to remove)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Devolution happens immediately and cannot be responded to",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can devolve a Pokemon on the turn you evolved it",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you devolve a Stage 2 to Basic, you discard both the Stage 1 and Stage 2 cards",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Pokemon is treated as if it just evolved (cannot attack if it was just placed that turn, but devolution itself doesn't count as playing)",
+      "source": "WotC Rulings"
+    }
+  ]
+}

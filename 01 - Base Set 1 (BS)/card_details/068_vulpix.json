@@ -1,0 +1,82 @@
+{
+  "id": "base1-068",
+  "name": "Vulpix",
+  "number": 68,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Ninetales"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Confuse Ray",
+      "cost": ["Fire", "Fire"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 37,
+    "category": "Fox Pokemon",
+    "height": "2' 0\"",
+    "weight": "22 lbs.",
+    "level": 11
+  },
+  "flavorText": "At the time of birth, it has just one tail. Its tail splits from the tip as it grows older.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "068_vulpix.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "50 HP is excellent for a Basic common Pokemon",
+      "Confuse Ray provides valuable disruption through Confusion status",
+      "Evolves into Ninetales, which has powerful energy manipulation",
+      "Low retreat cost of 1 allows flexible positioning",
+      "Strong against Grass and Steel-type Pokemon"
+    ],
+    "weaknesses": [
+      "Low 10 damage output makes knockouts very slow",
+      "Water weakness is significant with popular Water Pokemon in format",
+      "Confuse Ray requires 2 Fire Energy, delaying first attack",
+      "Confusion effect relies on coin flip, making it unreliable",
+      "No resistance to help with defensive matchups"
+    ],
+    "synergies": [
+      "Evolve into Ninetales to access Lure and energy manipulation",
+      "PlusPower can boost Confuse Ray's damage to more threatening levels",
+      "Use Confusion status with Gust of Wind to control opponent's active Pokemon",
+      "Defender helps Vulpix survive longer while applying disruption"
+    ],
+    "counters": [
+      "Squirtle - Water weakness and Bubble paralysis are problematic",
+      "Staryu - Type disadvantage and efficient damage",
+      "Poliwag - Water Gun exploits weakness effectively"
+    ]
+  }
+}

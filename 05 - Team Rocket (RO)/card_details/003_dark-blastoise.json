@@ -1,0 +1,122 @@
+{
+  "id": "rocket-003",
+  "name": "Dark Blastoise",
+  "number": 3,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Water"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Dark Wartortle",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Hydrocannon",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "30+",
+      "baseDamage": 30,
+      "text": "Does 30 damage plus 20 more damage for each Water Energy attached to Dark Blastoise but not used to pay for this attack. You can't add more than 40 damage in this way.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamagePerEnergy": 20,
+        "energyType": "Water",
+        "maxBonusDamage": 40,
+        "excludePaymentEnergy": true
+      }
+    },
+    {
+      "name": "Rocket Tackle",
+      "cost": ["Water", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Dark Blastoise does 10 damage to itself. Flip a coin. If heads, prevent all damage done to Dark Blastoise during your opponent's next turn. (Any other effects of attacks still happen.)",
+      "effect": {
+        "effectType": "self_damage",
+        "selfDamage": 10,
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventDamage": true,
+            "duration": "opponents_next_turn"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Shellfish Pokemon",
+    "height": "5' 3\"",
+    "weight": "189 lbs",
+    "nationalNumber": 9,
+    "level": 28
+  },
+  "flavorText": "An aggressive Pokémon that tackles anything it sees.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "003_dark-blastoise-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Hydrocannon can deal up to 70 damage for just 2 energy",
+      "Rocket Tackle can make Dark Blastoise invulnerable on a coin flip",
+      "Efficient energy-to-damage ratio",
+      "Moderate retreat cost"
+    ],
+    "weaknesses": [
+      "Low HP of 70 for a Stage 2",
+      "Rocket Tackle's self-damage adds up",
+      "Lightning weakness is dangerous vs Electabuzz",
+      "Requires energy stacking for maximum Hydrocannon damage"
+    ],
+    "synergies": [
+      "Blastoise (Rain Dance)",
+      "Dark Wartortle",
+      "Squirtle",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Electabuzz",
+      "Lightning-type Pokemon",
+      "Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Dark Blastoise was an interesting alternative to the original Blastoise. While it lacked Rain Dance, Hydrocannon's potential for 70 damage with 4 Water Energy made it a solid attacker. Some players experimented with using regular Blastoise's Rain Dance to power up Dark Blastoise quickly. The coin flip protection from Rocket Tackle added a luck-based defensive element.",
+  "rulings": [
+    {
+      "ruling": "Hydrocannon counts Water Energy attached but not used to pay for the attack. With 4 Water Energy, you deal 30 + 40 = 70 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The 40 damage cap on Hydrocannon means having more than 4 Water Energy doesn't increase damage further.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Rocket Tackle's damage prevention only prevents damage, not other effects like status conditions.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

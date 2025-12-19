@@ -1,0 +1,104 @@
+{
+  "id": "base1-075",
+  "name": "Lass",
+  "number": 75,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Rare",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer in Base Set. Would be classified as Supporter by modern rules due to affecting both players' hands significantly."
+  },
+  "effect": {
+    "text": "You and your opponent show each other your hands, then shuffle all the Trainer cards from your hands into your decks.",
+    "effectType": "hand_disruption",
+    "affectsOpponent": true,
+    "targetPlayer": "both",
+    "actions": [
+      {
+        "action": "opponent_reveal_hand"
+      },
+      {
+        "action": "both_shuffle_trainers",
+        "parameters": {
+          "cardType": "Trainer",
+          "destination": "deck"
+        }
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "075_lass.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "powerLevel": "High",
+    "timing": "early_game",
+    "deckInclusion": "Archetype Specific",
+    "synergies": ["Computer Search", "Item Finder", "Haymaker strategy"],
+    "antiSynergies": ["Trainer-heavy decks"],
+    "tips": [
+      "Best when you have fewer Trainers in hand than opponent",
+      "Devastating on turn 1 against setup decks",
+      "Play your important Trainers before using Lass",
+      "Only include in decks that can operate effectively without Trainers",
+      "Time usage for when you have board advantage and want to preserve it"
+    ]
+  },
+  "competitiveHistory": "Lass was a staple in aggressive Haymaker decks during the Base Set era. Playing Lass early could cripple opponents who relied on Trainers for setup, while aggressive decks with quick attackers could win before rebuilding their hand. It saw fringe competitive play primarily as a tech card in specific deck archetypes, particularly Pokemon Power-based decks that didn't rely on Trainers for their strategy.",
+  "rulings": [
+    {
+      "ruling": "Both players must reveal their entire hands to each other",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All Trainer cards from both players' hands are shuffled into their respective decks",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon and Energy cards remain in hand",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Both players shuffle their decks after returning Trainer cards",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The effect is mandatory; you cannot choose to keep Trainer cards in hand",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If a player has no Trainer cards in hand, they still reveal their hand but shuffle nothing",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Lass itself is not shuffled back (it's being played, not in hand)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The revealing happens first, then the shuffling",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Both players see exactly which Trainer cards are being shuffled back",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot play other Trainer cards after revealing but before shuffling (Lass resolves completely)",
+      "source": "WotC Rulings"
+    }
+  ]
+}

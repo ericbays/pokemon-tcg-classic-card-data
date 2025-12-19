@@ -1,0 +1,91 @@
+{
+  "id": "base2-067",
+  "name": "Bulbasaur",
+  "number": 67,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Ivysaur"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Leech Seed",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Bulbasaur.",
+      "effect": {
+        "effectType": "healing",
+        "parameters": {
+          "healAmount": 10,
+          "condition": "damage_not_prevented"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Seed Pokemon",
+    "height": "2' 4\"",
+    "weight": "15 lbs",
+    "nationalNumber": 1,
+    "level": 13
+  },
+  "flavorText": "A strange seed was planted on its back at birth. Thus, a plant sprouted and now grows with this Pokémon.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "067_bulbasaur-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Leech Seed provides healing",
+      "Decent damage at 20 for 2 energy",
+      "First Pokemon in National Dex - iconic"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fire weakness",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Ivysaur/Venusaur - Evolution line"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Bulbasaur was used as the basic for the Venusaur evolution line. Leech Seed's healing was a nice bonus while setting up.",
+  "rulings": [
+    {
+      "ruling": "Leech Seed removes 1 damage counter from Bulbasaur only if the attack deals damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If damage is completely prevented (e.g., by Defender), you cannot remove the damage counter.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

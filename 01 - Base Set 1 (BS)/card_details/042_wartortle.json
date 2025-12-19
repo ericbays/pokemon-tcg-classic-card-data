@@ -1,0 +1,107 @@
+{
+  "id": "base1-042",
+  "name": "Wartortle",
+  "number": 42,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original Series",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Squirtle",
+  "evolvesTo": ["Blastoise"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Withdraw",
+      "cost": ["Water", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Wartortle during your opponent's next turn. (Any other effects of attacks still happen.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventDamage": true,
+            "target": "self",
+            "duration": "opponent_next_turn",
+            "effectsStillApply": true
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Bite",
+      "cost": ["Water", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 8,
+    "category": "Turtle Pokémon",
+    "height": "3'3\"",
+    "weight": "50 lbs",
+    "level": 22
+  },
+  "flavorText": "Often hides in water to stalk unwary prey. When swimming quickly, it moves its ears to maintain balance.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "042_wartortle.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "70 HP provides better staying power than most Stage 1 Pokémon",
+      "Bite deals solid 40 damage",
+      "Withdraw can prevent damage 50% of the time",
+      "Single retreat cost allows flexible positioning",
+      "Key component of powerful Blastoise evolution line"
+    ],
+    "weaknesses": [
+      "Ultimate purpose is to evolve into Blastoise",
+      "Withdraw relies on coin flip (50% success rate)",
+      "Bite requires 3 energy",
+      "Pokémon Breeder often used to skip Wartortle entirely"
+    ],
+    "synergies": [
+      "Pokémon Breeder",
+      "Defender",
+      "PlusPower",
+      "Switch",
+      "Energy Removal",
+      "Blastoise"
+    ],
+    "counters": [
+      "Zapdos",
+      "Raichu",
+      "Electabuzz"
+    ]
+  }
+}

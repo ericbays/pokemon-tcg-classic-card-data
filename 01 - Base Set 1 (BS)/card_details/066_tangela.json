@@ -1,0 +1,90 @@
+{
+  "id": "base1-066",
+  "name": "Tangela",
+  "number": 66,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Tangrowth"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Bind",
+      "cost": ["Grass", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+    },
+    {
+      "name": "Poisonpowder",
+      "cost": ["Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "The Defending Pokémon is now Poisoned."
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "nationalNumber": 114,
+    "category": "Vine Pokemon",
+    "height": "3' 3\"",
+    "weight": "77 lbs.",
+    "level": 8
+  },
+  "flavorText": "Its whole body is swathed with wide vines that are similar to seaweed. These vines shake as it walks.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "066_tangela.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "50 HP is excellent for a Basic common Pokemon without evolution",
+      "Bind offers paralysis disruption with decent 20 damage for 2 Energy",
+      "Poisonpowder guarantees Poison status, dealing persistent damage",
+      "Strong against Water and Fighting-type Pokemon",
+      "Can single-handedly disrupt and wear down opponents through status effects"
+    ],
+    "weaknesses": [
+      "Fire weakness is significant with popular Fire Pokemon in format",
+      "High retreat cost of 2 makes switching expensive",
+      "Poisonpowder requires 3 Grass Energy, which is energy-intensive",
+      "No evolution means limited growth potential",
+      "Bind's paralysis relies on coin flip, making it unreliable"
+    ],
+    "synergies": [
+      "Use Poisonpowder then follow up with Bind paralysis to lock opponents",
+      "Energy Trans from Venusaur can help meet the 3 Grass Energy requirement",
+      "Switch or Scoop Up helps manage the high retreat cost",
+      "Defender reduces incoming damage while poison chips away at opponent"
+    ],
+    "counters": [
+      "Charmander and Fire starters - Fire weakness is devastating",
+      "Ponyta - Type disadvantage and decent damage output",
+      "Moltres - Fire typing and high damage overcome Tangela's HP"
+    ]
+  }
+}

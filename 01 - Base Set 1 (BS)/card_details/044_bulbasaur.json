@@ -1,0 +1,80 @@
+{
+  "id": "base1-044",
+  "name": "Bulbasaur",
+  "number": 44,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesTo": ["Ivysaur"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Leech Seed",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Bulbasaur."
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 1,
+    "category": "Seed Pokemon",
+    "height": "2' 4\"",
+    "weight": "15 lbs.",
+    "level": 13
+  },
+  "flavorText": "A strange seed was planted on its back at birth. Thus, a plant sprouted and now grows with this Pokémon. LV. 13 #1",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "044_bulbasaur.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Leech Seed provides self-healing, allowing Bulbasaur to recover from damage",
+      "Respectable 40 HP for a Basic Pokemon",
+      "Low retreat cost of 1 makes it mobile",
+      "Decent 20 damage output for a Basic Pokemon",
+      "Evolves into powerful Venusaur line"
+    ],
+    "weaknesses": [
+      "Double weakness to Fire-type attacks makes it extremely vulnerable to Charizard and other Fire Pokemon",
+      "Requires 2 Grass energy to attack, which can be slow to set up",
+      "No resistance to any type",
+      "Healing effect requires damage to not be prevented, making it less effective against Resistance or Defender"
+    ],
+    "synergies": [
+      "Energy Trans from Venusaur allows flexible energy management",
+      "Pokemon Center can fully heal Bulbasaur while Leech Seed provides ongoing recovery",
+      "Defender can reduce incoming damage while Leech Seed heals",
+      "PlusPower increases Leech Seed's damage to 30"
+    ],
+    "counters": [
+      "Fire-type Pokemon like Charizard and Arcanine",
+      "Energy removal to prevent attacking",
+      "One-hit knockout attacks that prevent healing"
+    ]
+  }
+}

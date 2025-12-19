@@ -1,0 +1,122 @@
+{
+  "id": "fossil-052",
+  "name": "Omanyte",
+  "number": 52,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Mysterious Fossil",
+  "evolvesTo": ["Omastar"],
+  "abilities": [
+    {
+      "name": "Clairvoyance",
+      "type": "Pokemon Power",
+      "text": "Your opponent plays with his or her hand face up. This power stops working while Omanyte is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "special",
+        "trigger": "passive",
+        "timing": "any_time",
+        "target": "opponent",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "opponentHandRevealed": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Water Gun",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Omanyte but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "parameters": {
+          "bonusDamagePerEnergy": 10,
+          "energyType": "Water",
+          "maxBonusDamage": 20,
+          "excludesCost": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Spiral Pokemon",
+    "height": "1' 4\"",
+    "weight": "17 lbs",
+    "nationalNumber": 138,
+    "level": 19
+  },
+  "flavorText": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "052_omanyte.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Clairvoyance reveals opponent's hand for perfect information",
+      "Water Gun scales with extra energy",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Only 40 HP is very fragile",
+      "Grass weakness",
+      "Evolves from Mysterious Fossil, not a Basic",
+      "Status conditions disable Clairvoyance"
+    ],
+    "synergies": [
+      "Mysterious Fossil",
+      "Omastar (evolution)",
+      "Information-based strategies",
+      "Control decks"
+    ],
+    "counters": [
+      "Status conditions disable Clairvoyance",
+      "Grass Pokemon",
+      "Any moderate attacker can OHKO"
+    ]
+  },
+  "competitiveHistory": "Omanyte's Clairvoyance power was unique and powerful, providing perfect information about the opponent's hand. This information advantage was significant for planning plays. However, the 40 HP and fossil evolution requirement limited its competitive viability.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Clairvoyance forces your opponent to play with their hand revealed at all times while active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Omanyte becomes Asleep, Confused, or Paralyzed, the opponent can hide their hand again.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Multiple Omanytes don't provide additional effects - one is enough to reveal the hand.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

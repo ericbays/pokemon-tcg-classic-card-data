@@ -1,0 +1,126 @@
+{
+  "id": "fossil-011",
+  "name": "Magneton",
+  "number": 11,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Magnemite",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sonicboom",
+      "cost": ["Lightning", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "ignoreWeakness": true,
+          "ignoreResistance": true
+        }
+      }
+    },
+    {
+      "name": "Selfdestruct",
+      "cost": ["Lightning", "Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 4,
+      "damage": "100",
+      "baseDamage": 100,
+      "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magneton does 100 damage to itself.",
+      "effect": {
+        "effectType": "self_damage",
+        "selfDamage": 100,
+        "benchDamage": {
+          "target": "all_bench",
+          "damage": 20,
+          "count": "all"
+        },
+        "parameters": {
+          "ignoreWeaknessResistanceBench": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Magnet Pokemon",
+    "height": "3' 3\"",
+    "weight": "132 lbs",
+    "nationalNumber": 82,
+    "level": 35
+  },
+  "flavorText": "Formed by several Magnemites linked together. They frequently appear when sunspots flare up.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "011_magneton.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Sonicboom ignores Weakness and Resistance for consistent damage",
+      "Selfdestruct does massive 100 damage",
+      "80 HP is decent for Stage 1",
+      "Lightning type is useful against Water Pokemon"
+    ],
+    "weaknesses": [
+      "Fighting weakness is dangerous against Haymaker",
+      "Selfdestruct KOs Magneton itself",
+      "Selfdestruct damages your own bench",
+      "No resistance",
+      "4 energy for Selfdestruct is expensive"
+    ],
+    "synergies": [
+      "Mr. Mime (protect your bench from Selfdestruct)",
+      "Pokemon Center (heal bench damage)",
+      "Defender (survive Selfdestruct)",
+      "Energy acceleration"
+    ],
+    "counters": [
+      "Fighting Pokemon (Hitmonchan, Hitmonlee)",
+      "Energy Removal prevents Selfdestruct setup",
+      "High HP Pokemon that survive Selfdestruct"
+    ]
+  },
+  "competitiveHistory": "Fossil Magneton saw niche play as a 'suicide' attacker with Selfdestruct. The 100 damage could eliminate almost any threat, but at the cost of Magneton itself and bench damage to both players. Sonicboom's ability to ignore Resistance made it useful against Colorless Pokemon with Fighting Resistance. The card was more of a tech choice than a main strategy.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Sonicboom's damage cannot be modified by Weakness or Resistance, but effects like PlusPower still apply.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Selfdestruct's 100 self-damage will knock out Magneton since it only has 80 HP.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Selfdestruct damages all Benched Pokemon on both sides, not just the opponent's.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

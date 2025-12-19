@@ -1,0 +1,88 @@
+{
+  "id": "base2-083",
+  "name": "Nidoran ♂",
+  "number": 83,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Nidorino"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Horn Hazard",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "parameters": {
+          "damage": 30,
+          "failOnTails": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Poison Pin Pokemon",
+    "height": "1' 4\"",
+    "weight": "15 lbs",
+    "nationalNumber": 32,
+    "level": 20
+  },
+  "flavorText": "Stiffens its ears to sense danger. The larger, more powerful of its horns secretes venom.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "083_nidoran-male-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Horn Hazard does high damage for 1 energy",
+      "Cheap attack cost"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Psychic weakness",
+      "No resistance",
+      "Horn Hazard can fail on tails",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Nidorino/Nidoking - Evolution line"
+    ],
+    "counters": [
+      "Psychic Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Nidoran ♂ was used as the basic for the Nidoking evolution line. Horn Hazard's potential 30 damage for 1 energy was excellent when it worked.",
+  "rulings": [
+    {
+      "ruling": "Horn Hazard does 30 damage on heads, nothing on tails.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

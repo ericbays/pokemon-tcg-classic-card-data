@@ -1,0 +1,113 @@
+{
+  "id": "fossil-046",
+  "name": "Ekans",
+  "number": 46,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Arbok"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Spit Poison",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Poisoned"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Wrap",
+      "cost": ["Grass", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Snake Pokemon",
+    "height": "6' 7\"",
+    "weight": "15 lbs",
+    "nationalNumber": 23,
+    "level": 10
+  },
+  "flavorText": "Moves silently and stealthily. Eats the eggs of birds such as Pidgey and Spearow whole.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "046_ekans.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Spit Poison can inflict Poison for 1 energy",
+      "Wrap can Paralyze",
+      "Low retreat cost of 1",
+      "Status condition potential"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Psychic weakness",
+      "Both attacks are coin flip dependent",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Arbok (evolution)",
+      "Status condition decks"
+    ],
+    "counters": [
+      "Psychic Pokemon",
+      "Any high-damage attacker"
+    ]
+  },
+  "competitiveHistory": "Ekans was a basic stepping stone to Arbok with status condition utility. Its coin flip dependency and low HP limited its usefulness.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Spit Poison does no damage - only the Poison effect if heads.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "base2-100",
+  "name": "Weedle",
+  "number": 100,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Kakuna"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Poison Sting",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Poisoned"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Hairy Bug Pokemon",
+    "height": "1' 0\"",
+    "weight": "7 lbs",
+    "nationalNumber": 13,
+    "level": 12
+  },
+  "flavorText": "Often found in forests, eating leaves. It has a sharp, venomous stinger on its head.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "100_weedle-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Poison Sting can Poison",
+      "Cheap 1 energy attack"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fire weakness",
+      "No resistance",
+      "Only one attack",
+      "Poison requires coin flip"
+    ],
+    "synergies": [
+      "Kakuna/Beedrill - Evolution line"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Weedle was used as the basic for the Beedrill evolution line. Poison Sting provided some utility while evolving.",
+  "rulings": [
+    {
+      "ruling": "Poison Sting's Poison only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

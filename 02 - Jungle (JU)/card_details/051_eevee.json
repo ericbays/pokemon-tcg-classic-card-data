@@ -1,0 +1,117 @@
+{
+  "id": "jungle-051",
+  "name": "Eevee",
+  "number": 51,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Vaporeon", "Jolteon", "Flareon"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Tail Wag",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon can't attack Eevee during your opponent's next turn. (Benching either Pokémon ends this effect.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventAttack": true,
+            "target": "defending",
+            "duration": "opponent_next_turn"
+          },
+          "onTails": null
+        },
+        "endCondition": "benching_either"
+      }
+    },
+    {
+      "name": "Quick Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 30
+          },
+          "onTails": {
+            "damage": 10
+          }
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Evolution Pokemon",
+    "height": "1' 0\"",
+    "weight": "14 lbs",
+    "nationalNumber": 133,
+    "level": 12
+  },
+  "flavorText": "Its genetic code is irregular. It may mutate if it is exposed to radiation from elemental stones.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "051_eevee.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "50 HP is good for a Basic",
+      "Psychic resistance",
+      "Tail Wag can prevent attacks",
+      "Evolves into multiple options",
+      "Colorless type fits any deck"
+    ],
+    "weaknesses": [
+      "Fighting weakness"
+    ],
+    "synergies": [
+      "Vaporeon, Jolteon, Flareon evolutions",
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness"
+    ]
+  },
+  "competitiveHistory": "Eevee from Jungle was the required basic for all three Eeveelutions in the set. The 50 HP and Psychic resistance made it a decent starting Pokemon, and its flexibility to evolve into different types based on matchup was valuable.",
+  "rulings": [
+    {
+      "ruling": "Tail Wag's attack prevention only affects the specific Defending Pokemon. If that Pokemon switches out, the effect ends.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

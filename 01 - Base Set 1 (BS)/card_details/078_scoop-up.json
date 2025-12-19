@@ -1,0 +1,100 @@
+{
+  "id": "base1-078",
+  "name": "Scoop Up",
+  "number": 78,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Choose 1 of your own Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)",
+    "effectType": "pokemon_manipulation",
+    "actions": [
+      {
+        "action": "return_pokemon",
+        "target": "your_pokemon",
+        "parameters": {
+          "returnStage": "basic_only",
+          "discardEvolutions": true,
+          "discardAttachments": true
+        }
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "078_scoop-up.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "any_time",
+    "synergies": ["Energy Retrieval", "Chansey", "Alakazam", "Hitmonchan", "Item Finder"],
+    "tips": [
+      "Use primarily to save Pokemon that are about to be knocked out",
+      "Time right before a Pokemon would be knocked out to maximize value",
+      "Use Energy Retrieval immediately after to recover discarded Energy",
+      "Scoop Up can remove Special Conditions",
+      "Combine with Alakazam's Damage Swap to concentrate damage before scooping"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You return only the Basic Pokemon card to your hand; all Evolution cards are discarded",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All Energy cards attached to the Pokemon are discarded",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All other cards attached to the Pokemon (Defender, PlusPower, etc.) are discarded",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All damage counters on the Pokemon are removed (the Pokemon is healed when returned to hand)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All Special Conditions on the Pokemon are removed",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Pokemon is no longer in play and does not count toward your in-play Pokemon count",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Scoop Up if it would leave you with zero Pokemon in play",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can immediately replay the Basic Pokemon in the same turn if you want",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Pokemon is evolved, only the Basic card is returned; Stage 1 and Stage 2 go to discard",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can use Scoop Up on a Pokemon that was just played this turn",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Any effects or attacks targeting the Pokemon are removed when it leaves play",
+      "source": "WotC Rulings"
+    }
+  ]
+}

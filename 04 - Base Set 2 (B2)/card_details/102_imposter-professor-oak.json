@@ -1,0 +1,64 @@
+{
+  "id": "base2-102",
+  "name": "Imposter Professor Oak",
+  "number": 102,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "text": "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards.",
+  "effect": {
+    "text": "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards.",
+    "effectType": "opponent_hand_disruption",
+    "parameters": {
+      "target": "opponent",
+      "shuffleHand": true,
+      "draw": 7
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "102_imposter-professor-oak-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruption",
+    "strengths": [
+      "Can disrupt opponent's hand setup",
+      "Forces opponent to shuffle away key cards",
+      "Useful when opponent has many cards in hand"
+    ],
+    "weaknesses": [
+      "Gives opponent 7 new cards",
+      "May help opponent if they had a bad hand",
+      "Situational effectiveness"
+    ],
+    "synergies": [
+      "Lass - Clear Trainers after they draw",
+      "Energy denial strategies"
+    ],
+    "counters": [
+      "Opponent benefits if they had a bad hand"
+    ]
+  },
+  "competitiveHistory": "Imposter Professor Oak was used in disruption strategies, often combined with Lass to clear the opponent's new hand of Trainers.",
+  "rulings": [
+    {
+      "ruling": "Your opponent shuffles their entire hand into their deck before drawing.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Your opponent draws exactly 7 cards.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

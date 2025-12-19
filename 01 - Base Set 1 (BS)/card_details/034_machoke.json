@@ -1,0 +1,149 @@
+{
+  "id": "base1-034",
+  "name": "Machoke",
+  "number": 34,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": [
+    "Stage 1"
+  ],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": [
+    "Fighting"
+  ],
+  "stage": "Stage 1",
+  "evolvesFrom": "Machop",
+  "evolvesTo": [
+    "Machamp"
+  ],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Karate Chop",
+      "cost": [
+        "Fighting",
+        "Fighting",
+        "Colorless"
+      ],
+      "convertedEnergyCost": 3,
+      "damage": "50-",
+      "baseDamage": 50,
+      "text": "Does 50 damage minus 10 damage for each damage counter on Machoke."
+    },
+    {
+      "name": "Submission",
+      "cost": [
+        "Fighting",
+        "Fighting",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "Machoke does 20 damage to itself."
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [
+    "Colorless",
+    "Colorless",
+    "Colorless"
+  ],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "nationalNumber": 67,
+    "category": "Superpower Pok\u00e9mon",
+    "height": "4'11\"",
+    "weight": "155 lbs.",
+    "level": 40
+  },
+  "flavorText": "Its muscular body is so powerful that it must wear a power-save belt to help regulate its motions.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "034_machoke.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "80 HP is excellent for a Stage 1 Pok\u00e9mon",
+      "Karate Chop does 50 damage when Machoke is undamaged",
+      "Submission's 60 damage can knock out many Stage 1 Pok\u00e9mon",
+      "Evolves into powerful Machamp",
+      "Fighting type has favorable matchups against Colorless",
+      "Can function as legitimate attacker while building to Machamp",
+      "High damage output makes it better than most middle evolutions"
+    ],
+    "weaknesses": [
+      "Psychic weakness is severe against Alakazam and Mewtwo decks",
+      "Karate Chop damage decreases as Machoke takes damage",
+      "Submission's 20 self-damage accelerates knockout",
+      "High retreat cost of 3 makes switching very expensive",
+      "Requires 3-4 energy to attack, which is slow to set up",
+      "Self-damage mechanics make Machoke self-destructive",
+      "At 5 damage counters, Karate Chop only does 0 damage"
+    ],
+    "synergies": [
+      "Machop - Required pre-evolution",
+      "Machamp - Ultimate evolution goal",
+      "Pok\u00e9mon Breeder - Can skip Machoke to reach Machamp faster",
+      "Defender - Reduces both opponent damage and self-damage from Submission",
+      "Switch - Mitigates the high retreat cost problem",
+      "PlusPower - Boosts damage to reach important KO thresholds",
+      "Potion/Super Potion - Heals damage to maintain Karate Chop's damage",
+      "Scoop Up - Resets Machoke's damage for maximum Karate Chop damage"
+    ],
+    "counters": [
+      "Alakazam - Psychic weakness and Damage Swap make this terrible",
+      "Mewtwo - Psychic typing exploits weakness",
+      "Mr. Mime - Invisible Wall blocks both Karate Chop and Submission",
+      "Pok\u00e9mon Center - Removes damage, maximizing Karate Chop while removing self-damage",
+      "Energy Removal - Prevents reaching high energy requirements",
+      "Gust of Wind - Forces Machoke out with high retreat cost"
+    ]
+  },
+  "description": "Machoke is a Stage 1 Fighting-type Pok\u00e9mon that serves as the powerful middle evolution between Machop and Machamp. With 80 HP and two high-damage attacks, Machoke offers legitimate offensive threat despite being a transitional evolution. Karate Chop provides damage that decreases as Machoke takes hits, while Submission delivers consistent 60 damage at the cost of recoil. The high retreat cost and self-damaging mechanics create interesting strategic decisions around when to evolve and when to continue attacking.",
+  "competitiveHistory": "Machoke saw moderate competitive play as part of Machamp evolution decks in the Base Set era. Unlike most middle-stage evolutions, Machoke was actually threatening enough to sometimes remain in play rather than being evolved immediately. The 50-60 damage output was competitive, though the self-damaging mechanics and Psychic weakness limited its appeal. Most tournament players preferred to use Pok\u00e9mon Breeder to skip directly to Machamp, but Machoke could hold its own when forced into combat. It was generally viewed as one of the better Stage 1 evolutions, though still inferior to the final Machamp form.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Karate Chop does 50 damage minus 10 damage for each damage counter on Machoke. For example, if Machoke has 2 damage counters (20 damage), Karate Chop does 50 - 20 = 30 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "No. If the calculation would result in 0 or less damage, Karate Chop simply does 0 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Defender reduces all damage done to the Pok\u00e9mon it's attached to, including self-damage from Submission. Submission would do 10 self-damage instead of 20.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Machoke would knock itself out. The 20 self-damage from Submission is applied after the attack resolves.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Both Karate Chop (when undamaged) and Submission exceed 30 damage, so Mr. Mime's Invisible Wall prevents all damage from these attacks.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "base2-082",
+  "name": "Nidoran ♀",
+  "number": 82,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Nidorina"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Fury Swipes",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "10x",
+      "baseDamage": 0,
+      "text": "Flip 3 coins. This attack does 10 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_multiplier",
+        "parameters": {
+          "coinFlips": 3,
+          "damagePerHeads": 10
+        }
+      }
+    },
+    {
+      "name": "Call for Family",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Search your deck for a Basic Pokémon named Nidoran ♂ or Nidoran ♀ and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)",
+      "effect": {
+        "effectType": "search",
+        "parameters": {
+          "searchTarget": "deck",
+          "cardName": ["Nidoran ♂", "Nidoran ♀"],
+          "destination": "bench"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Poison Pin Pokemon",
+    "height": "1' 4\"",
+    "weight": "15 lbs",
+    "nationalNumber": 29,
+    "level": 13
+  },
+  "flavorText": "Although small, its venomous barbs make this Pokémon dangerous. The female has smaller horns.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "082_nidoran-female-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "60 HP is excellent for a Basic",
+      "Call for Family searches for more Nidorans",
+      "Fury Swipes has potential for high damage"
+    ],
+    "weaknesses": [
+      "Psychic weakness",
+      "No resistance",
+      "Fury Swipes damage is coin-dependent"
+    ],
+    "synergies": [
+      "Nidorina/Nidoqueen - Evolution line",
+      "Nidoran ♂ - Call for Family target"
+    ],
+    "counters": [
+      "Psychic Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Nidoran ♀ was used as the basic for the Nidoqueen evolution line. Call for Family helped set up multiple evolution lines.",
+  "rulings": [
+    {
+      "ruling": "Fury Swipes flips 3 coins and does 10 damage per heads (0, 10, 20, or 30 damage).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Call for Family can search for either Nidoran ♂ or Nidoran ♀.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

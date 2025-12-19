@@ -1,0 +1,78 @@
+{
+  "id": "rocket-075",
+  "name": "Digger",
+  "number": 75,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "subtitle": "Rocket's Secret Machine",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Item",
+    "note": "Originally printed as a Trainer. Would be classified as Item by modern rules. Part of the 'Rocket's Secret Machine' series."
+  },
+  "effect": {
+    "text": "Flip a coin. If tails, do 10 damage to your Active Pokémon. If heads, your opponent flips a coin. If tails, your opponent does 10 damage to his or her Active Pokémon. If heads, you flip a coin. Keep doing this until a player gets tails.",
+    "effectType": "coin_flip_chain",
+    "actions": [
+      {
+        "action": "coin_flip_damage_chain",
+        "startWith": "you",
+        "onTails": {
+          "damage": 10,
+          "target": "your_active"
+        },
+        "onHeads": {
+          "switchTo": "opponent",
+          "continueChain": true
+        },
+        "endCondition": "tails"
+      }
+    ]
+  },
+  "illustrator": "Sumiyoshi Kizuki",
+  "imageUrl": "075_digger-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Gamble",
+    "powerLevel": "Risky",
+    "timing": "tactical",
+    "synergies": [
+      "High HP Pokemon",
+      "Pokemon that benefit from taking damage"
+    ],
+    "tips": [
+      "Can potentially deal damage to opponent for free",
+      "High risk - you might hurt yourself first",
+      "The chain continues until someone gets tails",
+      "Fun but unreliable"
+    ]
+  },
+  "competitiveHistory": "Digger was a fun gambling card from the Rocket's Secret Machine series. Players would flip coins back and forth until someone got tails and took 10 damage. It was rarely used competitively due to its unreliable nature, but created memorable moments.",
+  "rulings": [
+    {
+      "ruling": "You flip first. If you get tails, you take 10 damage and it ends. If you get heads, opponent flips, and so on.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The chain can theoretically go on indefinitely until someone flips tails.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The damage is dealt to the Active Pokemon of whoever flips tails.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "base1-037",
+  "name": "Nidorino",
+  "number": 37,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original Series",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Nidoran♂",
+  "evolvesTo": ["Nidoking"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Double Kick",
+      "cost": ["Grass", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 2,
+          "onHeads": {
+            "damagePerHead": 30
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Horn Drill",
+      "cost": ["Grass", "Grass", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 33,
+    "category": "Poison Pin Pokémon",
+    "height": "2'11\"",
+    "weight": "43 lbs",
+    "level": 25
+  },
+  "flavorText": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "037_nidorino.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Serves as stepping stone to Nidoking",
+      "Horn Drill provides consistent 50 damage",
+      "Double Kick can potentially deal 60 damage",
+      "Single retreat cost is manageable"
+    ],
+    "weaknesses": [
+      "Only 60 HP makes it vulnerable",
+      "Double Kick damage is unreliable (0-60) based on coin flips",
+      "Horn Drill is expensive at 4 energy for Stage 1 Pokémon",
+      "True value is evolving to Nidoking quickly"
+    ],
+    "synergies": [
+      "Pokémon Breeder",
+      "PlusPower",
+      "Switch",
+      "Item Finder",
+      "Nidoking"
+    ],
+    "counters": [
+      "Alakazam",
+      "Mewtwo",
+      "Gengar",
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  }
+}

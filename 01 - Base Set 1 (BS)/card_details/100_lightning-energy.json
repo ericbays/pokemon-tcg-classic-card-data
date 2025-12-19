@@ -1,0 +1,41 @@
+{
+  "id": "base1-100",
+  "name": "Lightning Energy",
+  "number": 100,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Lightning",
+  "provides": [
+    {
+      "type": "Lightning",
+      "amount": 1
+    }
+  ],
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "100_lightning-energy.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Power Lightning-type Pokemon attacks",
+    "deckTypes": [
+      "Haymaker (Electabuzz)",
+      "Rain Dance counter decks",
+      "Zapdos Beatdown",
+      "Lightning-type aggro"
+    ],
+    "notes": "Lightning Pokemon in Base Set include Pikachu, Raichu, Magnemite, Magneton, Voltorb, Electrode, Electabuzz, and Zapdos. Electabuzz is a Haymaker staple with its cheap, powerful Thunderpunch. Lightning is strong against Water (countering popular Rain Dance decks) and Flying types, but weak to Fighting. Electrode's Buzzap power can provide emergency Lightning Energy."
+  }
+}

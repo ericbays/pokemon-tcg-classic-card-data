@@ -1,0 +1,96 @@
+{
+  "id": "rocket-057",
+  "name": "Grimer",
+  "number": 57,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Muk", "Muk"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Poison Gas",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep"
+      }
+    },
+    {
+      "name": "Sticky Hands",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage and the Defending Pokémon is now Paralyzed; if tails, this attack does 10 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "bonusDamage": 20,
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Sludge Pokemon",
+    "height": "2' 11\"",
+    "weight": "66 lbs",
+    "nationalNumber": 88,
+    "level": 10
+  },
+  "flavorText": "It has recently been found that Grimers are formed in waste-processing plants, and can move into towns via the sewers.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "057_grimer-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Poison Gas guarantees Sleep",
+      "Sticky Hands can Paralyze on heads"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Dark Muk"
+    ],
+    "counters": [
+      "Psychic-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Grimer had good status-inflicting attacks. Poison Gas guaranteed Sleep for just one energy, and Sticky Hands could Paralyze.",
+  "rulings": []
+}

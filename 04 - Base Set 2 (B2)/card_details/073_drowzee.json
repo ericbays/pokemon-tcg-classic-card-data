@@ -1,0 +1,105 @@
+{
+  "id": "base2-073",
+  "name": "Drowzee",
+  "number": 73,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Hypno"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Pound",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Confuse Ray",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Hypnosis Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs",
+    "nationalNumber": 96,
+    "level": 12
+  },
+  "flavorText": "Puts enemies to sleep, then eats their dreams. Occasionally gets sick from eating bad dreams.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "073_drowzee-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Confuse Ray can inflict Confusion",
+      "50 HP is decent for a Basic",
+      "Pound provides cheap attack option"
+    ],
+    "weaknesses": [
+      "Psychic weakness",
+      "No resistance",
+      "Confuse Ray requires coin flip"
+    ],
+    "synergies": [
+      "Hypno - Evolution target"
+    ],
+    "counters": [
+      "Psychic Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Drowzee was used as the basic for Hypno. Confuse Ray provided utility while setting up for evolution.",
+  "rulings": [
+    {
+      "ruling": "Pound has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Confuse Ray's Confusion only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "base1-012",
+  "name": "Ninetales",
+  "number": 12,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Vulpix",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Lure",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "0",
+      "baseDamage": 0,
+      "text": "If your opponent has any Benched Pokemon, choose 1 of them and switch it with his or her Active Pokemon.",
+      "effect": {
+        "type": "forced_switch",
+        "target": "opponent_benched",
+        "choice": "your_choice",
+        "switchWith": "active"
+      }
+    },
+    {
+      "name": "Fire Blast",
+      "cost": ["Fire", "Fire", "Fire", "Fire"],
+      "convertedEnergyCost": 4,
+      "damage": "80",
+      "baseDamage": 80,
+      "text": "Discard 1 Fire Energy card attached to Ninetales in order to use this attack.",
+      "effect": {
+        "type": "energy_discard",
+        "discardCount": 1,
+        "discardType": "Fire",
+        "timing": "cost"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Fox Pokemon",
+    "height": "3'7\"",
+    "weight": "44 lbs",
+    "nationalNumber": 38,
+    "level": 32
+  },
+  "flavorText": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1,000-year curse.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "012_ninetales.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Lure provides built-in Gust of Wind effect",
+      "Fire Blast deals 80 damage - high for Stage 1",
+      "Only Stage 1 evolution",
+      "Low retreat cost of 1",
+      "Can target evolving basics before they evolve"
+    ],
+    "weaknesses": [
+      "Water weakness against Rain Dance",
+      "Fire Blast requires 4 Fire Energy",
+      "Must discard energy for Fire Blast",
+      "80 HP is moderate for a Stage 1"
+    ],
+    "synergies": [
+      "Energy Retrieval",
+      "PlusPower",
+      "Bill"
+    ],
+    "counters": [
+      "Blastoise Rain Dance - Water weakness",
+      "Any Water Pokemon",
+      "Energy Removal - Slows Fire Blast setup"
+    ]
+  },
+  "competitiveHistory": "Ninetales was valued for its Lure attack, which provided free Gust of Wind utility every turn. This made it effective at disrupting opponent's setup and picking off weak bench Pokemon. It saw play in Fire-based decks as a versatile attacker.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Lure cannot be used if your opponent has no Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You must discard 1 Fire Energy to use Fire Blast. If you cannot, you cannot use the attack.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

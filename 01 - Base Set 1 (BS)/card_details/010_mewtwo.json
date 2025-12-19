@@ -1,0 +1,120 @@
+{
+  "id": "base1-010",
+  "name": "Mewtwo",
+  "number": 10,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 60,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Psychic",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each Energy card attached to the Defending Pokemon.",
+      "effect": {
+        "type": "scaling_damage",
+        "baseDamage": 10,
+        "bonusDamage": 10,
+        "bonusCondition": "per_energy_on_defender",
+        "target": "defending_pokemon_energy"
+      }
+    },
+    {
+      "name": "Barrier",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "0",
+      "baseDamage": 0,
+      "text": "Discard 1 Psychic Energy card attached to Mewtwo in order to prevent all effects of attacks, including damage, done to Mewtwo during your opponent's next turn.",
+      "effect": {
+        "type": "damage_prevention",
+        "cost": {
+          "type": "energy_discard",
+          "energyType": "Psychic",
+          "count": 1
+        },
+        "prevents": "all_effects_and_damage",
+        "duration": "opponent_next_turn"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Genetic Pokemon",
+    "height": "6'7\"",
+    "weight": "269 lbs",
+    "nationalNumber": 150,
+    "level": 53
+  },
+  "flavorText": "A scientist created this Pokemon after years of horrific gene-splicing and DNA engineering experiments.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "010_mewtwo.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Psychic punishes energy-heavy Pokemon severely",
+      "Basic Pokemon - no evolution required",
+      "Barrier provides complete protection",
+      "Effective against Rain Dance and other energy-heavy decks",
+      "Only 2 energy to attack"
+    ],
+    "weaknesses": [
+      "Only 60 HP is fragile",
+      "Psychic weakness (mirror match danger)",
+      "High retreat cost of 3",
+      "Barrier requires discarding energy",
+      "Weak against opponents with minimal energy"
+    ],
+    "synergies": [
+      "Energy Removal",
+      "Alakazam",
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "Other Mewtwo - Psychic weakness mirror",
+      "Alakazam - Psychic weakness",
+      "Low-energy attackers like Hitmonchan",
+      "Gastly - Resistance to Psychic"
+    ]
+  },
+  "competitiveHistory": "Mewtwo was valued as a tech card against energy-heavy decks like Rain Dance. Its Psychic attack could deal massive damage to Pokemon loaded with energy, making it an effective meta counter. The Psychic weakness to itself made Mewtwo mirrors particularly volatile.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Psychic counts all Energy cards attached to the Defending Pokemon, including Special Energy like Double Colorless Energy (counts as 1 card, not 2 energy).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Barrier must have the Psychic Energy discarded as a cost. If no Psychic Energy is attached, Barrier cannot be used.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "base1-040",
+  "name": "Raticate",
+  "number": 40,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original Series",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Rattata",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Super Fang",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Does damage to the Defending Pokémon equal to half the Defending Pokémon's remaining HP (rounded up to the nearest 10).",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "damageCalculation": "half_remaining_hp",
+          "rounding": "up_to_10"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 20,
+    "category": "Rat Pokémon",
+    "height": "2'4\"",
+    "weight": "41 lbs",
+    "level": 41
+  },
+  "flavorText": "It uses its whiskers to maintain its balance. It seems to slow down if they are cut off.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "040_raticate.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Bite is excellent at 20 damage for 1 Colorless Energy",
+      "Super Fang excels against high-HP targets (50-60 damage against Stage 2s)",
+      "Colorless typing works in any deck archetype",
+      "Single retreat cost allows easy repositioning",
+      "One of the fastest attacking Stage 1 Pokémon"
+    ],
+    "weaknesses": [
+      "Only 60 HP makes it vulnerable",
+      "Super Fang's effectiveness diminishes as opponent HP decreases",
+      "Less effective against low-HP Pokémon",
+      "Super Fang has diminishing returns on damaged Pokémon"
+    ],
+    "synergies": [
+      "PlusPower",
+      "Gust of Wind",
+      "Defender",
+      "Double Colorless Energy",
+      "Scyther",
+      "Snorlax"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Machamp",
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "rocket-055",
+  "name": "Eevee",
+  "number": 55,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Flareon", "Dark Jolteon", "Dark Vaporeon", "Flareon", "Jolteon", "Vaporeon"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Tackle",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Sand-attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing.",
+      "effect": {
+        "effectType": "special",
+        "preventAttack": {
+          "condition": "coin_flip_tails",
+          "duration": "opponents_next_turn"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Evolution Pokemon",
+    "height": "1' 0\"",
+    "weight": "14 lbs",
+    "nationalNumber": 133,
+    "level": 9
+  },
+  "flavorText": "A rare and unique Pokémon about which little is known, as few have been captured.",
+  "illustrator": "Atsuko Nishida",
+  "imageUrl": "055_eevee-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Sand-attack can prevent opponent's attack",
+      "Psychic resistance",
+      "Evolves into multiple Eeveelutions"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Fighting weakness vs Hitmonchan"
+    ],
+    "synergies": [
+      "Dark Flareon",
+      "Dark Jolteon",
+      "Dark Vaporeon"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Eevee was a standard starting point for Eeveelution decks. Sand-attack provided some disruption while setting up for evolution.",
+  "rulings": [
+    {
+      "ruling": "Sand-attack's effect requires opponent to flip a coin if they attack next turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

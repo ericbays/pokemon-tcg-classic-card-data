@@ -1,0 +1,125 @@
+{
+  "id": "fossil-024",
+  "name": "Kabutops",
+  "number": 24,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 60,
+  "types": ["Fighting"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Kabuto",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sharp Sickle",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Absorb",
+      "cost": ["Fighting", "Fighting", "Fighting", "Fighting"],
+      "convertedEnergyCost": 4,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Remove a number of damage counters from Kabutops equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Kabutops has fewer damage counters than that, remove all of them.",
+      "effect": {
+        "effectType": "healing",
+        "parameters": {
+          "healAmount": "half_damage_dealt",
+          "roundUp": true,
+          "roundToNearest": 10,
+          "afterWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Shellfish Pokemon",
+    "height": "4' 3\"",
+    "weight": "89 lbs",
+    "nationalNumber": 141,
+    "level": 30
+  },
+  "flavorText": "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "024_kabutops.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Absorb heals while dealing damage for sustainability",
+      "Sharp Sickle is energy-efficient at 30 for 2",
+      "Low retreat cost of 1",
+      "Fighting type hits common weaknesses",
+      "Non-holo version is more accessible"
+    ],
+    "weaknesses": [
+      "Only 60 HP for a Stage 2 is very fragile",
+      "Stage 2 requiring Mysterious Fossil -> Kabuto -> Kabutops is slow",
+      "Grass weakness",
+      "Absorb requires 4 energy for modest damage"
+    ],
+    "synergies": [
+      "Mysterious Fossil",
+      "Kabuto",
+      "Pokemon Breeder (skip Kabuto)",
+      "Defender (help survive to heal with Absorb)"
+    ],
+    "counters": [
+      "Grass Pokemon (Scyther, Venusaur) exploit weakness",
+      "Aerodactyl prevents evolution",
+      "High damage attacks can OHKO despite healing",
+      "Energy Removal slows Absorb setup"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Kabutops is functionally identical to the holo version (#9). Kabutops struggled competitively due to its poor HP-to-stage ratio at only 60 HP for a Stage 2. The non-holo printing made it more accessible but didn't improve its competitive viability.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Absorb's healing is calculated after applying Weakness and Resistance to the damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Absorb does 80 damage (due to Weakness), Kabutops heals 40 damage (half of 80).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Healing is rounded up to the nearest 10, so 30 damage dealt heals 20 (half of 30 is 15, rounds to 20).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Kabutops evolves from Kabuto, which evolves from Mysterious Fossil (a Trainer card that plays as a Basic Pokemon).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

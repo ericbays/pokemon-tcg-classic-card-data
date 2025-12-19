@@ -1,0 +1,132 @@
+{
+  "id": "base2-005",
+  "name": "Clefable",
+  "number": 5,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Clefairy",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Metronome",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of the Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefable's type is still Colorless.)",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "copyAttack": true,
+          "ignoresEnergyCost": true,
+          "ignoresAdditionalCosts": true,
+          "maintainsOwnType": true
+        }
+      }
+    },
+    {
+      "name": "Minimize",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "All damage done by attacks to Clefable during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance).",
+      "effect": {
+        "effectType": "damage_reduction",
+        "parameters": {
+          "reduction": 20,
+          "duration": "opponents_next_turn",
+          "timing": "after_weakness_resistance"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Fairy Pokemon",
+    "height": "4' 3\"",
+    "weight": "88 lbs",
+    "nationalNumber": 36,
+    "level": 34
+  },
+  "flavorText": "A timid Fairy Pokémon that is rarely seen. It will run and hide the moment it senses people.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "005_clefable-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Metronome can copy any attack without energy costs",
+      "Can use opponent's best attacks against them",
+      "Colorless type uses any energy",
+      "Psychic resistance helps against Mewtwo",
+      "Minimize provides defensive utility",
+      "Only Stage 1 evolution"
+    ],
+    "weaknesses": [
+      "70 HP is moderate",
+      "Fighting weakness to Hitmonchan",
+      "Metronome effectiveness depends on opponent's Pokemon",
+      "Still pays 3 energy even when copying cheap attacks"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Powers up quickly",
+      "Clefairy - Same type for consistent evolution",
+      "Scoop Up - Reset damage and re-evolve"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Machamp - Fighting type",
+      "Pokemon with weak attacks - Nothing good to copy"
+    ]
+  },
+  "competitiveHistory": "Clefable from Jungle was popular but this Base Set 2 reprint maintained its relevance. Metronome's ability to copy powerful attacks for just 3 Colorless energy made it versatile. It could turn an opponent's Charizard's Fire Spin or Blastoise's Hydro Pump against them without the downsides.",
+  "rulings": [
+    {
+      "ruling": "Metronome copies the attack exactly but ignores energy costs and additional costs like discarding.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Clefable remains Colorless type even when copying an attack from another type. This affects Weakness and Resistance calculations.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the copied attack refers to the Pokemon by name (like 'Charizard does 80 damage to itself'), treat it as referring to Clefable instead.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Metronome cannot copy attacks that have no effect when used by Clefable (such as attacks requiring a specific Pokemon type Clefable isn't).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Minimize's damage reduction applies after Weakness and Resistance calculations.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

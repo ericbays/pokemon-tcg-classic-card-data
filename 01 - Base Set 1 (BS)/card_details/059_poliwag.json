@@ -1,0 +1,82 @@
+{
+  "id": "base1-059",
+  "name": "Poliwag",
+  "number": 59,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Poliwhirl"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Water Gun",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Poliwag but not used to pay for this attack's Energy cost. Extra Water Energy after the 2nd don't count."
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 60,
+    "category": "Tadpole Pokemon",
+    "height": "2' 0\"",
+    "weight": "27 lbs.",
+    "level": 13
+  },
+  "flavorText": "Its newly grown legs prevent it from running. It appears to prefer swimming over trying to stand.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "059_poliwag.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Water Gun can scale up to 30 damage with just 3 Water Energy total",
+      "Energy-efficient base attack requiring only 1 Water Energy",
+      "Evolves into Poliwhirl and eventually the powerful Poliwrath",
+      "Low retreat cost of 1 provides flexibility",
+      "Strong against Fire-type Pokemon"
+    ],
+    "weaknesses": [
+      "Very low 40 HP makes it fragile and easy to knock out",
+      "Grass weakness is significant with popular Grass Pokemon in format",
+      "Damage scaling caps at 2 extra Water Energy, limiting maximum output",
+      "No resistance to help offset defensive vulnerabilities",
+      "Requires multiple Energy attachments to reach competitive damage"
+    ],
+    "synergies": [
+      "Energy Trans from Venusaur can move extra Water Energy to Poliwag for boosted damage",
+      "Rain Dance Blastoise allows rapid Energy attachment to maximize Water Gun",
+      "Defender can help Poliwag survive an extra turn to build up Energy",
+      "Professor Oak can help draw into additional Water Energy cards"
+    ],
+    "counters": [
+      "Bulbasaur - Grass weakness and Leech Seed create major problems",
+      "Tangela - Double weakness and status effects are devastating",
+      "Bellsprout - Grass typing and Call for Family make this difficult"
+    ]
+  }
+}

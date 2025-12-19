@@ -1,0 +1,106 @@
+{
+  "id": "rocket-044",
+  "name": "Dark Rapidash",
+  "number": 44,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Ponyta",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Rear Kick",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Flame Pillar",
+      "cost": ["Fire", "Fire"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "You may discard 1 Fire Energy card attached to Dark Rapidash when you use this attack. If you do and if your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "effectType": "optional_discard",
+        "energyType": "Fire",
+        "count": 1,
+        "optional": true,
+        "additionalEffect": {
+          "benchDamage": {
+            "target": "opponent_bench_choice",
+            "damage": 10,
+            "ignoreWeakness": true,
+            "ignoreResistance": true
+          }
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Fire Horse Pokemon",
+    "height": "5' 7\"",
+    "weight": "209 lbs",
+    "nationalNumber": 78,
+    "level": 24
+  },
+  "flavorText": "A wild, uncontrollable Pokémon. When running, it looks like a comet streaking through the sky.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "044_dark-rapidash-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost - very mobile",
+      "Flame Pillar can spread damage to bench",
+      "Rear Kick is colorless and flexible"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Water weakness",
+      "Bench damage requires energy discard"
+    ],
+    "synergies": [
+      "Ponyta",
+      "Spread damage strategies"
+    ],
+    "counters": [
+      "Water-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Rapidash was a solid utility attacker with free retreat. Flame Pillar's optional bench damage spread was useful for setting up knockouts.",
+  "rulings": [
+    {
+      "ruling": "Flame Pillar's energy discard is optional. If you don't discard, you don't do bench damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

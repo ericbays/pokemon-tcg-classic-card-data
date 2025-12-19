@@ -1,0 +1,82 @@
+{
+  "id": "base1-065",
+  "name": "Staryu",
+  "number": 65,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Starmie"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slap",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": ""
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 120,
+    "category": "Starshape Pokemon",
+    "height": "2' 7\"",
+    "weight": "76 lbs.",
+    "level": 15
+  },
+  "flavorText": "An enigmatic Pokemon that can effortlessly regenerate any appendage it loses in battle.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "065_staryu.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Exceptional 20 damage for 1 Water Energy is highly efficient",
+      "Can attack effectively from the first turn with proper Energy",
+      "Evolves into Starmie which has healing and disruption capabilities",
+      "Low retreat cost of 1 provides excellent mobility",
+      "Strong against Fire-type Pokemon in the format"
+    ],
+    "weaknesses": [
+      "Low 40 HP makes it vulnerable to one-hit knockouts",
+      "Lightning weakness is problematic against popular Electric Pokemon",
+      "Only one attack limits strategic flexibility",
+      "No resistance to help offset defensive weaknesses",
+      "Cannot sustain prolonged battles due to low HP"
+    ],
+    "synergies": [
+      "PlusPower boosts Slap to 30 damage for guaranteed KOs on many basics",
+      "Evolve into Starmie to access healing and continue momentum",
+      "Energy Removal can slow opponents while Staryu applies pressure",
+      "Gust of Wind brings out weak benched Pokemon that Staryu can knock out"
+    ],
+    "counters": [
+      "Pikachu - Lightning weakness means Thunder Jolt is devastating",
+      "Magnemite - Electric typing exploits weakness significantly",
+      "Grass Pokemon - Can retaliate effectively against Staryu"
+    ]
+  }
+}

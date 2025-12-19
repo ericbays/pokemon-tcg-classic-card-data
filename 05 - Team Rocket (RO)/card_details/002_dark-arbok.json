@@ -1,0 +1,120 @@
+{
+  "id": "rocket-002",
+  "name": "Dark Arbok",
+  "number": 2,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Ekans",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Stare",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of your opponent's Pokémon. This attack does 10 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.) If that Pokémon has a Pokémon Power, that power stops working until the end of your opponent's next turn.",
+      "effect": {
+        "effectType": "special",
+        "targetChoice": "any_opponent_pokemon",
+        "damage": 10,
+        "ignoreWeakness": true,
+        "ignoreResistance": true,
+        "disablesPokemonPower": true,
+        "disableDuration": "end_of_opponents_next_turn"
+      }
+    },
+    {
+      "name": "Poison Vapor",
+      "cost": ["Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 3,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "The Defending Pokémon is now Poisoned. This attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Poisoned",
+        "benchDamage": {
+          "target": "opponent_bench",
+          "damage": 10,
+          "count": "all"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Cobra Pokemon",
+    "height": "11' 6\"",
+    "weight": "143 lbs",
+    "nationalNumber": 24,
+    "level": 25
+  },
+  "flavorText": "Freezes its prey with its stare. If you should encounter one, remember not to look into its eyes.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "002_dark-arbok-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Stare can disable Pokemon Powers - great against Alakazam, Blastoise, etc.",
+      "Poison Vapor spreads damage to the entire bench",
+      "Can target any opponent Pokemon with Stare",
+      "Solid disruption against power-reliant decks"
+    ],
+    "weaknesses": [
+      "Low HP of 60 for its energy costs",
+      "Stare does minimal damage",
+      "Psychic weakness is problematic",
+      "Poison Vapor's base damage is low"
+    ],
+    "synergies": [
+      "Ekans",
+      "Gust of Wind",
+      "Pokemon with spread damage"
+    ],
+    "counters": [
+      "Psychic-type Pokemon",
+      "High HP Pokemon",
+      "Pokemon without Powers"
+    ]
+  },
+  "competitiveHistory": "Dark Arbok was a niche tech card primarily valued for Stare's ability to shut down Pokemon Powers. In a format dominated by Alakazam's Damage Swap and Blastoise's Rain Dance, this disruption was potentially valuable. However, its low HP and damage output limited its competitive viability.",
+  "rulings": [
+    {
+      "ruling": "Stare's Pokemon Power disruption lasts until the end of your opponent's next turn, not your next turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can target Benched Pokemon with Stare.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Poison Vapor's bench damage ignores Weakness and Resistance as stated.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

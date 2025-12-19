@@ -1,0 +1,116 @@
+{
+  "id": "rocket-018",
+  "name": "Dark Alakazam",
+  "number": 18,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 60,
+  "types": ["Psychic"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Dark Kadabra",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Teleport Blast",
+      "cost": ["Psychic", "Psychic", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "You may switch Dark Alakazam with 1 of your Benched Pokémon. (Do the damage before switching the Pokémon.)",
+      "effect": {
+        "effectType": "switch",
+        "optional": true,
+        "timing": "after_damage",
+        "target": "self",
+        "parameters": {
+          "switchWith": "benched_pokemon"
+        }
+      }
+    },
+    {
+      "name": "Mind Shock",
+      "cost": ["Psychic", "Psychic", "Psychic"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)",
+      "effect": {
+        "effectType": "damage_modifier",
+        "ignoreWeakness": true,
+        "ignoreResistance": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Psi Pokemon",
+    "height": "4' 11\"",
+    "weight": "106 lbs",
+    "nationalNumber": 65,
+    "level": 30
+  },
+  "flavorText": "Almost as if it were being controlled by something else, it never changes expressions, even in the middle of battle.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "018_dark-alakazam-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Teleport Blast allows hit-and-run tactics",
+      "Mind Shock bypasses Weakness and Resistance for consistent damage",
+      "Can retreat to safety after attacking"
+    ],
+    "weaknesses": [
+      "Low HP of 60 for a Stage 2 Pokemon",
+      "High retreat cost of 3 if you can't switch",
+      "Psychic weakness is common in the format",
+      "Requires significant setup as Stage 2"
+    ],
+    "synergies": [
+      "Switch",
+      "Scoop Up",
+      "Dark Kadabra",
+      "Abra"
+    ],
+    "counters": [
+      "Psychic-type Pokemon",
+      "Gust of Wind",
+      "Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Dark Alakazam saw limited competitive play due to its low HP for a Stage 2 Pokemon. The hit-and-run capability with Teleport Blast was interesting but the 60 HP made it fragile. Mind Shock's ability to bypass Weakness and Resistance was useful but not enough to make it a top-tier threat. This non-holo version is functionally identical to the holo version.",
+  "rulings": [
+    {
+      "ruling": "Teleport Blast's switching effect is optional - you may choose not to switch.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Mind Shock still triggers effects that occur 'when damaged' even though Weakness and Resistance don't apply.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must have a Benched Pokemon to switch with if you choose to use Teleport Blast's effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

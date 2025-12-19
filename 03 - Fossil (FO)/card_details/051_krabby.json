@@ -1,0 +1,108 @@
+{
+  "id": "fossil-051",
+  "name": "Krabby",
+  "number": 51,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Kingler"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Call for Family",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Search your deck for a Basic Pokémon named Krabby and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)",
+      "effect": {
+        "effectType": "search_deck",
+        "parameters": {
+          "searchFor": "Basic Pokemon",
+          "specificName": "Krabby",
+          "destination": "bench",
+          "shuffleAfter": true,
+          "requiresBenchSpace": true
+        }
+      }
+    },
+    {
+      "name": "Irongrip",
+      "cost": ["Water", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "River Crab Pokemon",
+    "height": "1' 4\"",
+    "weight": "14 lbs",
+    "nationalNumber": 98,
+    "level": 20
+  },
+  "flavorText": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "051_krabby.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Call for Family sets up additional Krabbys",
+      "50 HP is decent for a Basic",
+      "Irongrip is efficient at 20 for 2"
+    ],
+    "weaknesses": [
+      "Lightning weakness",
+      "Retreat cost of 2 is heavy",
+      "Call for Family only searches for Krabby"
+    ],
+    "synergies": [
+      "Kingler (evolution)",
+      "Water decks"
+    ],
+    "counters": [
+      "Lightning Pokemon"
+    ]
+  },
+  "competitiveHistory": "Krabby's Call for Family was useful for quickly setting up multiple copies, though the attack only searched for Krabby specifically rather than any Pokemon.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Call for Family can only search for Basic Pokemon named Krabby, not Kingler or other Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You cannot use Call for Family if your Bench is full (5 Pokemon).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

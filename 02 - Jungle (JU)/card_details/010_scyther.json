@@ -1,0 +1,126 @@
+{
+  "id": "jungle-010",
+  "name": "Scyther",
+  "number": 10,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Scizor"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Swords Dance",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "During your next turn, Scyther's Slash attack's base damage is 60 instead of 30.",
+      "effect": {
+        "effectType": "damage_boost",
+        "boostsAttack": "Slash",
+        "newBaseDamage": 60,
+        "duration": "next_turn"
+      }
+    },
+    {
+      "name": "Slash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Mantis Pokemon",
+    "height": "4' 11\"",
+    "weight": "123 lbs",
+    "nationalNumber": 123,
+    "level": 25
+  },
+  "flavorText": "With ninja-like agility and speed, it can create the illusion that there is more than one of it.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "010_scyther.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "70 HP is excellent for a Basic Pokemon",
+      "Free retreat cost provides maximum mobility",
+      "Fighting resistance protects against Hitmonchan",
+      "Slash uses only Colorless energy - fits any deck",
+      "Swords Dance + Slash combo can deal 60 damage",
+      "With DCE, can attack turn 2 reliably"
+    ],
+    "weaknesses": [
+      "Fire weakness is problematic against Fire decks",
+      "Base 30 damage on Slash is low without Swords Dance setup",
+      "Swords Dance setup telegraphs your next move",
+      "Grass typing provides no offensive advantage in Base-Jungle meta"
+    ],
+    "synergies": [
+      "Double Colorless Energy - powers Slash instantly",
+      "Plus Power - turn 2 Swords Dance + Slash + PlusPower = 70 damage KO",
+      "Scoop Up - reset after Swords Dance if needed",
+      "Any deck - Colorless energy requirements make it universally splashable"
+    ],
+    "counters": [
+      "Arcanine - Fire weakness",
+      "Charizard - Fire type",
+      "Magmar - Fire type with Smokescreen disruption",
+      "Mr. Mime - Invisible Wall blocks both 30 and 60 damage Slash"
+    ]
+  },
+  "competitiveHistory": "Scyther from Jungle is widely considered one of the best cards from the original sets and a defining card of the Base Set era. It became an instant staple in the Haymaker archetype, replacing Farfetch'd as the third member of the Hitmonchan/Electabuzz core. Scyther's combination of 70 HP, free retreat, Fighting resistance (which countered Hitmonchan mirrors), and Colorless energy costs made it the most splashable and versatile Basic Pokemon available. The Swords Dance + Double Colorless Energy + Plus Power combo could achieve turn 2 knockouts on most Pokemon. Scyther was so powerful that it was included in virtually every competitive deck regardless of type focus, and it remained a format staple until rotation. Many veteran players consider it the best Pokemon in the game's first three sets.",
+  "rulings": [
+    {
+      "ruling": "Swords Dance's effect lasts until the end of your next turn, regardless of whether Scyther attacks or is benched.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Scyther uses Swords Dance and is then benched, the Swords Dance bonus is lost. The effect only applies while Scyther remains Active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Swords Dance's bonus only applies to the Slash attack, not to damage from other sources or copied attacks.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Swords Dance bonus is applied before Weakness and Resistance. So Slash would do 60 base, then doubled to 120 against Fire-weak Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Scyther is affected by Amnesia (making it forget Slash), the Swords Dance bonus cannot be used.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

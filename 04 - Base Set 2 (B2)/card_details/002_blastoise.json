@@ -1,0 +1,132 @@
+{
+  "id": "base2-002",
+  "name": "Blastoise",
+  "number": 2,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 100,
+  "types": ["Water"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Wartortle",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Rain Dance",
+      "type": "Pokemon Power",
+      "text": "As often as you like during your turn (before your attack), you may attach 1 Water Energy card to 1 of your Water Pokémon. (This doesn't use up your 1 Energy card attachment for the turn.) This power can't be used if Blastoise is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "energy_acceleration",
+        "trigger": "unlimited_per_turn",
+        "timing": "before_attack",
+        "target": "your_pokemon",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "energyType": "Water",
+          "attachTo": "Water Pokemon",
+          "doesNotUseAttachment": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Hydro Pump",
+      "cost": ["Water", "Water", "Water"],
+      "convertedEnergyCost": 3,
+      "damage": "40+",
+      "baseDamage": 40,
+      "text": "Does 40 damage plus 10 more damage for each Water Energy attached to Blastoise but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "parameters": {
+          "bonusDamage": 10,
+          "bonusPerExtraEnergy": "Water",
+          "maxBonus": 20,
+          "maxDamage": 60
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Shellfish Pokemon",
+    "height": "5' 3\"",
+    "weight": "189 lbs",
+    "nationalNumber": 9,
+    "level": 52
+  },
+  "flavorText": "A brutal Pokémon with pressurized water jets on its shell. They are used for high-speed tackles.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "002_blastoise-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy Acceleration",
+    "strengths": [
+      "Rain Dance is one of the best Pokemon Powers ever printed",
+      "Enables explosive turns with multiple energy attachments",
+      "100 HP is solid for the era",
+      "Hydro Pump can hit for 60 with enough energy",
+      "Powers up entire Water-type strategy"
+    ],
+    "weaknesses": [
+      "Lightning weakness to Electabuzz is problematic",
+      "Stage 2 requires setup time",
+      "3 retreat cost is expensive",
+      "Vulnerable when status conditions block Rain Dance"
+    ],
+    "synergies": [
+      "Articuno - Powerful attacker to receive Rain Dance energy",
+      "Lapras - Another strong Water attacker",
+      "Pokemon Breeder - Skip Wartortle stage",
+      "Computer Search - Find Blastoise quickly",
+      "Professor Oak - Draw into Water Energy"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness and fast setup",
+      "Energy Removal - Discard Rain Dance energy",
+      "Gust of Wind - Force Blastoise active before ready"
+    ]
+  },
+  "competitiveHistory": "Blastoise Rain Dance was one of the most dominant archetypes in early Pokemon TCG. The ability to attach unlimited Water Energy per turn enabled explosive plays and rapid board development. Combined with powerful Water attackers, Rain Dance defined the metagame and forced every deck to have an answer to it.",
+  "rulings": [
+    {
+      "ruling": "Rain Dance can only attach Water Energy cards, not Special Energy that provides Water.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can use Rain Dance to attach Water Energy to any of your Water Pokemon, including Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Rain Dance doesn't use up your normal Energy attachment for the turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Hydro Pump's bonus damage is calculated based on Water Energy attached beyond the 3 needed to pay for the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The +20 damage cap on Hydro Pump means maximum damage is 60, even with more than 5 Water Energy attached.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

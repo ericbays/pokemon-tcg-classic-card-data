@@ -1,0 +1,73 @@
+{
+  "id": "base2-101",
+  "name": "Computer Search",
+  "number": 101,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "text": "Discard 2 of the other cards from your hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward.",
+  "effect": {
+    "text": "Discard 2 of the other cards from your hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward.",
+    "effectType": "search",
+    "cost": {
+      "discard": 2,
+      "from": "hand"
+    },
+    "parameters": {
+      "searchTarget": "deck",
+      "cardType": "any",
+      "count": 1,
+      "destination": "hand",
+      "shuffle": true
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "101_computer-search-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Search",
+    "strengths": [
+      "Can search for ANY card in deck",
+      "Enables consistent combo strategies",
+      "One of the most powerful search effects"
+    ],
+    "weaknesses": [
+      "Requires discarding 2 cards",
+      "Card disadvantage"
+    ],
+    "synergies": [
+      "Item Finder - Recover discarded cards",
+      "Combo decks that need specific cards"
+    ],
+    "counters": [
+      "Lass - Shuffles Trainers back into deck"
+    ]
+  },
+  "competitiveHistory": "Computer Search was one of the most powerful and versatile cards in the early metagame. Its ability to search for any card made it essential for combo decks.",
+  "rulings": [
+    {
+      "ruling": "You must discard exactly 2 other cards from your hand to use Computer Search.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can search for any card, including Pokemon, Trainer, or Energy.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must shuffle your deck after searching.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "rocket-021",
+  "name": "Dark Charizard",
+  "number": 21,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Fire"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Dark Charmeleon",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Nail Flick",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Continuous Fireball",
+      "cost": ["Fire", "Fire"],
+      "convertedEnergyCost": 2,
+      "damage": "50x",
+      "baseDamage": 50,
+      "text": "Flip a number of coins equal to the number of Fire Energy cards attached to Dark Charizard. This attack does 50 damage times the number of heads. Discard a number of Fire Energy cards attached to Dark Charizard equal to the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "damagePerHead": 50,
+        "coinCount": "fire_energy_attached",
+        "energyDiscard": {
+          "type": "Fire",
+          "count": "heads_flipped"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Flame Pokemon",
+    "height": "5' 7\"",
+    "weight": "200 lbs",
+    "nationalNumber": 6,
+    "level": 38
+  },
+  "flavorText": "Seemingly possessed, it spews fire like a volcano, trying to burn all it sees.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "021_dark-charizard-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Continuous Fireball can deal massive damage with good coin flips",
+      "Potential for 200+ damage in ideal scenarios",
+      "Fighting resistance helps against Hitmonchan",
+      "Nail Flick provides cheap early game option"
+    ],
+    "weaknesses": [
+      "Extremely coin flip dependent - unreliable",
+      "Discards energy equal to heads, making follow-up attacks difficult",
+      "80 HP is low for a Stage 2",
+      "Water weakness devastates it",
+      "High retreat cost of 3"
+    ],
+    "synergies": [
+      "Energy Retrieval",
+      "Super Energy Retrieval",
+      "Dark Charmeleon",
+      "Charmander"
+    ],
+    "counters": [
+      "Blastoise - Water type with Rain Dance",
+      "Any Water Pokemon",
+      "Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Dark Charizard was a fan-favorite collector card but saw minimal competitive play due to its unreliable Continuous Fireball attack. This non-holo version is functionally identical to the holo version.",
+  "rulings": [
+    {
+      "ruling": "You flip coins equal to the number of Fire Energy cards, not the amount of Fire Energy provided.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must discard Fire Energy cards equal to the number of heads.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you flip all tails, the attack does 0 damage and you discard no energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

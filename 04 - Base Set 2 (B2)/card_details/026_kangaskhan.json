@@ -1,0 +1,114 @@
+{
+  "id": "base2-026",
+  "name": "Kangaskhan",
+  "number": 26,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 90,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Fetch",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Draw a card.",
+      "effect": {
+        "effectType": "draw",
+        "parameters": {
+          "cards": 1
+        }
+      }
+    },
+    {
+      "name": "Comet Punch",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "20x",
+      "baseDamage": 20,
+      "text": "Flip 4 coins. This attack does 20 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "parameters": {
+          "coinFlips": 4,
+          "damagePerHeads": 20,
+          "maxDamage": 80
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Parent Pokemon",
+    "height": "7' 3\"",
+    "weight": "176 lbs",
+    "nationalNumber": 115,
+    "level": 40
+  },
+  "flavorText": "The infant rarely ventures out of its mother's protective pouch until it is three years old.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "026_kangaskhan-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "90 HP is excellent for a Basic",
+      "Fetch draws a card for just 1 energy",
+      "Psychic resistance",
+      "Colorless type uses any energy",
+      "Comet Punch can hit up to 80 damage"
+    ],
+    "weaknesses": [
+      "Fighting weakness to Hitmonchan",
+      "Comet Punch is coin-flip dependent",
+      "3 retreat cost is expensive",
+      "4 energy for Comet Punch is slow"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Powers attacks",
+      "Alakazam - Damage Swap partner"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Machamp - Fighting type"
+    ]
+  },
+  "competitiveHistory": "Kangaskhan was occasionally used as a stalling Basic with high HP. Fetch provided card advantage while buying time to set up. The 90 HP and Psychic resistance made it durable, but Fighting weakness and coin-flip attack limited competitive success.",
+  "rulings": [
+    {
+      "ruling": "Fetch simply draws 1 card from your deck. It does no damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Comet Punch flips 4 coins and does 20 damage per heads. Results range from 0 to 80 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

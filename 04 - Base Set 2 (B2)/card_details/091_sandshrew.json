@@ -1,0 +1,95 @@
+{
+  "id": "base2-091",
+  "name": "Sandshrew",
+  "number": 91,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Sandslash"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sand-attack",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing.",
+      "effect": {
+        "effectType": "attack_disruption",
+        "parameters": {
+          "duration": "opponents_next_turn",
+          "coinFlipRequired": true,
+          "failOnTails": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mouse Pokemon",
+    "height": "2' 0\"",
+    "weight": "26 lbs",
+    "nationalNumber": 27,
+    "level": 12
+  },
+  "flavorText": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "091_sandshrew-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Sand-attack can disrupt opponent's attacks",
+      "Lightning resistance"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Grass weakness",
+      "Only one attack",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Sandslash - Evolution target"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Sandshrew was used as the basic for Sandslash. Sand-attack provided useful disruption.",
+  "rulings": [
+    {
+      "ruling": "Sand-attack's effect applies to the Defending Pokemon's next attack. If it flips tails, that attack does nothing.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Sand-attack's effect only applies to the specific Defending Pokemon at the time of the attack.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

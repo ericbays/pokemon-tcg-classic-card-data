@@ -1,0 +1,112 @@
+{
+  "id": "rocket-066",
+  "name": "Rattata",
+  "number": 66,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Raticate", "Raticate"],
+  "abilities": [
+    {
+      "name": "Trickery",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may switch 1 of your Prizes with the top card of your deck. This power can't be used if Rattata is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "prize_manipulation",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "action": "switch_prize_with_deck_top",
+        "count": 1,
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Quick Attack",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage; if tails, this attack does 10 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "bonusDamage": 10
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Rat Pokemon",
+    "height": "1' 0\"",
+    "weight": "8 lbs",
+    "nationalNumber": 19,
+    "level": 12
+  },
+  "flavorText": "Loves to eat walnuts, chestnuts, cheese, and milk.",
+  "illustrator": "Atsuko Nishida",
+  "imageUrl": "066_rattata-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Trickery can swap prized cards to retrieve them",
+      "Free retreat cost",
+      "Psychic resistance"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Fighting weakness vs Hitmonchan"
+    ],
+    "synergies": [
+      "Dark Raticate",
+      "Prize manipulation strategies"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Rattata had one of the most unique abilities - Trickery could swap Prize cards with the top card of your deck. This was incredibly useful for retrieving important cards stuck in prizes. Free retreat and Psychic resistance made it a solid tech card.",
+  "rulings": [
+    {
+      "ruling": "Trickery swaps a Prize card with the top card of your deck. You don't get to look at your Prizes before choosing.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can use Here Comes Team Rocket! to see your Prizes, then use Trickery to swap out a card you want.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

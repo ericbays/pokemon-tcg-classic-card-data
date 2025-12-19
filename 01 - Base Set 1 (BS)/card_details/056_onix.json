@@ -1,0 +1,90 @@
+{
+  "id": "base1-056",
+  "name": "Onix",
+  "number": 56,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 90,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Steelix"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Rock Throw",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": ""
+    },
+    {
+      "name": "Harden",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "During your opponent's next turn, whenever 30 or less damage is done to Onix (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "nationalNumber": 95,
+    "category": "Rock Snake Pokemon",
+    "height": "28' 10\"",
+    "weight": "463 lbs.",
+    "level": 12
+  },
+  "flavorText": "As it grows, the stone portions of its body harden to become similar to a diamond, though colored black.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "056_onix.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Tank",
+    "strengths": [
+      "Exceptional 90 HP for a Basic common Pokemon makes it one of the most durable starters",
+      "Harden ability effectively negates most early-game attacks and prevents chip damage",
+      "Rock Throw is energy-efficient at just 1 Fighting Energy for 10 damage",
+      "Strong against Lightning and Fire Pokemon in the early game",
+      "Can wall against multiple common Pokemon that deal 30 or less damage"
+    ],
+    "weaknesses": [
+      "Grass weakness is significant with popular Grass Pokemon in the format",
+      "Very high retreat cost of 3 makes it difficult to switch out",
+      "Neither attack deals substantial damage compared to evolved Pokemon",
+      "Harden requires prediction and doesn't protect against heavy hitters",
+      "No evolution path means it falls off in the late game"
+    ],
+    "synergies": [
+      "Use Defender to further reduce incoming damage and maximize Harden's effectiveness",
+      "Pair with PlusPower to boost Rock Throw's modest damage output",
+      "Switch or Scoop Up can help manage the costly retreat when needed",
+      "Works well as an opening tank to absorb damage while setting up other Pokemon"
+    ],
+    "counters": [
+      "Bulbasaur and Grass starters - Double weakness makes Onix vulnerable",
+      "Tangela - Poisonpowder bypasses Harden and deals continuous damage",
+      "Bellsprout evolutionary line - Grass weakness is exploited"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "jungle-045",
+  "name": "Rhydon",
+  "number": 45,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 100,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Rhyhorn",
+  "evolvesTo": ["Rhyperior"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Horn Attack",
+      "cost": ["Fighting", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Ram",
+      "cost": ["Fighting", "Fighting", "Fighting", "Fighting"],
+      "convertedEnergyCost": 4,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Rhydon does 20 damage to itself. If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon. Switch the Pokémon even if Rhydon is Knocked Out.)",
+      "effect": {
+        "effectType": "complex",
+        "selfDamage": 20,
+        "forcedSwitch": {
+          "target": "opponent_benched",
+          "opponentChooses": true,
+          "timing": "after_damage"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Drill Pokemon",
+    "height": "6' 3\"",
+    "weight": "265 lbs",
+    "nationalNumber": 112,
+    "level": 48
+  },
+  "flavorText": "Protected by an armor-like hide, it is capable of living in molten lava of 3600 degrees.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "045_rhydon.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "100 HP is excellent for Stage 1",
+      "Lightning resistance is valuable against Electabuzz",
+      "Ram does solid 50 damage"
+    ],
+    "weaknesses": [
+      "Grass weakness",
+      "Ram deals 20 damage to self",
+      "Ram forces a switch which opponent controls",
+      "Heavy 3 retreat cost",
+      "4 energy for Ram is slow"
+    ],
+    "synergies": [
+      "Fighting energy acceleration"
+    ],
+    "counters": [
+      "Grass Pokemon",
+      "Scyther - Grass type"
+    ]
+  },
+  "competitiveHistory": "Rhydon from Jungle had the highest HP of any Stage 1 in the early sets at 100 HP. The Lightning resistance was valuable against Electabuzz. However, the self-damage and forced switch from Ram, combined with the heavy energy requirement and Grass weakness to the common Scyther, limited its competitive use.",
+  "rulings": [
+    {
+      "ruling": "Ram's switch happens even if Rhydon is Knocked Out by its own recoil damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The opponent chooses which of their Benched Pokemon switches in.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

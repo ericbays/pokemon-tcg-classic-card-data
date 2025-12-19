@@ -1,0 +1,84 @@
+{
+  "id": "base1-094",
+  "name": "Potion",
+  "number": 94,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Remove up to 2 damage counters from 1 of your Pokémon.",
+    "effectType": "healing",
+    "actions": [
+      {
+        "action": "heal_damage",
+        "amount": 20,
+        "target": "own_pokemon",
+        "parameters": {
+          "maxDamageCounters": 2
+        }
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "pokemon_with_damage",
+        "minimum": 1,
+        "description": "Must have at least one Pokemon with damage counters"
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "094_potion.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Healing",
+    "timing": "situational",
+    "synergies": ["High HP Pokemon", "Scyther", "Defensive strategies"],
+    "tips": [
+      "Calculate exact damage to determine if Potion prevents a knockout",
+      "Most competitive decks skip Potion in favor of more impactful Trainers",
+      "Can be useful in budget decks or casual play",
+      "Better in slower, defensive strategies than aggressive decks",
+      "Consider Super Potion instead if your deck can afford the Energy cost for 40 healing",
+      "Free to play with no cost, so there's no downside when it does prevent a KO"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "Remove up to 2 damage counters (20 damage) from 1 of your Pokemon"
+    },
+    {
+      "ruling": "You can choose any of your Pokemon (Active or Benched) to heal"
+    },
+    {
+      "ruling": "If the Pokemon has only 1 damage counter, remove only 1 (you can't heal undamaged Pokemon)"
+    },
+    {
+      "ruling": "You cannot use Potion on a Pokemon with no damage counters"
+    },
+    {
+      "ruling": "Potion has no additional cost - simply remove the damage when played"
+    },
+    {
+      "ruling": "This is one of the simplest healing effects in the game"
+    }
+  ]
+}

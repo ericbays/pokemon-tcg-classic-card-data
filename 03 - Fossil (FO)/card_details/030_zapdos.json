@@ -1,0 +1,120 @@
+{
+  "id": "fossil-030",
+  "name": "Zapdos",
+  "number": 30,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thunderstorm",
+      "cost": ["Lightning", "Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 4,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "For each of your opponent's Benched Pokémon, flip a coin. If heads, this attack does 20 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) Then, Zapdos does 10 damage times the number of tails to itself.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "benchDamage": {
+          "target": "opponent_bench",
+          "damage": 20,
+          "perHead": true
+        },
+        "selfDamage": {
+          "perTail": 10
+        },
+        "parameters": {
+          "flipPerBenchedPokemon": true,
+          "ignoreWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Electric Pokemon",
+    "height": "5' 3\"",
+    "weight": "116 lbs",
+    "nationalNumber": 145,
+    "level": 40
+  },
+  "flavorText": "A legendary thunderbird Pokémon whose anger is said to cause storms. Some say it has lived above the clouds for thousands of years.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "030_zapdos.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "No weakness is extremely valuable",
+      "Fighting resistance protects against Haymaker",
+      "80 HP is solid for a Basic",
+      "Thunderstorm can deal significant bench damage",
+      "Lightning type hits Water Pokemon hard",
+      "Non-holo version is more accessible"
+    ],
+    "weaknesses": [
+      "4 energy cost is expensive",
+      "Self-damage on tails can be significant",
+      "Coin flip dependent for bench damage",
+      "40 damage to Active is low for 4 energy"
+    ],
+    "synergies": [
+      "Spread damage strategies",
+      "Gengar (Curse to finish damaged Pokemon)",
+      "Pokemon Center (heal self-damage)",
+      "Energy acceleration"
+    ],
+    "counters": [
+      "Energy Removal prevents setup",
+      "Mr. Mime blocks the 40 damage",
+      "Faster aggressive decks"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Zapdos is functionally identical to the holo version (#15). Zapdos offered a no-weakness legendary with spread potential but was generally considered inferior to the Base Set Zapdos. The non-holo printing made it more accessible for casual players.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Flip one coin for each of your opponent's Benched Pokemon. Each heads deals 20 damage to that Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "After resolving bench damage, count total tails and Zapdos takes 10 damage per tail.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If opponent has no Benched Pokemon, no coins are flipped and Zapdos takes no self-damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Thunderstorm always does 40 damage to the Active Pokemon regardless of coin flips.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

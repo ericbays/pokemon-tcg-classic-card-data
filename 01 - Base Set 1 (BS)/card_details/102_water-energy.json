@@ -1,0 +1,41 @@
+{
+  "id": "base1-102",
+  "name": "Water Energy",
+  "number": 102,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Water",
+  "provides": [
+    {
+      "type": "Water",
+      "amount": 1
+    }
+  ],
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "102_water-energy.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Power Water-type Pokemon attacks",
+    "deckTypes": [
+      "Rain Dance (Blastoise)",
+      "Gyarados Beatdown",
+      "Lapras Control",
+      "Water-type aggro"
+    ],
+    "notes": "Water Pokemon in Base Set include Squirtle, Wartortle, Blastoise, Psyduck, Golduck, Poliwag, Poliwhirl, Poliwrath, Tentacool, Tentacruel, Seel, Dewgong, Staryu, Starmie, Magikarp, Gyarados, and Lapras. Rain Dance is a tier 1 archetype that can attach multiple Water Energy per turn with Blastoise. Water is strong against Fire types but weak to Lightning and Grass. Energy Retrieval helps recover discarded Water Energy."
+  }
+}

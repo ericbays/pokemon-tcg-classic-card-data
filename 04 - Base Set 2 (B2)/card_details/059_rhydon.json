@@ -1,0 +1,115 @@
+{
+  "id": "base2-059",
+  "name": "Rhydon",
+  "number": 59,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 100,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Rhyhorn",
+  "evolvesTo": ["Rhyperior"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Horn Attack",
+      "cost": ["Fighting", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Ram",
+      "cost": ["Fighting", "Fighting", "Fighting", "Fighting"],
+      "convertedEnergyCost": 4,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Rhydon does 20 damage to itself. If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon. Switch the Pokémon even if Rhydon is Knocked Out.)",
+      "effect": {
+        "effectType": "self_damage",
+        "selfDamage": 20,
+        "additionalEffect": {
+          "type": "switch",
+          "target": "opponent_bench",
+          "opponentChooses": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Drill Pokemon",
+    "height": "6' 3\"",
+    "weight": "265 lbs",
+    "nationalNumber": 112,
+    "level": 48
+  },
+  "flavorText": "Protected by an armor-like hide, it is capable of living in molten lava of 3600 degrees.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "059_rhydon-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "100 HP is excellent for Stage 1",
+      "Lightning resistance protects against Electabuzz",
+      "Horn Attack is reliable damage",
+      "Fighting type hits Colorless weakness"
+    ],
+    "weaknesses": [
+      "Grass weakness",
+      "Ram has self-damage and forces switch",
+      "High energy cost for Ram",
+      "3 retreat cost is expensive"
+    ],
+    "synergies": [
+      "Rhyhorn - Required basic",
+      "Fighting decks"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness",
+      "Scyther - Grass type attacker"
+    ]
+  },
+  "competitiveHistory": "Rhydon was a solid Stage 1 with impressive 100 HP and Lightning resistance. However, the Grass weakness and awkward Ram attack (forcing a switch) limited its competitive appeal.",
+  "rulings": [
+    {
+      "ruling": "Horn Attack has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Ram does 50 damage to the Defending Pokemon, then Rhydon takes 20 self-damage, then opponent chooses a Benched Pokemon to switch in.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The switch happens even if Rhydon is Knocked Out by its own self-damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "rocket-007",
+  "name": "Dark Golbat",
+  "number": 7,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 50,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Zubat",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Sneak Attack",
+      "type": "Pokemon Power",
+      "text": "When you play Dark Golbat from your hand, you may choose 1 of your opponent's Pokémon. If you do, Dark Golbat does 10 damage to that Pokémon. Apply Weakness and Resistance.",
+      "effect": {
+        "effectType": "damage_boost",
+        "trigger": "on_play",
+        "target": "any_opponent_pokemon",
+        "damage": 10,
+        "applyWeakness": true,
+        "applyResistance": true,
+        "optional": true
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Flitter",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)",
+      "effect": {
+        "effectType": "special",
+        "targetChoice": "any_opponent_pokemon",
+        "damage": 20,
+        "ignoreWeakness": true,
+        "ignoreResistance": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Bat Pokemon",
+    "height": "5' 3\"",
+    "weight": "121 lbs",
+    "nationalNumber": 42,
+    "level": 25
+  },
+  "flavorText": "Sneaks up silently on its prey and attacks it from behind, sometimes killing it with one bite.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "007_dark-golbat-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Sneak Attack provides free 10 damage when evolved",
+      "Flitter can snipe any Pokemon, including benched",
+      "Free retreat cost - very mobile",
+      "Fighting resistance protects against Hitmonchan",
+      "Can be bounced with Scoop Up for repeated Sneak Attack"
+    ],
+    "weaknesses": [
+      "Very low 50 HP",
+      "Flitter does relatively low damage",
+      "Psychic weakness is common",
+      "Sneak Attack only works when played from hand"
+    ],
+    "synergies": [
+      "Scoop Up (replay for Sneak Attack)",
+      "Zubat",
+      "Spread damage strategies",
+      "Mr. Mime (can't attack but Sneak Attack works)"
+    ],
+    "counters": [
+      "Psychic-type Pokemon",
+      "Alakazam (Damage Swap)",
+      "High HP Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Golbat became a staple in the infamous 'Sneak Attack' deck archetype. The ability to repeatedly evolve, deal 10 damage with Sneak Attack, then use Scoop Up to return it to hand and do it again created a powerful damage engine. Combined with spread damage from Flitter targeting benched Pokemon, Dark Golbat enabled control strategies that slowly accumulated damage across the opponent's board. Free retreat made it very flexible tactically.",
+  "rulings": [
+    {
+      "ruling": "Sneak Attack triggers when Dark Golbat is played from your hand to evolve Zubat. It does not work with Pokemon Breeder or similar effects.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Sneak Attack applies Weakness and Resistance, so it does 20 to Psychic-weak Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Using Scoop Up on Dark Golbat and then re-evolving will trigger Sneak Attack again.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Flitter can target any of your opponent's Pokemon, including Benched Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

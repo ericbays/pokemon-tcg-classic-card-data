@@ -1,0 +1,70 @@
+{
+  "id": "base2-109",
+  "name": "Defender",
+  "number": 109,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "text": "Attach Defender to 1 of your Pokémon. At the end of your opponent's next turn, discard Defender. Damage done to that Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance).",
+  "effect": {
+    "text": "Attach Defender to 1 of your Pokémon. At the end of your opponent's next turn, discard Defender. Damage done to that Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance).",
+    "effectType": "damage_reduction",
+    "parameters": {
+      "attach": true,
+      "target": "your_pokemon",
+      "reduction": 20,
+      "duration": "opponents_next_turn",
+      "timing": "after_weakness_resistance",
+      "discardAfter": true
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "109_defender-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Protection",
+    "strengths": [
+      "Reduces incoming damage by 20",
+      "Can help Pokemon survive attacks",
+      "Stacks with Resistance"
+    ],
+    "weaknesses": [
+      "Only lasts one opponent's turn",
+      "Discarded automatically"
+    ],
+    "synergies": [
+      "High HP Pokemon - Extend survivability",
+      "Onix - Combined with Harden"
+    ],
+    "counters": [
+      "High damage attacks overcome reduction"
+    ]
+  },
+  "competitiveHistory": "Defender was used to help key Pokemon survive crucial turns, especially to protect setup Pokemon or extend the life of attackers.",
+  "rulings": [
+    {
+      "ruling": "Defender reduces damage after Weakness and Resistance are calculated.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Defender is discarded at the end of your opponent's next turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Multiple Defenders can be attached to the same Pokemon for stacking reduction.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

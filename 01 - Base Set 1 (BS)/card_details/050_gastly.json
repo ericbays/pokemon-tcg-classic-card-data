@@ -1,0 +1,90 @@
+{
+  "id": "base1-050",
+  "name": "Gastly",
+  "number": 50,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesTo": ["Haunter"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sleeping Gas",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep."
+    },
+    {
+      "name": "Destiny Bond",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Psychic Energy card attached to Gastly in order to use this attack. If a Pokémon Knocks Out Gastly during your opponent's next turn, Knock Out that Pokémon."
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "nationalNumber": 92,
+    "category": "Gas Pokemon",
+    "height": "4' 3\"",
+    "weight": "0.2 lbs.",
+    "level": 8
+  },
+  "flavorText": "Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice. LV. 8 #92",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "050_gastly.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Zero retreat cost provides complete mobility",
+      "No weakness makes it resistant to type-based strategies",
+      "Fighting resistance (-30) provides excellent defense against Fighting types",
+      "Sleeping Gas can lock down opponents with sleep status",
+      "Destiny Bond provides powerful deterrent against attacking Gastly",
+      "Evolves into Haunter and eventually Gengar"
+    ],
+    "weaknesses": [
+      "Extremely low 30 HP makes it very fragile",
+      "Neither attack deals direct damage",
+      "Sleeping Gas relies on coin flip (50% chance)",
+      "Destiny Bond requires discarding Psychic energy",
+      "Cannot contribute to taking prize cards through damage alone"
+    ],
+    "synergies": [
+      "Energy Retrieval recovers discarded Psychic energy from Destiny Bond",
+      "Gust of Wind can force opponent to keep sleeping Pokemon active",
+      "Defender makes opponents think twice about attacking with Destiny Bond active",
+      "Pokemon Breeder allows skipping Haunter to evolve straight to Gengar"
+    ],
+    "counters": [
+      "One-hit knockout attacks",
+      "Status removal cards like Full Heal",
+      "Pokemon that can attack from the bench"
+    ]
+  }
+}

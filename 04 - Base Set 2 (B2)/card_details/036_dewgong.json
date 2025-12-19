@@ -1,0 +1,108 @@
+{
+  "id": "base2-036",
+  "name": "Dewgong",
+  "number": 36,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Seel",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Aurora Beam",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Ice Beam",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Sea Lion Pokemon",
+    "height": "5' 7\"",
+    "weight": "265 lbs",
+    "nationalNumber": 87,
+    "level": 42
+  },
+  "flavorText": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "036_dewgong-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Aurora Beam does 50 damage for just 2 Water Energy",
+      "Ice Beam can Paralyze",
+      "80 HP is solid",
+      "Benefits from Rain Dance"
+    ],
+    "weaknesses": [
+      "Lightning weakness to Electabuzz",
+      "3 retreat cost is expensive",
+      "Ice Beam does less damage than Aurora Beam"
+    ],
+    "synergies": [
+      "Blastoise - Rain Dance energy acceleration",
+      "Water decks"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Zapdos - Lightning weakness"
+    ]
+  },
+  "competitiveHistory": "Dewgong was an efficient Water-type attacker. Aurora Beam's 50 damage for just 2 Water Energy was excellent efficiency, making it a solid option in Rain Dance decks that could power it up quickly.",
+  "rulings": [
+    {
+      "ruling": "Aurora Beam has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Ice Beam's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

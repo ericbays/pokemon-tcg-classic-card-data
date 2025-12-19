@@ -1,0 +1,79 @@
+{
+  "id": "base1-043",
+  "name": "Abra",
+  "number": 43,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesTo": ["Kadabra"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Psyshock",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 63,
+    "category": "Psi Pokemon",
+    "height": "2' 11\"",
+    "weight": "43 lbs.",
+    "level": 10
+  },
+  "flavorText": "Using its ability to read minds, it will identify impending danger and teleport to safety. LV. 10 #63",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "043_abra.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Low retreat cost of 1 Colorless energy allows for easy switching",
+      "Psyshock can potentially paralyze opponents with a coin flip, buying time to evolve",
+      "Only requires 1 Psychic energy to attack, making it energy-efficient",
+      "Evolves into the powerful Alakazam line"
+    ],
+    "weaknesses": [
+      "Extremely low HP of 30 makes it vulnerable to being knocked out in one hit",
+      "Weak to Psychic-type attacks",
+      "Psyshock's paralysis effect is unreliable (50% chance)",
+      "Limited offensive capability with only 10 damage"
+    ],
+    "synergies": [
+      "Defender to reduce damage and increase survivability",
+      "PlusPower to increase Psyshock damage output",
+      "Pokemon Breeder to skip Kadabra and evolve directly to Alakazam",
+      "Switch or Scoop Up can save Abra from dangerous situations"
+    ],
+    "counters": [
+      "Fighting-type Pokemon that can exploit low HP",
+      "Fast attackers that can knockout before evolution",
+      "Gust of Wind to force Abra active from bench"
+    ]
+  }
+}

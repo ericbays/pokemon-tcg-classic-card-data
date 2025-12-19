@@ -1,0 +1,103 @@
+{
+  "id": "jungle-040",
+  "name": "Nidorina",
+  "number": 40,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Nidoran ♀",
+  "evolvesTo": ["Nidoqueen"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Supersonic",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Double Kick",
+      "cost": ["Grass", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlips": 2,
+        "damagePerHead": 30
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Poison Pin Pokemon",
+    "height": "2' 7\"",
+    "weight": "44 lbs",
+    "nationalNumber": 30,
+    "level": 24
+  },
+  "flavorText": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "040_nidorina.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "70 HP is decent for Stage 1",
+      "Double Kick can deal up to 60 damage",
+      "Low retreat cost"
+    ],
+    "weaknesses": [
+      "Psychic weakness",
+      "Coin-flip dependent damage",
+      "No resistance"
+    ],
+    "synergies": [
+      "Nidoqueen - evolution target"
+    ],
+    "counters": [
+      "Psychic Pokemon"
+    ]
+  },
+  "competitiveHistory": "Nidorina from Jungle was primarily used as an evolution stepping stone to Nidoqueen. It was not used as a standalone competitive card.",
+  "rulings": [
+    {
+      "ruling": "Double Kick requires flipping 2 coins. You cannot choose to flip fewer.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

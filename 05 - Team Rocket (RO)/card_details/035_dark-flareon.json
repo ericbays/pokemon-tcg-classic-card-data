@@ -1,0 +1,109 @@
+{
+  "id": "rocket-035",
+  "name": "Dark Flareon",
+  "number": 35,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 50,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Eevee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Rage",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each damage counter on Dark Flareon.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamagePerDamageCounter": 10,
+        "target": "self"
+      }
+    },
+    {
+      "name": "Playing with Fire",
+      "cost": ["Fire", "Fire"],
+      "convertedEnergyCost": 2,
+      "damage": "30+",
+      "baseDamage": 30,
+      "text": "Use this attack only if there are any Fire Energy cards attached to Dark Flareon. Flip a coin. If heads, discard 1 of those Energy cards and this attack does 30 damage plus 20 more damage; if tails, this attack does 30 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "requirement": "fire_energy_attached",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "bonusDamage": 20,
+            "energyDiscard": {
+              "type": "Fire",
+              "count": 1
+            }
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Flame Pokemon",
+    "height": "2' 11\"",
+    "weight": "55 lbs",
+    "nationalNumber": 136,
+    "level": 23
+  },
+  "flavorText": "A Pokémon with a hot temper that can't be controlled once it's angered. Capable of breathing flames hotter than 3000°.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "035_dark-flareon-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Rage gets stronger as Dark Flareon takes damage",
+      "Playing with Fire can do 50 damage for 2 energy",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Very low HP of 50",
+      "Water weakness",
+      "Playing with Fire discards energy on heads"
+    ],
+    "synergies": [
+      "Eevee",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Water-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Flareon was one of the Eeveelution options in Team Rocket. Rage made it interesting as a damaged attacker, dealing more damage as it took hits. Playing with Fire offered decent damage output but with energy discard risk.",
+  "rulings": [
+    {
+      "ruling": "Rage damage increases by 10 for each damage counter, not each 10 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

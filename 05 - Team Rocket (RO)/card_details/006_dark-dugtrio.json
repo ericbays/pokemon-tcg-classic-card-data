@@ -1,0 +1,125 @@
+{
+  "id": "rocket-006",
+  "name": "Dark Dugtrio",
+  "number": 6,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 50,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Diglett",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Sinkhole",
+      "type": "Pokemon Power",
+      "text": "Whenever your opponent's Active Pokémon retreats, your opponent flips a coin. If tails, this power does 20 damage to that Pokémon. (Don't apply Weakness and Resistance.) This power stops working while Dark Dugtrio is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "damage_transfer",
+        "trigger": "on_opponent_retreat",
+        "target": "retreating_pokemon",
+        "damage": 20,
+        "condition": "coin_flip_tails",
+        "ignoreWeakness": true,
+        "ignoreResistance": true,
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Knock Down",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20+",
+      "baseDamage": 20,
+      "text": "Your opponent flips a coin. If tails, this attack does 20 damage plus 20 more damage; if heads, this attack does 20 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "flipper": "opponent",
+            "onFailure": {
+              "bonusDamage": 20
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Mole Pokemon",
+    "height": "2' 4\"",
+    "weight": "73 lbs",
+    "nationalNumber": 51,
+    "level": 18
+  },
+  "flavorText": "Digs large sinkholes in the ground and tries to trap its enemies in them.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "006_dark-dugtrio-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Sinkhole punishes opponent for retreating",
+      "Lightning resistance protects against Electabuzz",
+      "Forces opponent into difficult retreat decisions",
+      "Knock Down has opponent flip, so bad luck hurts them"
+    ],
+    "weaknesses": [
+      "Very low 50 HP for a Stage 1",
+      "Grass weakness is problematic vs Scyther",
+      "Sinkhole is only 50% effective",
+      "Knock Down damage is inconsistent"
+    ],
+    "synergies": [
+      "Gust of Wind (force switches, trigger Sinkhole)",
+      "Diglett",
+      "Energy Removal (make retreating necessary)"
+    ],
+    "counters": [
+      "Scyther - Grass type with free retreat",
+      "Pokemon with free retreat",
+      "Grass-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Dugtrio was a unique disruption card that punished opponents for retreating. However, its extremely low 50 HP made it very vulnerable, and Sinkhole only triggered 50% of the time. It saw some niche play in decks that wanted to punish switching, but was never a meta staple.",
+  "rulings": [
+    {
+      "ruling": "Sinkhole triggers whenever the opponent's Active Pokemon retreats - even if forced to switch by Gust of Wind (which is not retreating).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Sinkhole does not trigger when Pokemon are switched by trainer cards or effects - only actual retreating.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The opponent flips for Knock Down, not you. Tails is bad for them.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

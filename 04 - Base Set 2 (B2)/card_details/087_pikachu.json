@@ -1,0 +1,103 @@
+{
+  "id": "base2-087",
+  "name": "Pikachu",
+  "number": 87,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Raichu"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Gnaw",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Thunder Jolt",
+      "cost": ["Lightning", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If tails, Pikachu does 10 damage to itself.",
+      "effect": {
+        "effectType": "coin_flip_recoil",
+        "parameters": {
+          "damage": 30,
+          "selfDamageOnTails": 10
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mouse Pokemon",
+    "height": "1' 4\"",
+    "weight": "13 lbs",
+    "nationalNumber": 25,
+    "level": 12
+  },
+  "flavorText": "When several of these Pokémon gather, their electricity can cause lightning storms.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "087_pikachu-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Thunder Jolt does solid 30 damage",
+      "Gnaw provides cheap alternative",
+      "Iconic mascot Pokemon"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fighting weakness",
+      "Thunder Jolt has recoil damage",
+      "No resistance"
+    ],
+    "synergies": [
+      "Raichu - Evolution target"
+    ],
+    "counters": [
+      "Fighting Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Pikachu was used as the basic for Raichu. Thunder Jolt's 30 damage for 2 energy was respectable for a Basic.",
+  "rulings": [
+    {
+      "ruling": "Gnaw has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Thunder Jolt always does 30 damage to the Defending Pokemon. On tails, Pikachu also does 10 damage to itself.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

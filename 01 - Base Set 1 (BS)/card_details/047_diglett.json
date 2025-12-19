@@ -1,0 +1,91 @@
+{
+  "id": "base1-047",
+  "name": "Diglett",
+  "number": 47,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesTo": ["Dugtrio"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Dig",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": ""
+    },
+    {
+      "name": "Mud Slap",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": ""
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "nationalNumber": 50,
+    "category": "Mole Pokemon",
+    "height": "0' 8\"",
+    "weight": "2 lbs.",
+    "level": 8
+  },
+  "flavorText": "Lives about three feet underground, where it feeds on plant roots. It sometimes appears above ground. LV. 8 #50",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "047_diglett.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Zero retreat cost provides unmatched mobility and flexibility",
+      "Strong Lightning resistance (-30) effectively nullifies most Lightning attacks",
+      "Mud Slap deals impressive 30 damage for a Basic Pokemon",
+      "Dig requires only 1 Fighting energy for quick early-game pressure",
+      "Evolves into Dugtrio for increased power"
+    ],
+    "weaknesses": [
+      "Extremely low 30 HP makes it vulnerable to being one-hit KO'd",
+      "Weak to Grass-type attacks (x2 damage)",
+      "Must commit 2 Fighting energy for Mud Slap, which is substantial for such low HP",
+      "No defensive abilities to protect its fragile body"
+    ],
+    "synergies": [
+      "Defender can provide crucial damage reduction to help Diglett survive",
+      "PlusPower boosts attacks to 20 and 40 damage respectively",
+      "Gust of Wind can bring out weak Pokemon for Diglett to knock out with Mud Slap",
+      "Pokemon Center synergizes with free retreat - heal Diglett and bring it back to active"
+    ],
+    "counters": [
+      "Grass-type Pokemon that exploit weakness",
+      "One-hit knockout attacks",
+      "Pokemon with higher HP that can tank Mud Slap"
+    ]
+  }
+}

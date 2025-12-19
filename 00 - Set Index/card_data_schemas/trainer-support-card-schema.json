@@ -1,0 +1,559 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "trainer-support-card-schema.json",
+  "title": "Trainer Supporter Card Schema",
+  "description": "Schema for Pokemon TCG Trainer Supporter cards (limited to one per turn in modern rules). Note: In Base Set era, these were classified as regular Trainers but later reclassified as Supporters. This schema supports both classifications for historical accuracy.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "number",
+    "set",
+    "cardType",
+    "supertype",
+    "subtypes",
+    "rarity",
+    "effect",
+    "imageUrl"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in format: {setCode}-{paddedNumber}",
+      "pattern": "^[a-z0-9]+-[0-9]{3}$",
+      "examples": ["base1-088", "base1-073"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Supporter card name as printed",
+      "examples": ["Professor Oak", "Impostor Professor Oak", "Lass"]
+    },
+    "number": {
+      "type": "integer",
+      "description": "Card number within the set",
+      "minimum": 1,
+      "examples": [73, 75, 88]
+    },
+    "set": {
+      "type": "object",
+      "description": "Information about the card set",
+      "required": ["id", "name", "series", "releaseDate", "totalCards"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Set identifier code",
+          "examples": ["base1", "jungle", "fossil"]
+        },
+        "name": {
+          "type": "string",
+          "description": "Full set name",
+          "examples": ["Base Set", "Jungle", "Fossil"]
+        },
+        "series": {
+          "type": "string",
+          "description": "Series the set belongs to",
+          "examples": ["Original", "Neo", "E-Card"]
+        },
+        "releaseDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Set release date in ISO format",
+          "examples": ["1999-01-09"]
+        },
+        "totalCards": {
+          "type": "integer",
+          "description": "Total number of cards in the set",
+          "minimum": 1
+        }
+      }
+    },
+    "cardType": {
+      "type": "string",
+      "const": "trainer",
+      "description": "The type of card - always 'trainer' for this schema"
+    },
+    "supertype": {
+      "type": "string",
+      "const": "Trainer",
+      "description": "Card supertype classification"
+    },
+    "subtypes": {
+      "type": "array",
+      "description": "Trainer subtype - Supporter for this schema",
+      "items": {
+        "type": "string",
+        "enum": ["Supporter"]
+      },
+      "minItems": 1,
+      "maxItems": 1,
+      "const": ["Supporter"]
+    },
+    "rarity": {
+      "type": "string",
+      "description": "Card rarity",
+      "enum": ["Common", "Uncommon", "Rare", "Rare Holo", "Ultra Rare"],
+      "examples": ["Uncommon", "Rare"]
+    },
+    "historicalClassification": {
+      "type": "object",
+      "description": "For cards that were later reclassified (e.g., Base Set trainers that became Supporters)",
+      "properties": {
+        "originalSubtype": {
+          "type": "string",
+          "description": "Original card subtype when first printed",
+          "examples": ["Trainer"]
+        },
+        "reclassifiedAs": {
+          "type": "string",
+          "description": "What the card was reclassified as",
+          "examples": ["Supporter"]
+        },
+        "reclassificationDate": {
+          "type": "string",
+          "description": "When the reclassification occurred"
+        },
+        "note": {
+          "type": "string",
+          "description": "Additional context about the classification"
+        }
+      }
+    },
+    "effect": {
+      "type": "object",
+      "description": "The effect of the Supporter card",
+      "required": ["text", "effectType"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Full effect text as printed on the card"
+        },
+        "effectType": {
+          "type": "string",
+          "description": "Primary effect type for game logic categorization",
+          "enum": [
+            "draw",
+            "hand_refresh",
+            "search",
+            "healing",
+            "energy_manipulation",
+            "pokemon_manipulation",
+            "hand_disruption",
+            "deck_disruption",
+            "board_control",
+            "recovery",
+            "information",
+            "multi_effect"
+          ]
+        },
+        "actions": {
+          "type": "array",
+          "description": "Ordered list of actions this card performs",
+          "items": {
+            "$ref": "#/$defs/supporterAction"
+          },
+          "minItems": 1
+        },
+        "affectsOpponent": {
+          "type": "boolean",
+          "description": "Whether this supporter affects the opponent",
+          "default": false
+        },
+        "targetPlayer": {
+          "type": "string",
+          "description": "Which player(s) the effect targets",
+          "enum": ["self", "opponent", "both"],
+          "default": "self"
+        },
+        "cost": {
+          "type": "object",
+          "description": "Cost to play this card beyond the Supporter-per-turn limit",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["discard_hand", "discard_cards", "show_hand", "coin_flip", "none"]
+            },
+            "amount": {
+              "type": "integer",
+              "description": "Amount for variable costs"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        },
+        "requirements": {
+          "type": "array",
+          "description": "Requirements that must be met to play this card",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "cards_in_hand",
+                  "cards_in_deck",
+                  "cards_in_discard",
+                  "no_supporter_played",
+                  "pokemon_in_play",
+                  "turn_number"
+                ]
+              },
+              "minimum": {
+                "type": "integer"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "usageRestriction": {
+      "type": "object",
+      "description": "Restrictions on playing this card",
+      "properties": {
+        "oncePerTurn": {
+          "type": "boolean",
+          "description": "Whether only one Supporter can be played per turn (modern rules)",
+          "default": true
+        },
+        "notOnFirstTurn": {
+          "type": "boolean",
+          "description": "Whether this card cannot be played on the first turn",
+          "default": false
+        },
+        "formatSpecific": {
+          "type": "object",
+          "description": "Format-specific restrictions",
+          "properties": {
+            "unlimited": {
+              "type": "string",
+              "description": "Restriction in Unlimited format"
+            },
+            "standard": {
+              "type": "string",
+              "description": "Restriction in Standard format"
+            }
+          }
+        }
+      }
+    },
+    "illustrator": {
+      "type": "string",
+      "description": "Card illustrator name",
+      "examples": ["Ken Sugimori", "Keiji Kinebuchi"]
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "Relative path to card image file",
+      "pattern": "^[0-9]{3}_[a-z0-9-]+\\.(jpg|png)$",
+      "examples": ["088_professor-oak.jpg", "075_lass.jpg"]
+    },
+    "legality": {
+      "type": "object",
+      "description": "Format legality for the card",
+      "properties": {
+        "standard": { "type": "boolean" },
+        "expanded": { "type": "boolean" },
+        "unlimited": { "type": "boolean" }
+      },
+      "default": {
+        "standard": false,
+        "expanded": false,
+        "unlimited": true
+      }
+    },
+    "gameplay": {
+      "type": "object",
+      "description": "Gameplay analysis and strategy information",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Functional category of the supporter",
+          "enum": ["Draw", "Refresh", "Search", "Disruption", "Recovery", "Setup", "Control", "Utility", "Healing", "Energy", "Tech", "Combo"]
+        },
+        "powerLevel": {
+          "type": "string",
+          "description": "Relative power level of this supporter",
+          "enum": ["Low", "Medium", "High", "Staple", "Format-Defining"]
+        },
+        "timing": {
+          "type": "string",
+          "description": "When this card is typically played",
+          "enum": ["early_game", "mid_game", "late_game", "any_time", "situational", "tactical", "mid_to_late_game", "setup"]
+        },
+        "deckInclusion": {
+          "type": "string",
+          "description": "How commonly this is included in decks",
+          "enum": ["Universal Staple", "Common Inclusion", "Archetype Specific", "Tech Choice", "Niche"]
+        },
+        "synergies": {
+          "type": "array",
+          "description": "Cards that work well with this supporter",
+          "items": { "type": "string" }
+        },
+        "antiSynergies": {
+          "type": "array",
+          "description": "Cards that don't work well with this supporter",
+          "items": { "type": "string" }
+        },
+        "counters": {
+          "type": "array",
+          "description": "Effects that counter this supporter",
+          "items": { "type": "string" }
+        },
+        "tips": {
+          "type": "array",
+          "description": "Strategic tips for using this card",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "competitiveHistory": {
+      "type": "string",
+      "description": "Historical competitive context and impact"
+    },
+    "rulings": {
+      "type": "array",
+      "description": "Official rulings and clarifications",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "ruling": { "type": "string" },
+          "source": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "supporterAction": {
+      "type": "object",
+      "description": "A single action performed by the supporter card",
+      "required": ["action"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "The action type",
+          "enum": [
+            "draw_cards",
+            "draw",
+            "discard_hand",
+            "shuffle_hand_draw",
+            "search_deck",
+            "shuffle_deck",
+            "shuffle_into_deck",
+            "shuffle_hand_into_deck",
+            "view_top_cards",
+            "rearrange_top_cards",
+            "recover_from_discard",
+            "heal_pokemon",
+            "opponent_discard_hand",
+            "opponent_shuffle_hand",
+            "opponent_reveal_hand",
+            "both_shuffle_trainers",
+            "search_prizes",
+            "swap_prizes",
+            "force_opponent_action",
+            "reveal_prizes",
+            "attach_energy",
+            "return_energy"
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "description": "Amount for the action (cards drawn, etc.)"
+        },
+        "target": {
+          "type": "string",
+          "description": "Target of the action"
+        },
+        "condition": {
+          "type": "object",
+          "description": "Condition for this action",
+          "properties": {
+            "type": { "type": "string" },
+            "value": {}
+          }
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Additional action-specific parameters",
+          "additionalProperties": true
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "base1-088",
+      "name": "Professor Oak",
+      "number": 88,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "trainer",
+      "supertype": "Trainer",
+      "subtypes": ["Supporter"],
+      "rarity": "Uncommon",
+      "historicalClassification": {
+        "originalSubtype": "Trainer",
+        "reclassifiedAs": "Supporter",
+        "note": "Originally printed as a Trainer in Base Set. Would be classified as Supporter by modern rules due to powerful draw effect."
+      },
+      "effect": {
+        "text": "Discard your hand, then draw 7 cards.",
+        "effectType": "hand_refresh",
+        "actions": [
+          {
+            "action": "discard_hand"
+          },
+          {
+            "action": "draw_cards",
+            "amount": 7
+          }
+        ],
+        "cost": {
+          "type": "discard_hand",
+          "description": "Must discard entire hand"
+        },
+        "requirements": [
+          {
+            "type": "cards_in_deck",
+            "minimum": 7,
+            "description": "Must have at least 7 cards in deck"
+          }
+        ]
+      },
+      "illustrator": "Ken Sugimori",
+      "imageUrl": "088_professor-oak.jpg",
+      "gameplay": {
+        "category": "Refresh",
+        "powerLevel": "Format-Defining",
+        "timing": "any_time",
+        "deckInclusion": "Universal Staple",
+        "synergies": ["Item Finder", "Computer Search", "Energy Retrieval"],
+        "antiSynergies": ["Cards you want to keep in hand"],
+        "tips": [
+          "Play out useful cards from hand before using",
+          "One of the most powerful draw cards ever printed",
+          "Almost always run 4 copies"
+        ]
+      },
+      "competitiveHistory": "Professor Oak is one of the most powerful and iconic cards in Pokemon TCG history. It was an automatic 4-of in every competitive Base Set deck and defined the aggressive early game of the format."
+    },
+    {
+      "id": "base1-073",
+      "name": "Impostor Professor Oak",
+      "number": 73,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "trainer",
+      "supertype": "Trainer",
+      "subtypes": ["Supporter"],
+      "rarity": "Rare",
+      "historicalClassification": {
+        "originalSubtype": "Trainer",
+        "reclassifiedAs": "Supporter",
+        "note": "Originally printed as a Trainer. Affects opponent so would be Supporter by modern standards."
+      },
+      "effect": {
+        "text": "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards.",
+        "effectType": "hand_disruption",
+        "affectsOpponent": true,
+        "targetPlayer": "opponent",
+        "actions": [
+          {
+            "action": "opponent_shuffle_hand",
+            "target": "opponent"
+          },
+          {
+            "action": "draw_cards",
+            "amount": 7,
+            "target": "opponent"
+          }
+        ]
+      },
+      "illustrator": "Ken Sugimori",
+      "imageUrl": "073_impostor-professor-oak.jpg",
+      "gameplay": {
+        "category": "Disruption",
+        "powerLevel": "Medium",
+        "timing": "situational",
+        "deckInclusion": "Tech Choice",
+        "synergies": ["Lass", "Energy Removal"],
+        "tips": [
+          "Best when opponent has a large hand of key cards",
+          "Can backfire by giving opponent fresh cards",
+          "Use to disrupt opponent's setup"
+        ]
+      },
+      "competitiveHistory": "Impostor Professor Oak saw occasional play as a disruption tool. While powerful in theory, giving the opponent 7 fresh cards was often too risky."
+    },
+    {
+      "id": "base1-075",
+      "name": "Lass",
+      "number": 75,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "trainer",
+      "supertype": "Trainer",
+      "subtypes": ["Supporter"],
+      "rarity": "Rare",
+      "historicalClassification": {
+        "originalSubtype": "Trainer",
+        "reclassifiedAs": "Supporter",
+        "note": "Originally printed as a Trainer. Affects both players' hands significantly."
+      },
+      "effect": {
+        "text": "You and your opponent show each other your hands, then shuffle all Trainer cards from your hands into your decks.",
+        "effectType": "hand_disruption",
+        "affectsOpponent": true,
+        "targetPlayer": "both",
+        "actions": [
+          {
+            "action": "opponent_reveal_hand"
+          },
+          {
+            "action": "both_shuffle_trainers",
+            "parameters": {
+              "cardType": "Trainer",
+              "destination": "deck"
+            }
+          }
+        ]
+      },
+      "illustrator": "Ken Sugimori",
+      "imageUrl": "075_lass.jpg",
+      "gameplay": {
+        "category": "Disruption",
+        "powerLevel": "High",
+        "timing": "early_game",
+        "deckInclusion": "Archetype Specific",
+        "synergies": ["Computer Search", "Item Finder", "Haymaker strategy"],
+        "antiSynergies": ["Trainer-heavy decks"],
+        "tips": [
+          "Best when you have fewer Trainers in hand than opponent",
+          "Devastating on turn 1 against setup decks",
+          "Play your important Trainers before using Lass"
+        ]
+      },
+      "competitiveHistory": "Lass was a staple in aggressive Haymaker decks. Playing Lass early could cripple opponents who relied on Trainers for setup, while aggressive decks with quick attackers could win before rebuilding their hand."
+    }
+  ]
+}

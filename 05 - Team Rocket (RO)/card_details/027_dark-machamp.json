@@ -1,0 +1,101 @@
+{
+  "id": "rocket-027",
+  "name": "Dark Machamp",
+  "number": 27,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Dark Machoke",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Mega Punch",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Fling",
+      "cost": ["Fighting", "Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Your opponent shuffles his or her Active Pokémon and all cards attached to it into his or her deck. This attack can't be used if your opponent has no Benched Pokémon.",
+      "effect": {
+        "effectType": "special",
+        "shuffleIntoDeck": true,
+        "target": "opponent_active",
+        "includesAttachedCards": true,
+        "requirement": "opponent_has_benched_pokemon"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Superpower Pokemon",
+    "height": "5' 3\"",
+    "weight": "287 lbs",
+    "nationalNumber": 68,
+    "level": 30
+  },
+  "flavorText": "It is almost impossible to defend against a Machamp's four powerful arms.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "027_dark-machamp-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Fling removes opponent's Active Pokemon entirely",
+      "Shuffles all attached cards",
+      "Denies prize card"
+    ],
+    "weaknesses": [
+      "Low HP of 70 for Stage 2",
+      "Fling can't be used if opponent has no bench",
+      "4 energy cost is expensive",
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Dark Machoke",
+      "Machop"
+    ],
+    "counters": [
+      "Psychic-type Pokemon",
+      "Empty bench strategies"
+    ]
+  },
+  "competitiveHistory": "Dark Machamp's Fling attack was unique but situational. This non-holo version is functionally identical to the holo version.",
+  "rulings": [
+    {
+      "ruling": "Fling shuffles the Pokemon and all attached cards into the opponent's deck. No prize is taken.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

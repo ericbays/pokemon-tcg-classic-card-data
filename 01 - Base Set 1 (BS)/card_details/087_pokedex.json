@@ -1,0 +1,87 @@
+{
+  "id": "base1-087",
+  "name": "Pokédex",
+  "number": 87,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Look at up to 5 cards from the top of your deck and rearrange them as you like.",
+    "effectType": "deck_manipulation",
+    "actions": [
+      {
+        "action": "view_cards",
+        "amount": 5,
+        "target": "top_of_deck",
+        "parameters": {
+          "maxCards": 5
+        }
+      },
+      {
+        "action": "rearrange_cards",
+        "amount": 5,
+        "target": "top_of_deck",
+        "parameters": {
+          "location": "top_of_deck"
+        }
+      }
+    ],
+    "cost": {
+      "type": "none"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "087_pokedex.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "situational",
+    "synergies": ["Bill", "Professor Oak", "Item Finder", "Computer Search", "Gambler"],
+    "tips": [
+      "Best used immediately before draw effects to maximize value",
+      "Stack Energy on top if you need to power up Pokemon over several turns",
+      "Put key Trainer cards on top when you need specific answers",
+      "Consider future draws - arrange for multiple good turns, not just the next one",
+      "Most valuable in late game when deck is thin and specific cards are critical",
+      "In most decks, cards that actually draw are superior to Pokedex"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You can look at up to 5 cards from the top of your deck (you may choose to look at fewer)"
+    },
+    {
+      "ruling": "After looking at the cards, rearrange them in any order you choose"
+    },
+    {
+      "ruling": "The cards remain on top of your deck - they are not drawn or discarded"
+    },
+    {
+      "ruling": "Your opponent does not see which cards you looked at or how you arranged them"
+    },
+    {
+      "ruling": "If your deck has fewer than 5 cards, you can only look at and arrange the remaining cards"
+    },
+    {
+      "ruling": "You must keep the same cards on top - you cannot shuffle your deck after using Pokedex"
+    },
+    {
+      "ruling": "If your opponent uses an effect that shuffles their deck after your Pokedex, your arrangement is lost"
+    },
+    {
+      "ruling": "You can use Pokedex even if your deck has only 1 card remaining"
+    }
+  ]
+}

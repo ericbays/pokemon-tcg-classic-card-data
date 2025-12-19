@@ -1,0 +1,105 @@
+{
+  "id": "base2-008",
+  "name": "Hitmonchan",
+  "number": 8,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Jab",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Special Punch",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Punching Pokemon",
+    "height": "4' 7\"",
+    "weight": "111 lbs",
+    "nationalNumber": 107,
+    "level": 33
+  },
+  "flavorText": "While seeming to do nothing, it fires punches in lightning-fast volleys that are impossible to see.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "008_hitmonchan-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "20 damage for 1 energy is incredibly efficient",
+      "Basic Pokemon requires no evolution",
+      "70 HP is solid for a Basic",
+      "Special Punch provides 40 damage option",
+      "Fighting type hits Colorless weakness"
+    ],
+    "weaknesses": [
+      "Psychic weakness to Mewtwo and Alakazam",
+      "No resistance",
+      "2 retreat cost is moderate"
+    ],
+    "synergies": [
+      "PlusPower - Boost Jab to 30 damage turn 1",
+      "Double Colorless Energy - Quick Special Punch",
+      "Electabuzz - Another Haymaker staple",
+      "Scyther - Colorless Haymaker partner"
+    ],
+    "counters": [
+      "Mewtwo - Psychic weakness",
+      "Alakazam - Psychic weakness",
+      "Mr. Mime - Blocks both attacks with Invisible Wall"
+    ]
+  },
+  "competitiveHistory": "Hitmonchan was one of the defining cards of the Haymaker archetype and early Pokemon TCG. Turn 1 Jab for 20 damage set the pace of aggressive play. Combined with PlusPower, Hitmonchan could threaten 30 damage on turn 1, putting immediate pressure on opponents. It was an automatic inclusion in any aggressive deck.",
+  "rulings": [
+    {
+      "ruling": "Both Jab and Special Punch have no additional effects - they simply deal damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Hitmonchan cannot evolve as it has no evolution in the original sets.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

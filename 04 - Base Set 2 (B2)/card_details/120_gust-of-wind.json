@@ -1,0 +1,67 @@
+{
+  "id": "base2-120",
+  "name": "Gust of Wind",
+  "number": 120,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "text": "Choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon.",
+  "effect": {
+    "text": "Choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon.",
+    "effectType": "switch",
+    "parameters": {
+      "target": "opponent_benched_pokemon",
+      "chooser": "you",
+      "switchWith": "opponent_active"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "120_gust-of-wind-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Control",
+    "strengths": [
+      "Choose opponent's Active Pokemon",
+      "Target weak or damaged Pokemon for KO",
+      "Disrupt opponent's strategy"
+    ],
+    "weaknesses": [
+      "Requires opponent to have Benched Pokemon"
+    ],
+    "synergies": [
+      "High damage attackers - KO weak targets",
+      "Targeting Pokemon with high retreat cost"
+    ],
+    "counters": [
+      "Free retreat Pokemon",
+      "Switch cards"
+    ]
+  },
+  "competitiveHistory": "Gust of Wind was one of the most powerful control cards, allowing players to pick off damaged or key Pokemon from the Bench.",
+  "rulings": [
+    {
+      "ruling": "You choose which of your opponent's Benched Pokemon becomes Active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The former Active Pokemon goes to the Bench.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Gust of Wind if your opponent has no Benched Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

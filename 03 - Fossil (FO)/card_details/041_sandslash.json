@@ -1,0 +1,111 @@
+{
+  "id": "fossil-041",
+  "name": "Sandslash",
+  "number": 41,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Sandshrew",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slash",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Fury Swipes",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "20x",
+      "baseDamage": 20,
+      "text": "Flip 3 coins. This attack does 20 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "flipCount": 3,
+            "damagePerHead": 20
+          }
+        ],
+        "parameters": {
+          "minimumDamage": 0,
+          "maximumDamage": 60
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mouse Pokemon",
+    "height": "3' 3\"",
+    "weight": "65 lbs",
+    "nationalNumber": 28,
+    "level": 33
+  },
+  "flavorText": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "041_sandslash.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Lightning resistance is valuable",
+      "Fury Swipes can do up to 60 damage",
+      "70 HP is decent for Stage 1",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Grass weakness",
+      "Fury Swipes is coin flip dependent",
+      "Damage output is inconsistent"
+    ],
+    "synergies": [
+      "Sandshrew",
+      "Fighting decks"
+    ],
+    "counters": [
+      "Grass Pokemon"
+    ]
+  },
+  "competitiveHistory": "Sandslash was a decent Uncommon with Lightning resistance that helped against Electabuzz decks. However, the coin flip nature of Fury Swipes made it unreliable as a main attacker.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Fury Swipes does 0 damage if all three coins are tails.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

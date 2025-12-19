@@ -1,0 +1,104 @@
+{
+  "id": "base1-070",
+  "name": "Clefairy Doll",
+  "number": 70,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Play Clefairy Doll as if it were a Basic Pokémon. While in play, Clefairy Doll counts as a Pokémon (instead of a Trainer card). Clefairy Doll has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn't count as a Knocked Out Pokémon. At any time during your turn before your attack, you may discard Clefairy Doll.",
+    "effectType": "special_play",
+    "actions": [
+      {
+        "action": "play_as_pokemon",
+        "parameters": {
+          "hp": 10,
+          "canAttack": false,
+          "canRetreat": false,
+          "canSelfDiscard": true,
+          "immuneToStatus": true,
+          "givesNoPrize": true
+        }
+      }
+    ]
+  },
+  "specialRules": {
+    "playsAsPokemon": true,
+    "pokemonStats": {
+      "hp": 10,
+      "canAttack": false,
+      "canRetreat": false,
+      "immuneToStatus": true,
+      "givesNoPrize": true
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "070_clefairy-doll.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "situational",
+    "synergies": ["Scoop Up", "Defender", "Alakazam"],
+    "tips": [
+      "Use to stall while setting up",
+      "Doesn't give up a prize when knocked out",
+      "Can voluntarily discard before your attack",
+      "Absorb damage from powerful attacks without losing Prize advantage",
+      "Force opponent to waste resources on a target that yields no Prize"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "Clefairy Doll counts as a Pokémon while in play for all game purposes (can be targeted by Gust of Wind, counts toward bench limit, etc.)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "When Clefairy Doll is knocked out, it goes to the discard pile but does not award a Prize card to the opponent",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can voluntarily discard Clefairy Doll during your turn before your attack, but not at other times",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Clefairy Doll cannot retreat because it has no retreat cost and no ability to pay one",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You need Switch or similar effects to move Clefairy Doll from the active position",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Clefairy Doll cannot be affected by Special Conditions (Sleep, Confusion, Paralysis, Poison)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Alakazam can use Damage Swap to move damage counters to or from Clefairy Doll since it counts as a Pokémon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Defender and PlusPower can be attached to Clefairy Doll",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Clefairy Doll is in the active position and you have no benched Pokémon when it's knocked out, you lose the game",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Clefairy Doll cannot attack, even if it somehow gained an attack through other card effects",
+      "source": "WotC Rulings"
+    }
+  ]
+}

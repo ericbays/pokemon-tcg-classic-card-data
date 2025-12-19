@@ -1,0 +1,108 @@
+{
+  "id": "jungle-043",
+  "name": "Primeape",
+  "number": 43,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Mankey",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Fury Swipes",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "20x",
+      "baseDamage": 20,
+      "text": "Flip 3 coins. This attack does 20 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlips": 3,
+        "damagePerHead": 20
+      }
+    },
+    {
+      "name": "Tantrum",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Flip a coin. If tails, Primeape is now Confused (after doing damage).",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "onFailure": {
+              "selfStatusCondition": "Confused"
+            }
+          }
+        ],
+        "timing": "after_damage"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Pig Monkey Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs",
+    "nationalNumber": 57,
+    "level": 35
+  },
+  "flavorText": "Always furious and tenacious to boot. It will not abandon chasing its quarry until its quarry is caught.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "043_primeape.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Tantrum does solid 50 damage",
+      "Fury Swipes can deal up to 60 damage",
+      "Low retreat cost",
+      "Fighting type hits Colorless weakness"
+    ],
+    "weaknesses": [
+      "70 HP is moderate",
+      "Psychic weakness",
+      "Tantrum can confuse self on tails",
+      "Coin-flip attacks are unreliable",
+      "No resistance"
+    ],
+    "synergies": [
+      "Full Heal - remove self-confusion"
+    ],
+    "counters": [
+      "Psychic Pokemon"
+    ]
+  },
+  "competitiveHistory": "Primeape from Jungle was not a competitive staple. While Tantrum's 50 damage was decent, the risk of self-Confusion and the availability of better Fighting options like Hitmonchan limited its use.",
+  "rulings": [
+    {
+      "ruling": "Tantrum's self-Confusion happens after damage is dealt, only on a tails flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

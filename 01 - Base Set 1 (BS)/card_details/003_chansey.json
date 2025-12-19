@@ -1,0 +1,119 @@
+{
+  "id": "base1-003",
+  "name": "Chansey",
+  "number": 3,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 120,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Blissey"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Scrunch",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "0",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Chansey during your opponent's next turn. (Any other effects of attacks still happen.)",
+      "effect": {
+        "type": "damage_prevention",
+        "trigger": "coin_flip",
+        "triggerCondition": "heads",
+        "duration": "opponent_next_turn",
+        "prevents": "all_damage",
+        "note": "Other attack effects still apply"
+      }
+    },
+    {
+      "name": "Double-edge",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "80",
+      "baseDamage": 80,
+      "text": "Chansey does 80 damage to itself.",
+      "effect": {
+        "type": "recoil_damage",
+        "recoilDamage": 80,
+        "target": "self"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Egg Pokemon",
+    "height": "3'7\"",
+    "weight": "76 lbs",
+    "nationalNumber": 113,
+    "level": 55
+  },
+  "flavorText": "A rare and elusive Pokemon that is said to bring happiness to those who manage to catch it.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "003_chansey.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Tank",
+    "strengths": [
+      "Highest HP Basic Pokemon in Base Set (120 HP)",
+      "Scrunch can completely negate damage on heads",
+      "Colorless typing means it fits in any deck",
+      "Low retreat cost of 1",
+      "Psychic resistance is valuable against Alakazam/Mewtwo"
+    ],
+    "weaknesses": [
+      "Fighting weakness is devastating (Hitmonchan deals 40 with Jab)",
+      "Double-edge's 80 recoil often knocks out Chansey",
+      "No offensive pressure without significant risk",
+      "Scrunch is coin-flip dependent"
+    ],
+    "synergies": [
+      "Alakazam",
+      "Pokemon Center",
+      "Scoop Up",
+      "Mr. Mime"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting type destroys Chansey with weakness",
+      "Machamp - One-hit KO with Seismic Toss",
+      "Any Fighting Pokemon - 2x weakness is crippling",
+      "PlusPower - Helps reach KO threshold"
+    ]
+  },
+  "competitiveHistory": "Chansey was a staple in the Alakazam/Chansey control deck, one of the top competitive strategies of the Base Set era. Its massive HP pool made it irreplaceable as a damage absorber, and the deck remained viable throughout the WotC era of competitive play.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Scrunch's damage prevention effect ends at the end of your opponent's turn, not at the start of your next turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Double-edge's recoil damage is applied to Chansey even if the Defending Pokemon is Knocked Out.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

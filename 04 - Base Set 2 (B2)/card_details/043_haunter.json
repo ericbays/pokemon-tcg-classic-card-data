@@ -1,0 +1,112 @@
+{
+  "id": "base2-043",
+  "name": "Haunter",
+  "number": 43,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Psychic"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Gastly",
+  "evolvesTo": ["Gengar"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Hypnosis",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep"
+      }
+    },
+    {
+      "name": "Dream Eater",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "You can't use this attack unless the Defending Pokémon is Asleep.",
+      "effect": {
+        "effectType": "conditional",
+        "condition": "defending_pokemon_asleep"
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Gas Pokemon",
+    "height": "5' 3\"",
+    "weight": "0.2 lbs",
+    "nationalNumber": 93,
+    "level": 22
+  },
+  "flavorText": "Because of its ability to slip through block walls, it is said to be from another dimension.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "043_haunter-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "No weakness - very rare",
+      "Fighting resistance",
+      "Dream Eater does 50 for just 2 energy",
+      "Hypnosis guarantees Sleep",
+      "Low retreat cost"
+    ],
+    "weaknesses": [
+      "60 HP is moderate",
+      "Dream Eater requires defender to be Asleep",
+      "Defender may wake up before Dream Eater"
+    ],
+    "synergies": [
+      "Sleep strategies",
+      "Gastly/Gengar line"
+    ],
+    "counters": [
+      "Full Heal - Wakes up Asleep Pokemon",
+      "Switch - Replace Asleep Pokemon"
+    ]
+  },
+  "competitiveHistory": "Haunter was a unique attacker with strong synergy between Hypnosis and Dream Eater. The no-weakness trait was valuable, and 50 damage for 2 energy was efficient when the combo worked.",
+  "rulings": [
+    {
+      "ruling": "Hypnosis automatically puts the Defending Pokemon to sleep - no coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Dream Eater cannot be used unless the Defending Pokemon is currently Asleep.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Defending Pokemon wakes up between turns, you cannot use Dream Eater on your turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Haunter has no weakness.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "jungle-031",
+  "name": "Vileplume",
+  "number": 31,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Gloom",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Heal",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may flip a coin. If heads, remove 1 damage counter from 1 of your Pokémon. This power can't be used if Vileplume is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "healing",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "target": "your_pokemon",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "healAmount": 10
+          },
+          "onTails": null
+        },
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Petal Dance",
+      "cost": ["Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 3,
+      "damage": "40x",
+      "baseDamage": 40,
+      "text": "Flip 3 coins. This attack does 40 damage times the number of heads. Vileplume is now Confused (after doing damage).",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlips": 3,
+        "damagePerHead": 40,
+        "selfConfusion": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Flower Pokemon",
+    "height": "3' 11\"",
+    "weight": "41 lbs",
+    "nationalNumber": 45,
+    "level": 35
+  },
+  "flavorText": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "031_vileplume.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Petal Dance can deal up to 120 damage",
+      "Heal Pokemon Power"
+    ],
+    "weaknesses": [
+      "80 HP low for Stage 2",
+      "Fire weakness",
+      "Self-confusion after attacking"
+    ],
+    "synergies": [
+      "Full Heal"
+    ],
+    "counters": [
+      "Fire Pokemon",
+      "Consistent attackers"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Vileplume, identical to card #15. This Vileplume was not competitive due to self-inflicted Confusion.",
+  "rulings": [
+    {
+      "ruling": "Vileplume becomes Confused after dealing damage, not before.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

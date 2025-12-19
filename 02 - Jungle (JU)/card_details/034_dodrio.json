@@ -1,0 +1,112 @@
+{
+  "id": "jungle-034",
+  "name": "Dodrio",
+  "number": 34,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Doduo",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Retreat Aid",
+      "type": "Pokemon Power",
+      "text": "As long as Dodrio is Benched, pay 1 Colorless less to retreat your Active Pokémon.",
+      "effect": {
+        "effectType": "retreat_cost_reduction",
+        "reduction": 1,
+        "trigger": "while_benched",
+        "target": "active_pokemon"
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Rage",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each damage counter on Dodrio.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamage": 10,
+        "bonusCondition": "per_damage_counter_on_self"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Triplebird Pokemon",
+    "height": "5' 11\"",
+    "weight": "188 lbs",
+    "nationalNumber": 85,
+    "level": 28
+  },
+  "flavorText": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "034_dodrio.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Retreat Aid reduces retreat cost for Active Pokemon",
+      "Free retreat cost itself",
+      "Fighting resistance",
+      "Stacks with multiple Dodrio on bench"
+    ],
+    "weaknesses": [
+      "70 HP is moderate",
+      "Lightning weakness",
+      "Rage requires taking damage to be effective"
+    ],
+    "synergies": [
+      "Heavy retreat cost Pokemon benefit from Retreat Aid",
+      "Multiple Dodrio stack (2 Dodrio = 2 less retreat cost)",
+      "Chansey, Snorlax, other heavy Pokemon"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Gust of Wind - force Dodrio active"
+    ]
+  },
+  "competitiveHistory": "Dodrio from Jungle was a competitively significant support Pokemon due to its Retreat Aid Pokemon Power. Having one or two Dodrio on the bench could reduce or eliminate retreat costs for high-retreat Pokemon like Chansey and Snorlax. This made it a staple in stall and control decks that relied on heavy Pokemon. The free retreat cost on Dodrio itself made it easy to cycle.",
+  "rulings": [
+    {
+      "ruling": "Multiple Dodrio on the bench stack - two Dodrio reduce retreat cost by 2.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Retreat Aid only works while Dodrio is on the Bench, not when Active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Retreat Aid cannot reduce retreat cost below 0.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

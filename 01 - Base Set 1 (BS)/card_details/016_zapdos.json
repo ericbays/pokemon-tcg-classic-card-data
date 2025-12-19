@@ -1,0 +1,117 @@
+{
+  "id": "base1-016",
+  "name": "Zapdos",
+  "number": 16,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 90,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thunder",
+      "cost": ["Lightning", "Lightning", "Lightning", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "Flip a coin. If tails, Zapdos does 30 damage to itself.",
+      "effect": {
+        "type": "recoil_on_flip",
+        "trigger": "coin_flip",
+        "triggerCondition": "tails",
+        "recoilDamage": 30
+      }
+    },
+    {
+      "name": "Thunderbolt",
+      "cost": ["Lightning", "Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 4,
+      "damage": "100",
+      "baseDamage": 100,
+      "text": "Discard all Energy cards attached to Zapdos in order to use this attack.",
+      "effect": {
+        "type": "energy_discard",
+        "discardCount": "all",
+        "discardType": "all_energy",
+        "timing": "cost"
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "nationalNumber": 145,
+    "category": "Electric Pokemon",
+    "height": "5'3\"",
+    "weight": "116 lbs",
+    "level": 64
+  },
+  "flavorText": "A legendary bird Pokemon that is said to appear from clouds while dropping enormous lightning bolts.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "016_zapdos.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "90 HP Basic - highest HP Basic in Base Set",
+      "NO weakness - incredibly rare",
+      "Fighting resistance counters Haymaker",
+      "Thunderbolt deals 100 damage",
+      "No evolution required - immediate threat",
+      "Lightning type hits Water weakness"
+    ],
+    "weaknesses": [
+      "Thunderbolt discards ALL energy",
+      "Thunder can deal 30 recoil damage",
+      "High energy costs (4 for both attacks)",
+      "High retreat cost of 3",
+      "Difficult to sustain Thunderbolt usage"
+    ],
+    "synergies": [
+      "Energy Retrieval",
+      "Super Energy Retrieval",
+      "Electabuzz",
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "Energy Removal - Disrupts energy buildup",
+      "High HP Pokemon - Can survive Thunder/Thunderbolt",
+      "Decks with strong resistance"
+    ]
+  },
+  "description": "Zapdos is a Basic Lightning-type Legendary Pokemon with incredible stats. It has no weakness, Fighting resistance, and can deal up to 100 damage with Thunderbolt. Its 90 HP for a Basic is exceptional.",
+  "competitiveHistory": "Zapdos was highly valued in competitive play for its incredible base stats. The combination of 90 HP, no weakness, and Fighting resistance made it one of the best defensive Basic Pokemon. It was used both as a main attacker and as a Haymaker counter.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Thunderbolt requires discarding ALL Energy attached to Zapdos, not just Lightning Energy.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Thunder's recoil damage is dealt regardless of whether the attack KOs the Defending Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

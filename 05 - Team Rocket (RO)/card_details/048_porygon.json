@@ -1,0 +1,115 @@
+{
+  "id": "rocket-048",
+  "name": "Porygon",
+  "number": 48,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Conversion 1",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If the Defending Pokémon has a Weakness, you may change it to a type of your choice other than Colorless.",
+      "effect": {
+        "effectType": "weakness_manipulation",
+        "target": "defending_pokemon",
+        "action": "change_weakness",
+        "restriction": "not_colorless",
+        "optional": true
+      }
+    },
+    {
+      "name": "Psybeam",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Virtual Pokemon",
+    "height": "2' 7\"",
+    "weight": "80 lbs",
+    "nationalNumber": 137,
+    "level": 20
+  },
+  "flavorText": "More and more people play the slots every day, trying to win a Porygon.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "048_porygon-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Tech",
+    "strengths": [
+      "Conversion 1 can change opponent's Weakness",
+      "Free retreat cost",
+      "Psychic resistance",
+      "Psybeam can Confuse"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Fighting weakness vs Hitmonchan",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Type-specific attackers",
+      "Hit-and-run strategies"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Porygon was a tech card that could manipulate opponent's Weakness. Conversion 1 was useful to make an opponent weak to whatever type you were attacking with. Free retreat made it easy to swap in and out.",
+  "rulings": [
+    {
+      "ruling": "Conversion 1 changes the Defending Pokemon's Weakness permanently (until another effect changes it or the Pokemon leaves play).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot change Weakness to Colorless.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

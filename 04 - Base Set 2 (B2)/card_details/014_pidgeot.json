@@ -1,0 +1,117 @@
+{
+  "id": "base2-014",
+  "name": "Pidgeot",
+  "number": 14,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Colorless"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Pidgeotto",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Wing Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Hurricane",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Unless this attack Knocks Out the Defending Pokémon, return the Defending Pokémon and all cards attached to it to your opponent's hand.",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "returnToHand": true,
+          "includesAttachedCards": true,
+          "conditionNotKnockedOut": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Bird Pokemon",
+    "height": "4' 11\"",
+    "weight": "87 lbs",
+    "nationalNumber": 18,
+    "level": 40
+  },
+  "flavorText": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "014_pidgeot-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Hurricane returns Pokemon AND all attached cards to hand",
+      "Free retreat cost",
+      "Fighting resistance",
+      "Colorless type uses any energy",
+      "Can undo opponent's setup"
+    ],
+    "weaknesses": [
+      "Lightning weakness to Electabuzz",
+      "80 HP is low for Stage 2",
+      "Stage 2 requires significant setup",
+      "Hurricane doesn't work if it KOs the target"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Powers attacks quickly",
+      "Gust of Wind - Target specific Pokemon for Hurricane",
+      "Energy Removal - Further disrupt opponent after Hurricane"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Zapdos - Lightning weakness",
+      "High HP Pokemon - Hurricane won't KO them, but they survive"
+    ]
+  },
+  "competitiveHistory": "Pidgeot's Hurricane was a unique disruption tool that could undo turns of evolution and energy attachment. However, requiring a Stage 2 for this effect limited competitive viability. The free retreat was a nice bonus for switching strategies.",
+  "rulings": [
+    {
+      "ruling": "Hurricane returns the Defending Pokemon and ALL cards attached to it (Energy, Tools, etc.) to your opponent's hand.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Hurricane Knocks Out the Defending Pokemon, the Pokemon is not returned to hand - it goes to the discard pile as normal.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Defending Pokemon has 30 or less HP remaining, Hurricane will KO it and not trigger the return effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

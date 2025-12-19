@@ -1,0 +1,119 @@
+{
+  "id": "base2-081",
+  "name": "Metapod",
+  "number": 81,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Common",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Caterpie",
+  "evolvesTo": ["Butterfree"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Stiffen",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Metapod during your opponent's next turn. (Any other effects of attacks still happen.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventDamage": true,
+            "duration": "opponents_next_turn"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Stun Spore",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Cocoon Pokemon",
+    "height": "2' 4\"",
+    "weight": "22 lbs",
+    "nationalNumber": 11,
+    "level": 21
+  },
+  "flavorText": "It is vulnerable to attack because its shell is soft, exposing its weak and tender body.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "081_metapod-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "70 HP is solid for Stage 1",
+      "Stiffen can prevent all damage",
+      "Stun Spore can Paralyze"
+    ],
+    "weaknesses": [
+      "Fire weakness",
+      "No resistance",
+      "Both attacks require coin flips",
+      "High retreat cost"
+    ],
+    "synergies": [
+      "Caterpie - Evolves from",
+      "Butterfree - Evolution target"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Metapod was the middle stage in the Butterfree evolution line. Rarely used competitively.",
+  "rulings": [
+    {
+      "ruling": "Stiffen's damage prevention only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Stiffen prevents damage but not other effects of attacks.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Stun Spore's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

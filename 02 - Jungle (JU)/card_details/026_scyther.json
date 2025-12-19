@@ -1,0 +1,101 @@
+{
+  "id": "jungle-026",
+  "name": "Scyther",
+  "number": 26,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Scizor"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Swords Dance",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "During your next turn, Scyther's Slash attack's base damage is 60 instead of 30.",
+      "effect": {
+        "effectType": "damage_boost",
+        "boostsAttack": "Slash",
+        "newBaseDamage": 60,
+        "duration": "next_turn"
+      }
+    },
+    {
+      "name": "Slash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Mantis Pokemon",
+    "height": "4' 11\"",
+    "weight": "123 lbs",
+    "nationalNumber": 123,
+    "level": 25
+  },
+  "flavorText": "With ninja-like agility and speed, it can create the illusion that there is more than one of it.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "026_scyther.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "70 HP is excellent for a Basic",
+      "Free retreat cost",
+      "Fighting resistance",
+      "Colorless attack cost - fits any deck"
+    ],
+    "weaknesses": [
+      "Fire weakness"
+    ],
+    "synergies": [
+      "Double Colorless Energy",
+      "Plus Power"
+    ],
+    "counters": [
+      "Fire Pokemon",
+      "Mr. Mime"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Scyther, identical to card #10. Scyther was one of the most powerful and universally played cards in the Base Set era, appearing in virtually every competitive deck.",
+  "rulings": [
+    {
+      "ruling": "Swords Dance's effect lasts until the end of your next turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

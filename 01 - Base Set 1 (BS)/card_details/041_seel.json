@@ -1,0 +1,87 @@
+{
+  "id": "base1-041",
+  "name": "Seel",
+  "number": 41,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original Series",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dewgong"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Headbutt",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 86,
+    "category": "Sea Lion Pokémon",
+    "height": "3'7\"",
+    "weight": "198 lbs",
+    "level": 12
+  },
+  "flavorText": "The protruding horn on its head is very hard. This horn is used for bashing through thick ice.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "041_seel.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "60 HP is decent for a Basic Pokémon",
+      "Single Water Energy attack requirement",
+      "Single retreat cost is manageable",
+      "Can absorb an early hit while setting up evolution"
+    ],
+    "weaknesses": [
+      "Only 10 damage provides minimal offensive pressure",
+      "Purely an evolution card with little standalone value",
+      "Should have evolved to Dewgong by late game",
+      "Low damage won't threaten evolved Pokémon"
+    ],
+    "synergies": [
+      "Defender",
+      "Switch",
+      "Bill",
+      "Professor Oak",
+      "Computer Search",
+      "Pokémon Trader",
+      "Dewgong"
+    ],
+    "counters": [
+      "Pikachu",
+      "Raichu",
+      "Zapdos",
+      "Gust of Wind"
+    ]
+  }
+}

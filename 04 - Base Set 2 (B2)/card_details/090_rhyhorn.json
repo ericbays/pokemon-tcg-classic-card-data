@@ -1,0 +1,115 @@
+{
+  "id": "base2-090",
+  "name": "Rhyhorn",
+  "number": 90,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Rhydon"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Leer",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon can't attack Rhyhorn during your opponent's next turn. (Benching either Pokémon ends this effect.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventAttack": true,
+            "duration": "opponents_next_turn",
+            "endsOnBench": true
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Horn Attack",
+      "cost": ["Fighting", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Spikes Pokemon",
+    "height": "3' 3\"",
+    "weight": "254 lbs",
+    "nationalNumber": 111,
+    "level": 18
+  },
+  "flavorText": "Its massive bones are 1,000 times harder than human bones. It can easily knock a trailer flying.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "090_rhyhorn-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "70 HP is excellent for a Basic",
+      "Lightning resistance",
+      "Leer can prevent attacks"
+    ],
+    "weaknesses": [
+      "Grass weakness",
+      "High retreat cost",
+      "Horn Attack has high energy cost",
+      "Leer requires coin flip"
+    ],
+    "synergies": [
+      "Rhydon - Evolution target"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Rhyhorn was used as the basic for Rhydon. Its 70 HP was solid for a Basic, and Lightning resistance helped against Electabuzz.",
+  "rulings": [
+    {
+      "ruling": "Leer's effect only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If either Rhyhorn or the Defending Pokemon goes to the Bench, Leer's effect ends.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Horn Attack has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

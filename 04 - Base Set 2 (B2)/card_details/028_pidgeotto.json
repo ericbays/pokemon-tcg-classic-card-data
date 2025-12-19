@@ -1,0 +1,122 @@
+{
+  "id": "base2-028",
+  "name": "Pidgeotto",
+  "number": 28,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 60,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Pidgey",
+  "evolvesTo": ["Pidgeot"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Whirlwind",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)",
+      "effect": {
+        "effectType": "switch",
+        "parameters": {
+          "target": "opponent_bench",
+          "opponentChooses": true,
+          "damageFirst": true
+        }
+      }
+    },
+    {
+      "name": "Mirror Move",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If Pidgeotto was attacked last turn, do the final result of that attack on Pidgeotto to the Defending Pokémon.",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "copiesLastAttack": true,
+          "requiresBeingAttackedLastTurn": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Bird Pokemon",
+    "height": "3' 7\"",
+    "weight": "66 lbs",
+    "nationalNumber": 17,
+    "level": 36
+  },
+  "flavorText": "Very protective of its sprawling territory, this Pokémon will fiercely peck at any intruder.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "028_pidgeotto-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Fighting resistance",
+      "Low retreat cost of 1",
+      "Whirlwind forces bench rotation",
+      "Mirror Move can return big damage"
+    ],
+    "weaknesses": [
+      "Lightning weakness to Electabuzz",
+      "60 HP is moderate",
+      "Mirror Move requires being attacked first",
+      "Opponent chooses switch target for Whirlwind"
+    ],
+    "synergies": [
+      "Pidgey - Required basic",
+      "Pidgeot - Evolution target"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Zapdos - Lightning type"
+    ]
+  },
+  "competitiveHistory": "Pidgeotto was primarily used as a stepping stone to Pidgeot. Mirror Move could occasionally be devastating if the opponent hit Pidgeotto with a big attack and it survived, but this was inconsistent.",
+  "rulings": [
+    {
+      "ruling": "Whirlwind does damage first, then the opponent chooses which Benched Pokemon becomes the new Defending Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Mirror Move only works if Pidgeotto was attacked during your opponent's last turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Mirror Move does the 'final result' of the attack - the actual damage dealt after all modifiers.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the attack last turn did no damage (missed coin flip, etc.), Mirror Move does nothing.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

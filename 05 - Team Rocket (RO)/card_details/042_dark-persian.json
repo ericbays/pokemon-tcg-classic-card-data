@@ -1,0 +1,122 @@
+{
+  "id": "rocket-042",
+  "name": "Dark Persian",
+  "number": 42,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Meowth",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Fascinate",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, choose 1 of your opponent's Benched Pokémon and switch it with the Defending Pokémon. This attack can't be used if your opponent has no Benched Pokémon.",
+      "effect": {
+        "effectType": "switch",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "forceSwitch": true,
+            "target": "opponent_benched",
+            "chooser": "you"
+          },
+          "onTails": null
+        },
+        "requirement": "opponent_has_benched_pokemon"
+      }
+    },
+    {
+      "name": "Poison Claws",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Poisoned"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Classy Cat Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs",
+    "nationalNumber": 53,
+    "level": 28
+  },
+  "flavorText": "Popular with women because of its beautiful fur. The leader of the Rockets keeps one as a pet.",
+  "illustrator": "Shin-ichi Yoshida",
+  "imageUrl": "042_dark-persian-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Free retreat cost - very mobile",
+      "Fascinate can force switches on coin flip",
+      "Psychic resistance",
+      "Colorless typing - works with any energy"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Fighting weakness vs Hitmonchan",
+      "Both attacks are coin flip dependent",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Meowth",
+      "Hit-and-run strategies"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Persian was a utility Pokemon with free retreat. Fascinate offered a coin-flip Gust of Wind effect, while Poison Claws provided some offensive pressure. The free retreat made it excellent for tactical flexibility.",
+  "rulings": [
+    {
+      "ruling": "Fascinate does no damage - it only potentially forces a switch on heads.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The reference to 'the leader of the Rockets' in the flavor text refers to Giovanni.",
+      "source": "WotC"
+    }
+  ]
+}

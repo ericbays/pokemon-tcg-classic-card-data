@@ -1,0 +1,107 @@
+{
+  "id": "rocket-034",
+  "name": "Dark Electrode",
+  "number": 34,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Voltorb",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Rolling Tackle",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Energy Bomb",
+      "cost": ["Lightning", "Lightning"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Take all Energy cards attached to Dark Electrode and attach them to your Benched Pokémon (in any way you choose). If you have no Benched Pokémon, discard all Energy cards attached to Dark Electrode.",
+      "effect": {
+        "effectType": "energy_manipulation",
+        "action": "move_all_energy",
+        "destination": "your_bench",
+        "fallback": {
+          "condition": "no_benched_pokemon",
+          "action": "discard_all_energy"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Ball Pokemon",
+    "height": "3' 11\"",
+    "weight": "147 lbs",
+    "nationalNumber": 101,
+    "level": 24
+  },
+  "flavorText": "Some researchers hypothesize that Electrode may actually be a form of energy instead of having an actual body.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "034_dark-electrode-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Energy Bomb transfers energy to benched Pokemon",
+      "Can accelerate setup for benched attackers",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Fighting weakness vs Hitmonchan",
+      "Loses energy when attacking"
+    ],
+    "synergies": [
+      "Voltorb",
+      "Pokemon with high energy costs",
+      "Energy acceleration strategies"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Electrode was an interesting support Pokemon. Energy Bomb allowed you to attack and then transfer all energy to benched Pokemon, potentially setting up a bigger attacker. However, losing your energy investment made it situational.",
+  "rulings": [
+    {
+      "ruling": "You must distribute all Energy cards to Benched Pokemon if you have any. You can choose how to split them.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you have no Benched Pokemon, all Energy is discarded.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

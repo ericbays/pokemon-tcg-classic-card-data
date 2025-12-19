@@ -1,0 +1,91 @@
+{
+  "id": "rocket-053",
+  "name": "Dratini",
+  "number": 53,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Dragonair", "Dragonair"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Wrap",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Dragon Pokemon",
+    "height": "5' 11\"",
+    "weight": "7 lbs",
+    "nationalNumber": 147,
+    "level": 12
+  },
+  "flavorText": "The capture of the first Dratini inspired the search for other legendary Pokémon.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "053_dratini-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "No weakness - hard to hit for double damage",
+      "Psychic resistance",
+      "Wrap can Paralyze on coin flip",
+      "Colorless typing - any energy works"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Dark Dragonair",
+      "Dark Dragonite"
+    ],
+    "counters": [
+      "High damage attacks"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Dratini had no Weakness, making it harder to knock out quickly. The Psychic resistance was a bonus. It was the starting point for the powerful Dark Dragonair/Dark Dragonite evolution line.",
+  "rulings": [
+    {
+      "ruling": "Dratini has no Weakness, so no type deals double damage to it.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

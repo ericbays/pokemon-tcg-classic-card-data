@@ -1,0 +1,143 @@
+{
+  "id": "base1-029",
+  "name": "Haunter",
+  "number": 29,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": [
+    "Stage 1"
+  ],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": [
+    "Psychic"
+  ],
+  "stage": "Stage 1",
+  "evolvesFrom": "Gastly",
+  "evolvesTo": [
+    "Gengar"
+  ],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Hypnosis",
+      "cost": [
+        "Psychic"
+      ],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pok\u00e9mon is now Asleep."
+    },
+    {
+      "name": "Dream Eater",
+      "cost": [
+        "Psychic",
+        "Psychic"
+      ],
+      "convertedEnergyCost": 2,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "You can't use this attack unless the Defending Pok\u00e9mon is Asleep."
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [
+    "Colorless"
+  ],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 93,
+    "category": "Gas Pok\u00e9mon",
+    "height": "5'3\"",
+    "weight": "0.2 lbs.",
+    "level": 22
+  },
+  "flavorText": "Because of its ability to slip through block walls, it is said to be from another dimension.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "029_haunter.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Hypnosis guarantees Sleep with no coin flip required",
+      "Dream Eater deals 50 damage for only 2 Psychic energy - excellent efficiency",
+      "Sleep prevents opponent from attacking or retreating",
+      "No weakness makes Haunter resistant to type-based counters",
+      "Fighting resistance helps against Hitmonchan and Machamp",
+      "Low retreat cost enables easy switching if needed",
+      "Can lock down opponents who lack benched Pok\u00e9mon",
+      "Combo can be set up quickly with just 2 energy"
+    ],
+    "weaknesses": [
+      "Dream Eater is useless if opponent wakes up from Sleep",
+      "Opponent can switch to bench to break the lock",
+      "60 HP is low for a Stage 1 Pok\u00e9mon",
+      "Sleep status only has 50% chance to persist each turn",
+      "Switch and Full Heal completely counter the strategy",
+      "Requires evolving from Gastly, adding setup time",
+      "If opponent wakes up, you must use Hypnosis again, losing damage output"
+    ],
+    "synergies": [
+      "Gastly - Required pre-evolution",
+      "Gengar - Evolution option if Haunter strategy fails",
+      "Mr. Mime - Protects Haunter with Invisible Wall",
+      "Switch - Allows you to reset if opponent is about to wake up",
+      "Gust of Wind - Brings up opponent's Pok\u00e9mon without Switch cards",
+      "Pok\u00e9mon Center - Heals Haunter while maintaining Sleep lock",
+      "Energy Search - Finds Psychic energy to maintain attacks"
+    ],
+    "counters": [
+      "Switch - Allows opponent to escape Sleep lock completely",
+      "Full Heal - Removes Sleep status instantly",
+      "Gust of Wind - Opponent can bring up benched Pok\u00e9mon to break lock",
+      "Strong basic attackers - Can knock out Haunter before it sets up",
+      "Mr. Mime - Invisible Wall blocks Dream Eater's 50 damage",
+      "Alakazam - Can move damage around even while Asleep"
+    ]
+  },
+  "description": "Haunter is a Stage 1 Psychic-type Pok\u00e9mon that employs a powerful sleep-lock strategy through its Hypnosis and Dream Eater combo. With 60 HP and no weakness, Haunter can establish control over opponents by forcing Sleep status and then dealing massive 50 damage while they're incapacitated. This combination makes Haunter one of the most effective status-based control Pok\u00e9mon in the Base Set, though its strategy relies on the opponent remaining Asleep.",
+  "competitiveHistory": "Haunter saw moderate competitive play in the Base Set era, primarily as a component of Gengar evolution decks but occasionally as a standalone strategy. The Hypnosis-Dream Eater combo was powerful and could completely shut down unprepared opponents, making Haunter a legitimate threat. However, experienced players adapted by including Switch and maintaining developed benches, which reduced Haunter's effectiveness. The card was particularly strong in best-of-one formats where opponents might not be prepared, but struggled in longer tournament matches where players could sideboard or adapt.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "No. You can only use Dream Eater if the Defending Pok\u00e9mon is Asleep at the moment you declare and use the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Between turns, after all end-of-turn effects. The Asleep Pok\u00e9mon's controller flips a coin - heads means it wakes up.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "No. While Asleep, a Pok\u00e9mon cannot attack or retreat. The player must use a Trainer card like Switch or wait to wake up.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The Pok\u00e9mon remains Asleep. You cannot apply Sleep status twice or extend the duration.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "No. Benching a Pok\u00e9mon removes all status conditions, including Sleep.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

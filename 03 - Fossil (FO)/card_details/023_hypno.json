@@ -1,0 +1,135 @@
+{
+  "id": "fossil-023",
+  "name": "Hypno",
+  "number": 23,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 90,
+  "types": ["Psychic"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Drowzee",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Prophecy",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may look at up to 3 cards from the top of either player's deck and rearrange them as you like.",
+      "effect": {
+        "effectType": "special",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "target": "any_pokemon",
+        "parameters": {
+          "viewCards": 3,
+          "fromLocation": "top_of_deck",
+          "targetPlayer": "either",
+          "canRearrange": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Dark Mind",
+      "cost": ["Psychic", "Psychic", "Psychic"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "effectType": "bench_damage",
+        "benchDamage": {
+          "target": "opponent_bench",
+          "damage": 10,
+          "count": "choice"
+        },
+        "parameters": {
+          "requiresBenchedTarget": false,
+          "ignoreWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Hypnosis Pokemon",
+    "height": "5' 3\"",
+    "weight": "167 lbs",
+    "nationalNumber": 97,
+    "level": 36
+  },
+  "flavorText": "When it locks eyes with an enemy, it will use a mix of psi moves such as Hypnosis and Confusion.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "023_hypno.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Prophecy allows deck manipulation for both players",
+      "90 HP is solid for a Stage 1",
+      "Dark Mind spreads damage to bench",
+      "Can set up bad draws for opponent",
+      "Can arrange your own draws",
+      "Non-holo version is more accessible"
+    ],
+    "weaknesses": [
+      "Psychic weakness is problematic",
+      "No resistance",
+      "Dark Mind's 30 damage is modest",
+      "Retreat cost of 2 is inconvenient"
+    ],
+    "synergies": [
+      "Cards that care about top of deck",
+      "Gengar (shared Dark Mind attack and spread strategy)",
+      "Clefairy Doll/stall strategies",
+      "Lass (arrange bad draws after they reshuffle)"
+    ],
+    "counters": [
+      "Other Psychic Pokemon exploit weakness",
+      "Aggressive decks that don't care about deck order",
+      "Mr. Mime blocks Dark Mind"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Hypno is functionally identical to the holo version (#8). Hypno's unique Prophecy power allowed for deck manipulation of either player. The non-holo printing made this utility card more accessible.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Prophecy lets you look at UP TO 3 cards - you can choose to look at fewer.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You must choose which player's deck to look at before looking at the cards.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "After rearranging, the cards go back on top of the deck in your chosen order - you don't shuffle.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Dark Mind's bench damage does not apply Weakness or Resistance.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

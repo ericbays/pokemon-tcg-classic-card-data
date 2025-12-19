@@ -1,0 +1,112 @@
+{
+  "id": "fossil-042",
+  "name": "Seadra",
+  "number": 42,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Horsea",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Water Gun",
+      "cost": ["Water", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20+",
+      "baseDamage": 20,
+      "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Seadra but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "parameters": {
+          "bonusDamagePerEnergy": 10,
+          "energyType": "Water",
+          "maxBonusDamage": 20,
+          "excludesCost": true
+        }
+      }
+    },
+    {
+      "name": "Agility",
+      "cost": ["Water", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Seadra.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventAllEffects": true,
+            "preventDamage": true,
+            "duration": "opponent_next_turn"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Dragon Pokemon",
+    "height": "3' 11\"",
+    "weight": "55 lbs",
+    "nationalNumber": 117,
+    "level": 23
+  },
+  "flavorText": "Capable of swimming backward by rapidly flapping its wing-like pectoral fins and stout tail.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "042_seadra.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Water Gun scales with extra energy",
+      "Agility can provide full immunity on heads",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "60 HP is modest",
+      "Lightning weakness",
+      "Agility is coin flip dependent"
+    ],
+    "synergies": [
+      "Horsea",
+      "Blastoise (Rain Dance)",
+      "Water decks"
+    ],
+    "counters": [
+      "Lightning Pokemon"
+    ]
+  },
+  "competitiveHistory": "Seadra offered decent attacks with Water Gun scaling and Agility's defensive potential. However, its 60 HP and Lightning weakness limited competitive play.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "If Agility's coin flip is heads, Seadra is immune to all attack effects and damage until after the opponent's next turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

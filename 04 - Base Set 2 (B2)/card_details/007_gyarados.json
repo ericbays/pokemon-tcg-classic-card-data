@@ -1,0 +1,114 @@
+{
+  "id": "base2-007",
+  "name": "Gyarados",
+  "number": 7,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 100,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Magikarp",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Dragon Rage",
+      "cost": ["Water", "Water", "Water"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Bubblebeam",
+      "cost": ["Water", "Water", "Water", "Water"],
+      "convertedEnergyCost": 4,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Atrocious Pokemon",
+    "height": "21' 4\"",
+    "weight": "518 lbs",
+    "nationalNumber": 130,
+    "level": 41
+  },
+  "flavorText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "007_gyarados-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "100 HP is excellent for Stage 1",
+      "Dragon Rage does solid 50 damage with no downside",
+      "Bubblebeam can Paralyze opponent",
+      "Fighting resistance helps against Hitmonchan",
+      "Benefits from Rain Dance energy acceleration"
+    ],
+    "weaknesses": [
+      "Grass weakness (uncommon but exists)",
+      "Evolves from weak Magikarp",
+      "High retreat cost of 3",
+      "Bubblebeam costs 4 energy for only 40 damage"
+    ],
+    "synergies": [
+      "Blastoise - Rain Dance for energy acceleration",
+      "Pokemon Breeder - N/A (Stage 1)",
+      "Computer Search - Find Magikarp/Gyarados"
+    ],
+    "counters": [
+      "Grass Pokemon - Weakness",
+      "Energy Removal - Slow down attacks"
+    ]
+  },
+  "competitiveHistory": "Gyarados was a solid attacker in Rain Dance decks. Dragon Rage provided efficient damage at 50 for 3 Water energy, and Blastoise could power it up quickly. The challenge was protecting Magikarp long enough to evolve, as it only had 30 HP.",
+  "rulings": [
+    {
+      "ruling": "Dragon Rage has no additional effect - it simply does 50 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Bubblebeam's Paralysis effect only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

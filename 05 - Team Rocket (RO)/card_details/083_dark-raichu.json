@@ -1,0 +1,117 @@
+{
+  "id": "rocket-083",
+  "name": "Dark Raichu",
+  "number": 83,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Pikachu",
+  "attacks": [
+    {
+      "name": "Surprise Thunder",
+      "cost": ["Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "text": "Flip a coin. If heads, flip another coin. If the second coin is heads, this attack does 20 damage to each of your opponent's Benched Pokémon. If the second coin is tails, this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "type": "coin_flip_conditional_bench_damage",
+        "baseDamage": 30,
+        "coinFlips": [
+          {
+            "flip": 1,
+            "onHeads": {
+              "action": "flip_again"
+            },
+            "onTails": {
+              "action": "none"
+            }
+          },
+          {
+            "flip": 2,
+            "onHeads": {
+              "action": "damage_bench",
+              "damage": 20,
+              "target": "all_opponent_benched"
+            },
+            "onTails": {
+              "action": "damage_bench",
+              "damage": 10,
+              "target": "all_opponent_benched"
+            }
+          }
+        ],
+        "benchDamageIgnoresWeaknessResistance": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mouse Pokémon",
+    "height": "2' 7\"",
+    "weight": "66 lbs.",
+    "nationalNumber": 26,
+    "level": 31
+  },
+  "flavorText": "Stores up electricity in its body, then suddenly releases it to surprise and shock everyone.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "083_dark-raichu-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Bench Sniper",
+    "strengths": [
+      "Can hit entire opponent's bench",
+      "Potential 20 damage to all Benched Pokemon",
+      "Solid 30 base damage to Active"
+    ],
+    "weaknesses": [
+      "Coin flip dependent",
+      "70 HP is fragile",
+      "High Energy cost for the effect"
+    ],
+    "synergies": [
+      "Electrode (Buzzap)",
+      "Energy acceleration",
+      "Spread damage strategies"
+    ],
+    "counters": [
+      "Fighting Pokemon",
+      "Mr. Mime (Invisible Wall)"
+    ]
+  },
+  "competitiveHistory": "Dark Raichu was the secret rare of Team Rocket, numbered 83/82 (making it the first 'secret rare' in the TCG). It was a promotional surprise for collectors. While its Surprise Thunder attack had potential to devastate an opponent's bench, the double coin flip requirement made it inconsistent for competitive play.",
+  "rulings": [
+    {
+      "ruling": "If the first coin flip is tails, the attack only does 30 damage to the Active Pokemon and nothing to the Bench.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The bench damage does not apply Weakness or Resistance.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Dark Raichu evolves from Pikachu, not from regular Raichu.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

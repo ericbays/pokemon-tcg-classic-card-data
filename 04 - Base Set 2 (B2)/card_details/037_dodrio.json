@@ -1,0 +1,123 @@
+{
+  "id": "base2-037",
+  "name": "Dodrio",
+  "number": 37,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Doduo",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Retreat Aid",
+      "type": "Pokemon Power",
+      "text": "As long as Dodrio is Benched, pay 1 Colorless less to retreat your Active Pokémon.",
+      "effect": {
+        "effectType": "retreat_cost_reduction",
+        "trigger": "passive",
+        "conditions": ["is_benched"],
+        "parameters": {
+          "reduction": 1,
+          "target": "your_active_pokemon"
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Rage",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each damage counter on Dodrio.",
+      "effect": {
+        "effectType": "damage_multiplier",
+        "parameters": {
+          "baseDamage": 10,
+          "bonusDamage": 10,
+          "bonusPer": "damage_counter_on_self"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Triplebird Pokemon",
+    "height": "5' 11\"",
+    "weight": "188 lbs",
+    "nationalNumber": 85,
+    "level": 28
+  },
+  "flavorText": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "037_dodrio-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Retreat Aid reduces retreat cost for entire team",
+      "Free retreat cost itself",
+      "Fighting resistance",
+      "Multiple Dodrio stack for more retreat reduction"
+    ],
+    "weaknesses": [
+      "70 HP is moderate",
+      "Lightning weakness",
+      "Rage damage depends on being damaged",
+      "Takes up bench space"
+    ],
+    "synergies": [
+      "High retreat cost Pokemon - Reduced retreat",
+      "Multiple Dodrio - Stacking retreat reduction",
+      "Aggressive switching strategies"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Gust of Wind - Force Dodrio active"
+    ]
+  },
+  "competitiveHistory": "Dodrio was a popular tech card for its Retreat Aid ability. Reducing retreat costs by 1 for all your Pokemon was valuable, and multiple Dodrio stacked. It enabled switching strategies that would otherwise be too expensive.",
+  "rulings": [
+    {
+      "ruling": "Multiple Dodrio on your Bench stack - each one reduces retreat cost by 1.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Retreat Aid only works while Dodrio is on your Bench, not while Active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Retreat Aid can reduce retreat cost to 0.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Rage does 10 damage plus 10 for EACH damage counter on Dodrio (not just 10 total).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

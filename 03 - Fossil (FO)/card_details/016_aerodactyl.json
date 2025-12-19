@@ -1,0 +1,128 @@
+{
+  "id": "fossil-016",
+  "name": "Aerodactyl",
+  "number": 16,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 60,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Mysterious Fossil",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Prehistoric Power",
+      "type": "Pokemon Power",
+      "text": "No more Evolution cards can be played. This power stops working while Aerodactyl is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "special",
+        "trigger": "passive",
+        "timing": "any_time",
+        "target": "all_pokemon",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "blocksEvolution": true,
+          "affectsBothPlayers": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Wing Attack",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Fossil Pokemon",
+    "height": "5' 11\"",
+    "weight": "130 lbs",
+    "nationalNumber": 142,
+    "level": 28
+  },
+  "flavorText": "A ferocious prehistoric Pokémon that goes for the enemy's throat with its serrated saw-like fangs.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "016_aerodactyl.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Prehistoric Power completely shuts down evolution decks",
+      "Colorless attack cost allows flexibility in deck building",
+      "Fighting resistance is useful against Haymaker decks",
+      "Can be played quickly via Mysterious Fossil",
+      "Non-holo version is more affordable and accessible"
+    ],
+    "weaknesses": [
+      "Only 60 HP is fragile for a key strategic piece",
+      "Wing Attack is underwhelming at 30 damage for 3 energy",
+      "Shuts down your own evolutions as well",
+      "Grass weakness can be exploited"
+    ],
+    "synergies": [
+      "Mysterious Fossil",
+      "Basic Pokemon attackers (Hitmonchan, Electabuzz)",
+      "Haymaker strategy",
+      "Scoop Up (to temporarily allow evolution)"
+    ],
+    "counters": [
+      "Gust of Wind to force Aerodactyl active and KO it",
+      "Status conditions disable Prehistoric Power",
+      "Grass-type Pokemon for weakness damage",
+      "Energy Removal to slow down setup"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Aerodactyl is functionally identical to the holo version (#1). The Prehistoric Power ability was format-defining, creating the 'Aerodactyl Lock' archetype that prevented opponents from evolving. This made it essential for Haymaker and other Basic Pokemon strategies. The non-holo printing made it more accessible for competitive players.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Prehistoric Power affects both players - neither player can play Evolution cards while Aerodactyl's power is active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Aerodactyl becomes Asleep, Confused, or Paralyzed, Evolution cards can be played until it recovers.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Mysterious Fossil counts as a Basic Pokemon for evolution purposes, allowing Aerodactyl to be played as a Stage 1.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Pokemon Breeder cannot bypass Prehistoric Power - no evolution cards of any kind can be played.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

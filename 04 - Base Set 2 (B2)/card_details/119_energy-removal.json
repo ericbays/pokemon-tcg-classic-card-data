@@ -1,0 +1,65 @@
+{
+  "id": "base2-119",
+  "name": "Energy Removal",
+  "number": 119,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "text": "Choose 1 Energy card attached to 1 of your opponent's Pokémon and discard it.",
+  "effect": {
+    "text": "Choose 1 Energy card attached to 1 of your opponent's Pokémon and discard it.",
+    "effectType": "energy_removal",
+    "parameters": {
+      "target": "opponent_pokemon",
+      "removeEnergy": {
+        "count": 1,
+        "destination": "discard"
+      }
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "119_energy-removal-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruption",
+    "strengths": [
+      "Remove 1 Energy for free",
+      "No cost to use",
+      "Slows opponent's attacks"
+    ],
+    "weaknesses": [
+      "Only removes 1 Energy",
+      "Less impactful than Super Energy Removal"
+    ],
+    "synergies": [
+      "Super Energy Removal - More energy denial",
+      "Energy denial strategies"
+    ],
+    "counters": [
+      "Energy acceleration (Blastoise Rain Dance)"
+    ]
+  },
+  "competitiveHistory": "Energy Removal was a staple in energy denial strategies, often used alongside Super Energy Removal for maximum disruption.",
+  "rulings": [
+    {
+      "ruling": "You choose which of your opponent's Pokemon to target.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You choose which Energy card to discard from that Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "base2-003",
+  "name": "Chansey",
+  "number": 3,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 120,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Blissey"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Scrunch",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Chansey during your opponent's next turn. (Any other effects of attacks still happen.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "type": "damage_prevention",
+            "duration": "opponents_next_turn",
+            "amount": "all"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Double-edge",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "80",
+      "baseDamage": 80,
+      "text": "Chansey does 80 damage to itself.",
+      "effect": {
+        "effectType": "self_damage",
+        "selfDamage": 80
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Egg Pokemon",
+    "height": "3' 7\"",
+    "weight": "76 lbs",
+    "nationalNumber": 113,
+    "level": 55
+  },
+  "flavorText": "A rare and elusive Pokémon that is said to bring happiness to those who manage to catch it.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "003_chansey-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Tank",
+    "strengths": [
+      "120 HP is tied for highest in Base Set era",
+      "Basic Pokemon requires no evolution setup",
+      "Colorless type uses any energy",
+      "Psychic resistance helps against Mewtwo",
+      "Low retreat cost of 1",
+      "Scrunch can completely block damage"
+    ],
+    "weaknesses": [
+      "Fighting weakness is devastating against Hitmonchan",
+      "Double-edge deals 80 damage to itself",
+      "No efficient attack - Double-edge costs 4 energy",
+      "Scrunch is coin-flip dependent"
+    ],
+    "synergies": [
+      "Alakazam - Damage Swap moves damage off Chansey",
+      "Pokemon Center - Heal all damage if no energy attached",
+      "Scoop Up - Return damaged Chansey to hand",
+      "Double Colorless Energy - Power up attacks faster"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness one-shots with Special Punch",
+      "Machamp - Fighting type with high damage",
+      "Energy Removal - Prevent Chansey from attacking"
+    ]
+  },
+  "competitiveHistory": "Chansey was a staple in Damage Swap decks alongside Alakazam. Its massive 120 HP made it the perfect damage sponge - opponents would struggle to knock it out while Alakazam redistributed damage. Chansey also saw play in stall decks using Scrunch and Pokemon Center to outlast opponents.",
+  "rulings": [
+    {
+      "ruling": "If Scrunch's coin flip is heads, all damage from attacks is prevented, but other effects (like status conditions) still apply.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Double-edge's self-damage is applied even if the attack does no damage to the Defending Pokemon (such as when blocked by a Trainer card).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The self-damage from Double-edge can Knock Out Chansey if it reduces Chansey to 0 HP.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Defender reduces the self-damage from Double-edge by 20.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

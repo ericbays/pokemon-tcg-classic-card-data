@@ -1,0 +1,66 @@
+{
+  "id": "rocket-072",
+  "name": "Rocket's Sneak Attack",
+  "number": 72,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Rare",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer. Would be classified as Supporter by modern rules."
+  },
+  "effect": {
+    "text": "Look at your opponent's hand. If he or she has any Trainer cards, choose 1 of them. Your opponent shuffles that card into his or her deck.",
+    "effectType": "hand_disruption",
+    "affectsOpponent": true,
+    "targetPlayer": "opponent",
+    "actions": [
+      {
+        "action": "opponent_reveal_hand"
+      },
+      {
+        "action": "shuffle_into_deck",
+        "target": "opponent_hand",
+        "cardType": "Trainer",
+        "count": 1,
+        "chooser": "you"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "072_rockets-sneak-attack-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "powerLevel": "High",
+    "timing": "early_game",
+    "synergies": [
+      "Lass",
+      "Dark Vileplume"
+    ],
+    "tips": [
+      "Play early to see opponent's hand and remove key Trainers",
+      "Target Computer Search, Item Finder, or Professor Oak"
+    ]
+  },
+  "competitiveHistory": "This non-holo version is functionally identical to the holo version (#16). Rocket's Sneak Attack was a powerful disruption card for hand control strategies.",
+  "rulings": [
+    {
+      "ruling": "If opponent has no Trainer cards in hand, you still see their hand.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

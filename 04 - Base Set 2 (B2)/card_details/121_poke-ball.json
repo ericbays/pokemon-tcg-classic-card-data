@@ -1,0 +1,71 @@
+{
+  "id": "base2-121",
+  "name": "Poké Ball",
+  "number": 121,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "text": "Flip a coin. If heads, you may search your deck for any Basic Pokémon or Evolution card. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward.",
+  "effect": {
+    "text": "Flip a coin. If heads, you may search your deck for any Basic Pokémon or Evolution card. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward.",
+    "effectType": "search",
+    "coinFlip": {
+      "count": 1,
+      "onHeads": {
+        "action": "search_deck",
+        "searchFor": ["basic_pokemon", "evolution_pokemon"],
+        "destination": "hand",
+        "revealToOpponent": true,
+        "shuffleAfter": true
+      },
+      "onTails": null
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "121_poke-ball-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Search",
+    "strengths": [
+      "Can search for any Pokemon",
+      "No discard cost"
+    ],
+    "weaknesses": [
+      "Requires coin flip - 50% fail rate",
+      "Unreliable"
+    ],
+    "synergies": [
+      "Budget alternative to Pokemon Trader"
+    ],
+    "counters": [
+      "Coin flip can fail"
+    ]
+  },
+  "competitiveHistory": "Poké Ball saw limited play due to its coin flip requirement. Pokémon Trader was generally preferred for reliable searching.",
+  "rulings": [
+    {
+      "ruling": "You only search your deck on a heads result.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "On tails, the effect does nothing.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must reveal the Pokemon you search for.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

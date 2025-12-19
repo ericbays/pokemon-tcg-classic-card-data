@@ -1,0 +1,132 @@
+{
+  "id": "fossil-012",
+  "name": "Moltres",
+  "number": 12,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Wildfire",
+      "cost": ["Fire"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "You may discard any number of Fire Energy cards attached to Moltres when you use this attack. If you do, discard that many cards from the top of your opponent's deck.",
+      "effect": {
+        "effectType": "deck_manipulation",
+        "parameters": {
+          "discardFromOpponentDeck": true,
+          "amountBasedOn": "fire_energy_discarded",
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "Dive Bomb",
+      "cost": ["Fire", "Fire", "Fire", "Fire"],
+      "convertedEnergyCost": 4,
+      "damage": "80",
+      "baseDamage": 80,
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 80
+          },
+          "onTails": {
+            "damage": 0
+          }
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Flame Pokemon",
+    "height": "6' 7\"",
+    "weight": "132 lbs",
+    "nationalNumber": 146,
+    "level": 35
+  },
+  "flavorText": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "012_moltres.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Wildfire can mill opponent's deck as an alternate win condition",
+      "No weakness is extremely valuable",
+      "Fighting resistance helps against Haymaker",
+      "Basic Pokemon with 70 HP is solid",
+      "Dive Bomb can do 80 damage for a potential OHKO"
+    ],
+    "weaknesses": [
+      "Dive Bomb is coin flip dependent - 50% chance to do nothing",
+      "Wildfire requires discarding your own energy",
+      "4 energy for Dive Bomb is expensive",
+      "Mill strategy is slow and inconsistent"
+    ],
+    "synergies": [
+      "Energy Retrieval (recover discarded Fire Energy)",
+      "Super Energy Retrieval",
+      "Fire Energy acceleration",
+      "Stall strategies"
+    ],
+    "counters": [
+      "Water Pokemon deal good damage",
+      "Energy Removal prevents Wildfire/Dive Bomb",
+      "Aggressive decks that win before mill matters"
+    ]
+  },
+  "competitiveHistory": "Fossil Moltres offered a unique mill strategy with Wildfire, allowing players to attack the opponent's deck as a win condition. However, this strategy was generally too slow and inconsistent for competitive play. Dive Bomb's coin flip made it unreliable as a primary attacker. The card saw occasional play in stall and control decks but was not a tournament staple.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Wildfire allows you to discard 0 Fire Energy, in which case no cards are discarded from opponent's deck.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The Fire Energy must be discarded from Moltres, not from your hand or other Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Dive Bomb's coin flip is tails, no damage is dealt at all - the attack completely fails.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If opponent's deck has fewer cards than Fire Energy you discarded, discard all remaining cards in their deck.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

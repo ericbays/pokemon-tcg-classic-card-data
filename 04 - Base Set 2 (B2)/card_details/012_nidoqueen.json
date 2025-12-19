@@ -1,0 +1,113 @@
+{
+  "id": "base2-012",
+  "name": "Nidoqueen",
+  "number": 12,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 90,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Nidorina",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Boyfriends",
+      "cost": ["Grass", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20+",
+      "baseDamage": 20,
+      "text": "Does 20 damage plus 20 more damage for each Nidoking you have in play.",
+      "effect": {
+        "effectType": "damage_multiplier",
+        "parameters": {
+          "baseDamage": 20,
+          "bonusDamage": 20,
+          "bonusPer": "nidoking_in_play"
+        }
+      }
+    },
+    {
+      "name": "Mega Punch",
+      "cost": ["Grass", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Drill Pokemon",
+    "height": "4' 3\"",
+    "weight": "132 lbs",
+    "nationalNumber": 31,
+    "level": 43
+  },
+  "flavorText": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "012_nidoqueen-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Boyfriends can deal up to 60 damage for just 2 energy",
+      "90 HP is solid for Stage 2",
+      "Synergizes with Nidoking for bonus damage",
+      "Mega Punch provides reliable 50 damage"
+    ],
+    "weaknesses": [
+      "Boyfriends requires Nidoking in play for full power",
+      "Psychic weakness to Mewtwo/Alakazam",
+      "Stage 2 requires significant setup",
+      "3 retreat cost is expensive"
+    ],
+    "synergies": [
+      "Nidoking - Powers up Boyfriends attack",
+      "Pokemon Breeder - Skip middle evolution",
+      "Double Colorless Energy - Powers attacks faster"
+    ],
+    "counters": [
+      "Mewtwo - Psychic weakness",
+      "Alakazam - Psychic weakness",
+      "Gust of Wind - Target Nidoking to reduce Boyfriends damage"
+    ]
+  },
+  "competitiveHistory": "Nidoqueen was rarely played competitively. While Boyfriends had interesting synergy with Nidoking, running two Stage 2 evolution lines was impractical. Most players preferred more consistent strategies.",
+  "rulings": [
+    {
+      "ruling": "Boyfriends counts all Nidoking you have in play, including Benched Nidoking.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you have 2 Nidoking in play, Boyfriends does 20 + 20 + 20 = 60 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Mega Punch has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

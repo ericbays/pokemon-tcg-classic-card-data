@@ -1,0 +1,111 @@
+{
+  "id": "jungle-035",
+  "name": "Exeggutor",
+  "number": 35,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Exeggcute",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Teleport",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Switch Exeggutor with 1 of your Benched Pokémon.",
+      "effect": {
+        "effectType": "switch",
+        "target": "self",
+        "switchWith": "your_benched"
+      }
+    },
+    {
+      "name": "Big Eggsplosion",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "20x",
+      "baseDamage": 20,
+      "text": "Flip a number of coins equal to the number of Energy attached to Exeggutor. This attack does 20 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlips": "energy_attached",
+        "damagePerHead": 20
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Coconut Pokemon",
+    "height": "6' 7\"",
+    "weight": "265 lbs",
+    "nationalNumber": 103,
+    "level": 35
+  },
+  "flavorText": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an Exeggcute.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "035_exeggutor.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Big Eggsplosion only costs 1 Colorless energy",
+      "Damage scales with energy attached",
+      "Teleport allows retreat for 1 Psychic energy",
+      "Can attach many energy and deal massive damage"
+    ],
+    "weaknesses": [
+      "Fire weakness",
+      "Coin-flip dependent damage is unreliable",
+      "Heavy 3 retreat cost without Teleport",
+      "No resistance"
+    ],
+    "synergies": [
+      "Energy acceleration - more energy = more coin flips",
+      "Double Colorless Energy - counts as 1 flip but powers up",
+      "Grass/Psychic energy mix"
+    ],
+    "counters": [
+      "Fire Pokemon",
+      "Energy Removal - reduces damage potential"
+    ]
+  },
+  "competitiveHistory": "Exeggutor from Jungle saw some competitive play due to its efficient Big Eggsplosion attack. With enough energy attached, it could deal significant damage for just 1 Colorless energy cost. The coin-flip nature made it inconsistent, but the potential for high damage output made it appealing in some builds.",
+  "rulings": [
+    {
+      "ruling": "Big Eggsplosion counts ALL energy cards attached to Exeggutor, not just the one used to pay for the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Double Colorless Energy counts as 1 energy card, so you flip 1 coin for it, not 2.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Teleport can only be used if you have at least one Benched Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

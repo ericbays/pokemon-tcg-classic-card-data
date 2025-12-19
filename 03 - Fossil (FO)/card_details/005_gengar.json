@@ -1,0 +1,141 @@
+{
+  "id": "fossil-005",
+  "name": "Gengar",
+  "number": 5,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Psychic"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Haunter",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Curse",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may move 1 damage counter from 1 of your opponent's Pokémon to another (even if it would Knock Out the other Pokémon). This power can't be used if Gengar is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "damage_transfer",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "target": "opponent_pokemon",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "damageCountersMoved": 1,
+          "fromTarget": "opponent_pokemon",
+          "toTarget": "opponent_pokemon",
+          "canKnockOut": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Dark Mind",
+      "cost": ["Psychic", "Psychic", "Psychic"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "effectType": "bench_damage",
+        "benchDamage": {
+          "target": "opponent_bench",
+          "damage": 10,
+          "count": "choice"
+        },
+        "parameters": {
+          "requiresBenchedTarget": false,
+          "ignoreWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Shadow Pokemon",
+    "height": "4' 11\"",
+    "weight": "89 lbs",
+    "nationalNumber": 94,
+    "level": 38
+  },
+  "flavorText": "Under a full moon, this Pokémon likes to mimic the shadows of people and laugh at their fright.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "005_gengar.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Curse can finish off damaged Pokemon without attacking",
+      "Dark Mind spreads damage, setting up Curse knockouts",
+      "No weakness is extremely valuable",
+      "Fighting resistance helps against Haymaker",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Stage 2 requires full evolution line setup",
+      "80 HP is moderate for a Stage 2",
+      "Dark Mind's 30 damage is relatively low",
+      "Curse requires opponent's Pokemon to have damage"
+    ],
+    "synergies": [
+      "Fossil Haunter (Transparency power for protection)",
+      "Damage spreading attacks",
+      "Pokemon Breeder",
+      "Mr. Mime (Invisible Wall blocks while Gengar sets up)"
+    ],
+    "counters": [
+      "Aerodactyl prevents evolution",
+      "Status conditions disable Curse",
+      "Pokemon with high HP that don't get damaged easily",
+      "Gust of Wind to target Gastly/Haunter early"
+    ]
+  },
+  "competitiveHistory": "Gengar was a cornerstone of spread damage strategies in the classic era. The combination of Dark Mind's bench sniping and Curse's ability to move damage counters for knockouts created a unique control playstyle. When paired with Fossil Haunter's Transparency power, the Gastly evolution line became a formidable archetype. Gengar decks required skill to pilot but rewarded careful damage management with efficient multi-knockouts.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Curse can move a damage counter to a Pokemon that would be Knocked Out by it. The Knocked Out Pokemon is removed as normal.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You must move the damage counter from one of your opponent's Pokemon to another of your opponent's Pokemon - you cannot move it to your own.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Dark Mind's bench damage does not apply Weakness or Resistance.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If your opponent has no Benched Pokemon, Dark Mind still does 30 damage to the Active Pokemon but no bench damage occurs.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Multiple Gengars can each use Curse once per turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

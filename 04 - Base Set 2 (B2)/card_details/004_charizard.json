@@ -1,0 +1,130 @@
+{
+  "id": "base2-004",
+  "name": "Charizard",
+  "number": 4,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 120,
+  "types": ["Fire"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Charmeleon",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Energy Burn",
+      "type": "Pokemon Power",
+      "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "energy_conversion",
+        "trigger": "unlimited_per_turn",
+        "timing": "before_attack",
+        "target": "self",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "convertsTo": "Fire",
+          "duration": "rest_of_turn"
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Fire Spin",
+      "cost": ["Fire", "Fire", "Fire", "Fire"],
+      "convertedEnergyCost": 4,
+      "damage": "100",
+      "baseDamage": 100,
+      "text": "Discard 2 Energy cards attached to Charizard in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": 2,
+          "type": "any"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Flame Pokemon",
+    "height": "5' 7\"",
+    "weight": "200 lbs",
+    "nationalNumber": 6,
+    "level": 76
+  },
+  "flavorText": "Spits fire that is hot enough to melt boulders. Known to unintentionally cause forest fires.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "004_charizard-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "100 damage Fire Spin can one-shot most Pokemon",
+      "120 HP is tied for highest in Base Set era",
+      "Energy Burn allows flexible energy attachment",
+      "Fighting resistance protects against Hitmonchan",
+      "Iconic card with psychological impact"
+    ],
+    "weaknesses": [
+      "Water weakness is devastating against Rain Dance decks",
+      "Must discard 2 energy per attack - unsustainable",
+      "4 energy attack cost is slow to set up",
+      "Stage 2 evolution requires significant setup",
+      "3 retreat cost is expensive"
+    ],
+    "synergies": [
+      "Energy Retrieval - Recover discarded energy",
+      "Double Colorless Energy - Counts as 2 Fire with Energy Burn",
+      "Pokemon Breeder - Skip Charmeleon stage",
+      "Computer Search - Find evolution pieces",
+      "Super Energy Retrieval - Mass energy recovery"
+    ],
+    "counters": [
+      "Blastoise - Water type with Rain Dance for fast setup",
+      "Any Water Pokemon - 2x weakness",
+      "Energy Removal - Slows energy buildup",
+      "Gust of Wind - Force out before ready"
+    ]
+  },
+  "competitiveHistory": "Despite being the most iconic and valuable card of the era, Charizard was not considered top-tier competitively due to its high energy cost, energy discard requirement, and Water weakness (Blastoise Rain Dance was very popular). However, it remained a fan favorite and could steal games with raw power when it got set up.",
+  "rulings": [
+    {
+      "ruling": "Energy Burn only converts Energy for the rest of the turn. At the end of the turn, attached Energy returns to its original type.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must discard 2 Energy cards to use Fire Spin, even if Charizard has more than 4 Energy attached.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Double Colorless Energy counts as 2 Fire Energy when Energy Burn is active, and discarding it satisfies 2 of the discard requirement.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Energy Burn converts all attached Energy, including Special Energy cards.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

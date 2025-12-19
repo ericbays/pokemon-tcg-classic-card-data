@@ -1,0 +1,86 @@
+{
+  "id": "rocket-064",
+  "name": "Ponyta",
+  "number": 64,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Rapidash", "Rapidash"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Ember",
+      "cost": ["Fire", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Discard 1 Fire Energy card attached to Ponyta in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "cost": {
+          "type": "Fire",
+          "count": 1
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Fire Horse Pokemon",
+    "height": "3' 3\"",
+    "weight": "66 lbs",
+    "nationalNumber": 77,
+    "level": 15
+  },
+  "flavorText": "A gentle grass-eater, it will allow riders on its back. However, anyone attempting to do so must be careful to not get burned.",
+  "illustrator": "Atsuko Nishida",
+  "imageUrl": "064_ponyta-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Ember does 30 damage - good for a Basic",
+      "50 HP is decent"
+    ],
+    "weaknesses": [
+      "Water weakness",
+      "Ember requires energy discard"
+    ],
+    "synergies": [
+      "Dark Rapidash",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Water-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Ponyta had only one attack but Ember dealt good damage for a Basic Pokemon. The energy discard was a cost but 30 damage was solid early game.",
+  "rulings": [
+    {
+      "ruling": "You must discard a Fire Energy to use Ember - it's not optional.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

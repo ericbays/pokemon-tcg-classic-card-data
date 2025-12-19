@@ -1,0 +1,89 @@
+{
+  "id": "jungle-059",
+  "name": "Paras",
+  "number": 59,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Parasect"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Scratch",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Spore",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep",
+        "guaranteed": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mushroom Pokemon",
+    "height": "1' 0\"",
+    "weight": "12 lbs",
+    "nationalNumber": 46,
+    "level": 8
+  },
+  "flavorText": "Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "059_paras.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Spore guarantees Sleep",
+      "Scratch is decent early damage"
+    ],
+    "weaknesses": [
+      "40 HP is very low",
+      "Fire weakness"
+    ],
+    "synergies": [
+      "Parasect evolution"
+    ],
+    "counters": [
+      "Fire Pokemon"
+    ]
+  },
+  "competitiveHistory": "Paras from Jungle was used as a basic for Parasect. Spore provided guaranteed Sleep.",
+  "rulings": []
+}

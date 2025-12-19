@@ -1,0 +1,60 @@
+{
+  "id": "base2-122",
+  "name": "Potion",
+  "number": 122,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "text": "Remove up to 2 damage counters from 1 of your Pokémon.",
+  "effect": {
+    "text": "Remove up to 2 damage counters from 1 of your Pokémon.",
+    "effectType": "healing",
+    "parameters": {
+      "target": "your_pokemon",
+      "healAmount": "up_to_20"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "122_potion-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Healing",
+    "strengths": [
+      "Free healing with no cost",
+      "Simple and reliable"
+    ],
+    "weaknesses": [
+      "Only heals 20 damage",
+      "Small impact"
+    ],
+    "synergies": [
+      "Low HP Pokemon - 20 HP is more significant"
+    ],
+    "counters": [
+      "High damage attacks make healing insignificant"
+    ]
+  },
+  "competitiveHistory": "Potion saw minimal competitive play due to its low healing amount. Super Potion was generally preferred despite its cost.",
+  "rulings": [
+    {
+      "ruling": "You can remove fewer than 2 damage counters if the Pokemon has less damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can use Potion on any of your Pokemon, Active or Benched.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

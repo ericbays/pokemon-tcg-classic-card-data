@@ -1,0 +1,122 @@
+{
+  "id": "fossil-032",
+  "name": "Cloyster",
+  "number": 32,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 50,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Shellder",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Clamp",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, this attack does nothing (not even damage).",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 30,
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": {
+            "damage": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "Spike Cannon",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 2,
+          "damagePerHeads": 30
+        },
+        "parameters": {
+          "minimumDamage": 0,
+          "maximumDamage": 60
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Bivalve Pokemon",
+    "height": "4' 11\"",
+    "weight": "292 lbs",
+    "nationalNumber": 91,
+    "level": 25
+  },
+  "flavorText": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "032_cloyster.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Clamp can Paralyze for board control",
+      "Spike Cannon can deal up to 60 damage",
+      "Low energy costs"
+    ],
+    "weaknesses": [
+      "Only 50 HP is very fragile for Stage 1",
+      "Both attacks are coin flip dependent",
+      "Lightning weakness",
+      "Clamp can completely whiff"
+    ],
+    "synergies": [
+      "Shellder",
+      "Water decks",
+      "Rain Dance for energy"
+    ],
+    "counters": [
+      "Lightning Pokemon (Electabuzz)",
+      "Consistent attackers"
+    ]
+  },
+  "competitiveHistory": "Cloyster saw minimal competitive play due to its extremely low 50 HP for a Stage 1 and coin flip dependency on both attacks. The risk of Clamp doing nothing made it unreliable.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "If Clamp's coin flip is tails, the attack does nothing - no damage and no effects.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Spike Cannon does 0 damage if both coins are tails.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

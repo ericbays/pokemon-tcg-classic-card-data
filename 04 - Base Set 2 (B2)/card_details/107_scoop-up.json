@@ -1,0 +1,67 @@
+{
+  "id": "base2-107",
+  "name": "Scoop Up",
+  "number": 107,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "text": "Choose 1 of your Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)",
+  "effect": {
+    "text": "Choose 1 of your Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)",
+    "effectType": "bounce",
+    "parameters": {
+      "target": "your_pokemon",
+      "returnCard": "Basic",
+      "discardAttached": true
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "107_scoop-up-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Utility",
+    "strengths": [
+      "Save damaged Pokemon from being KO'd",
+      "Reset Pokemon with negative effects",
+      "Reuse come-into-play abilities"
+    ],
+    "weaknesses": [
+      "Discards all attached cards (Energy, evolutions)",
+      "Only returns Basic card"
+    ],
+    "synergies": [
+      "Alakazam - Move damage then Scoop Up",
+      "High-value Basics worth saving"
+    ],
+    "counters": [
+      "Fast KO attacks before Scoop Up can be used"
+    ]
+  },
+  "competitiveHistory": "Scoop Up was essential in Damage Swap decks with Alakazam, allowing players to move damage to a Pokemon then Scoop Up to effectively heal.",
+  "rulings": [
+    {
+      "ruling": "You can choose any of your Pokemon in play (Active or Benched).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Only the Basic Pokemon card goes to your hand. All other cards (evolutions, energy, etc.) are discarded.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you Scoop Up your Active Pokemon, you must promote a new Active from your Bench.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

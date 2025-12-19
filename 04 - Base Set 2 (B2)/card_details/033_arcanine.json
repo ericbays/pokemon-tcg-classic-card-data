@@ -1,0 +1,112 @@
+{
+  "id": "base2-033",
+  "name": "Arcanine",
+  "number": 33,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 100,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Growlithe",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Flamethrower",
+      "cost": ["Fire", "Fire", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Discard 1 Fire Energy card attached to Arcanine in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Fire"
+        }
+      }
+    },
+    {
+      "name": "Take Down",
+      "cost": ["Fire", "Fire", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "80",
+      "baseDamage": 80,
+      "text": "Arcanine does 30 damage to itself.",
+      "effect": {
+        "effectType": "self_damage",
+        "selfDamage": 30
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Legendary Pokemon",
+    "height": "6' 3\"",
+    "weight": "342 lbs",
+    "nationalNumber": 59,
+    "level": 45
+  },
+  "flavorText": "A Pokémon that has been long admired for its beauty. It runs gracefully, as if on wings.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "033_arcanine-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "100 HP is excellent for Stage 1",
+      "Take Down deals massive 80 damage",
+      "Flamethrower is solid at 50 damage",
+      "Only Stage 1 evolution"
+    ],
+    "weaknesses": [
+      "Water weakness to Blastoise/Rain Dance",
+      "Flamethrower requires energy discard",
+      "Take Down deals 30 self-damage",
+      "3 retreat cost is expensive"
+    ],
+    "synergies": [
+      "Energy Retrieval - Recover discarded Fire Energy",
+      "Defender - Reduce Take Down self-damage"
+    ],
+    "counters": [
+      "Blastoise - Water weakness and energy advantage",
+      "Any Water Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Arcanine was a solid Fire-type attacker with excellent HP for a Stage 1. However, the Water weakness in a Blastoise-dominated metagame and the energy/self-damage costs of its attacks limited competitive play.",
+  "rulings": [
+    {
+      "ruling": "You must discard 1 Fire Energy to use Flamethrower.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Take Down's self-damage is applied even if the attack does no damage to the Defending Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Take Down's self-damage can Knock Out Arcanine.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

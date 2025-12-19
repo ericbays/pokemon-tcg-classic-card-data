@@ -1,0 +1,76 @@
+{
+  "id": "base1-091",
+  "name": "Bill",
+  "number": 91,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Draw 2 cards.",
+    "effectType": "draw",
+    "actions": [
+      {
+        "action": "draw_cards",
+        "amount": 2
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "cards_in_deck",
+        "minimum": 2,
+        "description": "Must have at least 2 cards in deck"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "091_bill.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Draw",
+    "timing": "any_time",
+    "synergies": ["Professor Oak", "Computer Search", "Item Finder"],
+    "tips": [
+      "Always run 4 copies in competitive decks",
+      "Use freely throughout the game for card advantage",
+      "One of the best turn 1 plays",
+      "Play Bill before Professor Oak to see more cards total",
+      "Late game, count your deck before Bill to avoid decking out",
+      "Bill is often correct to play on any turn where you can play it"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "Simply draw 2 cards from your deck"
+    },
+    {
+      "ruling": "You must have at least 2 cards remaining in your deck to play Bill"
+    },
+    {
+      "ruling": "If you have exactly 1 card in your deck, you cannot play Bill"
+    },
+    {
+      "ruling": "No other conditions, costs, or requirements to play this card"
+    },
+    {
+      "ruling": "Bill counts as playing a Trainer card for any effects that track Trainer usage"
+    },
+    {
+      "ruling": "One of the simplest and most straightforward cards in the game"
+    }
+  ]
+}

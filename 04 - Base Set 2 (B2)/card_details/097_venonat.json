@@ -1,0 +1,113 @@
+{
+  "id": "base2-097",
+  "name": "Venonat",
+  "number": 97,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Venomoth"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Stun Spore",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Leech Life",
+      "cost": ["Grass", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Remove a number of damage counters from Venonat equal to the damage done to the Defending Pokémon (after applying Weakness and Resistance). If Venonat has fewer damage counters than that, remove all of them.",
+      "effect": {
+        "effectType": "drain",
+        "parameters": {
+          "healAmount": "damage_dealt",
+          "timing": "after_weakness_resistance"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Insect Pokemon",
+    "height": "3' 3\"",
+    "weight": "66 lbs",
+    "nationalNumber": 48,
+    "level": 12
+  },
+  "flavorText": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "097_venonat-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Stun Spore can Paralyze",
+      "Leech Life provides healing"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fire weakness",
+      "No resistance",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Venomoth - Evolution target"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Venonat was used as the basic for Venomoth. Stun Spore provided utility while setting up.",
+  "rulings": [
+    {
+      "ruling": "Stun Spore's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Leech Life heals damage equal to the damage dealt after Weakness and Resistance.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Venonat has fewer damage counters than the damage dealt, remove all of them.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

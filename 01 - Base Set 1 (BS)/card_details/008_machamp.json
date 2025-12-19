@@ -1,0 +1,115 @@
+{
+  "id": "base1-008",
+  "name": "Machamp",
+  "number": 8,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 100,
+  "types": ["Fighting"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Machoke",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Strikes Back",
+      "type": "Pokemon Power",
+      "text": "Whenever your opponent's attack damages Machamp (even if Machamp is Knocked Out), this power does 10 damage to the attacking Pokemon. (Don't apply Weakness and Resistance.) This power can't be used if Machamp is already Asleep, Confused, or Paralyzed when your opponent attacks.",
+      "effect": {
+        "type": "retaliation_damage",
+        "damage": 10,
+        "trigger": "when_damaged_by_attack",
+        "ignoresWeaknessResistance": true,
+        "worksWhenKnockedOut": true,
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Seismic Toss",
+      "cost": ["Fighting", "Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": null
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Superpower Pokemon",
+    "height": "5'3\"",
+    "weight": "287 lbs",
+    "nationalNumber": 68,
+    "level": 67
+  },
+  "flavorText": "Using its amazing muscles, it throws powerful punches that can knock its victim clear over the horizon.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "008_machamp.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Tank",
+    "strengths": [
+      "Strikes Back punishes every attack against Machamp",
+      "Retaliation damage works even when knocked out",
+      "100 HP is solid for a Stage 2",
+      "Seismic Toss deals reliable 60 damage",
+      "Fighting type hits Colorless weakness"
+    ],
+    "weaknesses": [
+      "Psychic weakness is problematic",
+      "Stage 2 requires full evolution line",
+      "4 energy for Seismic Toss is expensive",
+      "High retreat cost of 3",
+      "Strikes Back disabled by status conditions"
+    ],
+    "synergies": [
+      "Machop",
+      "Machoke",
+      "Pokemon Breeder",
+      "Defender"
+    ],
+    "counters": [
+      "Alakazam - Psychic weakness, Damage Swap negates Strikes Back",
+      "Mewtwo - Psychic type with Barrier",
+      "Mr. Mime - Blocks Seismic Toss damage",
+      "Status conditions - Disable Strikes Back"
+    ]
+  },
+  "competitiveHistory": "Machamp saw moderate play in the Base Set era. While Strikes Back was unique, the Psychic weakness and Stage 2 requirement limited its competitive viability compared to faster options like Hitmonchan. First Edition Machamp was included in starter decks, making it one of the more common holos.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Strikes Back damage is dealt even if Machamp is Knocked Out by the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Strikes Back does not apply Weakness or Resistance.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Machamp is Asleep, Confused, or Paralyzed when attacked, Strikes Back does not activate.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

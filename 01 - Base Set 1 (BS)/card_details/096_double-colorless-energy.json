@@ -1,0 +1,50 @@
+{
+  "id": "base1-096",
+  "name": "Double Colorless Energy",
+  "number": 96,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Special"],
+  "rarity": "Uncommon",
+  "energyType": "Special",
+  "provides": [
+    {
+      "type": "Colorless",
+      "amount": 2
+    }
+  ],
+  "effect": {
+    "text": "Provides 2 Colorless energy. Doesn't count as a basic Energy card.",
+    "effectType": "multi_energy",
+    "specialRules": {
+      "countsAsBasic": false,
+      "canBeSearched": false,
+      "canBeRetrieved": false
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "096_double-colorless-energy.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Accelerate Pokemon with Colorless energy costs",
+    "deckTypes": [
+      "Haymaker (Hitmonchan, Electabuzz, Scyther)",
+      "Wigglytuff Aggro",
+      "Chansey Stall",
+      "Mewtwo Beatdown",
+      "Snorlax Control"
+    ],
+    "notes": "Extremely valuable card in Base Set. Because it doesn't count as a Basic Energy, it cannot be searched with Energy Search or returned from the discard pile with Super Energy Removal defense. Limited to 4 copies per deck makes it highly contested in decks that need it. Works with any Pokemon that has Colorless energy in their attack costs."
+  }
+}

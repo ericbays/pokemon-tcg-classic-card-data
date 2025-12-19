@@ -1,0 +1,127 @@
+{
+  "id": "jungle-017",
+  "name": "Clefable",
+  "number": 17,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Clefairy",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Metronome",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of the Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefable's type is still Colorless.)",
+      "effect": {
+        "effectType": "special",
+        "copyAttack": true,
+        "ignoresEnergyCost": true,
+        "ignoresInOrderToCosts": true,
+        "maintainsOwnType": true
+      }
+    },
+    {
+      "name": "Minimize",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "All damage done by attacks to Clefable during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance).",
+      "effect": {
+        "effectType": "damage_reduction",
+        "reduction": 20,
+        "duration": "opponent_next_turn",
+        "timing": "after_weakness_resistance"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Fairy Pokemon",
+    "height": "4' 3\"",
+    "weight": "88 lbs",
+    "nationalNumber": 36,
+    "level": 34
+  },
+  "flavorText": "A timid Fairy Pokémon that is rarely seen. It will run and hide the moment it senses people.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "017_clefable.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Metronome can copy any attack for just 1 energy",
+      "Can use opponent's powerful attacks without energy cost requirements",
+      "Ignores 'in order to' costs like discarding energy",
+      "Minimize provides damage reduction for survivability",
+      "Psychic resistance is useful against Psychic-heavy metagames",
+      "Colorless typing means it fits in any deck"
+    ],
+    "weaknesses": [
+      "70 HP is relatively low for a Stage 1",
+      "Fighting weakness is dangerous against Hitmonchan decks",
+      "Metronome is situational - depends on opponent's attacks",
+      "Two retreat cost can be awkward",
+      "Requires evolution setup"
+    ],
+    "synergies": [
+      "Double Colorless Energy - powers up both attacks efficiently",
+      "Scoop Up - reuse Clefable after taking damage",
+      "Pokemon Center - heal damage from Minimize stalling",
+      "Clefairy (Base Set) - for evolution"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting type hits weakness hard",
+      "Machamp - Fighting type with high damage",
+      "Pokemon with weak attacks - Metronome loses value",
+      "Gust of Wind - force out before setup"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Clefable, identical to card #1 but without the holographic foil treatment. It was included to make Clefable more accessible to players who couldn't obtain the rarer holo version. Both versions have the same competitive applications.",
+  "rulings": [
+    {
+      "ruling": "Metronome copies the attack exactly, but any self-referencing text uses Clefable's name instead.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Metronome ignores energy costs and anything required 'in order to' use the attack, but does NOT ignore conditions without 'in order to' text.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "For attacks with variable damage based on attached energy, Clefable must have the appropriate energy attached beyond the Metronome cost to gain the bonus damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Clefable's type remains Colorless regardless of what attack it copies.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

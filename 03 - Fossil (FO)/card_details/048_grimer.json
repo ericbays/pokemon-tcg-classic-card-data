@@ -1,0 +1,116 @@
+{
+  "id": "fossil-048",
+  "name": "Grimer",
+  "number": 48,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Muk"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Nasty Goo",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Minimize",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "All damage done by attacks to Grimer during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance).",
+      "effect": {
+        "effectType": "damage_reduction",
+        "parameters": {
+          "reductionAmount": 20,
+          "duration": "opponent_next_turn",
+          "appliesAfterWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Sludge Pokemon",
+    "height": "2' 11\"",
+    "weight": "66 lbs",
+    "nationalNumber": 88,
+    "level": 17
+  },
+  "flavorText": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "048_grimer.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Nasty Goo can Paralyze with Colorless cost",
+      "Minimize reduces incoming damage",
+      "50 HP is decent for a Basic",
+      "Low retreat cost of 1",
+      "Evolves into format-defining Muk"
+    ],
+    "weaknesses": [
+      "Psychic weakness",
+      "Low damage output",
+      "Nasty Goo is coin flip dependent"
+    ],
+    "synergies": [
+      "Muk (essential evolution)",
+      "Stall strategies"
+    ],
+    "counters": [
+      "Psychic Pokemon",
+      "High damage that ignores reduction"
+    ]
+  },
+  "competitiveHistory": "Fossil Grimer was the primary choice for Muk decks due to its defensive Minimize attack and Paralysis potential. Its role was to survive long enough to evolve into Muk and shut down Pokemon Powers.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Minimize's damage reduction is applied after Weakness and Resistance calculations.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Minimize does not stack - using it multiple times doesn't increase the reduction beyond 20.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

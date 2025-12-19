@@ -1,0 +1,77 @@
+{
+  "id": "jungle-064",
+  "name": "Poké Ball",
+  "number": 64,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "text": "Flip a coin. If heads, you may search your deck for any Basic Pokémon or Evolution card. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward.",
+  "effect": {
+    "text": "Flip a coin. If heads, you may search your deck for any Basic Pokémon or Evolution card. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward.",
+    "effectType": "search",
+    "coinFlip": {
+      "count": 1,
+      "onHeads": {
+        "action": "search_deck",
+        "searchFor": ["basic_pokemon", "evolution_pokemon"],
+        "destination": "hand",
+        "revealToOpponent": true,
+        "shuffleAfter": true
+      },
+      "onTails": null
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "064_poke-ball.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Search",
+    "strengths": [
+      "Can search for any Pokemon",
+      "No energy cost - it's a Trainer",
+      "Flexible - finds Basics or Evolutions"
+    ],
+    "weaknesses": [
+      "Coin-flip dependent - 50% fail rate",
+      "Must show card to opponent",
+      "Computer Search is strictly better"
+    ],
+    "synergies": [
+      "Any deck needing Pokemon search"
+    ],
+    "counters": [
+      "Trainer denial effects"
+    ]
+  },
+  "competitiveHistory": "Poké Ball from Jungle was a budget alternative to Computer Search for Pokemon searching. While the coin-flip requirement made it unreliable, it was still useful for decks that needed to find specific Pokemon and couldn't afford 4 Computer Search. It was often run alongside Computer Search and Pokemon Trader to increase search consistency.",
+  "rulings": [
+    {
+      "ruling": "If you flip tails, the attack fails and you do not search your deck.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must show the Pokemon you find to your opponent before putting it in your hand.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can search for either a Basic Pokemon or an Evolution card, but not a Trainer or Energy.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must shuffle your deck after using Poké Ball, even if you flip tails.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

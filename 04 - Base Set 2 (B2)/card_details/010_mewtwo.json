@@ -1,0 +1,131 @@
+{
+  "id": "base2-010",
+  "name": "Mewtwo",
+  "number": 10,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 60,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Psychic",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each Energy card attached to the Defending Pokémon.",
+      "effect": {
+        "effectType": "damage_multiplier",
+        "parameters": {
+          "baseDamage": 10,
+          "bonusDamage": 10,
+          "bonusPer": "energy_on_defender"
+        }
+      }
+    },
+    {
+      "name": "Barrier",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Psychic Energy card attached to Mewtwo in order to use this attack. During your opponent's next turn, prevent all effects of attacks, including damage, done to Mewtwo.",
+      "effect": {
+        "effectType": "damage_prevention",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Psychic"
+        },
+        "parameters": {
+          "duration": "opponents_next_turn",
+          "prevents": "all_effects_and_damage"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Genetic Pokemon",
+    "height": "6' 7\"",
+    "weight": "269 lbs",
+    "nationalNumber": 150,
+    "level": 53
+  },
+  "flavorText": "A scientist created this Pokémon after years of horrific gene-splicing and DNA engineering experiments.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "010_mewtwo-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Psychic scales with opponent's energy - punishes setup decks",
+      "Basic Pokemon requires no evolution",
+      "Barrier provides complete protection for a turn",
+      "Psychic type hits Fighting weakness",
+      "2 energy attacks are efficient"
+    ],
+    "weaknesses": [
+      "60 HP is low for a main attacker",
+      "Psychic weakness means mirror matches are dangerous",
+      "3 retreat cost is expensive",
+      "Barrier requires energy discard"
+    ],
+    "synergies": [
+      "Energy Removal - Keep opponent's energy low while Psychic scales",
+      "Super Energy Removal - Same synergy",
+      "PlusPower - Boost Psychic damage"
+    ],
+    "counters": [
+      "Other Mewtwo - Mirror weakness",
+      "Alakazam - Psychic weakness",
+      "Energy Removal - Keep your Psychic energy off"
+    ]
+  },
+  "competitiveHistory": "Mewtwo was a staple in many decks as a counter to energy-heavy strategies like Rain Dance. Psychic could deal massive damage against Pokemon loaded with energy. Barrier provided a defensive option but was less commonly used due to energy discard. The Psychic weakness created interesting mirror match dynamics.",
+  "rulings": [
+    {
+      "ruling": "Psychic counts all Energy cards attached to the Defending Pokemon, including Special Energy.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Double Colorless Energy counts as 1 Energy card for Psychic's bonus damage (not 2).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Barrier prevents all damage AND effects from attacks, including status conditions.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must discard a Psychic Energy to use Barrier. If you cannot, you cannot use the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Barrier's protection lasts until the end of your opponent's next turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

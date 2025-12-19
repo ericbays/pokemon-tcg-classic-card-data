@@ -1,0 +1,82 @@
+{
+  "id": "base1-051",
+  "name": "Koffing",
+  "number": 51,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesTo": ["Weezing"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Foul Gas",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned; if tails, it is now Confused."
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 109,
+    "category": "Poison Gas Pokemon",
+    "height": "2' 0\"",
+    "weight": "2 lbs.",
+    "level": 13
+  },
+  "flavorText": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning. LV. 13 #109",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "051_koffing.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Foul Gas guarantees a status condition - either Poison or Confusion",
+      "50 HP provides good survivability for a Basic Pokemon",
+      "Poison deals damage between turns, providing passive damage",
+      "Confusion can disrupt opponent's strategy and potentially cause self-damage",
+      "Low retreat cost of 1 allows for decent mobility",
+      "Evolves into Weezing for enhanced poison abilities"
+    ],
+    "weaknesses": [
+      "Weak to Psychic-type attacks (x2 damage)",
+      "Only deals 10 damage, which is quite low",
+      "Requires 2 Grass energy to attack, which can be slow to set up",
+      "Cannot choose which status condition to inflict",
+      "No resistance to mitigate incoming damage"
+    ],
+    "synergies": [
+      "Gust of Wind keeps poisoned/confused Pokemon in the active position",
+      "PlusPower increases Foul Gas damage to 20",
+      "Defender helps Koffing survive while repeatedly applying status conditions",
+      "Switch allows pivoting after applying status effects"
+    ],
+    "counters": [
+      "Psychic-type Pokemon that exploit weakness",
+      "Full Heal or Switch to remove status conditions",
+      "High damage attackers that can knockout before status matters"
+    ]
+  }
+}

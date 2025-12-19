@@ -1,0 +1,89 @@
+{
+  "id": "base2-068",
+  "name": "Caterpie",
+  "number": 68,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Metapod"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "String Shot",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Worm Pokemon",
+    "height": "1' 0\"",
+    "weight": "6 lbs",
+    "nationalNumber": 10,
+    "level": 13
+  },
+  "flavorText": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "068_caterpie-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "String Shot can Paralyze",
+      "Cheap 1 energy attack"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fire weakness",
+      "Only one attack with coin flip"
+    ],
+    "synergies": [
+      "Metapod/Butterfree - Evolution line"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Caterpie was used as the basic for the Butterfree evolution line, though this line rarely saw competitive play.",
+  "rulings": [
+    {
+      "ruling": "String Shot's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

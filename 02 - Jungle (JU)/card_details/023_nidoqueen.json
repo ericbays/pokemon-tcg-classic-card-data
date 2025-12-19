@@ -1,0 +1,98 @@
+{
+  "id": "jungle-023",
+  "name": "Nidoqueen",
+  "number": 23,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 90,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Nidorina",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Boyfriends",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "20+",
+      "baseDamage": 20,
+      "text": "Does 20 damage plus 20 more damage for each Nidoking you have in play.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamage": 20,
+        "bonusCondition": "per_nidoking_in_play"
+      }
+    },
+    {
+      "name": "Mega Punch",
+      "cost": ["Grass", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Drill Pokemon",
+    "height": "4' 3\"",
+    "weight": "132 lbs",
+    "nationalNumber": 31,
+    "level": 43
+  },
+  "flavorText": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "023_nidoqueen.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "90 HP is solid for a Stage 2",
+      "Boyfriends synergizes with Nidoking",
+      "Mega Punch is a consistent 50 damage"
+    ],
+    "weaknesses": [
+      "Stage 2 requires significant setup",
+      "Boyfriends requires Nidoking to be efficient",
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Nidoking - powers up Boyfriends attack",
+      "Pokemon Breeder - faster evolution"
+    ],
+    "counters": [
+      "Alakazam - Psychic weakness",
+      "Evolution denial"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Nidoqueen, identical to card #7. The Nidoking/Nidoqueen archetype was a fun casual deck but too slow for competitive play.",
+  "rulings": [
+    {
+      "ruling": "Boyfriends counts all Nidoking you have in play, including on the bench.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

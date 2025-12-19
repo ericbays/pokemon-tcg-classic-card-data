@@ -1,0 +1,107 @@
+{
+  "id": "base1-038",
+  "name": "Poliwhirl",
+  "number": 38,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original Series",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Poliwag",
+  "evolvesTo": ["Poliwrath"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Amnesia",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of the Defending Pokémon's attacks. That Pokémon can't use that attack during your opponent's next turn.",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "attackLockout": true,
+          "duration": "opponent_next_turn"
+        }
+      }
+    },
+    {
+      "name": "Doubleslap",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 2,
+          "onHeads": {
+            "damagePerHead": 30
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 61,
+    "category": "Tadpole Pokémon",
+    "height": "3'4\"",
+    "weight": "44 lbs",
+    "level": 28
+  },
+  "flavorText": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "038_poliwhirl.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Amnesia provides excellent utility by locking out opponent's key attacks",
+      "Can disrupt high-value attacks like Charizard's Fire Spin",
+      "Doubleslap can potentially deal 60 damage",
+      "Single retreat cost makes it easy to switch out"
+    ],
+    "weaknesses": [
+      "Only 60 HP makes it vulnerable",
+      "Doubleslap damage is unreliable (0-60) based on coin flips",
+      "Pokémon with multiple attacks can work around Amnesia",
+      "Best used as stepping stone to Poliwrath"
+    ],
+    "synergies": [
+      "Pokémon Breeder",
+      "Energy Removal",
+      "Defender",
+      "PlusPower",
+      "Poliwrath"
+    ],
+    "counters": [
+      "Venusaur",
+      "Vileplume",
+      "Switch",
+      "Gust of Wind"
+    ]
+  }
+}

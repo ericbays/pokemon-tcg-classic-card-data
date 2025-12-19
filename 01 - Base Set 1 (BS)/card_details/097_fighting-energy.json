@@ -1,0 +1,40 @@
+{
+  "id": "base1-097",
+  "name": "Fighting Energy",
+  "number": 97,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Fighting",
+  "provides": [
+    {
+      "type": "Fighting",
+      "amount": 1
+    }
+  ],
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "097_fighting-energy.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Power Fighting-type Pokemon attacks",
+    "deckTypes": [
+      "Haymaker (Hitmonchan)",
+      "Machamp Mill",
+      "Fighting-type beatdown decks"
+    ],
+    "notes": "Fighting Pokemon in Base Set include Hitmonchan, Machop, Machoke, Machamp, Mankey, and Primeape. Hitmonchan is one of the most played Pokemon in the format, making Fighting Energy a staple. Fighting-type has advantage against Colorless Pokemon like Chansey and Snorlax."
+  }
+}

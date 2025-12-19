@@ -1,0 +1,83 @@
+{
+  "id": "base2-076",
+  "name": "Goldeen",
+  "number": 76,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Seaking"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Horn Attack",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Goldfish Pokemon",
+    "height": "2' 0\"",
+    "weight": "33 lbs",
+    "nationalNumber": 118,
+    "level": 12
+  },
+  "flavorText": "Its tail fin billows like an elegant ballroom dress, giving it the nickname \"Water Queen.\"",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "076_goldeen-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Free retreat cost",
+      "Cheap 1 energy attack"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Lightning weakness",
+      "Only one attack with low damage",
+      "No resistance"
+    ],
+    "synergies": [
+      "Seaking - Evolution target"
+    ],
+    "counters": [
+      "Lightning Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Goldeen was used as the basic for Seaking. Its free retreat was useful for switching out after evolving.",
+  "rulings": [
+    {
+      "ruling": "Horn Attack has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

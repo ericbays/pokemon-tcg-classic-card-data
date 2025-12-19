@@ -1,0 +1,120 @@
+{
+  "id": "base1-023",
+  "name": "Arcanine",
+  "number": 23,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 100,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Growlithe",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Flamethrower",
+      "cost": ["Fire", "Fire", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Discard 1 Fire Energy card attached to Arcanine in order to use this attack."
+    },
+    {
+      "name": "Take Down",
+      "cost": ["Fire", "Fire", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "80",
+      "baseDamage": 80,
+      "text": "Arcanine does 30 damage to itself."
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "nationalNumber": 59,
+    "category": "Legendary Pokemon",
+    "height": "6'3\"",
+    "weight": "342 lbs",
+    "level": 45
+  },
+  "flavorText": "A Pokémon that has been long admired for its beauty. It runs gracefully, as if on wings.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "023_arcanine.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Exceptional 100 HP makes it difficult to knock out in one hit",
+      "Take Down's 80 damage can OHKO most Stage 1 Pokémon and damage Stage 2s",
+      "Flamethrower's 50 damage is respectable for 3 energy",
+      "Works well with Fire Energy acceleration strategies",
+      "Only one Stage 1 evolution makes it relatively easy to set up",
+      "Three retreat cost makes it resistant to Gust of Wind switching strategies"
+    ],
+    "weaknesses": [
+      "Water weakness is significant in a meta with Blastoise and rain Dance",
+      "Flamethrower's energy discard reduces sustained attacking capability",
+      "Take Down's 30 self-damage hastens its own knockout",
+      "High energy requirements (3-4 energy) slow down initial setup",
+      "Three retreat cost makes it difficult to switch out once active",
+      "Vulnerable to Pokémon Center which removes all damage but also all energy"
+    ],
+    "synergies": [
+      "Charizard",
+      "Ninetales",
+      "Growlithe",
+      "Pokemon Breeder",
+      "Energy Retrieval",
+      "Super Energy Removal"
+    ],
+    "counters": [
+      "Blastoise with Rain Dance - Can tank hits and OHKO with Hydro Pump",
+      "Gyarados - Water typing and high HP make it a major threat",
+      "Hitmonchan - Can deal significant damage before Arcanine sets up",
+      "Pokémon Center - Removes Take Down self-damage but also energy",
+      "Energy Removal effects - Cripples high energy requirement attacks"
+    ]
+  },
+  "description": "Arcanine is a powerful Stage 1 Fire-type Pokémon with an impressive 100 HP, making it one of the most durable non-holographic Stage 1 Pokémon in the Base Set. Its evolution from Growlithe creates a formidable Fire-type attacker that can deliver devastating damage while maintaining solid defensive stats. As a Legendary Pokémon in the lore, Arcanine brings both thematic appeal and competitive viability to Fire decks.",
+  "competitiveHistory": "Arcanine saw moderate play in the early Base Set meta as a solid Fire-type option that didn't require the complex setup of Charizard. However, it was generally overshadowed by more efficient attackers in top-tier competitive play. Its 100 HP and 80 damage output were respectable, but the self-damage and energy discard mechanics limited its appeal in tournament settings where consistency was paramount.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "You must be able to discard 1 Fire Energy card from Arcanine in order to use Flamethrower. If you cannot pay the cost, you cannot use the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The 30 damage Arcanine does to itself is not considered damage from an opponent's Pokémon, so effects that prevent or reduce opponent's damage do not apply.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Defender reduces all damage done to the Pokémon it's attached to, including self-damage from Take Down.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The self-damage from Take Down is applied after the attack resolves, so Arcanine would knock itself out if it has 30 or fewer HP remaining.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

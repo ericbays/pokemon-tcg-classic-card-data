@@ -1,0 +1,580 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "trainer-item-card-schema.json",
+  "title": "Trainer Item Card Schema",
+  "description": "Schema for Pokemon TCG Trainer Item cards (play immediately, no limit per turn in Base Set era), designed for digital game implementation",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "number",
+    "set",
+    "cardType",
+    "supertype",
+    "subtypes",
+    "rarity",
+    "effect",
+    "imageUrl"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in format: {setCode}-{paddedNumber}",
+      "pattern": "^[a-z0-9]+-[0-9]{3}$",
+      "examples": ["base1-071", "base1-091"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Trainer card name as printed",
+      "examples": ["Computer Search", "Bill", "Professor Oak", "Potion"]
+    },
+    "number": {
+      "type": "integer",
+      "description": "Card number within the set",
+      "minimum": 1,
+      "examples": [71, 88, 91]
+    },
+    "set": {
+      "type": "object",
+      "description": "Information about the card set",
+      "required": ["id", "name", "series", "releaseDate", "totalCards"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Set identifier code",
+          "examples": ["base1", "jungle", "fossil"]
+        },
+        "name": {
+          "type": "string",
+          "description": "Full set name",
+          "examples": ["Base Set", "Jungle", "Fossil"]
+        },
+        "series": {
+          "type": "string",
+          "description": "Series the set belongs to",
+          "examples": ["Original", "Neo", "E-Card"]
+        },
+        "releaseDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Set release date in ISO format",
+          "examples": ["1999-01-09"]
+        },
+        "totalCards": {
+          "type": "integer",
+          "description": "Total number of cards in the set",
+          "minimum": 1
+        }
+      }
+    },
+    "cardType": {
+      "type": "string",
+      "enum": ["trainer", "trainer-item"],
+      "description": "The type of card - 'trainer' or 'trainer-item' for this schema"
+    },
+    "supertype": {
+      "type": "string",
+      "const": "Trainer",
+      "description": "Card supertype classification"
+    },
+    "subtypes": {
+      "type": "array",
+      "description": "Trainer subtype - Item for this schema",
+      "items": {
+        "type": "string",
+        "enum": ["Item"]
+      },
+      "minItems": 1,
+      "maxItems": 1,
+      "const": ["Item"]
+    },
+    "rarity": {
+      "type": "string",
+      "description": "Card rarity",
+      "enum": ["Common", "Uncommon", "Rare"],
+      "examples": ["Common", "Uncommon", "Rare"]
+    },
+    "effect": {
+      "type": "object",
+      "description": "The effect of the Trainer card",
+      "required": ["text", "effectType"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Full effect text as printed on the card"
+        },
+        "effectType": {
+          "type": "string",
+          "description": "Primary effect type for game logic categorization",
+          "enum": [
+            "draw",
+            "search",
+            "healing",
+            "energy_manipulation",
+            "energy_removal",
+            "pokemon_manipulation",
+            "damage_boost",
+            "damage_reduction",
+            "hand_disruption",
+            "opponent_hand_disruption",
+            "deck_manipulation",
+            "discard_manipulation",
+            "switch",
+            "bounce",
+            "evolution",
+            "status_removal",
+            "special_play",
+            "board_control",
+            "interactive",
+            "recovery",
+            "power_shutdown",
+            "prize_manipulation",
+            "status_infliction",
+            "status_condition",
+            "card_manipulation",
+            "coin_flip_chain",
+            "search_deck",
+            "special_trainer"
+          ]
+        },
+        "actions": {
+          "type": "array",
+          "description": "Ordered list of actions this card performs",
+          "items": {
+            "$ref": "#/$defs/trainerAction"
+          },
+          "minItems": 1
+        },
+        "cost": {
+          "type": "object",
+          "description": "Cost to play this card (beyond just playing it)",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["discard_cards", "discard_energy", "coin_flip", "return_cards", "none"],
+              "examples": ["discard_cards", "none"]
+            },
+            "amount": {
+              "type": "integer",
+              "description": "Amount for the cost (e.g., number of cards to discard)",
+              "minimum": 0
+            },
+            "target": {
+              "type": "string",
+              "description": "What the cost applies to",
+              "enum": ["hand", "energy_from_pokemon", "deck", "discard_pile"]
+            },
+            "description": {
+              "type": "string",
+              "description": "Human-readable cost description"
+            }
+          }
+        },
+        "requirements": {
+          "type": "array",
+          "description": "Requirements that must be met to play this card",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "cards_in_hand",
+                  "cards_in_deck",
+                  "cards_in_discard",
+                  "pokemon_in_play",
+                  "pokemon_with_damage",
+                  "energy_attached",
+                  "specific_card_in_hand"
+                ]
+              },
+              "minimum": {
+                "type": "integer",
+                "description": "Minimum required"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "coinFlip": {
+          "type": "object",
+          "description": "Coin flip mechanics for the trainer effect",
+          "properties": {
+            "count": {
+              "type": "integer",
+              "description": "Number of coins to flip",
+              "minimum": 1,
+              "default": 1
+            },
+            "onHeads": {
+              "type": ["object", "null"],
+              "description": "Effect when coin flip results in heads",
+              "additionalProperties": true
+            },
+            "onTails": {
+              "type": ["object", "null"],
+              "description": "Effect when coin flip results in tails (often null/nothing happens)",
+              "additionalProperties": true
+            }
+          }
+        },
+        "targeting": {
+          "type": "object",
+          "description": "How targets are selected for the effect",
+          "properties": {
+            "targetType": {
+              "type": "string",
+              "enum": ["none", "your_pokemon", "opponent_pokemon", "any_pokemon", "your_hand", "your_deck", "your_discard", "opponent_hand", "opponent_deck", "opponent_discard", "choice"]
+            },
+            "count": {
+              "type": "string",
+              "enum": ["one", "all", "choice", "up_to"],
+              "description": "How many targets"
+            },
+            "maxTargets": {
+              "type": "integer",
+              "description": "Maximum number of targets if count is 'up_to'"
+            },
+            "restrictions": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Restrictions on valid targets"
+            }
+          }
+        }
+      }
+    },
+    "specialRules": {
+      "type": "object",
+      "description": "Special rules for card behavior",
+      "properties": {
+        "playsAsPokemon": {
+          "type": "boolean",
+          "description": "Whether this trainer plays as a Pokemon (e.g., Clefairy Doll)",
+          "default": false
+        },
+        "attachesToPokemon": {
+          "type": "boolean",
+          "description": "Whether this card attaches to a Pokemon (e.g., Defender, PlusPower)",
+          "default": false
+        },
+        "attachmentDuration": {
+          "type": "string",
+          "description": "How long the attachment lasts",
+          "enum": ["end_of_turn", "until_discarded", "permanent", "until_condition"]
+        },
+        "pokemonStats": {
+          "type": "object",
+          "description": "Stats if this trainer plays as a Pokemon",
+          "properties": {
+            "hp": { "type": "integer" },
+            "canAttack": { "type": "boolean" },
+            "canRetreat": { "type": "boolean" },
+            "immuneToStatus": { "type": "boolean" },
+            "givesNoPrize": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "illustrator": {
+      "type": "string",
+      "description": "Card illustrator name",
+      "examples": ["Ken Sugimori", "Keiji Kinebuchi"]
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "Relative path to card image file",
+      "pattern": "^[0-9]{3}_[a-z0-9.-]+\\.(jpg|png)$",
+      "examples": ["071_computer-search.jpg", "091_bill.jpg", "058_mr.-fuji.jpg"]
+    },
+    "legality": {
+      "type": "object",
+      "description": "Format legality for the card",
+      "properties": {
+        "standard": { "type": "boolean" },
+        "expanded": { "type": "boolean" },
+        "unlimited": { "type": "boolean" }
+      },
+      "default": {
+        "standard": false,
+        "expanded": false,
+        "unlimited": true
+      }
+    },
+    "gameplay": {
+      "type": "object",
+      "description": "Gameplay analysis and strategy information",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Functional category of the trainer",
+          "enum": ["Draw", "Search", "Healing", "Energy", "Disruption", "Utility", "Combo", "Tech", "Recovery", "Setup", "Control", "Damage", "Status", "Gamble", "Interactive"]
+        },
+        "timing": {
+          "type": "string",
+          "description": "When this card is typically played",
+          "enum": ["early_game", "mid_game", "late_game", "any_time", "situational", "tactical", "mid_to_late_game", "setup"]
+        },
+        "synergies": {
+          "type": "array",
+          "description": "Cards that work well with this trainer",
+          "items": { "type": "string" }
+        },
+        "counters": {
+          "type": "array",
+          "description": "Effects that counter this trainer",
+          "items": { "type": "string" }
+        },
+        "tips": {
+          "type": "array",
+          "description": "Strategic tips for using this card",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "rulings": {
+      "type": "array",
+      "description": "Official rulings and clarifications",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "ruling": { "type": "string" },
+          "source": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "trainerAction": {
+      "type": "object",
+      "description": "A single action performed by the trainer card",
+      "required": ["action"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "The action type",
+          "enum": [
+            "draw_cards",
+            "search_deck",
+            "heal_damage",
+            "remove_energy",
+            "attach_energy",
+            "return_energy",
+            "discard_hand",
+            "shuffle_deck",
+            "switch_pokemon",
+            "return_pokemon",
+            "revive_pokemon",
+            "boost_damage",
+            "reduce_damage",
+            "remove_status",
+            "force_switch",
+            "view_cards",
+            "rearrange_cards",
+            "discard_cards",
+            "shuffle_into_deck",
+            "play_as_pokemon",
+            "attach_to_pokemon",
+            "opponent_draw",
+            "opponent_discard",
+            "opponent_shuffle",
+            "shuffle_hand_into_deck",
+            "recover_from_discard",
+            "reveal_prizes",
+            "swap_prizes",
+            "inflict_status",
+            "coin_flip",
+            "coin_flip_damage_chain",
+            "opponent_choice",
+            "disable_pokemon_powers"
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "description": "Amount for the action (cards, damage, etc.)"
+        },
+        "target": {
+          "type": "string",
+          "description": "Target of the action"
+        },
+        "condition": {
+          "type": "object",
+          "description": "Condition for this action to occur",
+          "properties": {
+            "type": { "type": "string" },
+            "value": {}
+          }
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Additional action-specific parameters",
+          "additionalProperties": true
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "base1-091",
+      "name": "Bill",
+      "number": 91,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "trainer",
+      "supertype": "Trainer",
+      "subtypes": ["Item"],
+      "rarity": "Common",
+      "effect": {
+        "text": "Draw 2 cards.",
+        "effectType": "draw",
+        "actions": [
+          {
+            "action": "draw_cards",
+            "amount": 2
+          }
+        ],
+        "cost": {
+          "type": "none"
+        },
+        "requirements": [
+          {
+            "type": "cards_in_deck",
+            "minimum": 2,
+            "description": "Must have at least 2 cards in deck"
+          }
+        ]
+      },
+      "illustrator": "Ken Sugimori",
+      "imageUrl": "091_bill.jpg",
+      "gameplay": {
+        "category": "Draw",
+        "timing": "any_time",
+        "synergies": ["Professor Oak", "Computer Search", "Item Finder"],
+        "tips": [
+          "Always run 4 copies in competitive decks",
+          "Use freely throughout the game for card advantage",
+          "One of the best turn 1 plays"
+        ]
+      }
+    },
+    {
+      "id": "base1-071",
+      "name": "Computer Search",
+      "number": 71,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "trainer",
+      "supertype": "Trainer",
+      "subtypes": ["Item"],
+      "rarity": "Rare",
+      "effect": {
+        "text": "Discard 2 of the other cards from your hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward.",
+        "effectType": "search",
+        "actions": [
+          {
+            "action": "search_deck",
+            "amount": 1,
+            "target": "any_card",
+            "parameters": {
+              "destination": "hand"
+            }
+          },
+          {
+            "action": "shuffle_deck"
+          }
+        ],
+        "cost": {
+          "type": "discard_cards",
+          "amount": 2,
+          "target": "hand",
+          "description": "Discard 2 other cards from your hand"
+        },
+        "requirements": [
+          {
+            "type": "cards_in_hand",
+            "minimum": 3,
+            "description": "Must have at least 2 other cards in hand to discard"
+          }
+        ]
+      },
+      "illustrator": "Keiji Kinebuchi",
+      "imageUrl": "071_computer-search.jpg",
+      "gameplay": {
+        "category": "Search",
+        "timing": "any_time",
+        "synergies": ["Item Finder", "Professor Oak", "Energy Retrieval"],
+        "tips": [
+          "Save for when you need a specific card to win",
+          "Discard cards you can recover later",
+          "One of the most powerful trainers ever printed"
+        ]
+      }
+    },
+    {
+      "id": "base1-070",
+      "name": "Clefairy Doll",
+      "number": 70,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "trainer",
+      "supertype": "Trainer",
+      "subtypes": ["Item"],
+      "rarity": "Rare",
+      "effect": {
+        "text": "Play Clefairy Doll as if it were a Basic Pokemon. While in play, Clefairy Doll counts as a Pokemon (instead of a Trainer card). Clefairy Doll has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn't count as a Knocked Out Pokemon. At any time during your turn before your attack, you may discard Clefairy Doll.",
+        "effectType": "special_play",
+        "actions": [
+          {
+            "action": "play_as_pokemon",
+            "parameters": {
+              "hp": 10,
+              "canAttack": false,
+              "canRetreat": false,
+              "canSelfDiscard": true
+            }
+          }
+        ]
+      },
+      "specialRules": {
+        "playsAsPokemon": true,
+        "pokemonStats": {
+          "hp": 10,
+          "canAttack": false,
+          "canRetreat": false,
+          "immuneToStatus": true,
+          "givesNoPrize": true
+        }
+      },
+      "illustrator": "Keiji Kinebuchi",
+      "imageUrl": "070_clefairy-doll.jpg",
+      "gameplay": {
+        "category": "Utility",
+        "timing": "situational",
+        "synergies": ["Scoop Up", "Defender", "Alakazam"],
+        "tips": [
+          "Use to stall while setting up",
+          "Doesn't give up a prize when knocked out",
+          "Can voluntarily discard before your attack"
+        ]
+      }
+    }
+  ]
+}

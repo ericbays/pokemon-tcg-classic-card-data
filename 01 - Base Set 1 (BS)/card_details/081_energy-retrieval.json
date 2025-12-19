@@ -1,0 +1,111 @@
+{
+  "id": "base1-081",
+  "name": "Energy Retrieval",
+  "number": 81,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Trade 1 of the other cards in your hand for up to 2 basic Energy cards from your discard pile.",
+    "effectType": "energy_manipulation",
+    "actions": [
+      {
+        "action": "return_energy",
+        "amount": 2,
+        "target": "discard_pile",
+        "parameters": {
+          "energyType": "basic",
+          "destination": "hand",
+          "maxAmount": 2
+        }
+      }
+    ],
+    "cost": {
+      "type": "discard_cards",
+      "amount": 1,
+      "target": "hand",
+      "description": "Discard 1 other card from your hand"
+    },
+    "requirements": [
+      {
+        "type": "cards_in_hand",
+        "minimum": 2,
+        "description": "Must have at least 1 other card in hand to discard"
+      },
+      {
+        "type": "cards_in_discard",
+        "minimum": 1,
+        "description": "Must have at least 1 basic Energy in discard pile"
+      }
+    ]
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "081_energy-retrieval.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Energy",
+    "timing": "mid_game",
+    "synergies": ["Super Energy Removal", "Scoop Up", "Charizard", "Professor Oak", "Item Finder"],
+    "tips": [
+      "Use in mid-to-late game when you have Energy in discard",
+      "Discard duplicate Pokemon or Trainer cards you don't need immediately",
+      "Pair with Super Energy Removal to create a renewable disruption engine",
+      "Energy Retrieval is card-positive (1 card for 2 Energy)",
+      "Use after Professor Oak to recover Energy you discarded"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must discard exactly 1 other card from your hand to use Energy Retrieval",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Energy Retrieval if you have no other cards in hand",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can recover up to 2 basic Energy cards from your discard pile",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can choose to recover only 1 Energy if you want, or 0 if you must",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Only basic Energy cards can be recovered (Fire, Water, Grass, Lightning, Psychic, Fighting, Colorless)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Special Energy cards like Double Colorless Energy cannot be recovered with Energy Retrieval",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The recovered Energy cards go to your hand, not directly into play",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must show the Energy cards you recover to your opponent",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you have fewer than 2 basic Energy in discard, you recover as many as possible",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can discard an Energy card as the cost and then recover 2 different Energy cards",
+      "source": "WotC Rulings"
+    }
+  ]
+}

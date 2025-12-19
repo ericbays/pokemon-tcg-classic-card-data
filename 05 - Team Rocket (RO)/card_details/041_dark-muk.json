@@ -1,0 +1,105 @@
+{
+  "id": "rocket-041",
+  "name": "Dark Muk",
+  "number": 41,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Grimer",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Sticky Goo",
+      "type": "Pokemon Power",
+      "text": "As long as Dark Muk is your Active Pokémon, your opponent pays 2 more Colorless Energy to retreat his or her Active Pokémon. This power stops working while Dark Muk is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "retreat_modifier",
+        "target": "opponent_active",
+        "modifier": "+2",
+        "condition": "dark_muk_is_active",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Sludge Punch",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "The Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Poisoned"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Sludge Pokemon",
+    "height": "3' 11\"",
+    "weight": "66 lbs",
+    "nationalNumber": 89,
+    "level": 25
+  },
+  "flavorText": "Muks appear suddenly, spreading sludge everywhere. Whenever one appears in a city, panic ensues.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "041_dark-muk-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Sticky Goo makes retreating very expensive for opponent",
+      "Sludge Punch guarantees Poison",
+      "Traps opponent's Active Pokemon"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Psychic weakness",
+      "Sticky Goo only works while Active"
+    ],
+    "synergies": [
+      "Grimer",
+      "Gust of Wind (trap something bad)",
+      "Status condition strategies"
+    ],
+    "counters": [
+      "Psychic-type Pokemon",
+      "Switch effects",
+      "Pokemon with free retreat"
+    ]
+  },
+  "competitiveHistory": "Dark Muk was a powerful disruptor. Sticky Goo adding 2 to the opponent's retreat cost could trap Pokemon that normally had low retreat costs. Combined with Gust of Wind to bring up a vulnerable Pokemon, Dark Muk could lock it in place while Poisoning it with Sludge Punch.",
+  "rulings": [
+    {
+      "ruling": "Sticky Goo adds 2 to retreat cost, so a Pokemon with retreat cost 1 would need 3 energy to retreat.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon with free retreat (0 cost) would need 2 energy to retreat when facing Dark Muk.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

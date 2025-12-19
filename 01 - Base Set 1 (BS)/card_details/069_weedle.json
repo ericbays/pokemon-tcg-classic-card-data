@@ -1,0 +1,82 @@
+{
+  "id": "base1-069",
+  "name": "Weedle",
+  "number": 69,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Kakuna"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Poison Sting",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 13,
+    "category": "Hairy Bug Pokemon",
+    "height": "1' 0\"",
+    "weight": "7 lbs.",
+    "level": 12
+  },
+  "flavorText": "Often found in forests, eating leaves. It has a sharp, venomous stinger on its head.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "069_weedle.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Energy-efficient Poison Sting costs only 1 Grass Energy",
+      "Poison status deals persistent 10 damage between turns",
+      "Evolves through Kakuna into Beedrill, a strong Stage 2 Pokemon",
+      "Low retreat cost of 1 provides flexibility",
+      "Can disrupt opponents from the very first turn"
+    ],
+    "weaknesses": [
+      "Very low 40 HP makes it extremely fragile",
+      "Fire weakness is significant with popular Fire Pokemon in format",
+      "Poison effect relies on coin flip, making it unreliable",
+      "Only 10 damage output limits offensive pressure",
+      "No resistance to help with defensive matchups"
+    ],
+    "synergies": [
+      "Evolve quickly through Kakuna into Beedrill for powerful attacks",
+      "Use Poison status to chip away at high-HP Pokemon while evolving",
+      "PlusPower can boost Poison Sting to 20 damage for better trades",
+      "Defender helps Weedle survive one extra turn to apply poison"
+    ],
+    "counters": [
+      "Charmander - Fire weakness means quick knockouts",
+      "Ponyta - Fire type advantage is devastating",
+      "Vulpix - Fire weakness and better HP make this very difficult"
+    ]
+  }
+}

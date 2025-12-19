@@ -1,0 +1,90 @@
+{
+  "id": "base1-049",
+  "name": "Drowzee",
+  "number": 49,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesTo": ["Hypno"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Pound",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": ""
+    },
+    {
+      "name": "Confuse Ray",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 96,
+    "category": "Hypnosis Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs.",
+    "level": 12
+  },
+  "flavorText": "Puts enemies to sleep, then eats their dreams. Occasionally gets sick from eating bad dreams. LV. 12 #96",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "049_drowzee.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "50 HP provides good survivability for a Basic Pokemon",
+      "Pound requires only 1 Colorless energy, allowing quick attacks with any energy type",
+      "Confuse Ray can disrupt opponent's strategy with confusion",
+      "Low retreat cost of 1 provides decent mobility",
+      "Confusion can cause opponent to damage themselves",
+      "Evolves into Hypno for more powerful sleep-inducing abilities"
+    ],
+    "weaknesses": [
+      "Weak to Psychic-type attacks (x2 damage)",
+      "Confuse Ray only deals 10 damage, which is quite low for 2 energy",
+      "Confusion effect is unreliable (50% chance on coin flip)",
+      "No resistance to mitigate damage",
+      "Both attacks deal minimal damage compared to other Basics"
+    ],
+    "synergies": [
+      "Gust of Wind can keep confused Pokemon trapped in the Active position",
+      "Defender reduces damage while you apply confusion pressure",
+      "PlusPower boosts both attacks by 10 damage",
+      "Switch allows you to pivot after applying confusion"
+    ],
+    "counters": [
+      "Psychic-type Pokemon that exploit weakness",
+      "Full Heal or Switch to remove confusion",
+      "High damage attackers that can knockout before confusion matters"
+    ]
+  }
+}

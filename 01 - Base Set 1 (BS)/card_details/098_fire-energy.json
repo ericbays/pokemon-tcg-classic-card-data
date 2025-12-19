@@ -1,0 +1,41 @@
+{
+  "id": "base1-098",
+  "name": "Fire Energy",
+  "number": 98,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Fire",
+  "provides": [
+    {
+      "type": "Fire",
+      "amount": 1
+    }
+  ],
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "098_fire-energy.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Power Fire-type Pokemon attacks",
+    "deckTypes": [
+      "Charizard Beatdown",
+      "Arcanine Control",
+      "Ninetales Disruption",
+      "Fire-type aggro decks"
+    ],
+    "notes": "Fire Pokemon in Base Set include Charmander, Charmeleon, Charizard, Vulpix, Ninetales, Growlithe, Arcanine, Ponyta, and Magmar. Charizard is iconic but requires discarding Fire Energy for its Energy Burn power and Fire Spin attack. Fire is strong against Grass types but weak to Water. Energy Retrieval and Super Energy Removal are important support cards for Fire decks."
+  }
+}

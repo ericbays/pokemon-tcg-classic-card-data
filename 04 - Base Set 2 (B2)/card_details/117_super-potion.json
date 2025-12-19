@@ -1,0 +1,66 @@
+{
+  "id": "base2-117",
+  "name": "Super Potion",
+  "number": 117,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "text": "Discard 1 Energy card attached to 1 of your own Pokémon in order to remove up to 4 damage counters from that Pokémon.",
+  "effect": {
+    "text": "Discard 1 Energy card attached to 1 of your own Pokémon in order to remove up to 4 damage counters from that Pokémon.",
+    "effectType": "healing",
+    "cost": {
+      "discard": 1,
+      "cardType": "Energy",
+      "from": "target_pokemon"
+    },
+    "parameters": {
+      "target": "your_pokemon",
+      "healAmount": "up_to_40"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "117_super-potion-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Healing",
+    "strengths": [
+      "Heals up to 40 damage",
+      "Significant healing"
+    ],
+    "weaknesses": [
+      "Requires discarding Energy from the Pokemon",
+      "Energy cost"
+    ],
+    "synergies": [
+      "High HP Pokemon - Worth the Energy cost",
+      "Energy acceleration"
+    ],
+    "counters": [
+      "High damage attacks make healing less effective"
+    ]
+  },
+  "competitiveHistory": "Super Potion saw some play in tanky decks where keeping a Pokemon alive was worth the Energy cost.",
+  "rulings": [
+    {
+      "ruling": "You must discard 1 Energy from the Pokemon being healed.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can remove fewer than 4 damage counters if the Pokemon has less damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "base2-123",
+  "name": "Switch",
+  "number": 123,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "text": "Switch 1 of your Benched Pokémon with your Active Pokémon.",
+  "effect": {
+    "text": "Switch 1 of your Benched Pokémon with your Active Pokémon.",
+    "effectType": "switch",
+    "parameters": {
+      "target": "your_pokemon",
+      "switchFrom": "active",
+      "switchTo": "benched"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "123_switch-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Utility",
+    "strengths": [
+      "Free retreat alternative",
+      "Ignore retreat cost",
+      "Escape status conditions"
+    ],
+    "weaknesses": [
+      "Requires Benched Pokemon"
+    ],
+    "synergies": [
+      "High retreat cost Pokemon",
+      "Status condition removal"
+    ],
+    "counters": [
+      "Gust of Wind can pull retreated Pokemon back"
+    ]
+  },
+  "competitiveHistory": "Switch was a staple utility card, allowing players to retreat Pokemon without paying retreat costs and escape status conditions.",
+  "rulings": [
+    {
+      "ruling": "You choose which Benched Pokemon becomes Active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Switch ignores retreat cost entirely.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Switching removes status conditions from the former Active Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

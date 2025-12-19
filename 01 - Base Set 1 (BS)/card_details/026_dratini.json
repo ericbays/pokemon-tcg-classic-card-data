@@ -1,0 +1,116 @@
+{
+  "id": "base1-026",
+  "name": "Dratini",
+  "number": 26,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dragonair"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Pound",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": ""
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 147,
+    "category": "Dragon Pokemon",
+    "height": "5'11\"",
+    "weight": "7 lbs",
+    "level": 10
+  },
+  "flavorText": "Long considered a mythical Pokémon until recently, when a small colony was found living underwater.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "026_dratini.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "No weakness makes it harder to one-hit KO than other 40 HP Basics",
+      "Psychic resistance (-30) is valuable against Psychic-heavy meta",
+      "Only 1 retreat cost makes it easy to switch to safety",
+      "Pound costs only 1 energy, allowing immediate response if needed",
+      "Colorless typing allows it to fit in any deck type",
+      "Evolves into powerful Dragonair and Dragonite",
+      "Uncommon rarity makes it accessible for deck building"
+    ],
+    "weaknesses": [
+      "40 HP is very low and vulnerable to most attackers",
+      "10 damage from Pound is largely ineffective",
+      "Requires two evolution stages to reach Dragonite",
+      "Cannot evolve until next turn after being played",
+      "Dragonair and Dragonite are rare, making evolution line difficult to complete",
+      "Vulnerable to Trainer disruption like Gust of Wind forcing it active",
+      "Limited attacking capability makes it a liability if stuck active"
+    ],
+    "synergies": [
+      "Dragonair",
+      "Dragonite",
+      "Pokemon Breeder",
+      "Switch",
+      "Bill",
+      "Professor Oak",
+      "Defender"
+    ],
+    "counters": [
+      "Hitmonchan - Special Punch deals 40 damage for 1 Fighting energy, instant KO",
+      "Electabuzz - Thunderpunch can OHKO with good coin flips",
+      "Any aggressive Basic Pokémon with 40+ damage output",
+      "Gust of Wind - Forces Dratini active before it can evolve",
+      "Energy Removal - Prevents even the basic Pound attack",
+      "Professor Oak - Can discard evolution cards from opponent's hand"
+    ]
+  },
+  "description": "Dratini is the Basic Dragon-type Pokémon that serves as the foundation for one of the most powerful evolution lines in the Base Set. Despite its modest 40 HP and simple Pound attack, Dratini's true value lies in its potential to evolve into the formidable Dragonite. As a Colorless-type with Psychic resistance and no weakness, Dratini has unique defensive properties that help it survive long enough to reach its later evolutions.",
+  "competitiveHistory": "Dratini saw limited competitive play due to the difficulty of completing the Dragonite evolution line. While Dragonite was powerful, the Stage 2 evolution requirement and the rarity of the cards made it impractical for most tournament decks. When Dratini did appear, it was almost always as a necessary component of Dragonite decks rather than for its own merits. The card was more popular in casual play where players could enjoy the Dragon evolution line regardless of competitive viability.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Without a weakness, Dratini never takes double damage from attacks, regardless of the attacking Pokémon's type.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "When Dratini is damaged by an attack from a Psychic-type Pokémon, reduce that damage by 30 (after applying weakness and other effects).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Pokémon Breeder still requires that you cannot evolve a Pokémon on the turn it was played or on your first turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Colorless is a type - it just means that Dratini is not weak or resistant to its own type, and its attacks can be powered by any energy type.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

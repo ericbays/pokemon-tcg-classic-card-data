@@ -1,0 +1,112 @@
+{
+  "id": "base1-080",
+  "name": "Defender",
+  "number": 80,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Attach Defender to 1 of your Pokémon. At the end of your opponent's next turn, discard Defender. Damage done to that Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance).",
+    "effectType": "damage_reduction",
+    "actions": [
+      {
+        "action": "attach_to_pokemon",
+        "target": "your_pokemon",
+        "parameters": {
+          "damageReduction": 20,
+          "duration": "end_of_opponent_turn",
+          "autoDiscard": true
+        }
+      },
+      {
+        "action": "reduce_damage",
+        "amount": 20,
+        "condition": {
+          "type": "during_opponent_turn",
+          "value": true
+        }
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one"
+    }
+  },
+  "specialRules": {
+    "attachesToPokemon": true,
+    "attachmentDuration": "end_of_turn"
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "080_defender.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "situational",
+    "synergies": ["Chansey", "Mr. Mime", "Alakazam", "Item Finder", "Clefairy Doll"],
+    "tips": [
+      "Calculate exact damage before using Defender",
+      "Use when the 20 reduction will prevent a knockout, not just reduce damage",
+      "Attach right before your opponent's turn, not in advance",
+      "Most valuable on Pokemon with critical roles",
+      "Multiple Defenders can be used over consecutive turns for extended protection"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "Defender attaches to a Pokemon and counts as a Tool card",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Only one Defender can be attached to a Pokemon at a time (old Tool rule in Base Set era)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Damage reduction applies to all damage from attacks during opponent's turn",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The 20 damage reduction applies after Weakness and Resistance calculations",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Defender does not prevent damage; it reduces it by 20 (minimum 0 damage)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Defender automatically discards at the end of your opponent's next turn (not your turn)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Pokemon with Defender is benched or evolved, Defender remains attached until it discards",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Defender does not prevent status conditions or other attack effects, only damage",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Multiple sources of damage reduction (like Mr. Mime's Invisible Wall) can stack with Defender",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Defender reduces damage to 0, no damage is dealt",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Defender works against all attacks, including multiple attacks in one turn (if that were possible)",
+      "source": "WotC Rulings"
+    }
+  ]
+}

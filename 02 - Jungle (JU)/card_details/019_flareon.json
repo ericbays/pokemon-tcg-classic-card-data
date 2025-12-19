@@ -1,0 +1,121 @@
+{
+  "id": "jungle-019",
+  "name": "Flareon",
+  "number": 19,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Eevee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Quick Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 30
+          },
+          "onTails": {
+            "damage": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "Flamethrower",
+      "cost": ["Fire", "Fire", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "Discard 1 Fire Energy card attached to Flareon in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Fire"
+        },
+        "timing": "cost"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Flame Pokemon",
+    "height": "2' 11\"",
+    "weight": "55 lbs",
+    "nationalNumber": 136,
+    "level": 28
+  },
+  "flavorText": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "019_flareon.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "60 damage Flamethrower is solid output",
+      "Quick Attack can be powered by Double Colorless Energy",
+      "Only 1 retreat cost",
+      "Fire type is strong against Grass Pokemon",
+      "Eevee provides flexible evolution options"
+    ],
+    "weaknesses": [
+      "70 HP is fragile for a 4-energy attacker",
+      "Water weakness is problematic against Rain Dance decks",
+      "Flamethrower requires energy discard",
+      "4 energy cost is slow to setup",
+      "No resistance"
+    ],
+    "synergies": [
+      "Double Colorless Energy - helps power up attacks",
+      "Energy Retrieval - recover discarded Fire energy",
+      "Eevee - required for evolution, provides deck flexibility"
+    ],
+    "counters": [
+      "Blastoise Rain Dance - Water weakness and fast energy acceleration",
+      "Any Water Pokemon - double damage from weakness",
+      "Energy Removal - disrupts 4-energy setup"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Flareon, identical to card #3 but without the holographic foil treatment. It was included to make Flareon more accessible to players. Flareon saw limited competitive play overall due to the dominant Water/Rain Dance presence in the meta.",
+  "rulings": [
+    {
+      "ruling": "You must discard a Fire Energy card to use Flamethrower. If you cannot discard a Fire Energy, you cannot use the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Quick Attack's coin flip determines the damage before applying Weakness and Resistance.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

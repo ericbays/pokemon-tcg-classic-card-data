@@ -1,0 +1,108 @@
+{
+  "id": "rocket-051",
+  "name": "Dark Raticate",
+  "number": 51,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Rattata",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Gnaw",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Hyper Fang",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "onFailure": {
+              "damage": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Rat Pokemon",
+    "height": "2' 4\"",
+    "weight": "41 lbs",
+    "nationalNumber": 20,
+    "level": 25
+  },
+  "flavorText": "A Raticate's front teeth are incredibly powerful; it can destroy a two-story house with them in 5 minutes.",
+  "illustrator": "Shin-ichi Yoshida",
+  "imageUrl": "051_dark-raticate-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Hyper Fang can do 50 damage for 3 colorless",
+      "Colorless typing - works with any energy",
+      "Psychic resistance",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Low HP of 50",
+      "Hyper Fang is coin flip dependent",
+      "Fighting weakness vs Hitmonchan"
+    ],
+    "synergies": [
+      "Rattata",
+      "Any energy type"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Raticate was a simple, colorless attacker. Hyper Fang's 50 damage for 3 colorless was decent, but the coin flip reliability issues limited its competitive use.",
+  "rulings": [
+    {
+      "ruling": "Hyper Fang does nothing on tails - no damage at all.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "fossil-044",
+  "name": "Tentacruel",
+  "number": 44,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Tentacool",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Supersonic",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Jellyfish Sting",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "The Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Poisoned",
+        "parameters": {
+          "guaranteed": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Jellyfish Pokemon",
+    "height": "5' 3\"",
+    "weight": "121 lbs",
+    "nationalNumber": 73,
+    "level": 21
+  },
+  "flavorText": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "044_tentacruel.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Free retreat cost",
+      "Supersonic can Confuse",
+      "Jellyfish Sting guarantees Poison",
+      "Status condition stacking potential"
+    ],
+    "weaknesses": [
+      "60 HP is low",
+      "Lightning weakness",
+      "Damage output is very low",
+      "Supersonic is coin flip dependent"
+    ],
+    "synergies": [
+      "Tentacool",
+      "Status condition decks",
+      "Free retreat Pokemon"
+    ],
+    "counters": [
+      "Lightning Pokemon",
+      "Full Heal"
+    ]
+  },
+  "competitiveHistory": "Tentacruel offered status condition utility with free retreat, but its low HP and damage output limited competitive viability. The guaranteed Poison from Jellyfish Sting was useful but 10 damage was too low.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Jellyfish Sting always Poisons the Defending Pokemon regardless of any other factors.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

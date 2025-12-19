@@ -1,0 +1,88 @@
+{
+  "id": "base2-089",
+  "name": "Rattata",
+  "number": 89,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Raticate"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Rat Pokemon",
+    "height": "1' 0\"",
+    "weight": "8 lbs",
+    "nationalNumber": 19,
+    "level": 9
+  },
+  "flavorText": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "089_rattata-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Free retreat cost",
+      "Bite does 20 damage for 1 energy - excellent efficiency",
+      "Psychic resistance",
+      "Colorless - works with any energy"
+    ],
+    "weaknesses": [
+      "30 HP is extremely fragile",
+      "Fighting weakness",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Raticate - Evolution target with Super Fang"
+    ],
+    "counters": [
+      "Fighting Pokemon - 2x weakness",
+      "Any moderate attacker can KO in one hit"
+    ]
+  },
+  "competitiveHistory": "Rattata was used as the basic for Raticate. Bite's efficiency at 20 damage for 1 energy made it a decent early attacker.",
+  "rulings": [
+    {
+      "ruling": "Bite has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "base2-098",
+  "name": "Voltorb",
+  "number": 98,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Electrode"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Tackle",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Ball Pokemon",
+    "height": "1' 8\"",
+    "weight": "23 lbs",
+    "nationalNumber": 100,
+    "level": 10
+  },
+  "flavorText": "Usually found in power plants. Easily mistaken for a Poké Ball, it has zapped many people.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "098_voltorb-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Colorless attack cost - works with any energy"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fighting weakness",
+      "No resistance",
+      "Only one basic attack",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Electrode - Evolution target with Buzzap"
+    ],
+    "counters": [
+      "Fighting Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Voltorb was used as the basic for Electrode, whose Buzzap Pokemon Power was extremely valuable for energy acceleration in Raindance decks.",
+  "rulings": [
+    {
+      "ruling": "Tackle has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "base1-071",
+  "name": "Computer Search",
+  "number": 71,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Discard 2 of the other cards from your hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward.",
+    "effectType": "search",
+    "actions": [
+      {
+        "action": "search_deck",
+        "amount": 1,
+        "target": "any_card",
+        "parameters": {
+          "destination": "hand"
+        }
+      },
+      {
+        "action": "shuffle_deck"
+      }
+    ],
+    "cost": {
+      "type": "discard_cards",
+      "amount": 2,
+      "target": "hand",
+      "description": "Discard 2 other cards from your hand"
+    },
+    "requirements": [
+      {
+        "type": "cards_in_hand",
+        "minimum": 3,
+        "description": "Must have at least 2 other cards in hand to discard"
+      }
+    ]
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "071_computer-search.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Search",
+    "timing": "any_time",
+    "synergies": ["Item Finder", "Professor Oak", "Energy Retrieval"],
+    "tips": [
+      "Save for when you need a specific card to win",
+      "Discard cards you can recover later",
+      "One of the most powerful trainers ever printed",
+      "Use draw Trainers first to increase hand size before using",
+      "Computer Search for Item Finder can create a pseudo-infinite loop"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must discard exactly 2 other cards from your hand to use Computer Search; you cannot use it with fewer than 2 other cards in hand",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can search for any card in your deck: Pokemon, Trainer, or Energy",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must shuffle your deck after searching, even if you don't find a card (if your deck is empty)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The cards you discard are chosen by you, not your opponent",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Computer Search itself does not count toward the discard requirement",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must show the card you find to your opponent (standard search procedure)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you have no cards in your deck, you cannot use Computer Search (nothing to search)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can choose to discard Energy or other important cards if that's all you have",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Computer Search resolves completely before you can play the card you searched for",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Computer Search if you only have Computer Search in hand (need 2 other cards to discard)",
+      "source": "WotC Rulings"
+    }
+  ]
+}

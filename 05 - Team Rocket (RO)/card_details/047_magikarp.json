@@ -1,0 +1,107 @@
+{
+  "id": "rocket-047",
+  "name": "Magikarp",
+  "number": 47,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 30,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Gyarados", "Gyarados"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Flop",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Rapid Evolution",
+      "cost": ["Water", "Water"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Search your deck for an Evolution card named Gyarados or Dark Gyarados and put it on Magikarp. (This counts as evolving Magikarp.) Shuffle your deck afterward.",
+      "effect": {
+        "effectType": "search_evolve",
+        "searchFor": ["Gyarados", "Dark Gyarados"],
+        "immediateEvolution": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Fish Pokemon",
+    "height": "2' 11\"",
+    "weight": "22 lbs",
+    "nationalNumber": 129,
+    "level": 6
+  },
+  "flavorText": "Recent research has revealed the presence of dragon DNA in this species of Pokémon.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "047_magikarp-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Rapid Evolution allows turn-1 evolution to Gyarados/Dark Gyarados",
+      "Bypasses normal evolution timing rules",
+      "Can search for either Gyarados variant"
+    ],
+    "weaknesses": [
+      "Very low HP of 30",
+      "Lightning weakness",
+      "Rapid Evolution costs 2 energy"
+    ],
+    "synergies": [
+      "Dark Gyarados",
+      "Gyarados",
+      "Water energy acceleration"
+    ],
+    "counters": [
+      "Lightning-type Pokemon",
+      "Sniping attacks"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Magikarp was notable for Rapid Evolution, which allowed you to evolve into Gyarados or Dark Gyarados immediately - even on the first turn or the turn Magikarp was played. This bypassed normal evolution rules and made Gyarados decks faster.",
+  "rulings": [
+    {
+      "ruling": "Rapid Evolution counts as evolving and can be used on the turn Magikarp is played or your first turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can search for either Gyarados (Base Set) or Dark Gyarados.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Since this counts as evolving, Pokemon Powers that trigger 'when evolved' will activate.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "base1-095",
+  "name": "Switch",
+  "number": 95,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Switch 1 of your own Benched Pokémon with your Active Pokémon.",
+    "effectType": "switch",
+    "actions": [
+      {
+        "action": "switch_pokemon",
+        "target": "own_pokemon",
+        "parameters": {
+          "yourChoice": true,
+          "source": "own_bench",
+          "bypassesRetreatCost": true
+        }
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "pokemon_in_play",
+        "minimum": 1,
+        "description": "Must have at least one benched Pokemon"
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one",
+      "restrictions": ["Must be on your bench"]
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "095_switch.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "any_time",
+    "synergies": ["Chansey", "Snorlax", "Mr. Mime", "Scyther", "High retreat cost Pokemon"],
+    "tips": [
+      "Essential in decks with high-retreat Pokemon like Chansey, Snorlax, or Mewtwo",
+      "Include 2-3 copies in decks that rely on Pokemon with retreat costs of 2+",
+      "Can be skipped in decks with mostly free-retreat or 1-retreat Pokemon",
+      "Excellent response to opponent's Gust of Wind bringing up an unprepared Pokemon",
+      "Allows you to use Pokemon with heavy retreat costs without Energy commitment",
+      "Can enable hit-and-run strategies with different attackers",
+      "Particularly valuable in the late game when Energy is scarce"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "Choose 1 Pokemon from your bench to switch with your Active Pokemon"
+    },
+    {
+      "ruling": "The Active Pokemon moves to your bench, and the chosen benched Pokemon becomes active"
+    },
+    {
+      "ruling": "You cannot play Switch if you have no benched Pokemon"
+    },
+    {
+      "ruling": "This does not count as retreating - no retreat cost is paid"
+    },
+    {
+      "ruling": "Any effects on the Active Pokemon that reference it being active may end when it moves to bench"
+    },
+    {
+      "ruling": "Switch can be used even if your Active Pokemon is Asleep, Paralyzed, or Confused"
+    },
+    {
+      "ruling": "You can switch to a Pokemon that has just been played that turn (no 'summoning sickness' rule)"
+    },
+    {
+      "ruling": "Switch bypasses any effect that would prevent retreating"
+    }
+  ]
+}

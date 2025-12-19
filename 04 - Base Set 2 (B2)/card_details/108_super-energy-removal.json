@@ -1,0 +1,75 @@
+{
+  "id": "base2-108",
+  "name": "Super Energy Removal",
+  "number": 108,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "text": "Discard 1 Energy card attached to 1 of your own Pokémon in order to choose 1 of your opponent's Pokémon and up to 2 Energy cards attached to it. Discard those Energy cards.",
+  "effect": {
+    "text": "Discard 1 Energy card attached to 1 of your own Pokémon in order to choose 1 of your opponent's Pokémon and up to 2 Energy cards attached to it. Discard those Energy cards.",
+    "effectType": "energy_removal",
+    "cost": {
+      "discard": 1,
+      "cardType": "Energy",
+      "from": "your_pokemon"
+    },
+    "parameters": {
+      "target": "opponent_pokemon",
+      "removeEnergy": {
+        "count": "up_to_2",
+        "destination": "discard"
+      }
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "108_super-energy-removal-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruption",
+    "strengths": [
+      "Remove up to 2 Energy from opponent",
+      "Slows opponent's attack setup",
+      "Powerful energy denial"
+    ],
+    "weaknesses": [
+      "Requires discarding your own Energy",
+      "Net loss of 1 Energy for 2 removed"
+    ],
+    "synergies": [
+      "Energy Removal - Additional energy denial",
+      "Energy denial strategies"
+    ],
+    "counters": [
+      "Energy acceleration (Blastoise Rain Dance)",
+      "Energy Retrieval - Recover discarded energy"
+    ]
+  },
+  "competitiveHistory": "Super Energy Removal was one of the most powerful disruption cards, creating the energy denial strategy that dominated early competitive play.",
+  "rulings": [
+    {
+      "ruling": "You must discard 1 Energy from your own Pokemon to use this card.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can choose to discard 0, 1, or 2 Energy cards from the opponent's Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You choose which of your opponent's Pokemon to target.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

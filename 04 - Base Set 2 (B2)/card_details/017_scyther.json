@@ -1,0 +1,123 @@
+{
+  "id": "base2-017",
+  "name": "Scyther",
+  "number": 17,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Scizor"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Swords Dance",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "During your next turn, Scyther's Slash attack's base damage is 60 instead of 30.",
+      "effect": {
+        "effectType": "damage_boost",
+        "parameters": {
+          "target": "self",
+          "affectedAttack": "Slash",
+          "newBaseDamage": 60,
+          "duration": "next_turn"
+        }
+      }
+    },
+    {
+      "name": "Slash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Mantis Pokemon",
+    "height": "4' 11\"",
+    "weight": "123 lbs",
+    "nationalNumber": 123,
+    "level": 25
+  },
+  "flavorText": "With ninja-like agility and speed, it can create the illusion that there is more than one of it.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "017_scyther-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost - can pivot freely",
+      "Fighting resistance protects against Hitmonchan",
+      "70 HP is excellent for a Basic",
+      "No evolution required",
+      "Swords Dance + Slash combo deals 60 damage",
+      "Colorless attack cost works with any energy"
+    ],
+    "weaknesses": [
+      "Fire weakness",
+      "Swords Dance + Slash takes 2 turns",
+      "Slash alone only does 30 damage"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Powers Slash immediately",
+      "PlusPower - Boost damage output",
+      "Hitmonchan - Fellow Haymaker staple",
+      "Electabuzz - Fellow Haymaker staple"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness",
+      "Charizard - Fire type attacker",
+      "Magmar - Fire type attacker"
+    ]
+  },
+  "competitiveHistory": "Scyther was a cornerstone of the Haymaker archetype and one of the most played cards in early Pokemon TCG. Free retreat, Fighting resistance (protecting against Hitmonchan), and colorless attack costs made it incredibly versatile. It could pivot around damage while threatening with Slash.",
+  "rulings": [
+    {
+      "ruling": "Swords Dance's effect only lasts until your next turn. After that turn, Slash returns to 30 base damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Scyther is Benched or otherwise doesn't use Slash on the turn after Swords Dance, the boost is lost.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Swords Dance boost affects base damage before Weakness/Resistance and other modifiers.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Scyther's free retreat makes it excellent for tactical switching.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

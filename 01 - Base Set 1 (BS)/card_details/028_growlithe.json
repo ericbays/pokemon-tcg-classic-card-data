@@ -1,0 +1,126 @@
+{
+  "id": "base1-028",
+  "name": "Growlithe",
+  "number": 28,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": [
+    "Basic"
+  ],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": [
+    "Fire"
+  ],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [
+    "Arcanine"
+  ],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Flare",
+      "cost": [
+        "Fire",
+        "Colorless"
+      ],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": ""
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [
+    "Colorless"
+  ],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 58,
+    "category": "Puppy Pok\u00e9mon",
+    "height": "2'4\"",
+    "weight": "42 lbs.",
+    "level": 18
+  },
+  "flavorText": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "028_growlithe.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "60 HP is above average for Basic Pok\u00e9mon",
+      "20 damage for 2 energy is decent for early game",
+      "Only requires 1 Fire energy to attack, with 1 colorless",
+      "Low retreat cost (1) enables easy switching",
+      "Evolves into powerful Arcanine with only one stage",
+      "Can apply early pressure while setting up evolution",
+      "Uncommon rarity makes it accessible for deck building"
+    ],
+    "weaknesses": [
+      "Water weakness is problematic in Blastoise/Rain Dance meta",
+      "20 damage is insufficient against higher HP Pok\u00e9mon",
+      "No resistance leaves it vulnerable to all types equally",
+      "Cannot evolve on first turn or turn played",
+      "Primarily valued as evolution fodder rather than standalone attacker",
+      "Vulnerable to being knocked out before evolving"
+    ],
+    "synergies": [
+      "Arcanine - The primary evolution target",
+      "Charizard - Can use Energy Burn to accelerate Fire energy",
+      "Energy Retrieval - Recovers Fire Energy for sustained attacks",
+      "Bill - Draws cards to find Arcanine faster",
+      "Switch - Takes advantage of low retreat cost for positioning",
+      "PlusPower - Boosts Flare to 30 damage for better knockouts",
+      "Defender - Helps Growlithe survive to evolve"
+    ],
+    "counters": [
+      "Blastoise - Water weakness and Rain Dance make this a terrible matchup",
+      "Staryu/Starmie - Fast Water attackers exploit weakness",
+      "Lapras - Can OHKO Growlithe with Water Gun at 3+ energy",
+      "Hitmonchan - Special Punch can deal significant damage quickly",
+      "Energy Removal - Prevents Flare from being used",
+      "Gust of Wind - Forces Growlithe active before it can evolve"
+    ]
+  },
+  "description": "Growlithe is a solid Basic Fire-type Pok\u00e9mon that serves as the foundation for the powerful Arcanine evolution. With 60 HP and a simple but effective 20-damage attack, Growlithe can function as both an early game attacker and a setup card for Arcanine. Its reasonable energy cost and low retreat cost make it a reliable component in Fire-type strategies, though its Water weakness can be a significant liability in certain matchups.",
+  "competitiveHistory": "Growlithe saw regular play as a necessary component of Arcanine decks in the Base Set era. While it could function as a basic attacker, its primary value was as evolution material. In competitive settings, Growlithe was judged more on its ability to survive long enough to evolve rather than its attacking capabilities. The prevalence of Water-type decks (particularly Rain Dance) made Growlithe vulnerable, but Fire decks still included it out of necessity for accessing Arcanine.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "You need at least 1 Fire Energy and 1 energy of any type (including another Fire Energy) to use Flare. The colorless energy requirement can be satisfied by any energy type.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "No. You cannot evolve a Pok\u00e9mon on the turn it was played or on your first turn of the game.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. The attack requires 1 Fire and 1 Colorless energy. Having more energy than needed is fine; the extra energy just remains attached.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. The Water weakness (\u00d72) means that any damage from Water-type Pok\u00e9mon's attacks is doubled after all other calculations.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "rocket-030",
+  "name": "Dark Vileplume",
+  "number": 30,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Dark Gloom",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Hay Fever",
+      "type": "Pokemon Power",
+      "text": "No Trainer cards can be played. This power stops working while Dark Vileplume is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "special",
+        "lockType": "trainer_lock",
+        "affectsBothPlayers": true,
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Petal Whirlwind",
+      "cost": ["Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 3 coins. This attack does 30 damage times the number of heads. If you get 2 or more heads, Dark Vileplume is now Confused (after doing damage).",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinCount": 3,
+        "damagePerHead": 30,
+        "selfConfusion": {
+          "condition": "2_or_more_heads"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Flower Pokemon",
+    "height": "3' 11\"",
+    "weight": "41 lbs",
+    "nationalNumber": 45,
+    "level": 29
+  },
+  "flavorText": "Perhaps because of their strong-smelling pollen, other Pokémon do not approach areas where Vileplumes live.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "030_dark-vileplume-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Hay Fever completely locks out all Trainer cards",
+      "Affects both players",
+      "Can shut down Trainer-reliant strategies"
+    ],
+    "weaknesses": [
+      "Very low HP of 60 for Stage 2",
+      "Hay Fever affects you too",
+      "Fire weakness",
+      "Status conditions disable Hay Fever"
+    ],
+    "synergies": [
+      "Pokemon-based draw",
+      "Dark Gloom",
+      "Oddish"
+    ],
+    "counters": [
+      "Fire-type Pokemon",
+      "Status condition attacks"
+    ]
+  },
+  "competitiveHistory": "Dark Vileplume was one of the most format-defining cards from Team Rocket with its Trainer lock. This non-holo version is functionally identical to the holo version.",
+  "rulings": [
+    {
+      "ruling": "Hay Fever affects both players - neither can play Trainers while active.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

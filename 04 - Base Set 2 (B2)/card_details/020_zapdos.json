@@ -1,0 +1,125 @@
+{
+  "id": "base2-020",
+  "name": "Zapdos",
+  "number": 20,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 90,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thunder",
+      "cost": ["Lightning", "Lightning", "Lightning", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "Flip a coin. If tails, Zapdos does 30 damage to itself.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "onFailure": {
+              "selfDamage": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thunderbolt",
+      "cost": ["Lightning", "Lightning", "Lightning", "Lightning"],
+      "convertedEnergyCost": 4,
+      "damage": "100",
+      "baseDamage": 100,
+      "text": "Discard all Energy cards attached to Zapdos in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": "all",
+          "type": "any"
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Electric Pokemon",
+    "height": "5' 3\"",
+    "weight": "116 lbs",
+    "nationalNumber": 145,
+    "level": 64
+  },
+  "flavorText": "A legendary bird Pokémon said to appear from clouds while wielding enormous lightning bolts.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "020_zapdos-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "90 HP is excellent for a Basic",
+      "No weakness - unique advantage",
+      "Fighting resistance helps against Hitmonchan",
+      "Thunderbolt deals massive 100 damage",
+      "No evolution required",
+      "Lightning type hits Water weakness"
+    ],
+    "weaknesses": [
+      "Thunder has self-damage risk on tails",
+      "Thunderbolt discards ALL energy - one-shot only",
+      "4 energy attacks are expensive",
+      "3 retreat cost is high"
+    ],
+    "synergies": [
+      "Energy Retrieval - Recover discarded energy",
+      "Computer Search - Find Zapdos quickly",
+      "Super Energy Retrieval - Mass energy recovery after Thunderbolt"
+    ],
+    "counters": [
+      "Energy Removal - Prevent Zapdos from attacking",
+      "Gust of Wind - Force out before ready"
+    ]
+  },
+  "competitiveHistory": "Zapdos was one of the premier Basic Pokemon in early competitive play. No weakness was extremely rare and valuable, and 90 HP on a Basic was excellent. Thunder provided solid damage output while Thunderbolt served as a nuclear option to KO anything. Often splashed as a 1-2 copy in various decks.",
+  "rulings": [
+    {
+      "ruling": "Thunder's self-damage only occurs on a tails flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Thunderbolt requires you to discard ALL Energy cards attached to Zapdos - you cannot use it if you're unwilling to discard.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "After using Thunderbolt, Zapdos has no energy and cannot attack until re-energized.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Zapdos has no weakness - this is printed on the card. It does not have a weakness to any type.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

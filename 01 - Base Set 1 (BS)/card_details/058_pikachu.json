@@ -1,0 +1,90 @@
+{
+  "id": "base1-058",
+  "name": "Pikachu",
+  "number": 58,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Raichu"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Gnaw",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": ""
+    },
+    {
+      "name": "Thunder Jolt",
+      "cost": ["Lightning", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If tails, Pikachu does 10 damage to itself."
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 25,
+    "category": "Mouse Pokemon",
+    "height": "1' 4\"",
+    "weight": "13 lbs.",
+    "level": 12
+  },
+  "flavorText": "When several of these Pokemon gather, their electricity can cause lightning storms.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "058_pikachu.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Thunder Jolt deals impressive 30 damage for just 2 Energy on a Basic Pokemon",
+      "Gnaw provides energy-efficient 10 damage with any Energy type",
+      "Can evolve into the powerful Raichu for added versatility",
+      "Low retreat cost of 1 allows easy switching",
+      "Strong against Water-type Pokemon which are common in the format"
+    ],
+    "weaknesses": [
+      "Low 40 HP makes it vulnerable to one-hit knockouts",
+      "Thunder Jolt has 50% chance to deal self-damage, reducing sustainability",
+      "Fighting weakness leaves it exposed to popular Fighting Pokemon",
+      "No resistance to offset defensive weaknesses",
+      "Self-damage from Thunder Jolt can accumulate quickly"
+    ],
+    "synergies": [
+      "Use PlusPower with Thunder Jolt to reach important knockout thresholds",
+      "Pair with Potion or Super Potion to heal self-inflicted damage",
+      "Combine with Defender to survive one extra hit given the low HP",
+      "Evolve into Raichu when Pikachu takes too much self-damage"
+    ],
+    "counters": [
+      "Onix - High HP tanks Thunder Jolt and Fighting typing exploits weakness",
+      "Machop - Fighting weakness means quick defeats",
+      "Sandshrew - Fighting type advantage and decent HP"
+    ]
+  }
+}

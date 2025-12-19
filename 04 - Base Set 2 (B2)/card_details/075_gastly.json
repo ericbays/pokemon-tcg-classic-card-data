@@ -1,0 +1,119 @@
+{
+  "id": "base2-075",
+  "name": "Gastly",
+  "number": 75,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Haunter"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sleeping Gas",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Asleep"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Destiny Bond",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Psychic Energy card attached to Gastly in order to use this attack. If a Pokémon Knocks Out Gastly during your opponent's next turn, Knock Out that Pokémon.",
+      "effect": {
+        "effectType": "destiny_bond",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Psychic"
+        },
+        "parameters": {
+          "duration": "opponents_next_turn",
+          "trigger": "knockout"
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Gas Pokemon",
+    "height": "4' 3\"",
+    "weight": "0.2 lbs",
+    "nationalNumber": 92,
+    "level": 8
+  },
+  "flavorText": "Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "075_gastly-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Free retreat cost",
+      "No weakness",
+      "Fighting resistance",
+      "Destiny Bond is a powerful deterrent"
+    ],
+    "weaknesses": [
+      "30 HP is extremely fragile",
+      "Sleeping Gas requires coin flip",
+      "Destiny Bond requires energy discard"
+    ],
+    "synergies": [
+      "Haunter/Gengar - Evolution line"
+    ],
+    "counters": [
+      "Any high damage attacker can KO before Destiny Bond activates"
+    ]
+  },
+  "competitiveHistory": "Gastly was used as the basic for the Haunter/Gengar evolution line. Destiny Bond provided a unique revenge KO mechanic.",
+  "rulings": [
+    {
+      "ruling": "Sleeping Gas's Sleep only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must discard 1 Psychic Energy to use Destiny Bond.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Destiny Bond only triggers if Gastly is Knocked Out by damage from an attack during your opponent's next turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "base2-056",
+  "name": "Persian",
+  "number": 56,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Meowth",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Scratch",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Pounce",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "If the Defending Pokémon attacks Persian during your opponent's next turn, any damage done by the attack is reduced by 10 (after applying Weakness and Resistance). (Benching either Pokémon ends this effect.)",
+      "effect": {
+        "effectType": "damage_reduction",
+        "parameters": {
+          "reduction": 10,
+          "duration": "opponents_next_turn",
+          "timing": "after_weakness_resistance",
+          "endsOnBench": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Classy Cat Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs",
+    "nationalNumber": 53,
+    "level": 25
+  },
+  "flavorText": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "056_persian-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost",
+      "Psychic resistance",
+      "Pounce provides damage reduction",
+      "Colorless attacks work with any energy"
+    ],
+    "weaknesses": [
+      "Fighting weakness to Hitmonchan",
+      "70 HP is moderate",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Meowth - Required basic",
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness"
+    ]
+  },
+  "competitiveHistory": "Persian was occasionally used for its free retreat and Psychic resistance. However, the low damage output limited competitive success.",
+  "rulings": [
+    {
+      "ruling": "Scratch has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pounce's damage reduction only applies if the Defending Pokemon attacks Persian specifically.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If either Persian or the Defending Pokemon goes to the Bench, Pounce's effect ends.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

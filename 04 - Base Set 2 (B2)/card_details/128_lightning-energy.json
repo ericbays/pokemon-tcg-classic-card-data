@@ -1,0 +1,58 @@
+{
+  "id": "base2-128",
+  "name": "Lightning Energy",
+  "number": 128,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Basic",
+  "provides": [
+    {
+      "type": "Lightning",
+      "amount": 1
+    }
+  ],
+  "text": "Provides 1 Lightning Energy.",
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "128_lightning-energy-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy",
+    "strengths": [
+      "Basic Energy - searchable and retrievable",
+      "Powers Lightning-type attacks"
+    ],
+    "weaknesses": [
+      "Only provides 1 Energy"
+    ],
+    "synergies": [
+      "Lightning Pokemon",
+      "Electabuzz",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Lightning Energy was essential for Lightning-type decks, particularly with the dominant Electabuzz.",
+  "rulings": [
+    {
+      "ruling": "Lightning Energy provides 1 Lightning Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

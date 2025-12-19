@@ -1,0 +1,116 @@
+{
+  "id": "rocket-011",
+  "name": "Dark Magneton",
+  "number": 11,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 60,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Magnemite",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sonicboom",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)",
+      "effect": {
+        "effectType": "damage_modifier",
+        "ignoreWeakness": true,
+        "ignoreResistance": true
+      }
+    },
+    {
+      "name": "Magnetic Lines",
+      "cost": ["Lightning", "Lightning"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "If the Defending Pokémon has any basic Energy cards attached to it, choose 1 of them. If your opponent has any Benched Pokémon, choose 1 of them and attach that Energy card to it.",
+      "effect": {
+        "effectType": "energy_manipulation",
+        "target": "defending_pokemon",
+        "action": "move_energy",
+        "destination": "opponent_bench",
+        "energyType": "basic",
+        "count": 1,
+        "requirement": "opponent_has_benched_pokemon"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Magnet Pokemon",
+    "height": "3' 3\"",
+    "weight": "132 lbs",
+    "nationalNumber": 82,
+    "level": 26
+  },
+  "flavorText": "The number of incidents of hackers using Magnetons to damage computer systems is steadily increasing.",
+  "illustrator": "Miki Tanaka",
+  "imageUrl": "011_dark-magneton-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Sonicboom bypasses Weakness and Resistance",
+      "Magnetic Lines disrupts opponent's energy placement",
+      "Colorless cost on Sonicboom means flexibility",
+      "Can strand energy on weak benched Pokemon"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Fighting weakness is devastating vs Hitmonchan",
+      "Magnetic Lines requires opponent to have bench",
+      "Moderate damage output"
+    ],
+    "synergies": [
+      "Magnemite",
+      "Energy disruption strategies",
+      "Gust of Wind (bring up energy-starved Pokemon)"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Fighting-type Pokemon",
+      "Single Pokemon strategies (no bench)"
+    ]
+  },
+  "competitiveHistory": "Dark Magneton was an interesting disruption card. Magnetic Lines could mess with the opponent's energy distribution, potentially stranding energy on Benched Pokemon they didn't want to use. However, the 60 HP and Fighting weakness made it vulnerable to the ubiquitous Hitmonchan, limiting its competitive impact.",
+  "rulings": [
+    {
+      "ruling": "Magnetic Lines only works if the Defending Pokemon has basic Energy attached AND the opponent has Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You choose which basic Energy to move and which Benched Pokemon receives it.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Special Energy cards like Double Colorless Energy cannot be moved by Magnetic Lines.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

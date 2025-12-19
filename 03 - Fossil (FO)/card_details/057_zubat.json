@@ -1,0 +1,112 @@
+{
+  "id": "fossil-057",
+  "name": "Zubat",
+  "number": 57,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Golbat"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Supersonic",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Leech Life",
+      "cost": ["Grass", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Remove a number of damage counters from Zubat equal to the damage done to the Defending Pokémon (after applying Weakness and Resistance). If Zubat has fewer damage counters than that, remove all of them.",
+      "effect": {
+        "effectType": "healing",
+        "parameters": {
+          "healAmount": "damage_dealt",
+          "afterWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Bat Pokemon",
+    "height": "2' 7\"",
+    "weight": "17 lbs",
+    "nationalNumber": 41,
+    "level": 10
+  },
+  "flavorText": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "057_zubat.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Free retreat cost",
+      "Fighting resistance",
+      "Leech Life provides self-healing",
+      "Supersonic can Confuse"
+    ],
+    "weaknesses": [
+      "40 HP is low",
+      "Psychic weakness",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Golbat (evolution)",
+      "Grass decks",
+      "Free retreat Pokemon"
+    ],
+    "counters": [
+      "Psychic Pokemon"
+    ]
+  },
+  "competitiveHistory": "Fossil Zubat was a decent Basic with free retreat and Fighting resistance. Leech Life's healing was useful for survivability, and it served as a stepping stone to Golbat.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Leech Life's healing is calculated after Weakness and Resistance are applied.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

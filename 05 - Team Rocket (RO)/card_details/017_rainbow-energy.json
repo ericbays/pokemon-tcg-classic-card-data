@@ -1,0 +1,74 @@
+{
+  "id": "rocket-017",
+  "name": "Rainbow Energy",
+  "number": 17,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Special"],
+  "rarity": "Rare",
+  "energyType": "Special",
+  "provides": [
+    {
+      "type": "Any",
+      "amount": 1
+    }
+  ],
+  "effect": {
+    "text": "Attach Rainbow Energy to 1 of your Pokémon. While in play, Rainbow Energy counts as every type of basic Energy but only provides 1 Energy at a time. (Doesn't count as a basic Energy card when not in play.) When you attach this card from your hand to 1 of your Pokémon, it does 10 damage to that Pokémon. (Don't apply Weakness and Resistance.)",
+    "effectType": "conditional_energy",
+    "specialRules": {
+      "countsAsBasic": false,
+      "providesAllTypes": true,
+      "energyAmount": 1,
+      "damageOnAttach": 10,
+      "canBeSearched": false,
+      "canBeRetrieved": false
+    }
+  },
+  "illustrator": "Takumi Akabane",
+  "imageUrl": "017_rainbow-energy-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Provide any energy type for multi-type attack costs",
+    "deckTypes": [
+      "Multi-type decks",
+      "Decks with varied energy requirements",
+      "Decks that benefit from self-damage"
+    ],
+    "notes": "Rainbow Energy is incredibly versatile, counting as any basic energy type while attached. The 10 damage on attachment is a real cost, but the flexibility is often worth it. Essential for decks using Pokemon with multiple energy types in their attack costs. Does not count as basic Energy when in deck, hand, or discard pile."
+  },
+  "competitiveHistory": "Rainbow Energy was a staple in decks that needed energy flexibility. The ability to satisfy any energy type requirement made it invaluable for multi-type decks. The 10 damage on attachment was generally acceptable for the flexibility provided. It remained a competitive staple across many formats.",
+  "rulings": [
+    {
+      "ruling": "While attached, Rainbow Energy counts as all basic Energy types simultaneously (Fire, Water, Grass, Lightning, Psychic, Fighting).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Rainbow Energy only provides 1 Energy even though it counts as all types.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The 10 damage is dealt when attached from hand. Moving it between Pokemon or attaching from discard doesn't cause damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Rainbow Energy is not a basic Energy card when in your hand, deck, or discard pile - only while attached.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Energy Search and Energy Retrieval cannot get Rainbow Energy from your deck or discard.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

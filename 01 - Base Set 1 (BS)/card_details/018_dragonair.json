@@ -1,0 +1,102 @@
+{
+  "id": "base1-018",
+  "name": "Dragonair",
+  "number": 18,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Dratini",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slam",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 0,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "type": "multi_coin_flip",
+        "coinFlips": 2,
+        "damagePerHeads": 30,
+        "minDamage": 0,
+        "maxDamage": 60
+      }
+    },
+    {
+      "name": "Hyper Beam",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If the Defending Pokemon has any Energy cards attached to it, choose 1 of them and discard it.",
+      "effect": {
+        "type": "energy_removal",
+        "target": "defending_pokemon",
+        "discardCount": 1,
+        "choice": "your_choice"
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "nationalNumber": 148,
+    "category": "Dragon Pokemon",
+    "height": "13'1\"",
+    "weight": "36 lbs",
+    "level": 33
+  },
+  "flavorText": "A mystical Pokemon that exudes a gentle aura. Has the ability to change climate conditions.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "018_dragonair.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "No weakness - takes consistent damage",
+      "Psychic resistance vs Alakazam/Mewtwo",
+      "Hyper Beam disrupts opponent's energy",
+      "Colorless costs work with any energy",
+      "Only Stage 1 evolution"
+    ],
+    "weaknesses": [
+      "Hyper Beam only does 20 damage",
+      "Slam is coin-flip dependent",
+      "80 HP is moderate",
+      "4 energy for Hyper Beam is expensive for 20 damage"
+    ],
+    "synergies": [
+      "Energy Removal",
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "High damage attackers - Can overcome Dragonair's HP",
+      "Pokemon with no energy requirements"
+    ]
+  },
+  "description": "Dragonair is a Stage 1 Colorless-type Pokemon with no weakness and Psychic resistance. It features Slam for variable damage and Hyper Beam for energy disruption. Its Colorless typing makes it versatile.",
+  "competitiveHistory": "Dragonair was occasionally used for its favorable typing (no weakness, Psychic resistance) and energy disruption. However, its low damage output limited competitive viability.",
+  "rulings": []
+}

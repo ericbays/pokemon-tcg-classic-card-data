@@ -1,0 +1,128 @@
+{
+  "id": "fossil-055",
+  "name": "Slowpoke",
+  "number": 55,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Slowbro"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Spacing Out",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, remove a damage counter from Slowpoke. This attack can't be used if Slowpoke has no damage counters on it.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "healDamage": 10
+          },
+          "onTails": null
+        },
+        "parameters": {
+          "requiresDamageCounters": true
+        }
+      }
+    },
+    {
+      "name": "Scavenge",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Psychic Energy card attached to Slowpoke in order to use this attack. Put a Trainer card from your discard pile into your hand.",
+      "effect": {
+        "effectType": "discard_cost",
+        "cost": {
+          "type": "Psychic",
+          "amount": 1
+        },
+        "parameters": {
+          "retrieveFromDiscard": "Trainer",
+          "destination": "hand"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Dopey Pokemon",
+    "height": "3' 11\"",
+    "weight": "79 lbs",
+    "nationalNumber": 79,
+    "level": 18
+  },
+  "flavorText": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
+  "illustrator": "Miki Takano",
+  "imageUrl": "055_slowpoke.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Scavenge retrieves Trainer cards from discard",
+      "Spacing Out provides self-healing",
+      "50 HP is decent for a Basic",
+      "Low retreat cost of 1",
+      "Evolves into powerful Slowbro"
+    ],
+    "weaknesses": [
+      "Psychic weakness",
+      "No damage-dealing attacks",
+      "Scavenge requires discarding energy"
+    ],
+    "synergies": [
+      "Slowbro (evolution with Strange Behavior)",
+      "Trainer recursion strategies",
+      "Control decks"
+    ],
+    "counters": [
+      "Psychic Pokemon",
+      "Aggressive attackers"
+    ]
+  },
+  "competitiveHistory": "Fossil Slowpoke's Scavenge attack was unique, allowing Trainer card recovery from the discard pile. This utility made it valuable in control decks, and it evolved into the powerful Slowbro with Strange Behavior.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Spacing Out cannot be used if Slowpoke has no damage counters.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Scavenge requires discarding a Psychic Energy from Slowpoke as a cost to use the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You can retrieve any Trainer card from your discard pile with Scavenge.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

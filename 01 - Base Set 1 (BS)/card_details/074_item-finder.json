@@ -1,0 +1,110 @@
+{
+  "id": "base1-074",
+  "name": "Item Finder",
+  "number": 74,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Discard 2 of the other cards from your hand in order to put a Trainer card from your discard pile into your hand.",
+    "effectType": "discard_manipulation",
+    "actions": [
+      {
+        "action": "search_deck",
+        "amount": 1,
+        "target": "trainer_card",
+        "parameters": {
+          "source": "discard_pile",
+          "destination": "hand"
+        }
+      }
+    ],
+    "cost": {
+      "type": "discard_cards",
+      "amount": 2,
+      "target": "hand",
+      "description": "Discard 2 other cards from your hand"
+    },
+    "requirements": [
+      {
+        "type": "cards_in_hand",
+        "minimum": 3,
+        "description": "Must have at least 2 other cards in hand to discard"
+      },
+      {
+        "type": "cards_in_discard",
+        "minimum": 1,
+        "description": "Must have at least one Trainer card in discard pile"
+      }
+    ]
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "074_item-finder.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Combo",
+    "timing": "any_time",
+    "synergies": ["Item Finder", "Professor Oak", "Computer Search", "Gust of Wind", "Energy Removal"],
+    "tips": [
+      "Don't use until you've discarded valuable Trainers worth recurring",
+      "Prioritize retrieving Trainers that impact the game state immediately",
+      "Item Finder getting Item Finder creates a Trainer recursion engine",
+      "In late game, retrieve game-winning Trainers like Gust of Wind",
+      "Save for critical moments rather than using casually"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must discard exactly 2 other cards from your hand to use Item Finder",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can only retrieve Trainer cards from your discard pile, not Pokemon or Energy",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Item Finder if you have fewer than 2 other cards in hand",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must have at least one Trainer card in your discard pile to use Item Finder",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You choose which Trainer card to retrieve",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The retrieved Trainer card goes to your hand and can be played immediately if you want",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Item Finder itself does not count toward the discard requirement",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can use Item Finder to retrieve another Item Finder from your discard pile",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The discarded cards go to your discard pile",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must show your opponent the Trainer card you retrieve",
+      "source": "WotC Rulings"
+    }
+  ]
+}

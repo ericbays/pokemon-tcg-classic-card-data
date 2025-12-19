@@ -1,0 +1,103 @@
+{
+  "id": "base1-036",
+  "name": "Magmar",
+  "number": 36,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original Series",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 50,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Fire Punch",
+      "cost": ["Fire", "Fire"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Flamethrower",
+      "cost": ["Fire", "Fire", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Discard 1 Fire Energy card attached to Magmar in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Fire"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "nationalNumber": 126,
+    "category": "Spitfire Pokémon",
+    "height": "4'3\"",
+    "weight": "98 lbs",
+    "level": 24
+  },
+  "flavorText": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "036_magmar.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Can be deployed immediately as a Basic Pokémon",
+      "Fire Punch deals solid 30 damage for 2 Fire Energy without additional costs",
+      "Flamethrower provides good damage output (50) for 3 energy",
+      "Quick offensive option in Fire-based decks"
+    ],
+    "weaknesses": [
+      "Only 50 HP makes it vulnerable to most attacks",
+      "Flamethrower requires discarding a Fire Energy, making it resource-intensive",
+      "2 retreat cost means Switch cards are valuable to pivot out",
+      "Becomes increasingly vulnerable in late game as evolved Pokémon take over"
+    ],
+    "synergies": [
+      "Energy Retrieval",
+      "Super Energy Retrieval",
+      "Pokémon Breeder",
+      "PlusPower",
+      "Charizard",
+      "Ninetales"
+    ],
+    "counters": [
+      "Blastoise",
+      "Poliwrath",
+      "Gyarados",
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "rocket-054",
+  "name": "Drowzee",
+  "number": 54,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Hypno", "Hypno"],
+  "abilities": [
+    {
+      "name": "Long-Distance Hypnosis",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may flip a coin. If heads, the Defending Pokémon is now Asleep; if tails, your Active Pokémon is now Asleep. This power can't be used if Drowzee is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "status_inflict",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "statusCondition": "Asleep",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "target": "defending_pokemon"
+          },
+          "onTails": {
+            "target": "your_active"
+          }
+        },
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Nightmare",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Hypnosis Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs",
+    "nationalNumber": 96,
+    "level": 10
+  },
+  "flavorText": "Not popular with girls because of its attitude. Can often be heard muttering to itself in a low voice.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "054_drowzee-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Long-Distance Hypnosis can put opponent to Sleep",
+      "Nightmare guarantees Sleep",
+      "Good for Sleep-based strategies"
+    ],
+    "weaknesses": [
+      "Long-Distance Hypnosis can backfire",
+      "Low damage output",
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Dark Hypno",
+      "Sleep strategies"
+    ],
+    "counters": [
+      "Psychic-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Drowzee was focused on Sleep status. Long-Distance Hypnosis was risky but could disable the opponent's Active Pokemon for free.",
+  "rulings": [
+    {
+      "ruling": "Long-Distance Hypnosis affects your Active Pokemon on tails, which could be Drowzee itself.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

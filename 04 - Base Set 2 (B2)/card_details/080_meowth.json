@@ -1,0 +1,99 @@
+{
+  "id": "base2-080",
+  "name": "Meowth",
+  "number": 80,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Persian"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Pay Day",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, draw a card.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "draw": 1
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Scratch Cat Pokemon",
+    "height": "1' 4\"",
+    "weight": "9 lbs",
+    "nationalNumber": 52,
+    "level": 15
+  },
+  "flavorText": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "080_meowth-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "50 HP is decent for a Basic",
+      "Pay Day can draw cards",
+      "Psychic resistance",
+      "Colorless - works with any energy"
+    ],
+    "weaknesses": [
+      "Fighting weakness",
+      "Low damage output",
+      "Card draw requires coin flip",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Persian - Evolution target"
+    ],
+    "counters": [
+      "Fighting Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Meowth was used as the basic for Persian. Pay Day's card draw was a nice bonus while setting up.",
+  "rulings": [
+    {
+      "ruling": "Pay Day draws a card only on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You draw the card after dealing damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

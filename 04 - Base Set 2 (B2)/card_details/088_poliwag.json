@@ -1,0 +1,93 @@
+{
+  "id": "base2-088",
+  "name": "Poliwag",
+  "number": 88,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Poliwhirl"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Water Gun",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Poliwag but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.",
+      "effect": {
+        "effectType": "extra_energy_damage",
+        "parameters": {
+          "baseDamage": 10,
+          "bonusDamage": 10,
+          "bonusPer": "extra_water_energy",
+          "maxBonus": 20
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Tadpole Pokemon",
+    "height": "2' 0\"",
+    "weight": "27 lbs",
+    "nationalNumber": 60,
+    "level": 13
+  },
+  "flavorText": "Its newly grown legs prevent it from running. It appears to prefer swimming over trying to stand.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "088_poliwag-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Water Gun scales with extra energy",
+      "Can do up to 30 damage"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Grass weakness",
+      "No resistance",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Poliwhirl/Poliwrath - Evolution line"
+    ],
+    "counters": [
+      "Grass Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Poliwag was used as the basic for the Poliwrath evolution line. Water Gun's scaling damage was useful.",
+  "rulings": [
+    {
+      "ruling": "Water Gun does 10 base damage plus 10 for each extra Water Energy (beyond the 1 needed to use it).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The bonus damage is capped at 20, so maximum damage is 30.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

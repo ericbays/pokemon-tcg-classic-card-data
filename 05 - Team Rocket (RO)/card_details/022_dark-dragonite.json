@@ -1,0 +1,119 @@
+{
+  "id": "rocket-022",
+  "name": "Dark Dragonite",
+  "number": 22,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Dark Dragonair",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Summon Minions",
+      "type": "Pokemon Power",
+      "text": "When you play Dark Dragonite from your hand, search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward.",
+      "effect": {
+        "effectType": "search",
+        "trigger": "on_play",
+        "target": "deck",
+        "searchFor": "Basic Pokemon",
+        "count": 2,
+        "destination": "bench",
+        "timing": "on_play"
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Giant Tail",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "70",
+      "baseDamage": 70,
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "onFailure": {
+              "damage": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Dragon Pokemon",
+    "height": "7' 3\"",
+    "weight": "463 lbs",
+    "nationalNumber": 149,
+    "level": 33
+  },
+  "flavorText": "Sometimes called \"The God of Destruction.\" Its wings are able to support it in spite of its massive weight.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "022_dark-dragonite-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Summon Minions provides incredible bench setup when evolved",
+      "No weakness makes it harder to exploit",
+      "Fighting resistance protects against Hitmonchan",
+      "Colorless typing means any energy works"
+    ],
+    "weaknesses": [
+      "Giant Tail is coin flip dependent - 50% chance to do nothing",
+      "70 HP is very low for a Stage 2",
+      "4 energy cost is expensive"
+    ],
+    "synergies": [
+      "Pokemon Breeder",
+      "Dark Dragonair",
+      "Dratini"
+    ],
+    "counters": [
+      "Energy Removal",
+      "Gust of Wind",
+      "High damage attacks"
+    ]
+  },
+  "competitiveHistory": "Dark Dragonite's Summon Minions Pokemon Power made it valuable in decks that needed fast bench setup. This non-holo version is functionally identical to the holo version.",
+  "rulings": [
+    {
+      "ruling": "Summon Minions only triggers when Dark Dragonite is played from your hand to evolve a Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You may search for 0, 1, or 2 Basic Pokemon with Summon Minions.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Giant Tail does no damage on tails.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

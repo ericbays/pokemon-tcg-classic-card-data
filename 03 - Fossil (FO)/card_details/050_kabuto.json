@@ -1,0 +1,126 @@
+{
+  "id": "fossil-050",
+  "name": "Kabuto",
+  "number": 50,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Mysterious Fossil",
+  "evolvesTo": ["Kabutops"],
+  "abilities": [
+    {
+      "name": "Kabuto Armor",
+      "type": "Pokemon Power",
+      "text": "Whenever an attack (even your own) does damage to Kabuto (after applying Weakness and Resistance), that attack only does half the damage to Kabuto (rounded down to the nearest 10). (Any other effects of attacks still happen.) This power stops working while Kabuto is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "damage_reduction",
+        "trigger": "on_damage",
+        "timing": "any_time",
+        "target": "self",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "reductionType": "half",
+          "roundDown": true,
+          "roundToNearest": 10,
+          "appliesAfterWeaknessResistance": true,
+          "appliesToOwnAttacks": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Scratch",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Shellfish Pokemon",
+    "height": "1' 8\"",
+    "weight": "25 lbs",
+    "nationalNumber": 140,
+    "level": 9
+  },
+  "flavorText": "A Pokémon that was resurrected from a fossil found in what was once the ocean floor eons ago.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "050_kabuto.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Kabuto Armor halves all damage taken",
+      "Effective HP is much higher than 30",
+      "Low energy requirement",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Only 30 HP is extremely low",
+      "Grass weakness (doubled then halved)",
+      "Scratch does minimal damage",
+      "Status conditions disable Kabuto Armor",
+      "Evolves from Mysterious Fossil, not a Basic"
+    ],
+    "synergies": [
+      "Mysterious Fossil",
+      "Kabutops (evolution)",
+      "Defender (further damage reduction)"
+    ],
+    "counters": [
+      "Status conditions disable Kabuto Armor",
+      "High damage still hurts through halving",
+      "Grass Pokemon for weakness"
+    ]
+  },
+  "competitiveHistory": "Kabuto's Kabuto Armor was innovative, effectively doubling its survivability. However, even with damage halving, 30 HP was extremely fragile. The requirement to evolve from Mysterious Fossil made the line slow to set up, and Kabutops wasn't strong enough to justify the effort.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Kabuto Armor halves damage after applying Weakness and Resistance.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Damage is rounded down to the nearest 10. So 30 damage becomes 10 (15 rounds to 10).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Kabuto Armor applies to your own attacks as well as opponent's attacks.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Kabuto is Asleep, Confused, or Paralyzed, Kabuto Armor does not work and full damage is taken.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

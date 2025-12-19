@@ -1,0 +1,139 @@
+{
+  "id": "fossil-017",
+  "name": "Articuno",
+  "number": 17,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Freeze Dry",
+      "cost": ["Water", "Water", "Water"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Blizzard",
+      "cost": ["Water", "Water", "Water", "Water"],
+      "convertedEnergyCost": 4,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "benchDamage": {
+              "target": "opponent_bench",
+              "damage": 10,
+              "count": "all"
+            }
+          },
+          "onTails": {
+            "benchDamage": {
+              "target": "your_bench",
+              "damage": 10,
+              "count": "all"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Freeze Pokemon",
+    "height": "5' 7\"",
+    "weight": "122 lbs",
+    "nationalNumber": 144,
+    "level": 35
+  },
+  "flavorText": "A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "017_articuno.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Basic Pokemon with solid 70 HP",
+      "No weakness is extremely valuable",
+      "Fighting resistance protects against Haymaker",
+      "Freeze Dry can Paralyze for board control",
+      "Blizzard can spread damage to opponent's bench",
+      "Non-holo version is more accessible"
+    ],
+    "weaknesses": [
+      "High energy costs (3-4 Water energy)",
+      "Blizzard can backfire and damage your own bench",
+      "Coin flip reliance makes it inconsistent",
+      "Slow to power up without Rain Dance support"
+    ],
+    "synergies": [
+      "Blastoise (Rain Dance for energy acceleration)",
+      "Pokemon Center (heal bench damage from Blizzard)",
+      "Energy Retrieval",
+      "Super Energy Retrieval"
+    ],
+    "counters": [
+      "Energy Removal slows down energy-intensive attacks",
+      "Super Energy Removal is devastating",
+      "Lightning Pokemon hit for decent damage",
+      "Faster attackers can KO before Articuno is ready"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Articuno is functionally identical to the holo version (#2). Articuno saw play in Blastoise Rain Dance decks as a resilient attacker with no weakness. The non-holo printing made it more accessible for budget-conscious competitive players.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Blizzard's bench damage is mandatory based on the coin flip result - you must apply it even if it damages your own Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Weakness and Resistance are not applied to benched Pokemon when calculating Blizzard's bench damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Articuno has no weakness, it takes normal damage from all types.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

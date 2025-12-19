@@ -1,0 +1,89 @@
+{
+  "id": "base1-046",
+  "name": "Charmander",
+  "number": 46,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesTo": ["Charmeleon"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Scratch",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": ""
+    },
+    {
+      "name": "Ember",
+      "cost": ["Fire", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Discard 1 Fire Energy card attached to Charmander in order to use this attack."
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 4,
+    "category": "Lizard Pokemon",
+    "height": "2' 0\"",
+    "weight": "19 lbs.",
+    "level": 10
+  },
+  "flavorText": "Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail. LV. 10 #4",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "046_charmander.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "High HP of 50 for a Basic Pokemon provides good survivability",
+      "Scratch requires only 1 Colorless energy, allowing it to attack with any energy type",
+      "Ember deals impressive 30 damage for a Basic Pokemon",
+      "Low retreat cost of 1 provides mobility",
+      "Evolves into the highly sought-after Charizard line"
+    ],
+    "weaknesses": [
+      "Weak to Water-type attacks (x2 damage)",
+      "Ember requires discarding a Fire energy, making it costly to use repeatedly",
+      "No resistance to reduce incoming damage",
+      "Vulnerable to Blastoise and other Water Pokemon"
+    ],
+    "synergies": [
+      "Energy Retrieval can recover discarded Fire energy from Ember",
+      "Super Energy Removal combined with Ember can control the energy game",
+      "Pokemon Breeder allows skipping Charmeleon to evolve directly to Charizard",
+      "Defender can help Charmander survive longer against threats",
+      "PlusPower boosts Ember to 40 damage"
+    ],
+    "counters": [
+      "Water-type Pokemon like Blastoise and Lapras",
+      "Energy removal to prevent Ember usage",
+      "High HP tanks that can absorb Ember damage"
+    ]
+  }
+}

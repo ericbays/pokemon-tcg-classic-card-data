@@ -1,0 +1,346 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "energy-card-schema.json",
+  "title": "Energy Card Schema",
+  "description": "Schema for Pokemon TCG Energy cards (Basic and Special), designed for digital game implementation",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "number",
+    "set",
+    "cardType",
+    "supertype",
+    "subtypes",
+    "rarity",
+    "energyType",
+    "provides",
+    "imageUrl"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in format: {setCode}-{paddedNumber}",
+      "pattern": "^[a-z0-9]+-[0-9]{3}$",
+      "examples": ["base1-097", "base1-096"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Energy card name as printed",
+      "examples": ["Fire Energy", "Double Colorless Energy", "Rainbow Energy"]
+    },
+    "number": {
+      "type": "integer",
+      "description": "Card number within the set",
+      "minimum": 1,
+      "examples": [96, 97, 102]
+    },
+    "set": {
+      "type": "object",
+      "description": "Information about the card set",
+      "required": ["id", "name", "series", "releaseDate", "totalCards"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Set identifier code",
+          "examples": ["base1", "jungle", "fossil"]
+        },
+        "name": {
+          "type": "string",
+          "description": "Full set name",
+          "examples": ["Base Set", "Jungle", "Fossil"]
+        },
+        "series": {
+          "type": "string",
+          "description": "Series the set belongs to",
+          "examples": ["Original", "Neo", "E-Card"]
+        },
+        "releaseDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Set release date in ISO format",
+          "examples": ["1999-01-09"]
+        },
+        "totalCards": {
+          "type": "integer",
+          "description": "Total number of cards in the set",
+          "minimum": 1
+        }
+      }
+    },
+    "cardType": {
+      "type": "string",
+      "const": "energy",
+      "description": "The type of card - always 'energy' for this schema"
+    },
+    "supertype": {
+      "type": "string",
+      "const": "Energy",
+      "description": "Card supertype classification"
+    },
+    "subtypes": {
+      "type": "array",
+      "description": "Energy subtype - Basic or Special",
+      "items": {
+        "type": "string",
+        "enum": ["Basic", "Special"]
+      },
+      "minItems": 1,
+      "maxItems": 1,
+      "examples": [["Basic"], ["Special"]]
+    },
+    "rarity": {
+      "type": "string",
+      "description": "Card rarity",
+      "enum": ["Common", "Uncommon", "Rare"],
+      "examples": ["Common", "Uncommon"]
+    },
+    "energyType": {
+      "type": "string",
+      "description": "Primary energy type classification",
+      "enum": ["Colorless", "Fire", "Water", "Lightning", "Grass", "Fighting", "Psychic", "Darkness", "Metal", "Dragon", "Fairy", "Special", "Basic"],
+      "examples": ["Fire", "Water", "Special", "Basic"]
+    },
+    "provides": {
+      "type": "array",
+      "description": "Energy types and amounts this card provides",
+      "items": {
+        "type": "object",
+        "required": ["type", "amount"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Energy type provided",
+            "enum": ["Colorless", "Fire", "Water", "Lightning", "Grass", "Fighting", "Psychic", "Darkness", "Metal", "Dragon", "Fairy", "Any"],
+            "examples": ["Fire", "Colorless", "Any"]
+          },
+          "amount": {
+            "type": "integer",
+            "description": "Number of energy of this type provided",
+            "minimum": 1,
+            "examples": [1, 2]
+          }
+        }
+      },
+      "minItems": 1,
+      "examples": [
+        [{ "type": "Fire", "amount": 1 }],
+        [{ "type": "Colorless", "amount": 2 }],
+        [{ "type": "Any", "amount": 1 }]
+      ]
+    },
+    "effect": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "description": "Special energy effect (null for Basic Energy)",
+          "properties": {
+            "text": {
+              "type": "string",
+              "description": "Full effect text as printed on card"
+            },
+            "effectType": {
+              "type": "string",
+              "description": "Categorized effect type for game implementation",
+              "enum": [
+                "multi_energy",
+                "conditional_energy",
+                "damage_boost",
+                "damage_reduction",
+                "healing",
+                "status_immunity",
+                "retreat_modifier",
+                "special_condition",
+                "discard_on_attach",
+                "attachment_restriction",
+                "none"
+              ]
+            },
+            "conditions": {
+              "type": "array",
+              "description": "Conditions for the energy effect",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "description": "Condition type",
+                    "enum": ["pokemon_type", "evolution_stage", "damage_counters", "specific_pokemon", "between_turns", "on_attach"]
+                  },
+                  "value": {
+                    "description": "Condition value or parameters"
+                  }
+                }
+              }
+            },
+            "restrictions": {
+              "type": "array",
+              "description": "Restrictions on energy attachment or use",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["attach_to_type", "attach_to_stage", "attach_to_specific", "once_per_turn", "not_basic_energy"]
+                  },
+                  "value": {
+                    "description": "Restriction parameters"
+                  }
+                }
+              }
+            },
+            "specialRules": {
+              "type": "object",
+              "description": "Special game rules for this energy",
+              "properties": {
+                "countsAsBasic": {
+                  "type": "boolean",
+                  "description": "Whether this energy counts as a Basic Energy card",
+                  "default": false
+                },
+                "discardAfterUse": {
+                  "type": "boolean",
+                  "description": "Whether this energy is discarded after use",
+                  "default": false
+                },
+                "damageOnAttach": {
+                  "type": "integer",
+                  "description": "Damage dealt to Pokemon when attached",
+                  "minimum": 0
+                },
+                "canBeSearched": {
+                  "type": "boolean",
+                  "description": "Whether this can be found with Energy Search",
+                  "default": false
+                },
+                "canBeRetrieved": {
+                  "type": "boolean",
+                  "description": "Whether this can be retrieved with Energy Retrieval",
+                  "default": false
+                }
+              }
+            }
+          }
+        }
+      ],
+      "description": "Effect of the energy card (null for Basic Energy)"
+    },
+    "illustrator": {
+      "type": "string",
+      "description": "Card illustrator name",
+      "examples": ["Keiji Kinebuchi"]
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "Relative path to card image file",
+      "pattern": "^[0-9]{3}_[a-z0-9-]+\\.(jpg|png)$",
+      "examples": ["097_fighting-energy.jpg", "096_double-colorless-energy.jpg"]
+    },
+    "legality": {
+      "type": "object",
+      "description": "Format legality for the card",
+      "properties": {
+        "standard": { "type": "boolean" },
+        "expanded": { "type": "boolean" },
+        "unlimited": { "type": "boolean" }
+      },
+      "default": {
+        "standard": false,
+        "expanded": false,
+        "unlimited": true
+      }
+    },
+    "gameplay": {
+      "type": "object",
+      "description": "Gameplay information and strategy notes",
+      "properties": {
+        "primaryUse": {
+          "type": "string",
+          "description": "Primary strategic use of this energy"
+        },
+        "deckTypes": {
+          "type": "array",
+          "description": "Deck archetypes that commonly use this energy",
+          "items": { "type": "string" }
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional gameplay notes"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "energyType": {
+      "type": "string",
+      "enum": ["Colorless", "Fire", "Water", "Lightning", "Grass", "Fighting", "Psychic", "Darkness", "Metal", "Dragon", "Fairy", "Any", "Special"]
+    }
+  },
+  "examples": [
+    {
+      "id": "base1-097",
+      "name": "Fighting Energy",
+      "number": 97,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "energy",
+      "supertype": "Energy",
+      "subtypes": ["Basic"],
+      "rarity": "Common",
+      "energyType": "Fighting",
+      "provides": [
+        { "type": "Fighting", "amount": 1 }
+      ],
+      "effect": null,
+      "illustrator": "Keiji Kinebuchi",
+      "imageUrl": "097_fighting-energy.jpg",
+      "gameplay": {
+        "primaryUse": "Power Fighting-type Pokemon attacks",
+        "deckTypes": ["Haymaker", "Fighting Beatdown"],
+        "notes": "Required for Hitmonchan and Machamp evolution lines"
+      }
+    },
+    {
+      "id": "base1-096",
+      "name": "Double Colorless Energy",
+      "number": 96,
+      "set": {
+        "id": "base1",
+        "name": "Base Set",
+        "series": "Original",
+        "releaseDate": "1999-01-09",
+        "totalCards": 102
+      },
+      "cardType": "energy",
+      "supertype": "Energy",
+      "subtypes": ["Special"],
+      "rarity": "Uncommon",
+      "energyType": "Special",
+      "provides": [
+        { "type": "Colorless", "amount": 2 }
+      ],
+      "effect": {
+        "text": "Provides 2 Colorless energy. Doesn't count as a basic Energy card.",
+        "effectType": "multi_energy",
+        "specialRules": {
+          "countsAsBasic": false,
+          "canBeSearched": false,
+          "canBeRetrieved": false
+        }
+      },
+      "illustrator": "Keiji Kinebuchi",
+      "imageUrl": "096_double-colorless-energy.jpg",
+      "gameplay": {
+        "primaryUse": "Accelerate Pokemon with Colorless energy costs",
+        "deckTypes": ["Haymaker", "Wigglytuff", "Chansey Stall"],
+        "notes": "Extremely valuable for aggressive strategies with high Colorless costs"
+      }
+    }
+  ]
+}

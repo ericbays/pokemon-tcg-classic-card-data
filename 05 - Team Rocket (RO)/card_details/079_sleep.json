@@ -1,0 +1,79 @@
+{
+  "id": "rocket-079",
+  "name": "Sleep!",
+  "number": 79,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "subtitle": "Rocket's Secret Machine",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Item",
+    "note": "Originally printed as a Trainer. Would be classified as Item by modern rules. Part of the 'Rocket's Secret Machine' series."
+  },
+  "effect": {
+    "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep.",
+    "effectType": "status_condition",
+    "coinFlip": {
+      "count": 1,
+      "onHeads": {
+        "statusCondition": "Asleep"
+      },
+      "onTails": null
+    },
+    "actions": [
+      {
+        "action": "coin_flip",
+        "onHeads": {
+          "action": "inflict_status",
+          "status": "Asleep",
+          "target": "defending_pokemon"
+        },
+        "onTails": {
+          "action": "none"
+        }
+      }
+    ]
+  },
+  "illustrator": "Sumiyoshi Kizuki",
+  "imageUrl": "079_sleep-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Status",
+    "powerLevel": "Low",
+    "timing": "tactical",
+    "synergies": [
+      "Stall strategies",
+      "Decks that benefit from opponent being unable to attack"
+    ],
+    "tips": [
+      "50% chance to put opponent's Active Pokemon to Sleep",
+      "Can buy time for setup",
+      "Unreliable due to coin flip",
+      "Sleep can be flipped out of between turns"
+    ]
+  },
+  "competitiveHistory": "Sleep! was one of the Rocket's Secret Machine cards featuring quirky, gadget-themed artwork. While the effect was potentially useful for stalling, the coin flip requirement and the fact that Sleep could be cured between turns made it unreliable in competitive play. The artwork featured Vileplume-inspired sleep machines and a sleeping Snorlax.",
+  "rulings": [
+    {
+      "ruling": "If you flip tails, nothing happens.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Defending Pokemon flips to wake up between turns as normal for the Asleep condition.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

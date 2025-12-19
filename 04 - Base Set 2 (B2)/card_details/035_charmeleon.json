@@ -1,0 +1,107 @@
+{
+  "id": "base2-035",
+  "name": "Charmeleon",
+  "number": 35,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Charmander",
+  "evolvesTo": ["Charizard"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Flamethrower",
+      "cost": ["Fire", "Fire", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Discard 1 Fire Energy card attached to Charmeleon in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Fire"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Flame Pokemon",
+    "height": "3' 7\"",
+    "weight": "42 lbs",
+    "nationalNumber": 5,
+    "level": 32
+  },
+  "flavorText": "When it swings its burning tail, it raises the temperature to unbearably high levels.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "035_charmeleon-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "80 HP is solid for Stage 1",
+      "Flamethrower deals good 50 damage",
+      "Low retreat cost of 1",
+      "Slash requires no specific energy type"
+    ],
+    "weaknesses": [
+      "Water weakness",
+      "Flamethrower requires energy discard",
+      "Primarily a stepping stone to Charizard"
+    ],
+    "synergies": [
+      "Charmander - Required basic",
+      "Charizard - Evolution target",
+      "Energy Retrieval - Recover discarded energy",
+      "Double Colorless Energy - Powers Slash"
+    ],
+    "counters": [
+      "Water Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Charmeleon was primarily used as a middle evolution to reach Charizard. With Pokemon Breeder available to skip Stage 1, Charmeleon was often bypassed in competitive play.",
+  "rulings": [
+    {
+      "ruling": "You must discard 1 Fire Energy to use Flamethrower.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Slash has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "base2-034",
+  "name": "Butterfree",
+  "number": 34,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Metapod",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Whirlwind",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)",
+      "effect": {
+        "effectType": "switch",
+        "parameters": {
+          "target": "opponent_bench",
+          "opponentChooses": true,
+          "damageFirst": true
+        }
+      }
+    },
+    {
+      "name": "Mega Drain",
+      "cost": ["Grass", "Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 4,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Remove a number of damage counters from Butterfree equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Butterfree has fewer damage counters than that, remove all of them.",
+      "effect": {
+        "effectType": "healing",
+        "parameters": {
+          "healAmount": "half_damage_dealt",
+          "roundUp": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Butterfly Pokemon",
+    "height": "3' 7\"",
+    "weight": "71 lbs",
+    "nationalNumber": 12,
+    "level": 28
+  },
+  "flavorText": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "034_butterfree-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Free retreat cost",
+      "Fighting resistance",
+      "Mega Drain provides healing",
+      "Colorless Whirlwind attack"
+    ],
+    "weaknesses": [
+      "70 HP is low for Stage 2",
+      "Fire weakness",
+      "4 energy for Mega Drain is expensive",
+      "Stage 2 requires significant setup"
+    ],
+    "synergies": [
+      "Grass Energy acceleration",
+      "Damage Swap strategies"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Butterfree rarely saw competitive play due to being a Stage 2 with low HP and expensive attacks. The healing from Mega Drain was interesting but not enough to justify the investment.",
+  "rulings": [
+    {
+      "ruling": "Mega Drain heals Butterfree for half the damage dealt (after Weakness/Resistance), rounded up to nearest 10.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Mega Drain does 40 damage, Butterfree heals 20 damage. If it does 80 (with Weakness), Butterfree heals 40.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Whirlwind does damage first, then opponent chooses which Benched Pokemon becomes active.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

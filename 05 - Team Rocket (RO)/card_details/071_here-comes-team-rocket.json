@@ -1,0 +1,60 @@
+{
+  "id": "rocket-071",
+  "name": "Here Comes Team Rocket!",
+  "number": 71,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Rare",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer. Would be classified as Supporter by modern rules."
+  },
+  "effect": {
+    "text": "Each player plays with his or her Prize cards face up for the rest of the game.",
+    "effectType": "information",
+    "affectsOpponent": true,
+    "targetPlayer": "both",
+    "actions": [
+      {
+        "action": "reveal_prizes",
+        "target": "both_players",
+        "duration": "rest_of_game"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "071_here-comes-team-rocket-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "early_game",
+    "synergies": [
+      "Rattata (Trickery)",
+      "Strategic planning"
+    ],
+    "tips": [
+      "Play early to maximize information advantage",
+      "Combine with Rattata's Trickery to swap Prize cards"
+    ]
+  },
+  "competitiveHistory": "This non-holo version is functionally identical to the holo version (#15). Revealing Prize cards eliminated hidden information and enabled Prize manipulation strategies.",
+  "rulings": [
+    {
+      "ruling": "Once played, Prize cards remain face-up for the rest of the game.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

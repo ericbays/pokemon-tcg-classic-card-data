@@ -1,0 +1,103 @@
+{
+  "id": "jungle-037",
+  "name": "Gloom",
+  "number": 37,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Oddish",
+  "evolvesTo": ["Vileplume"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Poisonpowder",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Poisoned",
+        "guaranteed": true
+      }
+    },
+    {
+      "name": "Foul Odor",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Both the Defending Pokémon and Gloom are now Confused (after doing damage).",
+      "effect": {
+        "effectType": "status_condition",
+        "statusConditions": ["Confused"],
+        "target": "both",
+        "timing": "after_damage"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Weed Pokemon",
+    "height": "2' 7\"",
+    "weight": "19 lbs",
+    "nationalNumber": 44,
+    "level": 22
+  },
+  "flavorText": "The fluid that oozes from its mouth isn't drool; it is a nectar that is used to attract prey.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "037_gloom.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Poisonpowder guarantees Poison for 1 energy",
+      "Low retreat cost"
+    ],
+    "weaknesses": [
+      "60 HP is fragile",
+      "Fire weakness",
+      "Foul Odor confuses self",
+      "No resistance"
+    ],
+    "synergies": [
+      "Vileplume - evolution target"
+    ],
+    "counters": [
+      "Fire Pokemon"
+    ]
+  },
+  "competitiveHistory": "Gloom from Jungle was primarily used as an evolution stepping stone to Vileplume. Its Poisonpowder attack could apply early Poison pressure, but the card was not used as a standalone attacker.",
+  "rulings": [
+    {
+      "ruling": "Foul Odor confuses both Pokemon after damage is dealt.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Poisonpowder guarantees Poison with no coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

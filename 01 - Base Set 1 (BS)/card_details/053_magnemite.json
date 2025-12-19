@@ -1,0 +1,90 @@
+{
+  "id": "base1-053",
+  "name": "Magnemite",
+  "number": 53,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesTo": ["Magneton"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thunder Wave",
+      "cost": ["Lightning"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+    },
+    {
+      "name": "Selfdestruct",
+      "cost": ["Lightning", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Does 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magnemite does 40 damage to itself."
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 81,
+    "category": "Magnet Pokemon",
+    "height": "1' 0\"",
+    "weight": "13 lbs.",
+    "level": 13
+  },
+  "flavorText": "Uses anti-gravity to stay suspended. Appears without warning and uses Thunder Wave and similar moves. LV. 13 #81",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "053_magnemite.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Thunder Wave can paralyze for only 1 Lightning energy",
+      "Selfdestruct deals massive 40 damage to the Active Pokemon",
+      "Bench damage from Selfdestruct can soften up or knockout weak Pokemon",
+      "Low retreat cost of 1 provides mobility",
+      "Evolves into Magneton for more powerful attacks"
+    ],
+    "weaknesses": [
+      "Low 40 HP makes it fragile",
+      "Weak to Fighting-type attacks (x2 damage)",
+      "Selfdestruct damages itself for 40, guaranteeing a knockout",
+      "Selfdestruct damages your own bench as well as opponent's",
+      "Thunder Wave's paralysis is unreliable (50% chance)",
+      "No resistance to mitigate damage"
+    ],
+    "synergies": [
+      "Mr. Mime's Invisible Wall can block Selfdestruct's bench damage to your Pokemon",
+      "PlusPower increases Thunder Wave to 20 damage or Selfdestruct to 50",
+      "Use Selfdestruct when opponent has a full bench to maximize damage spread",
+      "Switch or Scoop Up can save Magnemite if you change your mind about Selfdestruct"
+    ],
+    "counters": [
+      "Fighting-type Pokemon that exploit weakness",
+      "High HP Pokemon that can survive Selfdestruct",
+      "Mr. Mime to block bench damage"
+    ]
+  }
+}

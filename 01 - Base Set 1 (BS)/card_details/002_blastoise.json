@@ -1,0 +1,125 @@
+{
+  "id": "base1-002",
+  "name": "Blastoise",
+  "number": 2,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 100,
+  "types": ["Water"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Wartortle",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Rain Dance",
+      "type": "Pokemon Power",
+      "text": "As often as you like during your turn (before your attack), you may attach 1 Water Energy card to 1 of your Water Pokemon. (This doesn't use up your 1 Energy card attachment for the turn.) This power can't be used if Blastoise is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "type": "energy_acceleration",
+        "energyType": "Water",
+        "target": "your_water_pokemon",
+        "frequency": "unlimited_per_turn",
+        "timing": "before_attack",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "doesNotUseEnergyAttachment": true
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Hydro Pump",
+      "cost": ["Water", "Water", "Water"],
+      "convertedEnergyCost": 3,
+      "damage": "40+",
+      "baseDamage": 40,
+      "text": "Does 40 damage plus 10 more damage for each Water Energy attached to Blastoise but not used to pay for this attack's Energy cost. Extra Water Energy after the 2nd doesn't count.",
+      "effect": {
+        "type": "scaling_damage",
+        "baseDamage": 40,
+        "bonusDamage": 10,
+        "bonusCondition": "extra_water_energy",
+        "maxBonusEnergy": 2,
+        "maxDamage": 60
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Shellfish Pokemon",
+    "height": "5'3\"",
+    "weight": "189 lbs",
+    "nationalNumber": 9,
+    "level": 52
+  },
+  "flavorText": "A brutal Pokemon with pressurized water jets on its shell. They are used for high-speed tackles.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "002_blastoise.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy Acceleration",
+    "strengths": [
+      "Rain Dance enables explosive turns with multiple energy attachments",
+      "Can power up attackers from zero to fully charged in one turn",
+      "100 HP is solid for a Stage 2",
+      "Hydro Pump can deal up to 60 damage",
+      "Creates overwhelming board presence quickly"
+    ],
+    "weaknesses": [
+      "Lightning weakness is dangerous against Electabuzz/Zapdos",
+      "High retreat cost of 3",
+      "Requires Stage 2 evolution setup",
+      "Rain Dance disabled by status conditions",
+      "Vulnerable to Energy Removal strategies"
+    ],
+    "synergies": [
+      "Articuno",
+      "Lapras",
+      "Energy Retrieval",
+      "Professor Oak",
+      "Pokemon Breeder"
+    ],
+    "counters": [
+      "Electabuzz - Lightning type with efficient attacks",
+      "Zapdos - High damage Lightning attacker",
+      "Energy Removal/Super Energy Removal - Disrupts energy buildup",
+      "Gust of Wind - Force Blastoise active before it's ready"
+    ]
+  },
+  "competitiveHistory": "Blastoise Rain Dance was one of the 'Big Three' decks of the original Base Set era, alongside Haymaker and Alakazam/Chansey. The ability to bypass energy attachment restrictions made it incredibly powerful and it remained competitive throughout the WotC era.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Rain Dance can be used multiple times per turn, attaching one Water Energy at a time.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Rain Dance can only attach Water Energy to Water-type Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The Energy attached via Rain Dance is in addition to your normal Energy attachment for the turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "base2-092",
+  "name": "Spearow",
+  "number": 92,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Fearow"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Peck",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Mirror Move",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If Spearow was attacked last turn, do the final result of that attack on Spearow to the Defending Pokémon.",
+      "effect": {
+        "effectType": "mirror_move",
+        "parameters": {
+          "condition": "attacked_last_turn",
+          "target": "defending_pokemon"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Tiny Bird Pokemon",
+    "height": "1' 0\"",
+    "weight": "4 lbs",
+    "nationalNumber": 21,
+    "level": 13
+  },
+  "flavorText": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "092_spearow-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Free retreat cost",
+      "50 HP is decent for a Basic",
+      "Fighting resistance",
+      "Mirror Move can return high damage",
+      "Colorless - works with any energy"
+    ],
+    "weaknesses": [
+      "Lightning weakness",
+      "Mirror Move requires being attacked first"
+    ],
+    "synergies": [
+      "Fearow - Evolution target"
+    ],
+    "counters": [
+      "Lightning Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Spearow was used as the basic for Fearow. Free retreat and Mirror Move made it an interesting tech card.",
+  "rulings": [
+    {
+      "ruling": "Peck has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Mirror Move copies the final result of the last attack done to Spearow, including any modifications from Weakness, Resistance, or other effects.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Spearow was not attacked last turn, Mirror Move does nothing.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

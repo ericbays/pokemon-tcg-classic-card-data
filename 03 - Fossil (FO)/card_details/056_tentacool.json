@@ -1,0 +1,122 @@
+{
+  "id": "fossil-056",
+  "name": "Tentacool",
+  "number": 56,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Tentacruel"],
+  "abilities": [
+    {
+      "name": "Cowardice",
+      "type": "Pokemon Power",
+      "text": "At any time during your turn (before your attack), you may return Tentacool to your hand. (Discard all cards attached to Tentacool.) This power can't be used the turn you put Tentacool into play or if Tentacool is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "special",
+        "trigger": "any_time",
+        "timing": "before_attack",
+        "target": "self",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed", "not_first_turn_in_play"],
+        "parameters": {
+          "returnToHand": true,
+          "discardAttachedCards": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Acid",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Jellyfish Pokemon",
+    "height": "2' 11\"",
+    "weight": "100 lbs",
+    "nationalNumber": 72,
+    "level": 10
+  },
+  "flavorText": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "056_tentacool.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Utility",
+    "strengths": [
+      "Cowardice allows instant bounce to hand",
+      "Free retreat cost",
+      "Can avoid being knocked out by bouncing",
+      "Denies prize cards when bounced"
+    ],
+    "weaknesses": [
+      "Only 30 HP is extremely fragile",
+      "Lightning weakness",
+      "Acid does minimal damage",
+      "Can't use Cowardice turn played or when statused"
+    ],
+    "synergies": [
+      "Tentacruel (evolution)",
+      "Scoop Up strategies",
+      "Bench filling"
+    ],
+    "counters": [
+      "Status conditions prevent Cowardice",
+      "OHKOs before Cowardice can be used",
+      "Lightning Pokemon"
+    ]
+  },
+  "competitiveHistory": "Tentacool's Cowardice power was unique and useful for denying prize cards by bouncing before being knocked out. However, the 30 HP made it vulnerable to OHKOs before the power could be activated. It saw niche play in certain control strategies.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Cowardice can be used at any time during your turn before attacking, not just when Tentacool is Active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "All cards attached to Tentacool are discarded when using Cowardice.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Cowardice cannot be used the same turn Tentacool was played from your hand.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Tentacool is your only Pokemon in play, you cannot use Cowardice.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

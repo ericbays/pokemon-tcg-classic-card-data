@@ -1,0 +1,98 @@
+{
+  "id": "jungle-052",
+  "name": "Exeggcute",
+  "number": 52,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Exeggutor"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Hypnosis",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep",
+        "guaranteed": true
+      }
+    },
+    {
+      "name": "Leech Seed",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Exeggcute.",
+      "effect": {
+        "effectType": "healing",
+        "condition": "unless_damage_prevented",
+        "healAmount": 10,
+        "target": "self"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Egg Pokemon",
+    "height": "1' 4\"",
+    "weight": "6 lbs",
+    "nationalNumber": 102,
+    "level": 14
+  },
+  "flavorText": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "052_exeggcute.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "50 HP is decent for a Basic",
+      "Hypnosis guarantees Sleep",
+      "Leech Seed provides self-healing"
+    ],
+    "weaknesses": [
+      "Fire weakness",
+      "No resistance"
+    ],
+    "synergies": [
+      "Exeggutor evolution"
+    ],
+    "counters": [
+      "Fire Pokemon"
+    ]
+  },
+  "competitiveHistory": "Exeggcute from Jungle was used as a basic for Exeggutor. Hypnosis provided guaranteed Sleep for stalling.",
+  "rulings": [
+    {
+      "ruling": "Leech Seed's healing only occurs if at least 1 damage was dealt to the Defending Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

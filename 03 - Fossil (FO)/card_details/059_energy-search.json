@@ -1,0 +1,66 @@
+{
+  "id": "fossil-059",
+  "name": "Energy Search",
+  "number": 59,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Search your deck for a basic Energy card and put it into your hand. Shuffle your deck afterward.",
+    "effectType": "search_deck",
+    "parameters": {
+      "searchFor": "basic Energy",
+      "destination": "hand",
+      "shuffleAfter": true
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "059_energy-search.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Guarantees finding a basic Energy",
+      "Thins your deck",
+      "Can search for any basic Energy type"
+    ],
+    "weaknesses": [
+      "Takes a Trainer card slot for just Energy search",
+      "Doesn't accelerate energy, just searches",
+      "Could just run more Energy instead"
+    ],
+    "synergies": [
+      "Multi-type decks",
+      "Decks with specific energy requirements",
+      "Deck thinning strategies"
+    ],
+    "counters": [
+      "Psyduck's Headache prevents playing"
+    ]
+  },
+  "competitiveHistory": "Energy Search was a consistency card that helped find the right Energy type when needed. However, in most decks, running additional Energy was more efficient. It saw some play in multi-type decks that needed specific Energy types.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Energy Search can only find basic Energy cards, not Special Energy cards like Double Colorless Energy.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You must shuffle your deck after searching, even if you choose not to take an Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "rocket-029",
+  "name": "Dark Slowbro",
+  "number": 29,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 60,
+  "types": ["Psychic"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Slowpoke",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Reel In",
+      "type": "Pokemon Power",
+      "text": "When you play Dark Slowbro from your hand, choose up to 3 Basic Pokémon and/or Evolution cards from your discard pile and put them into your hand.",
+      "effect": {
+        "effectType": "recovery",
+        "trigger": "on_play",
+        "target": "discard_pile",
+        "searchFor": ["Basic Pokemon", "Evolution cards"],
+        "count": 3,
+        "destination": "hand"
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Fickle Attack",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Flip a coin. If tails, this attack does nothing.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "onFailure": {
+              "damage": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Hermitcrab Pokemon",
+    "height": "5' 3\"",
+    "weight": "173 lbs",
+    "nationalNumber": 80,
+    "level": 27
+  },
+  "flavorText": "It loves nothing better than to be left alone, and so sometimes ends up being manipulated by unscrupulous people.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "029_dark-slowbro-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Reel In provides excellent Pokemon recovery",
+      "Retrieves up to 3 Pokemon from discard"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Fickle Attack is 50% to do nothing",
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Slowpoke",
+      "Professor Oak",
+      "Evolution-heavy decks"
+    ],
+    "counters": [
+      "Psychic-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Slowbro was primarily valued for Reel In Pokemon Power. This non-holo version is functionally identical to the holo version.",
+  "rulings": [
+    {
+      "ruling": "Reel In triggers when Dark Slowbro is played from your hand to evolve Slowpoke.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

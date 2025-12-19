@@ -1,0 +1,83 @@
+{
+  "id": "base1-055",
+  "name": "Nidoran ♂",
+  "number": 55,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesTo": ["Nidorino"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Horn Hazard",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If tails, this attack does nothing."
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 32,
+    "category": "Poison Pin Pokemon",
+    "height": "1' 4\"",
+    "weight": "15 lbs.",
+    "level": 20
+  },
+  "flavorText": "Stiffens its ears to sense danger. The larger, more powerful of its horns secretes venom. LV. 20 #32",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "055_nidoran-male.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Horn Hazard can deal 30 damage for only 1 Grass energy - exceptional efficiency",
+      "When successful, has the best damage-to-energy ratio of any Basic Common in Base Set",
+      "Level 20 is high for a Basic Pokemon",
+      "Low retreat cost of 1 provides mobility",
+      "Can knockout many low-HP Pokemon in one hit",
+      "Evolves into Nidorino and Nidoking"
+    ],
+    "weaknesses": [
+      "Low 40 HP makes it vulnerable to being one-hit knocked out",
+      "Horn Hazard has 50% chance to do nothing on tails",
+      "Weak to Psychic-type attacks (x2 damage)",
+      "Highly unreliable - can flip multiple tails in a row",
+      "No resistance to mitigate damage",
+      "Only one attack limits options"
+    ],
+    "synergies": [
+      "PlusPower boosts successful Horn Hazard to 40 damage on heads",
+      "Defender helps Nidoran survive despite low HP",
+      "Energy Removal can slow opponents while you attempt Horn Hazard",
+      "Switch allows retreating after failed attacks"
+    ],
+    "counters": [
+      "Psychic-type Pokemon that exploit weakness",
+      "Consistent attackers that don't rely on coin flips",
+      "Energy removal to prevent attacking"
+    ]
+  }
+}

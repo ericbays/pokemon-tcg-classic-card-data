@@ -1,0 +1,125 @@
+{
+  "id": "base2-006",
+  "name": "Clefairy",
+  "number": 6,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 40,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Clefable"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sing",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Asleep"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Metronome",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Choose 1 of the Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefairy's type is still Colorless.)",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "copyAttack": true,
+          "ignoresEnergyCost": true,
+          "ignoresAdditionalCosts": true,
+          "maintainsOwnType": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Fairy Pokemon",
+    "height": "2' 0\"",
+    "weight": "17 lbs",
+    "nationalNumber": 35,
+    "level": 14
+  },
+  "flavorText": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "006_clefairy-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Metronome can copy powerful attacks early game",
+      "Sing provides early status disruption",
+      "Colorless type uses any energy",
+      "Psychic resistance",
+      "Low retreat cost of 1",
+      "Evolves into useful Clefable"
+    ],
+    "weaknesses": [
+      "40 HP is fragile",
+      "Fighting weakness to Hitmonchan",
+      "Metronome costs 3 energy on a Basic",
+      "Primarily used for evolution"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Quick Metronome access",
+      "Clefable - Evolution target",
+      "Pokemon Breeder - N/A (Stage 1 evolution)"
+    ],
+    "counters": [
+      "Hitmonchan - One-shots with Jab",
+      "Any fast attacker - Low HP"
+    ]
+  },
+  "competitiveHistory": "Clefairy was primarily valued as the evolution basis for Clefable. While Metronome is interesting on a Basic, 40 HP made it too fragile to invest 3 energy into. The Rare Holo rarity made it a collectible card in the set.",
+  "rulings": [
+    {
+      "ruling": "Metronome copies the attack exactly but ignores energy costs and additional costs like discarding.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Clefairy remains Colorless type even when copying an attack from another type.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Sing only puts the Defending Pokemon to sleep on a heads flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

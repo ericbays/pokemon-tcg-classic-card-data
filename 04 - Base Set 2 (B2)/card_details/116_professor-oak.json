@@ -1,0 +1,68 @@
+{
+  "id": "base2-116",
+  "name": "Professor Oak",
+  "number": 116,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "text": "Discard your hand, then draw 7 cards.",
+  "effect": {
+    "text": "Discard your hand, then draw 7 cards.",
+    "effectType": "draw",
+    "cost": {
+      "discard": "hand"
+    },
+    "parameters": {
+      "draw": 7
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "116_professor-oak-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Draw",
+    "strengths": [
+      "Draw 7 cards",
+      "One of the best draw cards ever printed",
+      "Refresh entire hand"
+    ],
+    "weaknesses": [
+      "Must discard current hand",
+      "Loses cards you may have wanted"
+    ],
+    "synergies": [
+      "Item Finder - Recover discarded cards",
+      "Play out hand first, then Oak"
+    ],
+    "counters": [
+      "Lass - Shuffle away the new hand's Trainers"
+    ]
+  },
+  "competitiveHistory": "Professor Oak was the most powerful draw card in the early metagame and was included in virtually every competitive deck as a 4-of.",
+  "rulings": [
+    {
+      "ruling": "You must discard your entire hand before drawing.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You draw exactly 7 cards.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you have fewer than 7 cards in your deck, you draw what remains.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

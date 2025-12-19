@@ -1,0 +1,145 @@
+{
+  "id": "base1-030",
+  "name": "Ivysaur",
+  "number": 30,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": [
+    "Stage 1"
+  ],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": [
+    "Grass"
+  ],
+  "stage": "Stage 1",
+  "evolvesFrom": "Bulbasaur",
+  "evolvesTo": [
+    "Venusaur"
+  ],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Vine Whip",
+      "cost": [
+        "Grass",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": ""
+    },
+    {
+      "name": "Poisonpowder",
+      "cost": [
+        "Grass",
+        "Grass",
+        "Grass"
+      ],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "The Defending Pok\u00e9mon is now Poisoned."
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [
+    "Colorless"
+  ],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 2,
+    "category": "Seed Pok\u00e9mon",
+    "height": "3'3\"",
+    "weight": "29 lbs.",
+    "level": 20
+  },
+  "flavorText": "When the bulb on its back grows large, the Pok\u00e9mon seems to lose the ability to stand on its hind legs.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "030_ivysaur.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Vine Whip only requires 1 Grass energy, rest is colorless",
+      "Poisonpowder guarantees Poison status with no coin flip",
+      "60 HP provides decent survivability for a Stage 1",
+      "Low retreat cost (1) enables easy switching",
+      "Poison deals 10 damage between turns, adding up over time",
+      "Can stall while building energy for Venusaur",
+      "Two attack options provide tactical flexibility"
+    ],
+    "weaknesses": [
+      "Fire weakness is severe in a meta with Charizard and Arcanine",
+      "Primarily valued as stepping stone to Venusaur",
+      "30 damage from Vine Whip is mediocre for 3 energy",
+      "20 damage from Poisonpowder is very low for 3 Grass energy",
+      "Cannot evolve on turn played or first turn",
+      "Both attacks require 3 energy, which is slow to set up",
+      "Poison damage can be removed by switching or Full Heal"
+    ],
+    "synergies": [
+      "Bulbasaur - Required pre-evolution",
+      "Venusaur - Ultimate evolution goal",
+      "Pok\u00e9mon Breeder - Can skip Ivysaur to reach Venusaur faster",
+      "Energy Retrieval - Recovers Grass Energy for sustained attacks",
+      "Switch - Takes advantage of low retreat cost",
+      "Bill - Draws cards to find Venusaur faster",
+      "Defender - Helps Ivysaur survive Fire attacks"
+    ],
+    "counters": [
+      "Charizard - Fire weakness and Energy Burn make this unwinnable",
+      "Arcanine - Fire typing and high damage exploit weakness",
+      "Moltres - Flying Fire-type that can OHKO Ivysaur",
+      "Energy Removal - Prevents reaching 3 energy threshold",
+      "Gust of Wind - Forces Ivysaur active before it can evolve",
+      "Full Heal - Removes Poison status from Poisonpowder"
+    ]
+  },
+  "description": "Ivysaur is the Stage 1 evolution of Bulbasaur and the intermediary step toward the powerful Venusaur. With 60 HP and two attacking options, Ivysaur can serve as either a transitional evolution or a functional mid-game attacker. Vine Whip provides straightforward damage, while Poisonpowder offers status disruption at the cost of reduced immediate damage. The low retreat cost and moderate HP make Ivysaur a flexible component in Grass-type evolution strategies.",
+  "competitiveHistory": "Ivysaur's competitive role was almost exclusively as a necessary evolution step toward Venusaur in Energy Trans decks. Like most middle-stage evolutions, it was rarely intended as an active attacker in tournament play. Many competitive Venusaur decks used Pok\u00e9mon Breeder to bypass Ivysaur entirely, jumping directly from Bulbasaur to Venusaur. When Ivysaur did see active play, it was usually due to necessity rather than strategic choice, serving as a placeholder until Venusaur could be found and played.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Yes. Vine Whip requires 1 Grass and 2 Colorless energy. The Colorless requirement can be satisfied by any energy type, including Grass.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "A Poisoned Pok\u00e9mon takes 10 damage between turns, after all other effects are resolved.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "No. You can only evolve a Pok\u00e9mon once per turn, and cannot evolve a Pok\u00e9mon on the turn it was played or evolved (except with Pok\u00e9mon Breeder).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Pok\u00e9mon Breeder allows you to put Venusaur directly onto Bulbasaur, bypassing Ivysaur entirely.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes, but it has no additional effect. The Pok\u00e9mon remains Poisoned with the same 10 damage per turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

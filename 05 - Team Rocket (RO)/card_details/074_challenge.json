@@ -1,0 +1,83 @@
+{
+  "id": "rocket-074",
+  "name": "Challenge!",
+  "number": 74,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Item",
+    "note": "Originally printed as a Trainer. Would be classified as Item by modern rules."
+  },
+  "effect": {
+    "text": "Ask your opponent if he or she accepts your challenge. If your opponent declines (or if both Benches are full), draw 2 cards. If your opponent accepts, each of you searches your decks for any number of Basic Pokémon cards and puts them face down onto your Benches. (A player can't do this if his or her Bench is full.) When you both have finished, shuffle your decks and turn those cards face up.",
+    "effectType": "interactive",
+    "actions": [
+      {
+        "action": "opponent_choice",
+        "ifDecline": {
+          "action": "draw",
+          "count": 2
+        },
+        "ifBenchesFull": {
+          "action": "draw",
+          "count": 2
+        },
+        "ifAccept": {
+          "action": "both_search_bench_basics",
+          "searchFor": "Basic Pokemon",
+          "count": "any",
+          "destination": "bench",
+          "faceDown": true,
+          "revealAfter": true
+        }
+      }
+    ]
+  },
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "074_challenge-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Setup",
+    "powerLevel": "Situational",
+    "timing": "early_game",
+    "synergies": [
+      "Decks that need full bench",
+      "Dark Dragonite (Summon Minions)",
+      "Bench-dependent strategies"
+    ],
+    "tips": [
+      "Use when you have more bench space than opponent",
+      "Draw 2 if opponent declines or can't accept",
+      "Good for setting up multiple evolution lines"
+    ]
+  },
+  "competitiveHistory": "Challenge! was a unique interactive card. If your opponent declined, you drew 2 cards. If they accepted, both players could fill their benches with Basic Pokemon. This created interesting strategic decisions about when to play it.",
+  "rulings": [
+    {
+      "ruling": "If both benches are full, the card automatically gives you 2 cards - no choice is offered.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Both players search and place cards face down before revealing, so neither sees the other's choices during selection.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "A player with a full bench when the challenge is accepted simply doesn't search.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

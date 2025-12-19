@@ -1,0 +1,129 @@
+{
+  "id": "fossil-022",
+  "name": "Hitmonlee",
+  "number": 22,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 60,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Stretch Kick",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 20 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+      "effect": {
+        "effectType": "bench_damage",
+        "benchDamage": {
+          "target": "opponent_bench",
+          "damage": 20,
+          "count": "choice"
+        },
+        "parameters": {
+          "doesNoDamageToActive": true,
+          "requiresBenchedPokemon": true,
+          "ignoreWeaknessResistance": true
+        }
+      }
+    },
+    {
+      "name": "High Jump Kick",
+      "cost": ["Fighting", "Fighting", "Fighting"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Kicking Pokemon",
+    "height": "4' 11\"",
+    "weight": "110 lbs",
+    "nationalNumber": 106,
+    "level": 30
+  },
+  "flavorText": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "022_hitmonlee.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Basic Pokemon - no evolution required",
+      "Stretch Kick snipes benched Pokemon for 20 damage",
+      "High Jump Kick does solid 50 damage",
+      "Low retreat cost of 1",
+      "Fighting type hits many Pokemon for weakness",
+      "Non-holo version is more accessible"
+    ],
+    "weaknesses": [
+      "60 HP is low for a main attacker",
+      "Psychic weakness is problematic against popular Psychic Pokemon",
+      "No resistance",
+      "Stretch Kick requires opponent to have benched Pokemon"
+    ],
+    "synergies": [
+      "Plus Power (push High Jump Kick to 60)",
+      "Gengar (spread damage strategy)",
+      "Fighting Energy acceleration",
+      "Gust of Wind (bring damaged bench Pokemon active)"
+    ],
+    "counters": [
+      "Mr. Mime's Invisible Wall blocks High Jump Kick",
+      "Psychic Pokemon (Alakazam, Mewtwo) exploit weakness",
+      "Higher HP Pokemon can tank the attacks"
+    ]
+  },
+  "competitiveHistory": "This non-holo version of Hitmonlee is functionally identical to the holo version (#7). Hitmonlee's Stretch Kick provided a unique bench-sniping ability that complemented spread damage strategies. The non-holo printing made it more accessible for competitive players.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Stretch Kick can only be used if your opponent has at least one Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Stretch Kick does not damage the Active Pokemon at all - only a Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Weakness and Resistance are not applied to Stretch Kick's bench damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "High Jump Kick is affected normally by Weakness and Resistance when targeting the Active Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

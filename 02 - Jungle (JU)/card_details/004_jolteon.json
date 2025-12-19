@@ -1,0 +1,122 @@
+{
+  "id": "jungle-004",
+  "name": "Jolteon",
+  "number": 4,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Eevee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Quick Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 30
+          },
+          "onTails": {
+            "damage": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "Pin Missile",
+      "cost": ["Lightning", "Lightning"],
+      "convertedEnergyCost": 2,
+      "damage": "20x",
+      "baseDamage": 20,
+      "text": "Flip 4 coins. This attack does 20 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlips": 4,
+        "damagePerHead": 20
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Lightning Pokemon",
+    "height": "2' 7\"",
+    "weight": "54 lbs",
+    "nationalNumber": 135,
+    "level": 29
+  },
+  "flavorText": "It accumulates negative ions from the atmosphere to blast out 10,000-volt lightning bolts.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "004_jolteon.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Pin Missile can deal up to 80 damage for only 2 energy",
+      "Quick Attack works with Double Colorless Energy",
+      "Only 1 retreat cost for mobility",
+      "Lightning type is effective against Water Pokemon",
+      "Eevee provides flexible evolution options"
+    ],
+    "weaknesses": [
+      "70 HP is relatively low",
+      "Fighting weakness is dangerous in Haymaker meta",
+      "Pin Missile is coin-flip dependent and unreliable",
+      "Average damage output with bad flips",
+      "No resistance"
+    ],
+    "synergies": [
+      "Double Colorless Energy - powers Quick Attack",
+      "Plus Power - boost damage on successful flips",
+      "Eevee - required for evolution",
+      "Defender - protect fragile HP"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Fighting Pokemon - double damage",
+      "High HP Pokemon - inconsistent damage struggles"
+    ]
+  },
+  "competitiveHistory": "Jolteon from Jungle was considered one of the better Eeveelutions competitively due to its efficient Pin Missile attack that only required 2 Lightning energy. While the coin-flip nature made it inconsistent, the potential for 80 damage at low cost was appealing. However, the Fighting weakness made it vulnerable to the dominant Haymaker archetype, limiting its tournament success. It saw play in Lightning-focused decks and Eeveelution builds.",
+  "rulings": [
+    {
+      "ruling": "Pin Missile requires you to flip all 4 coins and count the heads. You cannot choose to flip fewer coins.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you flip 0 heads on Pin Missile, the attack does 0 damage but is still considered to have been used.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Quick Attack's coin flip determines the damage before applying Weakness and Resistance.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

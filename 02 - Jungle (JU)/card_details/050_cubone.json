@@ -1,0 +1,98 @@
+{
+  "id": "jungle-050",
+  "name": "Cubone",
+  "number": 50,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Marowak"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Snivel",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If the Defending Pokémon attacks Cubone during your opponent's next turn, any damage done by the attack is reduced by 20 (after applying Weakness and Resistance). (Benching either Pokémon ends this effect.)",
+      "effect": {
+        "effectType": "damage_reduction",
+        "reduction": 20,
+        "condition": "if_attacked",
+        "duration": "opponent_next_turn",
+        "timing": "after_weakness_resistance",
+        "endCondition": "benching_either"
+      }
+    },
+    {
+      "name": "Rage",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each damage counter on Cubone.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamage": 10,
+        "bonusCondition": "per_damage_counter_on_self"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Lonely Pokemon",
+    "height": "1' 4\"",
+    "weight": "14 lbs",
+    "nationalNumber": 104,
+    "level": 13
+  },
+  "flavorText": "Because it never removes its skull helmet, no one has ever seen this Pokémon's real face.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "050_cubone.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Snivel provides damage reduction",
+      "Lightning resistance",
+      "Rage scales with damage"
+    ],
+    "weaknesses": [
+      "40 HP is very low",
+      "Grass weakness"
+    ],
+    "synergies": [
+      "Marowak evolution"
+    ],
+    "counters": [
+      "Grass Pokemon"
+    ]
+  },
+  "competitiveHistory": "Cubone from Jungle was used as a basic for the Marowak evolution line.",
+  "rulings": []
+}

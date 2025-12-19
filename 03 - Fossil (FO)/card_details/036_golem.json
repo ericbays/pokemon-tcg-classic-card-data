@@ -1,0 +1,116 @@
+{
+  "id": "fossil-036",
+  "name": "Golem",
+  "number": 36,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Fighting"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Graveler",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Avalanche",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Selfdestruct",
+      "cost": ["Fighting", "Fighting", "Fighting", "Fighting"],
+      "convertedEnergyCost": 4,
+      "damage": "100",
+      "baseDamage": 100,
+      "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Golem does 100 damage to itself.",
+      "effect": {
+        "effectType": "self_damage",
+        "selfDamage": 100,
+        "benchDamage": {
+          "target": "all_bench",
+          "damage": 20,
+          "count": "all"
+        },
+        "parameters": {
+          "ignoreWeaknessResistanceBench": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Megaton Pokemon",
+    "height": "4' 7\"",
+    "weight": "662 lbs",
+    "nationalNumber": 76,
+    "level": 36
+  },
+  "flavorText": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "036_golem.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Avalanche does solid 60 damage",
+      "Selfdestruct does massive 100 damage",
+      "80 HP is decent",
+      "Fighting type hits common weaknesses"
+    ],
+    "weaknesses": [
+      "Stage 2 requires full evolution line",
+      "Selfdestruct KOs Golem",
+      "Grass weakness is problematic",
+      "Heavy retreat cost of 3",
+      "Selfdestruct damages your own bench"
+    ],
+    "synergies": [
+      "Geodude",
+      "Graveler",
+      "Mr. Mime (protect bench from Selfdestruct)",
+      "Pokemon Center"
+    ],
+    "counters": [
+      "Grass Pokemon (Scyther, Venusaur)",
+      "Aerodactyl prevents evolution"
+    ]
+  },
+  "competitiveHistory": "Golem was an interesting Stage 2 with a powerful Avalanche attack and the option for Selfdestruct. However, being a Stage 2 with Grass weakness and heavy retreat cost limited its competitive viability. Avalanche's 60 damage for 3 energy was respectable but the evolution requirements were costly.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Selfdestruct's 100 self-damage will knock out Golem since it only has 80 HP.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Selfdestruct damages all Benched Pokemon on both sides.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "base1-082",
+  "name": "Full Heal",
+  "number": 82,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Your Active Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned.",
+    "effectType": "status_removal",
+    "actions": [
+      {
+        "action": "remove_status",
+        "target": "active_pokemon",
+        "parameters": {
+          "conditions": ["Asleep", "Confused", "Paralyzed", "Poisoned"]
+        }
+      }
+    ],
+    "targeting": {
+      "targetType": "your_pokemon",
+      "count": "one",
+      "restrictions": ["Active Pokemon only"]
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "082_full-heal.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "situational",
+    "synergies": ["Switch", "Item Finder"],
+    "counters": ["Hypno", "Poison-based decks"],
+    "tips": [
+      "Only include if your local metagame has significant status-based decks",
+      "Most valuable against Confusion (prevents self-damage and attack failure)",
+      "Consider if retreating or using Switch would be better",
+      "Use immediately when status would prevent a game-winning attack",
+      "Typically a sideboard/tech card, not a main deck staple"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "Full Heal only affects your Active Pokemon, not benched Pokemon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Full Heal removes all Special Conditions simultaneously: Asleep, Confused, Paralyzed, and Poisoned",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If your Active Pokemon has no Special Conditions, Full Heal has no effect but can still be played",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Full Heal does not remove damage counters, only Special Conditions",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Full Heal does not prevent Special Conditions from being applied later",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Status conditions from attacks that occur on the same turn Full Heal is used can still be applied afterward",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Full Heal does not affect attack effects that aren't Special Conditions (like 'can't retreat' effects)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If your Active Pokemon is affected by multiple Special Conditions, Full Heal removes all of them",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Full Heal can be played even if it would have no effect",
+      "source": "WotC Rulings"
+    }
+  ]
+}

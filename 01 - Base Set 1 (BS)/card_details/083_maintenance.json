@@ -1,0 +1,89 @@
+{
+  "id": "base1-083",
+  "name": "Maintenance",
+  "number": 83,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Shuffle 2 of the other cards from your hand into your deck in order to draw a card.",
+    "effectType": "deck_manipulation",
+    "actions": [
+      {
+        "action": "shuffle_into_deck",
+        "amount": 2,
+        "target": "hand",
+        "parameters": {
+          "source": "hand",
+          "destination": "deck"
+        }
+      },
+      {
+        "action": "draw_cards",
+        "amount": 1
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "cards_in_hand",
+        "minimum": 3,
+        "description": "Must have at least 2 other cards in hand besides Maintenance"
+      },
+      {
+        "type": "cards_in_deck",
+        "minimum": 1,
+        "description": "Must have at least 1 card in deck to draw"
+      }
+    ]
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "083_maintenance.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "situational",
+    "synergies": ["Professor Oak", "Bill", "Item Finder", "Computer Search"],
+    "tips": [
+      "Only use when the 2 cards being shuffled back are genuinely useless in current situation",
+      "Best used when you have excess Energy cards clogging your hand",
+      "Can be valuable in late game to recycle important cards back into a thin deck",
+      "Consider using before Professor Oak to save cards you want to keep",
+      "In most decks, Bill or Professor Oak are superior choices for consistency"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must have at least 2 other cards in your hand besides Maintenance to play this card"
+    },
+    {
+      "ruling": "You must shuffle exactly 2 cards from your hand into your deck - you cannot shuffle fewer"
+    },
+    {
+      "ruling": "After shuffling the 2 cards in, you draw 1 card from your deck"
+    },
+    {
+      "ruling": "If your deck has no cards remaining, you cannot play Maintenance (you must be able to complete the draw)"
+    },
+    {
+      "ruling": "The 2 cards shuffled in can be any combination of Pokemon, Energy, or Trainer cards"
+    },
+    {
+      "ruling": "Shuffle your deck thoroughly after putting the 2 cards in and before drawing"
+    }
+  ]
+}

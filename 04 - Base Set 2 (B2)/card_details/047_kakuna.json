@@ -1,0 +1,116 @@
+{
+  "id": "base2-047",
+  "name": "Kakuna",
+  "number": 47,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Weedle",
+  "evolvesTo": ["Beedrill"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Stiffen",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Kakuna during your opponent's next turn. (Any other effects of attacks still happen.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "type": "damage_prevention",
+            "duration": "opponents_next_turn",
+            "amount": "all"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Poisonpowder",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Poisoned"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Cocoon Pokemon",
+    "height": "2' 0\"",
+    "weight": "22 lbs",
+    "nationalNumber": 14,
+    "level": 23
+  },
+  "flavorText": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "047_kakuna-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "80 HP is high for Stage 1",
+      "Stiffen can block all damage",
+      "Poisonpowder adds status effect"
+    ],
+    "weaknesses": [
+      "Fire weakness",
+      "Stiffen is coin-flip dependent",
+      "Low damage output",
+      "Primarily evolution fodder"
+    ],
+    "synergies": [
+      "Weedle - Required basic",
+      "Beedrill - Evolution target"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Kakuna was used as the middle evolution to reach Beedrill. The 80 HP was notably high for a Stage 1 evolution, but it was typically bypassed with Pokemon Breeder.",
+  "rulings": [
+    {
+      "ruling": "Stiffen's damage prevention only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Poisonpowder's Poison effect only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

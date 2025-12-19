@@ -1,0 +1,111 @@
+{
+  "id": "base1-019",
+  "name": "Dugtrio",
+  "number": 19,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Diglett",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slash",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": ""
+    },
+    {
+      "name": "Earthquake",
+      "cost": ["Fighting", "Fighting", "Fighting", "Fighting"],
+      "convertedEnergyCost": 4,
+      "damage": "70",
+      "baseDamage": 70,
+      "text": "Does 10 damage to each of your own Benched Pokemon. (Don't apply Weakness and Resistance for Benched Pokemon.)",
+      "effect": {
+        "type": "bench_damage",
+        "target": "your_benched_pokemon",
+        "damage": 10,
+        "ignoresWeaknessResistance": true
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "nationalNumber": 51,
+    "category": "Mole Pokemon",
+    "height": "2'4\"",
+    "weight": "73 lbs",
+    "level": 36
+  },
+  "flavorText": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "019_dugtrio.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Earthquake deals 70 damage - excellent for Stage 1",
+      "Lightning resistance counters Electric decks",
+      "Only Stage 1 evolution",
+      "Fighting type exploits Colorless weakness",
+      "Slash provides safe damage option"
+    ],
+    "weaknesses": [
+      "Earthquake damages your own bench",
+      "70 HP is low for an evolved Pokemon",
+      "Grass weakness",
+      "4 energy for Earthquake is expensive"
+    ],
+    "synergies": [
+      "Mr. Mime",
+      "Defender",
+      "Minimal bench strategy"
+    ],
+    "counters": [
+      "Grass Pokemon - Weakness",
+      "Flying Pokemon with Grass attacks",
+      "Self-inflicted bench damage over time"
+    ]
+  },
+  "description": "Dugtrio is a Stage 1 Fighting-type Pokemon with high damage output. Earthquake deals 70 damage but hits your own bench. Lightning resistance helps against Electric types.",
+  "competitiveHistory": "Dugtrio saw some play for its high damage output relative to its Stage 1 status. However, the bench damage from Earthquake and low HP limited its use in competitive decks.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Earthquake damages all of YOUR Benched Pokemon, not your opponent's.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Weakness and Resistance are not applied to bench damage from Earthquake.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

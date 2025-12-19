@@ -1,0 +1,98 @@
+{
+  "id": "rocket-067",
+  "name": "Slowpoke",
+  "number": 67,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Slowbro", "Slowbro"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Afternoon Nap",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Search your deck for a Psychic Energy card and attach it to Slowpoke. Shuffle your deck afterward.",
+      "effect": {
+        "effectType": "search",
+        "target": "deck",
+        "searchFor": "Psychic Energy",
+        "count": 1,
+        "destination": "self",
+        "attachEnergy": true
+      }
+    },
+    {
+      "name": "Headbutt",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Dopey Pokemon",
+    "height": "3' 11\"",
+    "weight": "79 lbs",
+    "nationalNumber": 79,
+    "level": 16
+  },
+  "flavorText": "Although it knows how to fish, no other intelligent behavior has been detected in it.",
+  "illustrator": "Sumiyoshi Kizuki",
+  "imageUrl": "067_slowpoke-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Afternoon Nap searches and attaches Psychic Energy",
+      "Energy acceleration for 1 colorless",
+      "50 HP is decent"
+    ],
+    "weaknesses": [
+      "Psychic weakness"
+    ],
+    "synergies": [
+      "Dark Slowbro",
+      "Psychic energy decks"
+    ],
+    "counters": [
+      "Psychic-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Slowpoke had Afternoon Nap, which searched for and attached Psychic Energy. This was a useful form of energy acceleration for Psychic decks.",
+  "rulings": [
+    {
+      "ruling": "Afternoon Nap attaches the Psychic Energy directly to Slowpoke, not to your hand.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "jungle-015",
+  "name": "Vileplume",
+  "number": 15,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Gloom",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Heal",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may flip a coin. If heads, remove 1 damage counter from 1 of your Pokémon. This power can't be used if Vileplume is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "healing",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "target": "your_pokemon",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "healAmount": 10
+          },
+          "onTails": null
+        },
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Petal Dance",
+      "cost": ["Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 3,
+      "damage": "40x",
+      "baseDamage": 40,
+      "text": "Flip 3 coins. This attack does 40 damage times the number of heads. Vileplume is now Confused (after doing damage).",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlips": 3,
+        "damagePerHead": 40,
+        "selfConfusion": true,
+        "confusionTiming": "after_damage"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Flower Pokemon",
+    "height": "3' 11\"",
+    "weight": "41 lbs",
+    "nationalNumber": 45,
+    "level": 35
+  },
+  "flavorText": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "015_vileplume.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Petal Dance can deal up to 120 damage",
+      "Heal Pokemon Power provides sustain",
+      "High damage potential for 3 energy",
+      "Grass type is effective against Water Pokemon"
+    ],
+    "weaknesses": [
+      "80 HP is low for a Stage 2",
+      "Fire weakness is problematic",
+      "Petal Dance confuses Vileplume after use",
+      "Damage is highly inconsistent (coin-flip dependent)",
+      "Heal is also coin-flip dependent",
+      "Stage 2 evolution is slow",
+      "No resistance"
+    ],
+    "synergies": [
+      "Full Heal - remove self-inflicted Confusion",
+      "Scoop Up - pick up Confused Vileplume",
+      "Switch - retreat Confused Vileplume"
+    ],
+    "counters": [
+      "Fire Pokemon - double damage from weakness",
+      "Consistent attackers - Vileplume's damage is unreliable",
+      "Status condition exploiters"
+    ]
+  },
+  "competitiveHistory": "Vileplume from Jungle was not competitively viable due to its self-inflicted Confusion from Petal Dance. While the potential for 120 damage was exciting, the coin-flip nature and guaranteed Confusion made it too unreliable for tournament play. The Heal Pokemon Power was a nice bonus but also coin-dependent. Players preferred more consistent options, and this Vileplume was largely outclassed. Note that this is different from Dark Vileplume (Team Rocket) which had a much more impactful Trainer-locking power.",
+  "rulings": [
+    {
+      "ruling": "Vileplume becomes Confused after dealing damage, not before. The damage is calculated and applied first.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you flip 0 heads on Petal Dance, it does 0 damage but Vileplume still becomes Confused.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Heal can target any of your Pokemon, including Vileplume itself.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Heal removes 1 damage counter (10 damage), not 1 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "rocket-077",
+  "name": "Nightly Garbage Run",
+  "number": 77,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "subtitle": "Rocket's Secret Machine",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Item",
+    "note": "Originally printed as a Trainer. Would be classified as Item by modern rules. Part of the 'Rocket's Secret Machine' series."
+  },
+  "effect": {
+    "text": "Choose up to 3 Basic Pokémon cards, Evolution cards, and/or basic Energy cards from your discard pile. Show them to your opponent and shuffle them into your deck.",
+    "effectType": "recovery",
+    "target": "discard_pile",
+    "searchFor": ["Basic Pokemon", "Evolution card", "basic Energy"],
+    "count": "up to 3",
+    "destination": "deck",
+    "showToOpponent": true
+  },
+  "illustrator": "Sumiyoshi Kizuki",
+  "imageUrl": "077_nightly-garbage-run-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Recovery",
+    "powerLevel": "High",
+    "timing": "mid_to_late_game",
+    "deckInclusion": "Staple in many decks",
+    "synergies": [
+      "Decks that discard resources",
+      "Evolution-heavy decks",
+      "Energy-hungry attackers"
+    ],
+    "tips": [
+      "Recycle knocked out Pokemon for another use",
+      "Recover basic Energy for continued attacking",
+      "Use to recycle key evolution lines",
+      "Excellent for extending games"
+    ]
+  },
+  "competitiveHistory": "Nightly Garbage Run became a staple recovery card in many decks. Its flexibility to recover any combination of Pokemon and basic Energy made it invaluable for maintaining resources throughout a game. The artwork humorously depicted robots collecting discarded items at night.",
+  "rulings": [
+    {
+      "ruling": "You can choose any combination of Basic Pokemon, Evolution cards, and basic Energy cards, up to 3 total.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Special Energy cards are not basic Energy cards and cannot be recovered with this card.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The cards are shuffled into your deck, not put into your hand.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

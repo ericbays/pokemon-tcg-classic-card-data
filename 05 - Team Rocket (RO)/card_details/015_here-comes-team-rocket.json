@@ -1,0 +1,72 @@
+{
+  "id": "rocket-015",
+  "name": "Here Comes Team Rocket!",
+  "number": 15,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Rare Holo",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer. Would be classified as Supporter by modern rules due to significant game state change affecting both players."
+  },
+  "effect": {
+    "text": "Each player plays with his or her Prize cards face up for the rest of the game.",
+    "effectType": "information",
+    "affectsOpponent": true,
+    "targetPlayer": "both",
+    "actions": [
+      {
+        "action": "reveal_prizes",
+        "target": "both_players",
+        "duration": "rest_of_game"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "015_here-comes-team-rocket-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Utility",
+    "timing": "early_game",
+    "synergies": [
+      "Cards that interact with prizes",
+      "Strategic planning",
+      "Searching for specific prize cards"
+    ],
+    "counters": [],
+    "tips": [
+      "Play early to maximize information advantage",
+      "Helps you know exactly what cards are prized",
+      "Can help plan which Pokemon to knock out for specific prizes",
+      "Both players benefit, so use when you gain more advantage"
+    ]
+  },
+  "competitiveHistory": "Here Comes Team Rocket! was a unique information card. Revealing all Prize cards for both players eliminated the hidden information aspect of prizes. While symmetric (both players see prizes), the player who plays it typically has a plan to benefit from the information. It saw niche play in decks that wanted to track prize cards or plan knockouts strategically.",
+  "rulings": [
+    {
+      "ruling": "Once played, Prize cards remain face-up for the rest of the game - there's no way to turn them face-down again.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "This effect persists even if the card that caused it is no longer in play.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Both players' Prize cards are revealed simultaneously.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

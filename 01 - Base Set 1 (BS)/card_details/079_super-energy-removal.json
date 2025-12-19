@@ -1,0 +1,115 @@
+{
+  "id": "base1-079",
+  "name": "Super Energy Removal",
+  "number": 79,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "effect": {
+    "text": "Discard 1 Energy card attached to 1 of your own Pokémon in order to choose 1 of your opponent's Pokémon and up to 2 Energy cards attached to it. Discard those Energy cards.",
+    "effectType": "energy_manipulation",
+    "actions": [
+      {
+        "action": "remove_energy",
+        "amount": 2,
+        "target": "opponent_pokemon",
+        "parameters": {
+          "maxAmount": 2,
+          "targetCount": 1
+        }
+      }
+    ],
+    "cost": {
+      "type": "discard_energy",
+      "amount": 1,
+      "target": "energy_from_pokemon",
+      "description": "Discard 1 Energy card attached to one of your own Pokemon"
+    },
+    "requirements": [
+      {
+        "type": "energy_attached",
+        "minimum": 1,
+        "description": "Must have at least 1 Energy attached to your Pokemon"
+      }
+    ],
+    "targeting": {
+      "targetType": "opponent_pokemon",
+      "count": "one",
+      "maxTargets": 2,
+      "restrictions": ["Can remove up to 2 Energy from single opponent Pokemon"]
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "079_super-energy-removal.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "timing": "any_time",
+    "synergies": ["Energy Removal", "Item Finder", "Energy Retrieval", "Hitmonchan", "Electabuzz"],
+    "tips": [
+      "Target opponent's main attacker to prevent their most dangerous attacks",
+      "Prioritize removing Double Colorless Energy when possible (maximum value)",
+      "Use right before opponent would attack with a powered-up Pokemon",
+      "Build deck with low-Energy attackers if running multiple SER",
+      "Use Item Finder to recur SER for continuous disruption"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You must discard exactly 1 Energy card from one of your own Pokemon as a cost",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Super Energy Removal if you have no Pokemon with Energy attached",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You choose one of your opponent's Pokemon and remove up to 2 Energy cards from that single Pokemon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot split the removal across multiple opponent Pokemon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You choose which Energy cards to discard from opponent's Pokemon",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Removing a Double Colorless Energy counts as removing 2 Energy (maximum efficiency)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The cost is paid first (discard your Energy), then you choose opponent's Pokemon and Energy",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the targeted Pokemon has only 1 Energy, you can only remove 1 Energy",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You can choose to remove fewer than 2 Energy if you want (minimum 0, maximum 2)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If opponent has no Energy on their Pokemon, you can still use SER (it just has no effect after the cost)",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Special Energy cards like Double Colorless can be removed",
+      "source": "WotC Rulings"
+    }
+  ]
+}

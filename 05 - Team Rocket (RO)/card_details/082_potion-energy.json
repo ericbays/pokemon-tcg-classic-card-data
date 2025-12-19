@@ -1,0 +1,73 @@
+{
+  "id": "rocket-082",
+  "name": "Potion Energy",
+  "number": 82,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Special"],
+  "rarity": "Uncommon",
+  "energyType": "Special",
+  "provides": [
+    {
+      "type": "Colorless",
+      "amount": 1
+    }
+  ],
+  "effect": {
+    "text": "If you play this card from your hand, remove 1 damage counter from the Pokémon you attach it to, if it has any. Potion Energy provides [C] energy. (Doesn't count as a basic Energy card.)",
+    "providesEnergy": "Colorless",
+    "energyAmount": 1,
+    "attachmentEffect": {
+      "action": "heal",
+      "amount": 10,
+      "target": "attached_pokemon",
+      "condition": "played_from_hand"
+    },
+    "notBasicEnergy": true
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "082_potion-energy-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Special Energy",
+    "powerLevel": "Low",
+    "timing": "reactive",
+    "synergies": [
+      "Tanky Pokemon",
+      "Decks focused on survival",
+      "Colorless attackers"
+    ],
+    "tips": [
+      "Heals 10 damage when played from hand",
+      "Only provides Colorless Energy",
+      "Minor healing but doesn't cost your Trainer for turn",
+      "Better than regular Energy when your Pokemon is damaged"
+    ]
+  },
+  "competitiveHistory": "Potion Energy was the healing counterpart to Full Heal Energy. While removing just 1 damage counter (10 damage) was minor, it provided incremental value without using your Supporter or Item for the turn. It saw occasional play in slower, tankier decks.",
+  "rulings": [
+    {
+      "ruling": "The healing effect only triggers when you play this card from your hand. Moving it doesn't heal.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Pokemon has no damage counters, you still attach the Energy but don't heal anything.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Potion Energy only provides 1 Colorless Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

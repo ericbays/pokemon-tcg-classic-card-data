@@ -1,0 +1,105 @@
+{
+  "id": "base2-069",
+  "name": "Charmander",
+  "number": 69,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Fire"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Charmeleon"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Scratch",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Ember",
+      "cost": ["Fire", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Discard 1 Fire Energy card attached to Charmander in order to use this attack.",
+      "effect": {
+        "effectType": "energy_discard",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Fire"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Lizard Pokemon",
+    "height": "2' 0\"",
+    "weight": "19 lbs",
+    "nationalNumber": 4,
+    "level": 10
+  },
+  "flavorText": "Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "069_charmander-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "50 HP is decent for a Basic",
+      "Ember does solid 30 damage",
+      "Scratch provides cheap alternative",
+      "Iconic starter Pokemon"
+    ],
+    "weaknesses": [
+      "Water weakness",
+      "Ember requires energy discard",
+      "No resistance"
+    ],
+    "synergies": [
+      "Charmeleon/Charizard - Evolution line",
+      "Energy Retrieval - Recover discarded energy"
+    ],
+    "counters": [
+      "Water Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Charmander was used as the basic for the iconic Charizard evolution line. While Charizard was popular, the line wasn't top-tier competitively due to Water weakness.",
+  "rulings": [
+    {
+      "ruling": "Scratch has no additional effect.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You must discard 1 Fire Energy to use Ember.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

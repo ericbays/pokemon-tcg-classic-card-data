@@ -1,0 +1,119 @@
+{
+  "id": "fossil-053",
+  "name": "Psyduck",
+  "number": 53,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Golduck"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Headache",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Your opponent can't play Trainer cards during his or her next turn.",
+      "effect": {
+        "effectType": "special",
+        "parameters": {
+          "blocksTrainerCards": true,
+          "duration": "opponent_next_turn"
+        }
+      }
+    },
+    {
+      "name": "Fury Swipes",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10x",
+      "baseDamage": 10,
+      "text": "Flip 3 coins. This attack does 10 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "conditions": [
+          {
+            "type": "coin_flip",
+            "flipCount": 3,
+            "damagePerHead": 10
+          }
+        ],
+        "parameters": {
+          "minimumDamage": 0,
+          "maximumDamage": 30
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Duck Pokemon",
+    "height": "2' 7\"",
+    "weight": "43 lbs",
+    "nationalNumber": 54,
+    "level": 15
+  },
+  "flavorText": "While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "053_psyduck.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Headache locks opponent out of Trainer cards",
+      "Low energy costs",
+      "Low retreat cost of 1",
+      "50 HP is decent for a Basic"
+    ],
+    "weaknesses": [
+      "Lightning weakness",
+      "Headache does no damage",
+      "Fury Swipes is coin flip dependent"
+    ],
+    "synergies": [
+      "Golduck (evolution)",
+      "Trainer lock strategies",
+      "Vileplume (extended lock)"
+    ],
+    "counters": [
+      "Lightning Pokemon",
+      "Pokemon Powers that don't need Trainers"
+    ]
+  },
+  "competitiveHistory": "Fossil Psyduck's Headache attack was powerful disruption, preventing the opponent from playing any Trainer cards for a turn. This could buy time and disrupt combo setups. Combined with other lock effects, it contributed to control strategies.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Headache prevents ALL Trainer cards from being played, including Items, Supporters, and Stadiums.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The effect lasts until the end of your opponent's next turn.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "rocket-008",
+  "name": "Dark Gyarados",
+  "number": 8,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Magikarp",
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Final Beam",
+      "type": "Pokemon Power",
+      "text": "When Dark Gyarados is Knocked Out by an attack, flip a coin. If heads, this power does 20 damage for each Water Energy attached to Dark Gyarados to the Pokémon that Knocked Out Dark Gyarados. Apply Weakness and Resistance. This power doesn't work if Dark Gyarados is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "damage_boost",
+        "trigger": "on_knockout",
+        "target": "attacking_pokemon",
+        "damagePerEnergy": 20,
+        "energyType": "Water",
+        "condition": "coin_flip_heads",
+        "applyWeakness": true,
+        "applyResistance": true,
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Ice Beam",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Atrocious Pokemon",
+    "height": "21' 4\"",
+    "weight": "518 lbs",
+    "nationalNumber": 130,
+    "level": 31
+  },
+  "flavorText": "Normally found only in the deep ocean, it has recently been seen in shallow waters as well.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "008_dark-gyarados-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Final Beam can deal massive revenge damage when knocked out",
+      "Ice Beam has potential to Paralyze",
+      "Fighting resistance helps against Hitmonchan",
+      "Only Stage 1 - easier to set up than Gyarados"
+    ],
+    "weaknesses": [
+      "70 HP is mediocre",
+      "Final Beam is coin flip dependent",
+      "Ice Beam's Paralysis is also coin flip",
+      "Grass weakness is problematic vs Scyther"
+    ],
+    "synergies": [
+      "Magikarp (Team Rocket version)",
+      "Water Energy acceleration",
+      "Defender (survive to maximize Final Beam energy)"
+    ],
+    "counters": [
+      "Scyther - Grass type",
+      "Status conditions (disable Final Beam)",
+      "Non-attack knockouts"
+    ]
+  },
+  "competitiveHistory": "Dark Gyarados was an interesting card that punished opponents for knocking it out. With multiple Water Energy attached, Final Beam could deal significant revenge damage - potentially knocking out the attacker. However, the coin flip requirement and status condition restrictions made it unreliable. Ice Beam's potential Paralysis gave it some stall capability.",
+  "rulings": [
+    {
+      "ruling": "Final Beam only triggers when knocked out by an attack, not by damage from Pokemon Powers or other effects.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Final Beam's damage is calculated before Dark Gyarados leaves play, using the Water Energy attached at that moment.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Dark Gyarados is Asleep, Confused, or Paralyzed when knocked out, Final Beam doesn't trigger.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Final Beam applies Weakness and Resistance of the Pokemon that knocked out Dark Gyarados.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

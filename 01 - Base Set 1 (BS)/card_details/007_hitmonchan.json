@@ -1,0 +1,94 @@
+{
+  "id": "base1-007",
+  "name": "Hitmonchan",
+  "number": 7,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 70,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Jab",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": null
+    },
+    {
+      "name": "Special Punch",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": null
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Punching Pokemon",
+    "height": "4'7\"",
+    "weight": "111 lbs",
+    "nationalNumber": 107,
+    "level": 33
+  },
+  "flavorText": "While seeming to do nothing, it fires punches in lightning-fast volleys that are impossible to see.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "007_hitmonchan.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Jab: 20 damage for 1 energy is incredibly efficient",
+      "Basic Pokemon - can attack turn 1 going second",
+      "70 HP is solid for a Basic",
+      "Fighting type hits Colorless weakness (Chansey, Clefairy)",
+      "No evolution required - immediate threat",
+      "Special Punch scales damage as game progresses"
+    ],
+    "weaknesses": [
+      "Psychic weakness is exploitable",
+      "No resistance",
+      "Retreat cost of 2 is awkward",
+      "Falls off in late game against evolved Pokemon"
+    ],
+    "synergies": [
+      "Electabuzz",
+      "PlusPower",
+      "Energy Removal",
+      "Gust of Wind",
+      "Scoop Up"
+    ],
+    "counters": [
+      "Alakazam - Psychic weakness",
+      "Mewtwo - Psychic type with high damage",
+      "Mr. Mime - Invisible Wall blocks both attacks",
+      "Gastly/Haunter - Resistance to Fighting"
+    ]
+  },
+  "competitiveHistory": "Hitmonchan was the face of the Haymaker archetype, which dominated early competitive Pokemon TCG. The deck's strategy of fast, efficient attackers combined with disruption (Energy Removal, Gust of Wind) defined the metagame and remained tier 1 throughout the Base Set era.",
+  "rulings": []
+}

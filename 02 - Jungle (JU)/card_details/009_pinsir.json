@@ -1,0 +1,113 @@
+{
+  "id": "jungle-009",
+  "name": "Pinsir",
+  "number": 9,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Irongrip",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Guillotine",
+      "cost": ["Grass", "Grass", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Stagbeetle Pokemon",
+    "height": "4' 11\"",
+    "weight": "121 lbs",
+    "nationalNumber": 127,
+    "level": 24
+  },
+  "flavorText": "If it fails to crush the victim in its pincers, it will swing its victim around and toss it hard.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "009_pinsir.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Basic Pokemon - no evolution required",
+      "Irongrip can paralyze on coin flip",
+      "Guillotine does solid 50 damage",
+      "Low retreat cost of 1",
+      "Grass type is effective against Water Pokemon"
+    ],
+    "weaknesses": [
+      "60 HP is fragile for a main attacker",
+      "Fire weakness is problematic against Fire decks",
+      "Irongrip paralysis is coin-flip dependent",
+      "4 energy for Guillotine is slow",
+      "No resistance"
+    ],
+    "synergies": [
+      "Double Colorless Energy - helps reach Guillotine cost",
+      "Plus Power - boost damage output",
+      "Defender - protect fragile HP"
+    ],
+    "counters": [
+      "Arcanine - Fire weakness",
+      "Charizard - Fire type with high damage",
+      "Any Fire Pokemon - double damage"
+    ]
+  },
+  "competitiveHistory": "Pinsir from Jungle was not considered competitively viable. With only 60 HP as a Basic Pokemon, it was too fragile compared to the Haymaker staples like Hitmonchan (70 HP) and Scyther (70 HP with resistance). The coin-flip paralysis on Irongrip was unreliable, and Guillotine's 4-energy cost was inefficient. Scyther was simply a better Grass-type option for competitive play due to its free retreat, Fighting resistance, and Colorless energy costs.",
+  "rulings": [
+    {
+      "ruling": "Irongrip's coin flip for Paralysis happens after damage is dealt.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If the Defending Pokemon is already Paralyzed, flipping heads on Irongrip has no additional effect (Paralysis doesn't stack).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

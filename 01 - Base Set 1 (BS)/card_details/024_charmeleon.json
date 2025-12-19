@@ -1,0 +1,121 @@
+{
+  "id": "base1-024",
+  "name": "Charmeleon",
+  "number": 24,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Fire"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Charmander",
+  "evolvesTo": ["Charizard"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Slash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": ""
+    },
+    {
+      "name": "Flamethrower",
+      "cost": ["Fire", "Fire", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "Discard 1 Fire Energy card attached to Charmeleon in order to use this attack."
+    }
+  ],
+  "weakness": {
+    "type": "Water",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 5,
+    "category": "Flame Pokemon",
+    "height": "3'7\"",
+    "weight": "42 lbs",
+    "level": 32
+  },
+  "flavorText": "When it swings its burning tail, it raises the temperature to unbearably high levels.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "024_charmeleon.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Slash uses any energy type, making it flexible in multi-type decks",
+      "50 damage from Flamethrower is solid for a Stage 1 Pokémon",
+      "80 HP is decent survivability for a mid-evolution",
+      "Only 1 retreat cost makes it easy to switch out",
+      "Can attack while building energy for Charizard evolution",
+      "Doesn't require specific Fire energy for Slash attack",
+      "Evolves into one of the most powerful cards in the set"
+    ],
+    "weaknesses": [
+      "Generally seen as just a stepping stone to Charizard",
+      "Water weakness makes it vulnerable to common threats",
+      "Flamethrower's energy discard slows down Charizard setup",
+      "Lower HP than other Stage 1 attackers like Arcanine",
+      "Overshadowed by Charizard in most deck strategies",
+      "30 damage from Slash is underwhelming compared to other options"
+    ],
+    "synergies": [
+      "Charmander",
+      "Charizard",
+      "Pokemon Breeder",
+      "Energy Retrieval",
+      "Bill",
+      "Switch"
+    ],
+    "counters": [
+      "Blastoise - Water weakness and Rain Dance make this a terrible matchup",
+      "Staryu/Starmie - Fast Water attackers that exploit weakness",
+      "Energy Removal - Prevents reaching attack thresholds",
+      "Gust of Wind - Forces Charmeleon out before it can evolve",
+      "Professor Oak - Opponent may discard your Charizard from hand"
+    ]
+  },
+  "description": "Charmeleon is the Stage 1 evolution of Charmander and the crucial stepping stone to the powerful Charizard. With 80 HP and versatile attacking options, Charmeleon can serve as both a transitional evolution and a functional mid-game attacker. Its low retreat cost and flexible energy requirements make it an important component in Fire-type evolution strategies.",
+  "competitiveHistory": "Charmeleon's role in competitive play was almost entirely as a necessary evolution step to Charizard. While it could function as an attacker in casual play, competitive decks often used Pokémon Breeder to skip it entirely. When it did see play, it was usually attacking out of necessity rather than by design. Its presence in tournament decks was ubiquitous in Charizard builds, but it was rarely the intended active Pokémon.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Slash requires 3 Colorless energy, which can be paid with any combination of energy types, including all Fire Energy.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You choose which Fire Energy card to discard from Charmeleon when using Flamethrower.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You can only evolve a Pokémon once per turn, and you cannot evolve a Pokémon on the same turn it was played or evolved (except with Pokémon Breeder).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Pokémon Breeder allows you to put Charizard directly onto Charmander, bypassing Charmeleon entirely.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

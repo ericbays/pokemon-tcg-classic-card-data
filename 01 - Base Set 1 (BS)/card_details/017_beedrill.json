@@ -1,0 +1,113 @@
+{
+  "id": "base1-017",
+  "name": "Beedrill",
+  "number": 17,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Kakuna",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Twineedle",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30x",
+      "baseDamage": 0,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "type": "multi_coin_flip",
+        "coinFlips": 2,
+        "damagePerHeads": 30,
+        "minDamage": 0,
+        "maxDamage": 60
+      }
+    },
+    {
+      "name": "Poison Sting",
+      "cost": ["Grass", "Grass", "Grass"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "Flip a coin. If heads, the Defending Pokemon is now Poisoned.",
+      "effect": {
+        "type": "status_condition",
+        "condition": "Poisoned",
+        "trigger": "coin_flip",
+        "triggerCondition": "heads"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "nationalNumber": 15,
+    "category": "Poison Bee Pokemon",
+    "height": "3'3\"",
+    "weight": "65 lbs",
+    "level": 32
+  },
+  "flavorText": "Flies at high speed and attacks using the large, venomous stingers on its forelegs and tail.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "017_beedrill.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost - unmatched mobility",
+      "Twineedle uses any energy type",
+      "Fighting resistance vs Haymaker",
+      "Poison Sting can Poison opponents",
+      "Twineedle can deal up to 60 damage"
+    ],
+    "weaknesses": [
+      "Stage 2 requires full evolution line",
+      "Twineedle damage is coin-dependent",
+      "80 HP is low for Stage 2",
+      "Fire weakness",
+      "Can deal 0 damage with Twineedle"
+    ],
+    "synergies": [
+      "Double Colorless Energy",
+      "Pokemon Breeder"
+    ],
+    "counters": [
+      "Fire Pokemon - Weakness",
+      "Charizard, Ninetales",
+      "High HP Pokemon when Twineedle flips tails"
+    ]
+  },
+  "description": "Beedrill is a Stage 2 Grass-type Pokemon with free retreat cost. Twineedle offers variable damage based on coin flips, while Poison Sting can inflict Poison. Its Fighting resistance and free retreat make it mobile.",
+  "competitiveHistory": "Beedrill saw limited play due to the coin-flip nature of Twineedle and the requirement of a full Stage 2 evolution. However, its free retreat cost made it occasionally useful as a mobile attacker.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Twineedle flips 2 coins. 0 heads = 0 damage, 1 head = 30 damage, 2 heads = 60 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

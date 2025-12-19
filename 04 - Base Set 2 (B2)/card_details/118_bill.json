@@ -1,0 +1,57 @@
+{
+  "id": "base2-118",
+  "name": "Bill",
+  "number": 118,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "text": "Draw 2 cards.",
+  "effect": {
+    "text": "Draw 2 cards.",
+    "effectType": "draw",
+    "parameters": {
+      "draw": 2
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "118_bill-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Draw",
+    "strengths": [
+      "Free card advantage (+1)",
+      "No cost or drawback",
+      "Simple and efficient"
+    ],
+    "weaknesses": [
+      "Only draws 2 cards",
+      "Less powerful than Professor Oak"
+    ],
+    "synergies": [
+      "Any deck benefits from draw",
+      "Professor Oak - Additional draw power"
+    ],
+    "counters": [
+      "Lass - Shuffle away drawn Trainers"
+    ]
+  },
+  "competitiveHistory": "Bill was an auto-include in every deck as a free +1 card advantage. One of the most efficient draw cards ever printed.",
+  "rulings": [
+    {
+      "ruling": "Bill simply draws 2 cards with no cost or condition.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

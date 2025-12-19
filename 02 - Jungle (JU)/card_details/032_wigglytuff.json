@@ -1,0 +1,107 @@
+{
+  "id": "jungle-032",
+  "name": "Wigglytuff",
+  "number": 32,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare",
+  "hp": 80,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Jigglypuff",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Lullaby",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep",
+        "guaranteed": true
+      }
+    },
+    {
+      "name": "Do the Wave",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each of your Benched Pokémon.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamage": 10,
+        "bonusCondition": "per_benched_pokemon"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Balloon Pokemon",
+    "height": "3' 3\"",
+    "weight": "26 lbs",
+    "nationalNumber": 40,
+    "level": 36
+  },
+  "flavorText": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "032_wigglytuff.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Do the Wave can deal 60 damage with full bench",
+      "Colorless energy cost fits any deck",
+      "Psychic resistance"
+    ],
+    "weaknesses": [
+      "Fighting weakness",
+      "Requires full bench for max damage"
+    ],
+    "synergies": [
+      "Double Colorless Energy",
+      "Plus Power",
+      "Scyther"
+    ],
+    "counters": [
+      "Hitmonchan",
+      "Mr. Mime"
+    ]
+  },
+  "competitiveHistory": "This is the non-holo rare version of Wigglytuff, identical to card #16. Wigglytuff was one of the most powerful cards in early Pokemon TCG history, with the Do the Wave deck rivaling Haymaker as the top competitive strategy.",
+  "rulings": [
+    {
+      "ruling": "Do the Wave counts all of YOUR Benched Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "With 5 Benched Pokemon, Do the Wave does 60 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

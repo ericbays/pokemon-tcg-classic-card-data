@@ -1,0 +1,108 @@
+{
+  "id": "jungle-036",
+  "name": "Fearow",
+  "number": 36,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Spearow",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Agility",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Fearow.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventAllEffects": true,
+            "preventDamage": true,
+            "duration": "opponent_next_turn"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Drill Peck",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Beak Pokemon",
+    "height": "3' 11\"",
+    "weight": "84 lbs",
+    "nationalNumber": 22,
+    "level": 27
+  },
+  "flavorText": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "036_fearow.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost",
+      "Agility can provide full protection on coin flip",
+      "Fighting resistance",
+      "Colorless energy costs"
+    ],
+    "weaknesses": [
+      "70 HP is moderate",
+      "Lightning weakness",
+      "Protection is coin-flip dependent",
+      "Damage output is low for energy cost"
+    ],
+    "synergies": [
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness"
+    ]
+  },
+  "competitiveHistory": "Fearow from Jungle was not competitively viable. While the free retreat and potential Agility protection were nice, the low damage output and reliance on coin flips made it inferior to other options.",
+  "rulings": [
+    {
+      "ruling": "Agility's protection effect prevents ALL effects of attacks, including damage, special conditions, and other effects.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "base2-061",
+  "name": "Seel",
+  "number": 61,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dewgong"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Headbutt",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Sea Lion Pokemon",
+    "height": "3' 7\"",
+    "weight": "198 lbs",
+    "nationalNumber": 86,
+    "level": 12
+  },
+  "flavorText": "The protruding horn on its head is very hard. This horn is used for bashing through thick ice.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "061_seel-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "60 HP is decent for a Basic",
+      "Low retreat cost",
+      "Evolves into Dewgong"
+    ],
+    "weaknesses": [
+      "Lightning weakness",
+      "Only one attack",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Dewgong - Evolution target",
+      "Rain Dance decks"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness"
+    ]
+  },
+  "competitiveHistory": "Seel was used as the basic for the Dewgong evolution line in Water decks.",
+  "rulings": [
+    {
+      "ruling": "Headbutt has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

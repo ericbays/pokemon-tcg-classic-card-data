@@ -1,0 +1,100 @@
+{
+  "id": "rocket-045",
+  "name": "Dark Vaporeon",
+  "number": 45,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Eevee",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Whirlpool",
+      "cost": ["Water", "Water", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it.",
+      "effect": {
+        "effectType": "energy_disruption",
+        "target": "defending_pokemon",
+        "action": "discard",
+        "count": 1,
+        "energyType": "any"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Bubble Jet Pokemon",
+    "height": "3' 3\"",
+    "weight": "64 lbs",
+    "nationalNumber": 134,
+    "level": 28
+  },
+  "flavorText": "A Pokémon capable of controlling water, so it is capable of creating giant whirlpools.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "045_dark-vaporeon-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruptor",
+    "strengths": [
+      "Bite is efficient - 30 for 2 colorless",
+      "Whirlpool discards opponent's energy",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Lightning weakness vs Electabuzz",
+      "Whirlpool does low damage"
+    ],
+    "synergies": [
+      "Eevee",
+      "Energy denial strategies"
+    ],
+    "counters": [
+      "Electabuzz",
+      "Lightning-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "Dark Vaporeon was the energy disruption Eeveelution. Whirlpool's guaranteed energy discard was useful for slowing down opponents, complementing Energy Removal strategies.",
+  "rulings": [
+    {
+      "ruling": "Whirlpool lets you choose which energy to discard from the Defending Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

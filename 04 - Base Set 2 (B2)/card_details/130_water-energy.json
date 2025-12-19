@@ -1,0 +1,58 @@
+{
+  "id": "base2-130",
+  "name": "Water Energy",
+  "number": 130,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Basic",
+  "provides": [
+    {
+      "type": "Water",
+      "amount": 1
+    }
+  ],
+  "text": "Provides 1 Water Energy.",
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "130_water-energy-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Energy",
+    "strengths": [
+      "Basic Energy - searchable and retrievable",
+      "Powers Water-type attacks"
+    ],
+    "weaknesses": [
+      "Only provides 1 Energy"
+    ],
+    "synergies": [
+      "Water Pokemon",
+      "Blastoise Rain Dance",
+      "Energy Retrieval"
+    ],
+    "counters": [
+      "Energy Removal",
+      "Super Energy Removal"
+    ]
+  },
+  "competitiveHistory": "Water Energy was essential for the dominant Raindance archetype featuring Blastoise, which could attach multiple Water Energy per turn.",
+  "rulings": [
+    {
+      "ruling": "Water Energy provides 1 Water Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

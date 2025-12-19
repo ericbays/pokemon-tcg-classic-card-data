@@ -1,0 +1,65 @@
+{
+  "id": "rocket-073",
+  "name": "The Boss's Way",
+  "number": 73,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Item",
+    "note": "Originally printed as a Trainer. Would be classified as Item by modern rules."
+  },
+  "effect": {
+    "text": "Search your deck for an Evolution card with Dark in its name. Show it to your opponent and put it into your hand. Shuffle your deck afterward.",
+    "effectType": "search",
+    "target": "deck",
+    "searchFor": "Evolution card with Dark in name",
+    "count": 1,
+    "destination": "hand",
+    "showToOpponent": true
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "073_the-bosss-way-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Search",
+    "powerLevel": "High",
+    "timing": "setup",
+    "deckInclusion": "Staple in Dark Pokemon decks",
+    "synergies": [
+      "All Dark Pokemon evolutions",
+      "Dark Vileplume",
+      "Dark Blastoise",
+      "Dark Dragonite"
+    ],
+    "tips": [
+      "Essential for Dark Pokemon evolution decks",
+      "Search for the Dark evolution you need",
+      "Use early to find key Dark evolutions"
+    ]
+  },
+  "competitiveHistory": "The Boss's Way was essential for any deck using Dark Pokemon evolutions. It allowed you to search for any Dark evolution card, making evolution lines much more consistent. Giovanni's silhouette on the card implied the 'Boss' was the Team Rocket leader.",
+  "rulings": [
+    {
+      "ruling": "You can only search for Evolution cards (Stage 1 or Stage 2) with 'Dark' in the name.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Basic Pokemon are not Evolution cards, so you cannot search for Basic Dark Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

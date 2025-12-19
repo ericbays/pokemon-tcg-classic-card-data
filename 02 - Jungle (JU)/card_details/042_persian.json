@@ -1,0 +1,107 @@
+{
+  "id": "jungle-042",
+  "name": "Persian",
+  "number": 42,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Meowth",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Scratch",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Pounce",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "If the Defending Pokémon attacks Persian during your opponent's next turn, any damage done by the attack is reduced by 10 (after applying Weakness and Resistance). (Benching either Pokémon ends this effect.)",
+      "effect": {
+        "effectType": "damage_reduction",
+        "reduction": 10,
+        "condition": "if_attacked",
+        "duration": "opponent_next_turn",
+        "timing": "after_weakness_resistance",
+        "endCondition": "benching_either"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Classy Cat Pokemon",
+    "height": "3' 3\"",
+    "weight": "71 lbs",
+    "nationalNumber": 53,
+    "level": 25
+  },
+  "flavorText": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "042_persian.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost",
+      "Psychic resistance",
+      "Pounce provides minor damage reduction",
+      "Colorless energy costs"
+    ],
+    "weaknesses": [
+      "70 HP is moderate",
+      "Fighting weakness",
+      "Low damage output"
+    ],
+    "synergies": [
+      "Double Colorless Energy"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness"
+    ]
+  },
+  "competitiveHistory": "Persian from Jungle was not competitively viable. While the free retreat and Psychic resistance were nice, the low damage output made it inferior to other Colorless options like Scyther and Wigglytuff.",
+  "rulings": [
+    {
+      "ruling": "Pounce's damage reduction only applies if the Defending Pokemon attacks Persian. If Persian attacks a different Pokemon, the effect doesn't apply.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Benching either Persian or the Defending Pokemon ends Pounce's effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

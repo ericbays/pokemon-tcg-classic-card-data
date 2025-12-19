@@ -1,0 +1,76 @@
+{
+  "id": "jungle-053",
+  "name": "Goldeen",
+  "number": 53,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Seaking"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Horn Attack",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Goldfish Pokemon",
+    "height": "2' 0\"",
+    "weight": "33 lbs",
+    "nationalNumber": 118,
+    "level": 12
+  },
+  "flavorText": "Its tail fin billows like an elegant ballroom dress, giving it the nickname \"Water Queen.\"",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "053_goldeen.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Free retreat cost"
+    ],
+    "weaknesses": [
+      "40 HP is very low",
+      "Lightning weakness",
+      "Only one weak attack"
+    ],
+    "synergies": [
+      "Seaking evolution"
+    ],
+    "counters": [
+      "Lightning Pokemon"
+    ]
+  },
+  "competitiveHistory": "Goldeen from Jungle was a very basic card used only as an evolution into Seaking.",
+  "rulings": []
+}

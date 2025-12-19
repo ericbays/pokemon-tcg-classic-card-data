@@ -1,0 +1,127 @@
+{
+  "id": "base2-027",
+  "name": "Mr. Mime",
+  "number": 27,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 40,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Invisible Wall",
+      "type": "Pokemon Power",
+      "text": "Whenever an attack (including your own) does 30 or more damage to Mr. Mime (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.) This power can't be used if Mr. Mime is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "damage_prevention",
+        "trigger": "on_damage",
+        "timing": "after_weakness_resistance",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "threshold": 30,
+          "preventsAllDamageAboveThreshold": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Meditate",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each damage counter on the Defending Pokémon.",
+      "effect": {
+        "effectType": "damage_multiplier",
+        "parameters": {
+          "baseDamage": 10,
+          "bonusDamage": 10,
+          "bonusPer": "damage_counter_on_defender"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Barrier Pokemon",
+    "height": "4' 3\"",
+    "weight": "120 lbs",
+    "nationalNumber": 122,
+    "level": 28
+  },
+  "flavorText": "If interrupted while miming, it will slap around the enemy with its broad hands.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "027_mr.-mime-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Tank",
+    "strengths": [
+      "Invisible Wall blocks ALL attacks doing 30+ damage",
+      "Immune to most heavy hitters in the format",
+      "Blocks Hitmonchan's Special Punch, Electabuzz's Thunderpunch",
+      "Low retreat cost of 1",
+      "Meditate scales with damage on defender"
+    ],
+    "weaknesses": [
+      "40 HP is extremely low",
+      "Psychic weakness (mirror matches)",
+      "Vulnerable to attacks doing exactly 20 damage",
+      "Status conditions disable Invisible Wall"
+    ],
+    "synergies": [
+      "Alakazam - Damage Swap keeps Mr. Mime healthy",
+      "Pokemon Center - Heal damage",
+      "Full Heal - Remove status conditions"
+    ],
+    "counters": [
+      "Mewtwo - Psychic weakness and Psychic attack scales",
+      "20-damage attacks - Under Invisible Wall threshold",
+      "Status conditions - Disable Invisible Wall"
+    ]
+  },
+  "competitiveHistory": "Mr. Mime was a meta-defining card that warped deck building. Invisible Wall completely shut down many popular attackers like Hitmonchan and Electabuzz. Decks had to include answers to Mr. Mime or risk auto-losing. It enabled defensive strategies built around protecting Mr. Mime.",
+  "rulings": [
+    {
+      "ruling": "Invisible Wall prevents damage of 30 or more AFTER applying Weakness and Resistance.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "A 20-damage attack against Mr. Mime with Psychic weakness becomes 40 damage, which is then prevented by Invisible Wall.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Invisible Wall prevents damage from YOUR OWN attacks too (relevant for effects like Earthquake).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Effects of attacks still happen even if damage is prevented. Status conditions are still applied.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Mr. Mime is Asleep, Confused, or Paralyzed, Invisible Wall does not work.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

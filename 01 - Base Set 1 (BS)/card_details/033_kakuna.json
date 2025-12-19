@@ -1,0 +1,144 @@
+{
+  "id": "base1-033",
+  "name": "Kakuna",
+  "number": 33,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": [
+    "Stage 1"
+  ],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": [
+    "Grass"
+  ],
+  "stage": "Stage 1",
+  "evolvesFrom": "Weedle",
+  "evolvesTo": [
+    "Beedrill"
+  ],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Stiffen",
+      "cost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Kakuna during your opponent's next turn. (Any other effects of attacks still happen.)"
+    },
+    {
+      "name": "Poisonpowder",
+      "cost": [
+        "Grass",
+        "Grass"
+      ],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, the Defending Pok\u00e9mon is now Poisoned."
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [
+    "Colorless",
+    "Colorless"
+  ],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "nationalNumber": 14,
+    "category": "Cocoon Pok\u00e9mon",
+    "height": "2'0\"",
+    "weight": "22 lbs.",
+    "level": 23
+  },
+  "flavorText": "Almost incapable of moving, this Pok\u00e9mon can only harden its shell to protect itself from predators.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "033_kakuna.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "80 HP is exceptional for a Stage 1 Pok\u00e9mon",
+      "Stiffen can completely negate damage on successful flip",
+      "Low energy requirements for both attacks",
+      "Can stall effectively while searching for Beedrill",
+      "Poisonpowder adds chip damage over time if successful",
+      "High HP makes it difficult for opponents to knock out quickly",
+      "Both attacks cost only 2 energy, enabling quick setup"
+    ],
+    "weaknesses": [
+      "Fire weakness is severe in Fire-heavy meta",
+      "Both attacks rely on coin flips, making them unreliable",
+      "20 damage from Poisonpowder is very low",
+      "Primarily just a stepping stone to Beedrill",
+      "Stiffen does no damage, losing offensive tempo",
+      "50% chance of Stiffen failing leaves Kakuna vulnerable",
+      "Retreat cost of 2 makes switching moderately expensive"
+    ],
+    "synergies": [
+      "Weedle - Required pre-evolution",
+      "Beedrill - Ultimate evolution goal",
+      "Pok\u00e9mon Breeder - Can skip Kakuna to reach Beedrill faster",
+      "Defender - Stacks with Stiffen for maximum damage reduction",
+      "Switch - Helps bypass the 2 retreat cost",
+      "Bill - Draws cards to find Beedrill faster",
+      "Potion/Super Potion - Extends Kakuna's already high HP"
+    ],
+    "counters": [
+      "Charizard - Fire weakness and high damage make this unwinnable",
+      "Arcanine - Fire typing exploits weakness for massive damage",
+      "Moltres - Can OHKO Kakuna despite 80 HP",
+      "Energy Removal - Prevents using Stiffen or Poisonpowder",
+      "Gust of Wind - Forces Kakuna active before evolution",
+      "Pok\u00e9mon that don't rely on damage - Stiffen doesn't prevent status or effects"
+    ]
+  },
+  "description": "Kakuna is a Stage 1 Grass-type Pok\u00e9mon that represents the cocoon stage between Weedle and Beedrill. With an impressive 80 HP for a middle evolution, Kakuna focuses on survival and stalling rather than offense. Stiffen provides a defensive coin flip mechanic that can prevent damage, while Poisonpowder offers a low-damage attack with potential Poison status. While primarily serving as an evolution bridge to Beedrill, Kakuna's high HP gives it unusual durability for a transitional Pok\u00e9mon.",
+  "competitiveHistory": "Kakuna saw minimal competitive play in the Base Set era. While its 80 HP was notable, the coin flip reliance and minimal damage output made it impractical as an attacker. Most Beedrill decks used Pok\u00e9mon Breeder to skip Kakuna entirely, and even when Kakuna was included, it was never intended to see active play. The card's competitive value was essentially zero - it existed purely as a necessary evil for evolution purposes. Even casual players generally preferred to evolve past it rather than utilize its defensive mechanics.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Yes. If Stiffen succeeds, it prevents ALL damage during your opponent's next turn, including damage that would be doubled by weakness.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Stiffen specifically states that other effects still happen. So status conditions, energy removal, or other effects would still apply even though damage is prevented.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Poisonpowder does 20 damage regardless of the coin flip. The flip only determines whether Poison status is applied.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes, but if Stiffen prevents all damage, Defender would have no effect that turn. However, if Stiffen wears off or wasn't successful, Defender would still reduce damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Stiffen only prevents damage during your opponent's next turn. After that turn ends, the effect wears off.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

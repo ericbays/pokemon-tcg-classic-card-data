@@ -1,0 +1,130 @@
+{
+  "id": "base1-027",
+  "name": "Farfetch'd",
+  "number": 27,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Uncommon",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Leek Slap",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If tails, this attack does nothing. Either way, you can't use this attack again as long as Farfetch'd stays in play (even putting Farfetch'd on the Bench won't let you use it again)."
+    },
+    {
+      "name": "Pot Smash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": ""
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 83,
+    "category": "Wild Duck Pokemon",
+    "height": "2'7\"",
+    "weight": "33 lbs",
+    "level": 20
+  },
+  "flavorText": "The sprig of green onions it holds is its weapon. This sprig is used much like a metal sword.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "027_farfetchd.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Leek Slap can deal 30 damage for only 1 energy if successful",
+      "Pot Smash provides reliable 30 damage for 3 colorless energy",
+      "50 HP is decent for a non-evolving Basic",
+      "Fighting resistance (-30) helps against Hitmonchan and Machamp",
+      "Only 1 retreat cost enables easy switching",
+      "Colorless typing fits in any deck",
+      "Can potentially snipe damaged Pokémon early with Leek Slap"
+    ],
+    "weaknesses": [
+      "Leek Slap's one-time use severely limits Farfetch'd's potential",
+      "50% chance of Leek Slap doing nothing",
+      "Once Leek Slap is used/wasted, Farfetch'd loses its main advantage",
+      "30 damage from Pot Smash for 3 energy is inefficient",
+      "Lightning weakness makes it vulnerable to Zapdos and Electabuzz",
+      "Does not evolve, limiting long-term viability",
+      "If Leek Slap fails, you've permanently lost access to your best attack"
+    ],
+    "synergies": [
+      "Scoop Up",
+      "PlusPower",
+      "Switch",
+      "Bill",
+      "Defender",
+      "Gambler"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness and Thunderpunch can OHKO",
+      "Zapdos - Thunder can easily knock out Farfetch'd",
+      "Any 50+ damage attack - Will OHKO Farfetch'd",
+      "Energy Removal - Prevents reaching Pot Smash threshold",
+      "Gust of Wind - Forces Farfetch'd active at inopportune times"
+    ]
+  },
+  "description": "Farfetch'd is one of the most unique Basic Pokémon in the Base Set, featuring an attack with a permanent usage restriction. As a non-evolving Colorless-type with 50 HP, Farfetch'd presents an interesting risk-reward dynamic with Leek Slap - potentially dealing 30 damage for just 1 energy, but with a coin flip requirement and the restriction that once used, it cannot be used again while Farfetch'd remains in play. This creates fascinating strategic decisions around when and whether to attempt this high-risk attack.",
+  "competitiveHistory": "Farfetch'd saw almost no competitive play in the Base Set era. The coin flip dependency combined with the permanent restriction on Leek Slap made it too unreliable for tournament use. While the concept was interesting and created unique gameplay moments, competitive players preferred consistent attackers that didn't require gambling. The card remained a fan favorite for casual play and for players who enjoyed its quirky mechanics, but it was considered one of the weaker Uncommons in the set from a competitive standpoint.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Scoop Up returns Farfetch'd to your hand, and when you play it again, it's treated as a new Pokémon with no memory of having used Leek Slap before.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Whether the coin flip is heads or tails, once you declare and use Leek Slap, you cannot use it again with that Farfetch'd while it remains in play.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The card specifically states that even putting Farfetch'd on the Bench won't let you use Leek Slap again. The restriction lasts as long as that Farfetch'd remains in play.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "PlusPower adds 10 damage to the attack, making Leek Slap do 40 damage total. If the flip is tails, PlusPower has no effect since the attack does nothing.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "The new Farfetch'd is a different Pokémon and can use Leek Slap (subject to the same restrictions once used).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

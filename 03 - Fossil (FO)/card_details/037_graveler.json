@@ -1,0 +1,113 @@
+{
+  "id": "fossil-037",
+  "name": "Graveler",
+  "number": 37,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Geodude",
+  "evolvesTo": ["Golem"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Harden",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "During your opponent's next turn, whenever 30 or less damage is done to Graveler (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)",
+      "effect": {
+        "effectType": "damage_prevention",
+        "parameters": {
+          "damageThreshold": 30,
+          "duration": "opponent_next_turn",
+          "preventsOnlyDamage": true
+        }
+      }
+    },
+    {
+      "name": "Rock Throw",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Rock Pokemon",
+    "height": "3' 3\"",
+    "weight": "232 lbs",
+    "nationalNumber": 75,
+    "level": 29
+  },
+  "flavorText": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "037_graveler.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Harden prevents low-damage attacks",
+      "Rock Throw does solid 40 damage",
+      "Good stepping stone to Golem"
+    ],
+    "weaknesses": [
+      "60 HP is modest",
+      "Grass weakness",
+      "Harden only prevents 30 or less damage"
+    ],
+    "synergies": [
+      "Geodude",
+      "Golem",
+      "Fighting decks"
+    ],
+    "counters": [
+      "Grass Pokemon",
+      "High-damage attacks bypass Harden"
+    ]
+  },
+  "competitiveHistory": "Graveler was primarily a stepping stone to Golem. Harden provided some defensive utility against low-damage attacks, but most competitive attackers dealt more than 30 damage, limiting its usefulness.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Harden only prevents damage of 30 or less after applying Weakness and Resistance.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If damage is 31 or more, Harden does not prevent any of it.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Effects of attacks (like status conditions) still happen even if Harden prevents the damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

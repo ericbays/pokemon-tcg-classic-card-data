@@ -1,0 +1,126 @@
+{
+  "id": "base2-030",
+  "name": "Snorlax",
+  "number": 30,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 90,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Thick Skinned",
+      "type": "Pokemon Power",
+      "text": "Snorlax can't become Asleep, Confused, Paralyzed, or Poisoned. This power can't be used if Snorlax is already Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "status_immunity",
+        "trigger": "passive",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "immuneTo": ["Asleep", "Confused", "Paralyzed", "Poisoned"]
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Body Slam",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 4,
+  "pokedex": {
+    "category": "Sleeping Pokemon",
+    "height": "6' 11\"",
+    "weight": "1014 lbs",
+    "nationalNumber": 143,
+    "level": 20
+  },
+  "flavorText": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "030_snorlax-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Tank",
+    "strengths": [
+      "Thick Skinned prevents all status conditions",
+      "90 HP is excellent for a Basic",
+      "Psychic resistance",
+      "Colorless type uses any energy",
+      "Body Slam can Paralyze"
+    ],
+    "weaknesses": [
+      "Fighting weakness to Hitmonchan",
+      "4 retreat cost is extremely high",
+      "Body Slam only does 30 damage for 4 energy",
+      "Slow to set up"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Powers Body Slam",
+      "Switch - Work around massive retreat cost",
+      "Alakazam - Damage Swap partner"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Machamp - Fighting type",
+      "Gust of Wind - Force out, hard to retreat"
+    ]
+  },
+  "competitiveHistory": "Snorlax was a solid defensive option. Thick Skinned's status immunity was excellent against disruption strategies, and 90 HP made it durable. The 4 retreat cost was a significant drawback, but Switch cards could work around it.",
+  "rulings": [
+    {
+      "ruling": "Thick Skinned prevents Snorlax from becoming Asleep, Confused, Paralyzed, or Poisoned.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If Snorlax is already affected by a status condition (somehow applied before Thick Skinned was active), the power can't prevent new conditions until the existing ones are removed.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Thick Skinned is a Pokemon Power, so effects that turn off Pokemon Powers will disable it.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Body Slam's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

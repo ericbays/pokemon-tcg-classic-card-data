@@ -1,0 +1,142 @@
+{
+  "id": "base1-031",
+  "name": "Jynx",
+  "number": 31,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": [
+    "Basic"
+  ],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": [
+    "Psychic"
+  ],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Doubleslap",
+      "cost": [
+        "Psychic"
+      ],
+      "convertedEnergyCost": 1,
+      "damage": "10x",
+      "baseDamage": 10,
+      "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+    },
+    {
+      "name": "Meditate",
+      "cost": [
+        "Psychic",
+        "Psychic",
+        "Colorless"
+      ],
+      "convertedEnergyCost": 3,
+      "damage": "20+",
+      "baseDamage": 20,
+      "text": "Does 20 damage plus 10 more damage for each damage counter on the Defending Pok\u00e9mon."
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [
+    "Colorless",
+    "Colorless"
+  ],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "nationalNumber": 124,
+    "category": "Human Shape Pok\u00e9mon",
+    "height": "4'7\"",
+    "weight": "90 lbs.",
+    "level": 23
+  },
+  "flavorText": "Merely by meditating, the Pok\u00e9mon launches a powerful psychic energy attack.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "031_jynx.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "70 HP is excellent for a non-evolving Basic Pok\u00e9mon",
+      "Doubleslap costs only 1 Psychic energy, enabling turn 1 attacks",
+      "Meditate can deal massive damage to wounded opponents",
+      "No evolution requirement means immediate availability",
+      "Meditate at 3 energy with 4+ damage counters on opponent = 60+ damage",
+      "Works well as a finisher after other Pok\u00e9mon deal initial damage",
+      "Moderate retreat cost allows for strategic switching"
+    ],
+    "weaknesses": [
+      "Doubleslap is unreliable - can do 0 damage on double tails",
+      "Meditate requires opponent to have damage counters to be effective",
+      "Psychic weakness makes mirror matches problematic",
+      "Base 20 damage on Meditate is low if opponent is undamaged",
+      "No resistance leaves it vulnerable to all types equally",
+      "Requires 3 energy for Meditate to be effective",
+      "Does not evolve, limiting late-game scaling"
+    ],
+    "synergies": [
+      "Hitmonchan - Damages opponents early, setting up for Meditate",
+      "Electabuzz - Softens up targets for Jynx to finish",
+      "Kangaskhan - Fetch ability helps find energy while Jynx attacks",
+      "PlusPower - Boosts Meditate damage to secure knockouts",
+      "Pok\u00e9mon Center - Heals Jynx while opponents remain damaged",
+      "Defender - Helps Jynx survive with its moderate 70 HP",
+      "Energy Retrieval - Recovers Psychic Energy for sustained Meditate"
+    ],
+    "counters": [
+      "Mr. Mime - Invisible Wall blocks Meditate when it exceeds 30 damage",
+      "Other Jynx - Psychic weakness makes mirror matches risky",
+      "Alakazam - Can move damage counters off the Defending Pok\u00e9mon",
+      "Pok\u00e9mon Center - Removes all damage counters, negating Meditate's bonus",
+      "Scoop Up - Opponent removes damage counters by picking up Pok\u00e9mon",
+      "Fast aggressive decks - Can knock out Jynx before it sets up"
+    ]
+  },
+  "description": "Jynx is a unique Basic Psychic-type Pok\u00e9mon that combines coin flip mechanics with damage scaling based on the opponent's current damage. With 70 HP and no evolution, Jynx serves as a standalone attacker that can adapt to different situations - using Doubleslap for early game chip damage or Meditate to finish off wounded opponents. The damage-scaling mechanic makes Jynx particularly effective in the mid-to-late game when opponents have accumulated damage counters.",
+  "competitiveHistory": "Jynx saw significant competitive play in the Base Set era, particularly in Haymaker-style decks where it served as an excellent cleanup attacker. The combination of 70 HP, low energy requirements, and Meditate's scaling damage made it a valuable inclusion in aggressive strategies. Tournament players appreciated that Jynx could be played immediately as a Basic and could punish opponents who were carefully managing their resources to avoid knockouts. While not a top-tier threat on its own, Jynx was a solid supporting attacker that found its way into many successful competitive decks.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Meditate does 20 base damage plus 10 additional damage for each damage counter on the Defending Pok\u00e9mon. For example, if the Defending Pok\u00e9mon has 3 damage counters (30 damage), Meditate does 20 + 30 = 50 total damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "No. If both coins are tails, Doubleslap does 0 damage (10 \u00d7 0 heads = 0).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Meditate counts all damage counters on the Defending Pok\u00e9mon, regardless of how they were placed.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Meditate would do 20 + (10 \u00d7 6) = 80 damage total (before applying weakness/resistance).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes, if Meditate would do 30 or more damage (after all calculations), Mr. Mime's Invisible Wall prevents all of it.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

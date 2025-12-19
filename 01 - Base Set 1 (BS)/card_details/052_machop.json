@@ -1,0 +1,82 @@
+{
+  "id": "base1-052",
+  "name": "Machop",
+  "number": 52,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesTo": ["Machoke"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Low Kick",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": ""
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 66,
+    "category": "Superpower Pokemon",
+    "height": "2' 7\"",
+    "weight": "43 lbs.",
+    "level": 20
+  },
+  "flavorText": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger. LV. 20 #66",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "052_machop.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Low Kick deals strong 20 damage for only 1 Fighting energy",
+      "Excellent damage-to-energy ratio makes it very energy efficient",
+      "50 HP provides good survivability",
+      "Level 20 is high for a Basic Pokemon",
+      "Low retreat cost of 1 allows for mobility",
+      "Evolves into powerful Machoke and Machamp"
+    ],
+    "weaknesses": [
+      "Weak to Psychic-type attacks (x2 damage), making it vulnerable to Alakazam and Mewtwo",
+      "Only one attack limits strategic options",
+      "No resistance to reduce incoming damage",
+      "No special effects or status conditions to disrupt opponents"
+    ],
+    "synergies": [
+      "PlusPower boosts Low Kick to 30 damage, allowing it to knockout many Basic Pokemon",
+      "Defender helps Machop survive longer to deliver more attacks",
+      "Gust of Wind can bring out weak Pokemon for Machop to knockout",
+      "Professor Oak can help dig for evolution cards to reach Machoke/Machamp faster",
+      "Energy Removal can slow opponents while Machop applies pressure"
+    ],
+    "counters": [
+      "Psychic-type Pokemon like Alakazam and Mewtwo",
+      "High HP Pokemon that can tank Low Kick",
+      "Energy removal to prevent attacking"
+    ]
+  }
+}

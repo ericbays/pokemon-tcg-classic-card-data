@@ -1,0 +1,113 @@
+{
+  "id": "base2-039",
+  "name": "Exeggutor",
+  "number": 39,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Exeggcute",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Teleport",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Switch Exeggutor with 1 of your Benched Pokémon.",
+      "effect": {
+        "effectType": "switch",
+        "parameters": {
+          "target": "self",
+          "switchWith": "your_bench"
+        }
+      }
+    },
+    {
+      "name": "Big Eggsplosion",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "20x",
+      "baseDamage": 20,
+      "text": "Flip a number of coins equal to the number of Energy attached to Exeggutor. This attack does 20 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "parameters": {
+          "coinFlips": "energy_attached_to_self",
+          "damagePerHeads": 20
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Coconut Pokemon",
+    "height": "6' 7\"",
+    "weight": "265 lbs",
+    "nationalNumber": 103,
+    "level": 35
+  },
+  "flavorText": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an Exeggcute.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "039_exeggutor-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Big Eggsplosion scales with energy - high damage potential",
+      "Only costs 1 Colorless energy to attack",
+      "Teleport provides free switching",
+      "80 HP is solid"
+    ],
+    "weaknesses": [
+      "Fire weakness",
+      "Big Eggsplosion is coin-flip dependent",
+      "3 retreat cost is expensive",
+      "Inconsistent damage output"
+    ],
+    "synergies": [
+      "Energy acceleration - More flips for Big Eggsplosion",
+      "Any energy type - Colorless attack cost"
+    ],
+    "counters": [
+      "Fire Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Exeggutor was occasionally used for Big Eggsplosion's high ceiling. With multiple energy attached, it could deal massive damage, but the coin-flip variance made it unreliable for competitive play.",
+  "rulings": [
+    {
+      "ruling": "Big Eggsplosion flips coins equal to ALL energy attached to Exeggutor, regardless of type.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Double Colorless Energy counts as 1 Energy card for determining number of coin flips.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Teleport can only be used if you have Benched Pokemon to switch with.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

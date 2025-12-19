@@ -1,0 +1,41 @@
+{
+  "id": "base1-099",
+  "name": "Grass Energy",
+  "number": 99,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Grass",
+  "provides": [
+    {
+      "type": "Grass",
+      "amount": 1
+    }
+  ],
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "099_grass-energy.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Power Grass-type Pokemon attacks",
+    "deckTypes": [
+      "Venusaur Heal",
+      "Victreebel Control",
+      "Tangela Stall",
+      "Grass/Psychic hybrid decks"
+    ],
+    "notes": "Grass Pokemon in Base Set include Bulbasaur, Ivysaur, Venusaur, Caterpie, Metapod, Weedle, Kakuna, Nidoran (both), Nidorina, Nidoqueen, Nidorino, Nidoking, Tangela, and Bellsprout line. Venusaur's Energy Trans power allows moving Grass Energy between Pokemon. Grass is strong against Water but weak to Fire. Many Grass Pokemon have low retreat costs and synergize well with Switch."
+  }
+}

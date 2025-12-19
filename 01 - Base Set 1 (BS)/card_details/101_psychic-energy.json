@@ -1,0 +1,41 @@
+{
+  "id": "base1-101",
+  "name": "Psychic Energy",
+  "number": 101,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "energy",
+  "supertype": "Energy",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "energyType": "Psychic",
+  "provides": [
+    {
+      "type": "Psychic",
+      "amount": 1
+    }
+  ],
+  "effect": null,
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "101_psychic-energy.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "primaryUse": "Power Psychic-type Pokemon attacks",
+    "deckTypes": [
+      "Alakazam Damage Swap",
+      "Mewtwo Beatdown",
+      "Mr. Mime Stall",
+      "Psychic Control"
+    ],
+    "notes": "Psychic Pokemon in Base Set include Abra, Kadabra, Alakazam, Drowzee, Hypno, Gastly, Haunter, Gengar, Jynx, Mewtwo, and Mr. Mime. Alakazam's Damage Swap power allows moving damage counters around. Mewtwo is extremely powerful with attacks that scale based on Energy. Psychic is strong against Fighting types (making it good against Hitmonchan). Mr. Mime's Invisible Wall creates a unique stall dynamic."
+  }
+}

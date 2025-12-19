@@ -1,0 +1,110 @@
+{
+  "id": "jungle-007",
+  "name": "Nidoqueen",
+  "number": 7,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 2"],
+  "rarity": "Rare Holo",
+  "hp": 90,
+  "types": ["Grass"],
+  "stage": "Stage 2",
+  "evolvesFrom": "Nidorina",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Boyfriends",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "20+",
+      "baseDamage": 20,
+      "text": "Does 20 damage plus 20 more damage for each Nidoking you have in play.",
+      "effect": {
+        "effectType": "damage_modifier",
+        "bonusDamage": 20,
+        "bonusCondition": "per_nidoking_in_play"
+      }
+    },
+    {
+      "name": "Mega Punch",
+      "cost": ["Grass", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Drill Pokemon",
+    "height": "4' 3\"",
+    "weight": "132 lbs",
+    "nationalNumber": 31,
+    "level": 43
+  },
+  "flavorText": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "007_nidoqueen.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "90 HP is solid for a Stage 2",
+      "Boyfriends can deal up to 60+ damage for 1 energy with Nidokings in play",
+      "Mega Punch is a consistent 50 damage",
+      "Grass type is effective against Water Pokemon",
+      "Thematic synergy with Nidoking"
+    ],
+    "weaknesses": [
+      "Stage 2 requires significant setup (Nidoran F -> Nidorina -> Nidoqueen)",
+      "Boyfriends requires Nidoking in play to be efficient",
+      "Running both evolution lines is deck-space intensive",
+      "Psychic weakness is problematic against Alakazam/Gengar",
+      "Heavy retreat cost of 3"
+    ],
+    "synergies": [
+      "Nidoking - powers up Boyfriends attack",
+      "Pokemon Breeder - skip Stage 1 for faster evolution",
+      "Double Colorless Energy - helps power Mega Punch",
+      "Switch - work around heavy retreat cost"
+    ],
+    "counters": [
+      "Alakazam - Psychic weakness",
+      "Gengar - Psychic type",
+      "Evolution denial (Gust of Wind on basics)",
+      "Decks that don't give time to set up both evolution lines"
+    ]
+  },
+  "competitiveHistory": "Nidoqueen from Jungle saw very limited competitive play. While the Boyfriends attack had interesting synergy with Nidoking, requiring two separate Stage 2 evolution lines made the deck too slow and inconsistent for tournament play. The Nidoking/Nidoqueen archetype was considered a fun casual deck but could not compete with faster strategies like Haymaker or more efficient evolution decks like Rain Dance. Mega Punch was decent but not worth the evolution investment.",
+  "rulings": [
+    {
+      "ruling": "Boyfriends counts all Nidoking you have in play, including on the bench.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If you have multiple Nidoking in play, each one adds 20 damage to Boyfriends.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

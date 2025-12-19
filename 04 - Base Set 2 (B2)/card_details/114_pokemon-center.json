@@ -1,0 +1,66 @@
+{
+  "id": "base2-114",
+  "name": "Pokémon Center",
+  "number": 114,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "text": "Remove all damage counters from all of your own Pokémon with damage counters on them, then discard all Energy cards attached to those Pokémon.",
+  "effect": {
+    "text": "Remove all damage counters from all of your own Pokémon with damage counters on them, then discard all Energy cards attached to those Pokémon.",
+    "effectType": "healing",
+    "parameters": {
+      "target": "all_your_pokemon_with_damage",
+      "healAmount": "all",
+      "discardEnergy": "all"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "114_pokemon-center-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Healing",
+    "strengths": [
+      "Heals ALL damage from ALL your Pokemon",
+      "Massive healing potential"
+    ],
+    "weaknesses": [
+      "Discards all Energy from healed Pokemon",
+      "Significant energy loss"
+    ],
+    "synergies": [
+      "Alakazam Damage Swap - Move damage first",
+      "Low energy requirement decks"
+    ],
+    "counters": [
+      "Energy denial strategies benefit"
+    ]
+  },
+  "competitiveHistory": "Pokémon Center was essential in Alakazam Damage Swap decks, where damage would be consolidated onto one Pokemon with no Energy before using the Center.",
+  "rulings": [
+    {
+      "ruling": "Only Pokemon with damage counters are affected.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All Energy is discarded from Pokemon that had damage removed.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon with no damage counters keep their Energy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

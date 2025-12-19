@@ -1,0 +1,106 @@
+{
+  "id": "jungle-055",
+  "name": "Mankey",
+  "number": 55,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Primeape"],
+  "abilities": [
+    {
+      "name": "Peek",
+      "type": "Pokemon Power",
+      "text": "Once during your turn (before your attack), you may look at one of the following: the top card of either player's deck, a random card from your opponent's hand, or one of either player's Prizes. This power can't be used if Mankey is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "information",
+        "trigger": "once_per_turn",
+        "timing": "before_attack",
+        "options": ["top_of_deck", "random_opponent_hand", "prize_card"],
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Scratch",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Pig Monkey Pokemon",
+    "height": "1' 8\"",
+    "weight": "62 lbs",
+    "nationalNumber": 56,
+    "level": 7
+  },
+  "flavorText": "Extremely quick to anger. It could be docile one moment, then thrashing away the next.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "055_mankey.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Peek provides valuable information",
+      "Free retreat cost",
+      "Can look at opponent's hand, deck, or prizes"
+    ],
+    "weaknesses": [
+      "30 HP is extremely low",
+      "Psychic weakness",
+      "Only 10 damage attack"
+    ],
+    "synergies": [
+      "Information-based strategies",
+      "Primeape evolution"
+    ],
+    "counters": [
+      "Psychic Pokemon",
+      "Any attacker - very fragile"
+    ]
+  },
+  "competitiveHistory": "Mankey from Jungle was notable for its Peek Pokemon Power, which provided valuable information about the opponent's hand, deck, or prizes. While the 30 HP made it very fragile, the free retreat and information gathering made it a useful tech in some decks.",
+  "rulings": [
+    {
+      "ruling": "Peek can only look at ONE of the options each turn, not all of them.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "When looking at a random card from opponent's hand, shuffle or randomize their hand before selecting.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Peek does not reveal the card to your opponent - you look at it privately.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

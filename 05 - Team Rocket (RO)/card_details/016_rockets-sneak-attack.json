@@ -1,0 +1,81 @@
+{
+  "id": "rocket-016",
+  "name": "Rocket's Sneak Attack",
+  "number": 16,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Supporter"],
+  "rarity": "Rare Holo",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Supporter",
+    "note": "Originally printed as a Trainer. Would be classified as Supporter by modern rules due to powerful hand disruption effect."
+  },
+  "effect": {
+    "text": "Look at your opponent's hand. If he or she has any Trainer cards, choose 1 of them. Your opponent shuffles that card into his or her deck.",
+    "effectType": "hand_disruption",
+    "affectsOpponent": true,
+    "targetPlayer": "opponent",
+    "actions": [
+      {
+        "action": "opponent_reveal_hand"
+      },
+      {
+        "action": "shuffle_into_deck",
+        "target": "opponent_hand",
+        "cardType": "Trainer",
+        "count": 1,
+        "chooser": "you"
+      }
+    ]
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "016_rockets-sneak-attack-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "powerLevel": "High",
+    "timing": "early_game",
+    "deckInclusion": "Common Inclusion",
+    "synergies": [
+      "Lass",
+      "Dark Vileplume",
+      "Hand disruption strategies"
+    ],
+    "counters": [
+      "No Trainer cards in hand"
+    ],
+    "tips": [
+      "Play early to see opponent's hand and remove key Trainers",
+      "Target Computer Search, Item Finder, or Professor Oak",
+      "Information gained from seeing hand is valuable even without Trainers",
+      "Great opening play on turn 1"
+    ]
+  },
+  "competitiveHistory": "Rocket's Sneak Attack was one of the most powerful disruption cards from Team Rocket. Looking at the opponent's hand provided valuable information, and removing a key Trainer could derail their strategy. It was especially devastating against combo decks relying on specific Trainer cards. Many competitive decks ran multiple copies for consistent early disruption.",
+  "rulings": [
+    {
+      "ruling": "You must show your opponent which card you chose before they shuffle it into their deck.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If your opponent has no Trainer cards in hand, you still get to look at their hand.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The opponent shuffles the chosen Trainer into their deck, not discard pile.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

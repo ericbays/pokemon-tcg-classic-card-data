@@ -1,0 +1,146 @@
+{
+  "id": "base1-032",
+  "name": "Kadabra",
+  "number": 32,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": [
+    "Stage 1"
+  ],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": [
+    "Psychic"
+  ],
+  "stage": "Stage 1",
+  "evolvesFrom": "Abra",
+  "evolvesTo": [
+    "Alakazam"
+  ],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Recover",
+      "cost": [
+        "Psychic",
+        "Psychic"
+      ],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Psychic Energy card attached to Kadabra in order to use this attack. Remove all damage counters from Kadabra."
+    },
+    {
+      "name": "Super Psy",
+      "cost": [
+        "Psychic",
+        "Psychic",
+        "Colorless"
+      ],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": ""
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": [
+    "Colorless",
+    "Colorless",
+    "Colorless"
+  ],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "nationalNumber": 64,
+    "category": "Psi Pok\u00e9mon",
+    "height": "4'3\"",
+    "weight": "125 lbs.",
+    "level": 38
+  },
+  "flavorText": "It emits special alpha waves from its body that induce headaches even to those just nearby.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "032_kadabra.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Super Psy's 50 damage for 3 energy is efficient",
+      "Recover removes ALL damage counters, providing complete healing",
+      "Can sustain itself indefinitely with energy attachment and Recover",
+      "Evolves into the powerful Alakazam",
+      "60 HP is reasonable for a Stage 1 Pok\u00e9mon",
+      "High retreat cost makes it resistant to forced switching",
+      "Psychic typing has favorable matchups against Fighting"
+    ],
+    "weaknesses": [
+      "Recover costs energy and tempo, slowing down attacks",
+      "60 HP is still vulnerable to strong attackers",
+      "High retreat cost of 3 makes it difficult to switch out",
+      "Psychic weakness creates dangerous mirror matches",
+      "Requires 3 energy to attack effectively with Super Psy",
+      "Recover requires discarding Psychic energy, limiting future attacks",
+      "Primarily valued as evolution material for Alakazam"
+    ],
+    "synergies": [
+      "Abra - Required pre-evolution",
+      "Alakazam - Ultimate evolution goal with Damage Swap",
+      "Energy Retrieval - Recovers discarded Psychic Energy from Recover",
+      "Pok\u00e9mon Center - Heals without energy discard (alternative to Recover)",
+      "Switch - Mitigates the high retreat cost problem",
+      "Bill - Draws cards to find Alakazam faster",
+      "Defender - Reduces damage, potentially avoiding need for Recover"
+    ],
+    "counters": [
+      "Other Psychic Pok\u00e9mon - Exploits Psychic weakness",
+      "Mr. Mime - Invisible Wall blocks Super Psy's 50 damage",
+      "Energy Removal/Super Energy Removal - Prevents both attacks",
+      "Gust of Wind - Forces Kadabra out despite high retreat cost",
+      "High-damage attackers - Can OHKO or 2HKO through Recover",
+      "Hitmonchan - Fast pressure before Kadabra sets up"
+    ]
+  },
+  "description": "Kadabra is a Stage 1 Psychic-type Pok\u00e9mon that bridges the gap between the fragile Abra and the powerful Alakazam. With 60 HP and two distinct abilities, Kadabra can serve as both a self-sustaining attacker and a transitional evolution. Recover provides full healing at the cost of energy discard, while Super Psy delivers solid 50 damage. The high retreat cost and energy requirements make Kadabra a commitment, but its healing capability and respectable damage output provide value in Psychic-type strategies.",
+  "competitiveHistory": "Kadabra saw significant competitive play as a necessary component of Alakazam decks, which were top-tier in the Base Set era. While rarely used as a standalone attacker in tournaments, Kadabra was valued for its ability to stall with Recover while players searched for Alakazam and built their board state. The 50 damage from Super Psy meant Kadabra wasn't completely helpless while waiting to evolve, making it better than most middle-stage evolutions. In the right circumstances, Kadabra could hold its own, but it was generally seen as a placeholder for the superior Alakazam.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Recover only removes damage counters from Kadabra. It does not remove status conditions like Poison, Confusion, Paralysis, or Sleep.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. You can use Recover even if Kadabra has no damage counters, though it would have no beneficial effect (you'd still discard the Psychic Energy).",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Energy Retrieval can recover energy cards from your discard pile, including those discarded for Recover.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Recover removes ALL damage counters from Kadabra, regardless of how much damage it has.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Yes. Super Psy does 50 damage, which is more than 30, so Invisible Wall prevents all damage from Super Psy.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

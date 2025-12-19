@@ -1,0 +1,93 @@
+{
+  "id": "rocket-063",
+  "name": "Oddish",
+  "number": 63,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Grass"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Gloom", "Gloom"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Sleep Powder",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep"
+      }
+    },
+    {
+      "name": "Poisonpowder",
+      "cost": ["Grass"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Poisoned.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Poisoned"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Weed Pokemon",
+    "height": "1' 8\"",
+    "weight": "12 lbs",
+    "nationalNumber": 43,
+    "level": 21
+  },
+  "flavorText": "It wanders around at night sowing its seeds to create more Oddishes.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "063_oddish-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Sleep Powder guarantees Sleep for 1 energy",
+      "Poisonpowder guarantees Poison for 1 energy",
+      "Very efficient status infliction",
+      "50 HP is good for a Basic"
+    ],
+    "weaknesses": [
+      "No damage dealing attacks",
+      "Fire weakness"
+    ],
+    "synergies": [
+      "Dark Gloom",
+      "Dark Vileplume",
+      "Status condition strategies"
+    ],
+    "counters": [
+      "Fire-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Oddish was excellent for status infliction. Both attacks guaranteed their status condition for just one Grass energy, making it a very efficient disruptor.",
+  "rulings": []
+}

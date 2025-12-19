@@ -1,0 +1,114 @@
+{
+  "id": "fossil-054",
+  "name": "Shellder",
+  "number": 54,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 30,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Cloyster"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Supersonic",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Confused.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Confused"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Hide in Shell",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Shellder during your opponent's next turn. (Any other effects of attacks still happen.)",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "preventDamage": true,
+            "duration": "opponent_next_turn"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Bivalve Pokemon",
+    "height": "1' 0\"",
+    "weight": "9 lbs",
+    "nationalNumber": 90,
+    "level": 8
+  },
+  "flavorText": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "054_shellder.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Setup",
+    "strengths": [
+      "Hide in Shell can prevent all damage",
+      "Supersonic can Confuse",
+      "Low energy costs",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Only 30 HP is extremely fragile",
+      "Lightning weakness",
+      "Both attacks are coin flip dependent",
+      "No damage output"
+    ],
+    "synergies": [
+      "Cloyster (evolution)",
+      "Stall strategies"
+    ],
+    "counters": [
+      "Lightning Pokemon",
+      "Any attacker that hits consistently"
+    ]
+  },
+  "competitiveHistory": "Shellder had interesting defensive potential with Hide in Shell but its 30 HP made it extremely fragile. It was primarily used as evolution fodder for Cloyster.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Hide in Shell only prevents damage - other attack effects still happen.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

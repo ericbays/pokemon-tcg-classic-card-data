@@ -1,0 +1,82 @@
+{
+  "id": "base2-078",
+  "name": "Machop",
+  "number": 78,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 50,
+  "types": ["Fighting"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Machoke"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Low Kick",
+      "cost": ["Fighting"],
+      "convertedEnergyCost": 1,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Superpower Pokemon",
+    "height": "2' 7\"",
+    "weight": "43 lbs",
+    "nationalNumber": 66,
+    "level": 20
+  },
+  "flavorText": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "078_machop-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Low Kick does 20 damage for 1 energy - excellent efficiency",
+      "50 HP is decent for a Basic"
+    ],
+    "weaknesses": [
+      "Psychic weakness",
+      "No resistance",
+      "Only one attack"
+    ],
+    "synergies": [
+      "Machoke/Machamp - Evolution line"
+    ],
+    "counters": [
+      "Psychic Pokemon - 2x weakness"
+    ]
+  },
+  "competitiveHistory": "Machop was used as the basic for Machamp. Low Kick's efficiency made it one of the better attacking basics.",
+  "rulings": [
+    {
+      "ruling": "Low Kick has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

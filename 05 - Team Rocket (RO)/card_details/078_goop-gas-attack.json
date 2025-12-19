@@ -1,0 +1,72 @@
+{
+  "id": "rocket-078",
+  "name": "Goop Gas Attack",
+  "number": 78,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "historicalClassification": {
+    "originalSubtype": "Trainer",
+    "reclassifiedAs": "Item",
+    "note": "Originally printed as a Trainer. Would be classified as Item by modern rules."
+  },
+  "effect": {
+    "text": "All Pokémon Powers stop working until the end of your opponent's next turn.",
+    "effectType": "power_shutdown",
+    "duration": "until end of opponent's next turn",
+    "affectsBoth": true,
+    "actions": [
+      {
+        "action": "disable_pokemon_powers",
+        "target": "all_pokemon",
+        "duration": "until_end_of_opponents_next_turn"
+      }
+    ]
+  },
+  "illustrator": "Sumiyoshi Kizuki",
+  "imageUrl": "078_goop-gas-attack-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "powerLevel": "High",
+    "timing": "tactical",
+    "synergies": [
+      "Decks without Pokemon Powers",
+      "Anti-Alakazam strategies",
+      "Anti-Dark Vileplume"
+    ],
+    "tips": [
+      "Use to shut down powerful Pokemon Powers like Damage Swap",
+      "Affects both players' Pokemon Powers",
+      "Lasts through your opponent's turn",
+      "Essential against Power-heavy decks"
+    ]
+  },
+  "competitiveHistory": "Goop Gas Attack was a crucial answer to Pokemon Power-based strategies. It could temporarily shut down powerful abilities like Alakazam's Damage Swap or Blastoise's Rain Dance, giving non-Power decks a chance to compete. The artwork featured a gas-masked figure spraying toxic clouds.",
+  "rulings": [
+    {
+      "ruling": "All Pokemon Powers are affected, including your own.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The effect lasts until the end of your opponent's next turn, so Powers resume working at the start of your following turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon Powers that are already in effect (like continuous effects) are also shut down.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

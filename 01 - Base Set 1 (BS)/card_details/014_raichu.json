@@ -1,0 +1,115 @@
+{
+  "id": "base1-014",
+  "name": "Raichu",
+  "number": 14,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Lightning"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Pikachu",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Agility",
+      "cost": ["Lightning", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Raichu.",
+      "effect": {
+        "type": "damage_prevention",
+        "trigger": "coin_flip",
+        "triggerCondition": "heads",
+        "prevents": "all_effects_and_damage",
+        "duration": "opponent_next_turn"
+      }
+    },
+    {
+      "name": "Thunder",
+      "cost": ["Lightning", "Lightning", "Lightning", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "Flip a coin. If tails, Raichu does 30 damage to itself.",
+      "effect": {
+        "type": "recoil_on_flip",
+        "trigger": "coin_flip",
+        "triggerCondition": "tails",
+        "recoilDamage": 30
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mouse Pokemon",
+    "height": "2'7\"",
+    "weight": "66 lbs",
+    "nationalNumber": 26,
+    "level": 40
+  },
+  "flavorText": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "014_raichu.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Agility can completely prevent damage",
+      "Thunder deals 60 damage",
+      "Only Stage 1 evolution",
+      "Low retreat cost of 1",
+      "Lightning type hits Water weakness"
+    ],
+    "weaknesses": [
+      "Fighting weakness against Haymaker",
+      "Thunder can deal 30 recoil damage",
+      "Both attacks rely on coin flips",
+      "80 HP is moderate",
+      "4 energy for Thunder is expensive"
+    ],
+    "synergies": [
+      "Defender",
+      "Scoop Up",
+      "Electabuzz"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Any Fighting Pokemon",
+      "High HP Pokemon that survive Thunder"
+    ]
+  },
+  "competitiveHistory": "Raichu saw limited competitive play because Electabuzz was generally preferred as a more consistent and efficient Lightning attacker. The coin-flip nature of both attacks made Raichu less reliable in tournament settings.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Agility's effect lasts until the end of your opponent's next turn.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Thunder's recoil damage is dealt to Raichu regardless of whether the attack KOs the Defending Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

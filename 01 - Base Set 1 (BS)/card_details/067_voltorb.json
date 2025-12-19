@@ -1,0 +1,82 @@
+{
+  "id": "base1-067",
+  "name": "Voltorb",
+  "number": 67,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Electrode"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Tackle",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": ""
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 100,
+    "category": "Ball Pokemon",
+    "height": "1' 8\"",
+    "weight": "23 lbs.",
+    "level": 10
+  },
+  "flavorText": "Usually found in power plants. Easily mistaken for a Monster Ball, it has zapped many people.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "067_voltorb.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Evolves into Electrode, which has game-changing Buzzap ability",
+      "Tackle uses Colorless Energy, allowing flexible deck building",
+      "Low retreat cost of 1 provides good mobility",
+      "Lightning typing gives it advantage against Water Pokemon",
+      "Energy-efficient 10 damage for 1 Energy"
+    ],
+    "weaknesses": [
+      "Very low 40 HP makes it extremely fragile",
+      "Fighting weakness leaves it vulnerable to popular Fighting Pokemon",
+      "Only one attack with minimal 10 damage output",
+      "No resistance to help with defensive matchups",
+      "Limited utility as a standalone Pokemon"
+    ],
+    "synergies": [
+      "Evolve quickly into Electrode to access Buzzap energy acceleration",
+      "Use Electrode's Buzzap to power up other Lightning Pokemon like Zapdos",
+      "PlusPower can boost Tackle to 20 damage if needed",
+      "Defender can help Voltorb survive one extra turn to evolve"
+    ],
+    "counters": [
+      "Machop - Fighting weakness and higher HP make this impossible",
+      "Onix - Cannot deal meaningful damage and takes double damage",
+      "Sandshrew - Fighting type advantage and resistance make this very bad"
+    ]
+  }
+}

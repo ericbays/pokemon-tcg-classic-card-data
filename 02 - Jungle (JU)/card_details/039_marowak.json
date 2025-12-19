@@ -1,0 +1,108 @@
+{
+  "id": "jungle-039",
+  "name": "Marowak",
+  "number": 39,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Cubone",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Bonemerang",
+      "cost": ["Fighting", "Fighting"],
+      "convertedEnergyCost": 2,
+      "damage": "30x",
+      "baseDamage": 30,
+      "text": "Flip 2 coins. This attack does 30 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlips": 2,
+        "damagePerHead": 30
+      }
+    },
+    {
+      "name": "Call for Friend",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Search your deck for a Fighting Basic Pokémon card and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)",
+      "effect": {
+        "effectType": "search",
+        "target": "deck",
+        "searchFor": "basic_fighting_pokemon",
+        "destination": "bench"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Grass",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Lightning",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Bonekeeper Pokemon",
+    "height": "3' 3\"",
+    "weight": "99 lbs",
+    "nationalNumber": 105,
+    "level": 26
+  },
+  "flavorText": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to K.O. targets.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "039_marowak.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Bonemerang can deal up to 60 damage",
+      "Call for Friend searches for Fighting basics",
+      "Lightning resistance",
+      "Low retreat cost"
+    ],
+    "weaknesses": [
+      "60 HP is fragile for Stage 1",
+      "Grass weakness",
+      "Bonemerang is coin-flip dependent"
+    ],
+    "synergies": [
+      "Fighting deck support",
+      "Hitmonchan - can search for it"
+    ],
+    "counters": [
+      "Grass Pokemon"
+    ]
+  },
+  "competitiveHistory": "Marowak from Jungle was occasionally used as Fighting deck support. Call for Friend could search for key Fighting Pokemon like Hitmonchan, though the 3 energy cost made it slow. The Lightning resistance was useful against Electabuzz.",
+  "rulings": [
+    {
+      "ruling": "Call for Friend can only search for Basic Fighting Pokemon cards, not evolved or non-Fighting Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You cannot use Call for Friend if your Bench is full (5 Pokemon).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

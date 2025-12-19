@@ -1,0 +1,70 @@
+{
+  "id": "base2-113",
+  "name": "PlusPower",
+  "number": 113,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "text": "Attach PlusPower to your Active Pokémon. At the end of your turn, discard PlusPower. If this Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon.",
+  "effect": {
+    "text": "Attach PlusPower to your Active Pokémon. At the end of your turn, discard PlusPower. If this Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon.",
+    "effectType": "damage_boost",
+    "parameters": {
+      "attach": true,
+      "target": "active_pokemon",
+      "bonusDamage": 10,
+      "timing": "after_weakness_resistance",
+      "condition": "damage_dealt",
+      "discardAfter": "end_of_turn"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "113_pluspower-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Damage Boost",
+    "strengths": [
+      "Adds 10 damage to attacks",
+      "Can stack multiple PlusPowers",
+      "Helps reach KO thresholds"
+    ],
+    "weaknesses": [
+      "Only lasts one turn",
+      "Discarded at end of turn"
+    ],
+    "synergies": [
+      "High damage attackers - Reach OHKO range",
+      "Multiple PlusPowers for big damage"
+    ],
+    "counters": [
+      "Defender - Negates the bonus"
+    ]
+  },
+  "competitiveHistory": "PlusPower was essential for aggressive decks, often used in multiples to reach key knockout numbers.",
+  "rulings": [
+    {
+      "ruling": "PlusPower only adds damage if the attack does damage to the Defending Pokemon.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Multiple PlusPowers can be attached for cumulative bonus damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "PlusPower is discarded at the end of your turn, regardless of whether you attacked.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

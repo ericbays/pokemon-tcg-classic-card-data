@@ -1,0 +1,113 @@
+{
+  "id": "base2-046",
+  "name": "Kadabra",
+  "number": 46,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Psychic"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Abra",
+  "evolvesTo": ["Alakazam"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Recover",
+      "cost": ["Psychic", "Psychic"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Discard 1 Psychic Energy card attached to Kadabra in order to use this attack. Remove all damage counters from Kadabra.",
+      "effect": {
+        "effectType": "healing",
+        "energyDiscard": {
+          "count": 1,
+          "type": "specific",
+          "specificType": "Psychic"
+        },
+        "parameters": {
+          "healAmount": "all"
+        }
+      }
+    },
+    {
+      "name": "Super Psy",
+      "cost": ["Psychic", "Psychic", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50",
+      "baseDamage": 50,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Psi Pokemon",
+    "height": "4' 3\"",
+    "weight": "125 lbs",
+    "nationalNumber": 64,
+    "level": 38
+  },
+  "flavorText": "It emits special alpha waves from its body that induce headaches even to those just nearby.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "046_kadabra-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Super Psy does solid 50 damage",
+      "Recover can fully heal Kadabra",
+      "Stepping stone to Alakazam"
+    ],
+    "weaknesses": [
+      "Psychic weakness",
+      "60 HP is low",
+      "3 retreat cost is expensive",
+      "Recover requires energy discard"
+    ],
+    "synergies": [
+      "Abra - Required basic",
+      "Alakazam - Evolution target"
+    ],
+    "counters": [
+      "Mewtwo - Psychic weakness",
+      "Other Psychic types"
+    ]
+  },
+  "competitiveHistory": "Kadabra was used primarily as the middle evolution to reach Alakazam. With Pokemon Breeder available, it was often skipped in competitive play.",
+  "rulings": [
+    {
+      "ruling": "You must discard 1 Psychic Energy to use Recover.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Recover removes ALL damage counters from Kadabra.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Super Psy has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

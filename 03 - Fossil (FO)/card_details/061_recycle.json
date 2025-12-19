@@ -1,0 +1,75 @@
+{
+  "id": "fossil-061",
+  "name": "Recycle",
+  "number": 61,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Flip a coin. If heads, put a card in your discard pile on top of your deck.",
+    "effectType": "card_manipulation",
+    "parameters": {
+      "coinFlip": true,
+      "onHeads": {
+        "moveCard": true,
+        "from": "discard_pile",
+        "to": "top_of_deck",
+        "count": 1
+      }
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "061_recycle.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Can recover ANY card from discard pile",
+      "Puts card on top of deck for guaranteed draw",
+      "Flexible - works with Pokemon, Trainers, Energy"
+    ],
+    "weaknesses": [
+      "50% chance of failure",
+      "Only recovers one card on success",
+      "Takes a Trainer card slot"
+    ],
+    "synergies": [
+      "Key combo pieces in discard",
+      "Energy recovery",
+      "Important Trainer recovery"
+    ],
+    "counters": [
+      "Psyduck's Headache prevents playing"
+    ]
+  },
+  "competitiveHistory": "Recycle offered flexibility in recovering any card type from the discard pile, but the coin flip made it unreliable. More consistent recovery options like Energy Retrieval or Item Finder were generally preferred. It saw niche play when recovering specific key cards was essential.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "If heads, you may put ANY card from your discard pile on top of your deck.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If tails, nothing happens and Recycle is discarded.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "You must have at least one card in your discard pile to play Recycle.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

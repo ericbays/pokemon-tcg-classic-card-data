@@ -1,0 +1,110 @@
+{
+  "id": "fossil-034",
+  "name": "Golbat",
+  "number": 34,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Zubat",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Wing Attack",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    },
+    {
+      "name": "Leech Life",
+      "cost": ["Grass", "Grass", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Remove a number of damage counters from Golbat equal to the damage done to the Defending Pokémon (after applying Weakness and Resistance). If Golbat has fewer damage counters than that, remove all of them.",
+      "effect": {
+        "effectType": "healing",
+        "parameters": {
+          "healAmount": "damage_dealt",
+          "afterWeaknessResistance": true
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Bat Pokemon",
+    "height": "5' 3\"",
+    "weight": "121 lbs",
+    "nationalNumber": 42,
+    "level": 29
+  },
+  "flavorText": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "034_golbat.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost",
+      "Fighting resistance",
+      "Wing Attack is efficient at 30 for 2 colorless",
+      "Leech Life provides self-healing"
+    ],
+    "weaknesses": [
+      "60 HP is moderate",
+      "Psychic weakness",
+      "Leech Life's healing often less valuable than more damage"
+    ],
+    "synergies": [
+      "Zubat",
+      "Grass decks",
+      "Free retreat Pokemon"
+    ],
+    "counters": [
+      "Psychic Pokemon exploit weakness"
+    ]
+  },
+  "competitiveHistory": "Golbat was a decent Uncommon with its efficient Wing Attack and free retreat, but its low HP and Psychic weakness limited its competitive use. Leech Life's healing was rarely impactful enough to matter.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Leech Life's healing is calculated after Weakness and Resistance are applied to the damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Leech Life does 40 damage due to Weakness, Golbat heals 40 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "base2-041",
+  "name": "Fearow",
+  "number": 41,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 70,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Spearow",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Agility",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Fearow.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "type": "damage_prevention",
+            "duration": "opponents_next_turn",
+            "prevents": "all_effects_and_damage"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Drill Peck",
+      "cost": ["Colorless", "Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "40",
+      "baseDamage": 40,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Beak Pokemon",
+    "height": "3' 11\"",
+    "weight": "84 lbs",
+    "nationalNumber": 22,
+    "level": 27
+  },
+  "flavorText": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "041_fearow-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Free retreat cost",
+      "Fighting resistance",
+      "Agility can provide complete protection",
+      "Colorless attacks work with any energy"
+    ],
+    "weaknesses": [
+      "Lightning weakness to Electabuzz",
+      "70 HP is moderate",
+      "Agility is coin-flip dependent",
+      "Drill Peck is expensive for 40 damage"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Powers attacks",
+      "Spearow - Required basic"
+    ],
+    "counters": [
+      "Electabuzz - Lightning weakness",
+      "Zapdos - Lightning type"
+    ]
+  },
+  "competitiveHistory": "Fearow rarely saw competitive play. While the free retreat and Agility were nice, the damage output was underwhelming and Scyther was generally a better Colorless option.",
+  "rulings": [
+    {
+      "ruling": "Agility's protection only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Drill Peck has no additional effect.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

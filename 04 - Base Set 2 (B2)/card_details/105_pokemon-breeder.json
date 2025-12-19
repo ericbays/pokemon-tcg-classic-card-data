@@ -1,0 +1,64 @@
+{
+  "id": "base2-105",
+  "name": "Pokémon Breeder",
+  "number": 105,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "text": "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can only play this card when you would be allowed to evolve that Pokémon anyway.",
+  "effect": {
+    "text": "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can only play this card when you would be allowed to evolve that Pokémon anyway.",
+    "effectType": "evolution",
+    "parameters": {
+      "skipStage": "Stage 1",
+      "fromHand": "Stage 2",
+      "target": "Basic",
+      "evolutionRulesApply": true
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "105_pokemon-breeder-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Skip Stage 1 evolution",
+      "Get Stage 2 Pokemon out faster",
+      "Reduces deck space needed for Stage 1"
+    ],
+    "weaknesses": [
+      "Still requires waiting a turn to evolve",
+      "Need Stage 2 in hand"
+    ],
+    "synergies": [
+      "Charizard/Blastoise/Venusaur - Fast Stage 2",
+      "Alakazam - Quick Damage Swap setup"
+    ],
+    "counters": [
+      "Lass - Shuffles Breeder back into deck"
+    ]
+  },
+  "competitiveHistory": "Pokémon Breeder was essential for any deck running Stage 2 Pokemon, allowing them to skip the Stage 1 entirely for faster setup.",
+  "rulings": [
+    {
+      "ruling": "You can only use Pokemon Breeder when you could normally evolve (not on a Pokemon played this turn or your first turn).",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The Stage 2 must match the evolution chain (e.g., Charizard on Charmander).",
+      "source": "WotC Rulings"
+    }
+  ]
+}

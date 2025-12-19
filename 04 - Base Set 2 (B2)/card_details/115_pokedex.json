@@ -1,0 +1,64 @@
+{
+  "id": "base2-115",
+  "name": "Pokédex",
+  "number": 115,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "text": "Look at up to 5 cards from the top of your deck and rearrange them as you like.",
+  "effect": {
+    "text": "Look at up to 5 cards from the top of your deck and rearrange them as you like.",
+    "effectType": "deck_manipulation",
+    "parameters": {
+      "look": {
+        "count": "up_to_5",
+        "from": "top_of_deck"
+      },
+      "rearrange": true
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "115_pokedex-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Deck Manipulation",
+    "strengths": [
+      "See upcoming draws",
+      "Rearrange for optimal draw order",
+      "Information advantage"
+    ],
+    "weaknesses": [
+      "Doesn't draw cards",
+      "Doesn't add card advantage"
+    ],
+    "synergies": [
+      "Bill/Professor Oak - Know what you'll draw"
+    ],
+    "counters": [
+      "Shuffle effects disrupt arrangement"
+    ]
+  },
+  "competitiveHistory": "Pokédex saw occasional play for deck manipulation, but was generally overshadowed by cards that actually drew.",
+  "rulings": [
+    {
+      "ruling": "You can look at fewer than 5 cards if you choose.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "You rearrange the cards in any order and put them back on top of your deck.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

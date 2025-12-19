@@ -1,0 +1,97 @@
+{
+  "id": "jungle-054",
+  "name": "Jigglypuff",
+  "number": 54,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 60,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Wigglytuff"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Lullaby",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep",
+        "guaranteed": true
+      }
+    },
+    {
+      "name": "Pound",
+      "cost": ["Colorless", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "20",
+      "baseDamage": 20,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Balloon Pokemon",
+    "height": "1' 8\"",
+    "weight": "12 lbs",
+    "nationalNumber": 39,
+    "level": 14
+  },
+  "flavorText": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "054_jigglypuff.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "60 HP is good for a Basic",
+      "Lullaby guarantees Sleep",
+      "Psychic resistance"
+    ],
+    "weaknesses": [
+      "Fighting weakness"
+    ],
+    "synergies": [
+      "Wigglytuff evolution - key for Do the Wave deck"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness"
+    ]
+  },
+  "competitiveHistory": "Jigglypuff from Jungle was a critical card as the basic for the powerful Wigglytuff. This Jigglypuff with 60 HP and Lullaby was the preferred version for competitive Do the Wave decks.",
+  "rulings": [
+    {
+      "ruling": "Lullaby guarantees Sleep with no coin flip required.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

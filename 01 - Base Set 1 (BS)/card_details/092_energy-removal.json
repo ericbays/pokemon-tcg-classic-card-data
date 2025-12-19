@@ -1,0 +1,88 @@
+{
+  "id": "base1-092",
+  "name": "Energy Removal",
+  "number": 92,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Common",
+  "effect": {
+    "text": "Choose 1 Energy card attached to 1 of your opponent's Pokémon and discard it.",
+    "effectType": "energy_manipulation",
+    "actions": [
+      {
+        "action": "remove_energy",
+        "amount": 1,
+        "target": "opponent_pokemon",
+        "parameters": {
+          "yourChoice": true
+        }
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "energy_attached",
+        "minimum": 1,
+        "description": "Opponent must have at least one Pokemon with Energy attached"
+      }
+    ],
+    "targeting": {
+      "targetType": "opponent_pokemon",
+      "count": "one"
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "092_energy-removal.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "timing": "any_time",
+    "synergies": ["Gust of Wind", "Haymaker strategy", "Super Energy Removal", "PlusPower"],
+    "tips": [
+      "Prioritize removing Double Colorless Energy when possible (removes 2 Energy value)",
+      "Target Active Pokemon's Energy to prevent immediate attacks",
+      "Remove Energy from benched Pokemon being powered up for future turns",
+      "Use aggressively in early game to prevent opponent from establishing board",
+      "Combine with offensive pressure - removal alone doesn't win, but buying time for KOs does",
+      "Run 3-4 copies in aggressive decks like Haymaker",
+      "Less effective against Rain Dance decks that can easily reattach Water Energy"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "Choose 1 Energy card attached to any of your opponent's Pokemon (Active or Benched)"
+    },
+    {
+      "ruling": "The chosen Energy card is discarded to the opponent's discard pile"
+    },
+    {
+      "ruling": "You can choose to discard any type of Energy (Basic Energy or Special Energy)"
+    },
+    {
+      "ruling": "You cannot play Energy Removal if your opponent has no Pokemon with Energy attached"
+    },
+    {
+      "ruling": "You choose which Energy to discard if the Pokemon has multiple Energy attached"
+    },
+    {
+      "ruling": "Discarding Double Colorless Energy removes both Energy at once (it's 1 card providing 2 Energy)"
+    },
+    {
+      "ruling": "You can see which Energy cards are attached to opponent's Pokemon before choosing"
+    }
+  ]
+}

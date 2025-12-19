@@ -1,0 +1,121 @@
+{
+  "id": "base2-019",
+  "name": "Wigglytuff",
+  "number": 19,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 80,
+  "types": ["Colorless"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Jigglypuff",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Lullaby",
+      "cost": ["Colorless"],
+      "convertedEnergyCost": 1,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep"
+      }
+    },
+    {
+      "name": "Do the Wave",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "10+",
+      "baseDamage": 10,
+      "text": "Does 10 damage plus 10 more damage for each of your Benched Pokémon.",
+      "effect": {
+        "effectType": "damage_multiplier",
+        "parameters": {
+          "baseDamage": 10,
+          "bonusDamage": 10,
+          "bonusPer": "benched_pokemon"
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Balloon Pokemon",
+    "height": "3' 3\"",
+    "weight": "26 lbs",
+    "nationalNumber": 40,
+    "level": 36
+  },
+  "flavorText": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "019_wigglytuff-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Do the Wave can deal up to 60 damage with full bench",
+      "Only 3 Colorless energy - works with any type",
+      "Lullaby guarantees Sleep for disruption",
+      "80 HP is solid for Stage 1",
+      "Psychic resistance helps against Mewtwo"
+    ],
+    "weaknesses": [
+      "Fighting weakness to Hitmonchan",
+      "Requires full bench for maximum damage",
+      "Stage 1 evolution required"
+    ],
+    "synergies": [
+      "Double Colorless Energy - Powers Do the Wave quickly",
+      "Pokemon with free retreat - Keep bench full",
+      "Bill/Professor Oak - Draw to fill bench"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness",
+      "Machamp - Fighting type",
+      "Bench damage - Reduces Do the Wave damage"
+    ]
+  },
+  "competitiveHistory": "Wigglytuff was the centerpiece of one of the most popular and successful deck archetypes of the era. 'Do the Wave' decks focused on filling the bench quickly and powering out Wigglytuff with Double Colorless Energy. With a full bench of 5 Pokemon, Do the Wave dealt 60 damage for just 3 energy, making it extremely efficient.",
+  "rulings": [
+    {
+      "ruling": "Do the Wave counts all of YOUR Benched Pokemon, not your opponent's.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "With 5 Benched Pokemon, Do the Wave deals 10 + 50 = 60 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Lullaby automatically puts the Defending Pokemon to sleep - no coin flip required.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "If your bench is empty, Do the Wave only deals 10 damage.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

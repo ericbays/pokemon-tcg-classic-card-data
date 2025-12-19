@@ -1,0 +1,126 @@
+{
+  "id": "base2-024",
+  "name": "Electabuzz",
+  "number": 24,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare",
+  "hp": 70,
+  "types": ["Lightning"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Electivire"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Thundershock",
+      "cost": ["Lightning"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    },
+    {
+      "name": "Thunderpunch",
+      "cost": ["Lightning", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "30+",
+      "baseDamage": 30,
+      "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage and Electabuzz does 10 damage to itself.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "damage": 40
+          },
+          "onTails": {
+            "damage": 30,
+            "selfDamage": 10
+          }
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless"],
+  "convertedRetreatCost": 2,
+  "pokedex": {
+    "category": "Electric Pokemon",
+    "height": "3' 7\"",
+    "weight": "66 lbs",
+    "nationalNumber": 125,
+    "level": 35
+  },
+  "flavorText": "Normally found near power plants, it can wander away and cause major blackouts in cities.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "024_electabuzz-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Attacker",
+    "strengths": [
+      "Thundershock can Paralyze for just 1 energy",
+      "Thunderpunch deals up to 40 damage for 2 energy",
+      "70 HP is excellent for a Basic",
+      "No evolution required",
+      "Lightning type hits Water weakness"
+    ],
+    "weaknesses": [
+      "Fighting weakness to Hitmonchan",
+      "Thunderpunch has self-damage risk",
+      "No resistance"
+    ],
+    "synergies": [
+      "PlusPower - Boost damage output",
+      "Hitmonchan - Fellow Haymaker staple",
+      "Scyther - Fellow Haymaker staple",
+      "Double Colorless Energy - Quick Thunderpunch"
+    ],
+    "counters": [
+      "Hitmonchan - Fighting weakness, 20 damage Jab",
+      "Machamp - Fighting type",
+      "Dugtrio - Fighting type with resistance"
+    ]
+  },
+  "competitiveHistory": "Electabuzz was one of the 'Big 3' Haymaker Pokemon alongside Hitmonchan and Scyther. Its efficient attacks, early Paralysis potential, and solid HP made it a staple in aggressive decks. Thunderpunch's 40 damage for 2 energy was exceptional efficiency for the era.",
+  "rulings": [
+    {
+      "ruling": "Thundershock's Paralysis only triggers on a heads coin flip.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Thunderpunch does 40 on heads (30+10) or 30 on tails with 10 self-damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "The self-damage from Thunderpunch can Knock Out Electabuzz if it reduces it to 0 HP.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

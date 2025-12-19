@@ -1,0 +1,68 @@
+{
+  "id": "base2-104",
+  "name": "Lass",
+  "number": 104,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "trainer-item",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Rare",
+  "text": "You and your opponent show each other your hands, then shuffle all the Trainer cards from your hands into your decks.",
+  "effect": {
+    "text": "You and your opponent show each other your hands, then shuffle all the Trainer cards from your hands into your decks.",
+    "effectType": "hand_disruption",
+    "parameters": {
+      "target": "both_players",
+      "revealHand": true,
+      "shuffleCardType": "Trainer",
+      "destination": "deck"
+    }
+  },
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "104_lass-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Disruption",
+    "strengths": [
+      "Removes all Trainers from both hands",
+      "Reveals opponent's hand information",
+      "Can cripple Trainer-heavy strategies"
+    ],
+    "weaknesses": [
+      "Affects your own hand too",
+      "Both players lose Trainers"
+    ],
+    "synergies": [
+      "Imposter Professor Oak - Use after they draw",
+      "Decks with few Trainers"
+    ],
+    "counters": [
+      "Decks that don't rely heavily on Trainers"
+    ]
+  },
+  "competitiveHistory": "Lass was a key disruption card, often used in combination with Imposter Professor Oak to strip opponents of their Trainers after forcing a fresh hand.",
+  "rulings": [
+    {
+      "ruling": "Both players must reveal their entire hands.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All Trainer cards in both hands are shuffled into their respective decks.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Pokemon and Energy cards remain in hand.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "base1-086",
+  "name": "Pokémon Flute",
+  "number": 86,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "trainer",
+  "supertype": "Trainer",
+  "subtypes": ["Item"],
+  "rarity": "Uncommon",
+  "effect": {
+    "text": "Choose 1 Basic Pokémon card from your opponent's discard pile and put it onto his or her Bench. (You can't play Pokémon Flute if your opponent's Bench is full.)",
+    "effectType": "pokemon_manipulation",
+    "actions": [
+      {
+        "action": "return_pokemon",
+        "amount": 1,
+        "target": "opponent_bench",
+        "parameters": {
+          "source": "opponent_discard_pile",
+          "pokemonType": "Basic",
+          "yourChoice": true
+        }
+      }
+    ],
+    "cost": {
+      "type": "none"
+    },
+    "requirements": [
+      {
+        "type": "pokemon_in_play",
+        "description": "Opponent's bench must not be full (must have fewer than 5 Pokemon)"
+      }
+    ],
+    "targeting": {
+      "targetType": "opponent_discard",
+      "count": "one",
+      "restrictions": ["Basic Pokemon only"]
+    }
+  },
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "086_pokemon-flute.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "category": "Disruption",
+    "timing": "situational",
+    "synergies": ["Gust of Wind", "Hitmonchan", "Mr. Mime", "Muk"],
+    "tips": [
+      "Best used in combination with Gust of Wind for immediate value",
+      "Wait until opponent has discarded weak Basics before using",
+      "Consider filling their bench to limit their options for playing new Basics",
+      "Excellent in decks with spread damage or bench damage capabilities",
+      "Use to bring back Pokemon with favorable weakness matchups for your deck",
+      "Check opponent's discard pile carefully before playing to choose the best target"
+    ]
+  },
+  "rulings": [
+    {
+      "ruling": "You can only play Pokemon Flute if your opponent's bench has fewer than 5 Pokemon on it"
+    },
+    {
+      "ruling": "You choose which Basic Pokemon card to take from your opponent's discard pile"
+    },
+    {
+      "ruling": "The Pokemon goes directly to your opponent's bench, not their hand"
+    },
+    {
+      "ruling": "Only Basic Pokemon can be chosen - you cannot choose Evolution cards"
+    },
+    {
+      "ruling": "The Pokemon is placed on the bench with no damage counters (even if it had damage when discarded)"
+    },
+    {
+      "ruling": "No Energy or other cards attached to the Pokemon when it was discarded come back with it"
+    },
+    {
+      "ruling": "You can look through your opponent's discard pile at any time to plan your play"
+    },
+    {
+      "ruling": "If there are no Basic Pokemon in the opponent's discard pile, you cannot play Pokemon Flute"
+    }
+  ]
+}

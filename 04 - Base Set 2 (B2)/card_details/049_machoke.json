@@ -1,0 +1,108 @@
+{
+  "id": "base2-049",
+  "name": "Machoke",
+  "number": 49,
+  "set": {
+    "id": "base2",
+    "name": "Base Set 2",
+    "series": "Original",
+    "releaseDate": "2000-02-24",
+    "totalCards": 130
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 80,
+  "types": ["Fighting"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Machop",
+  "evolvesTo": ["Machamp"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Karate Chop",
+      "cost": ["Fighting", "Fighting", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "50-",
+      "baseDamage": 50,
+      "text": "Does 50 damage minus 10 damage for each damage counter on Machoke.",
+      "effect": {
+        "effectType": "damage_reduction",
+        "parameters": {
+          "baseDamage": 50,
+          "reduction": 10,
+          "reductionPer": "damage_counter_on_self"
+        }
+      }
+    },
+    {
+      "name": "Submission",
+      "cost": ["Fighting", "Fighting", "Colorless", "Colorless"],
+      "convertedEnergyCost": 4,
+      "damage": "60",
+      "baseDamage": 60,
+      "text": "Machoke does 20 damage to itself.",
+      "effect": {
+        "effectType": "self_damage",
+        "selfDamage": 20
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "convertedRetreatCost": 3,
+  "pokedex": {
+    "category": "Superpower Pokemon",
+    "height": "4' 11\"",
+    "weight": "155 lbs",
+    "nationalNumber": 67,
+    "level": 40
+  },
+  "flavorText": "Its muscular body is so powerful that it must wear a power-save belt to help regulate its motions.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "049_machoke-base-set.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "80 HP is solid",
+      "Karate Chop starts at 50 damage",
+      "Submission does 60 damage",
+      "Fighting type hits Colorless weakness"
+    ],
+    "weaknesses": [
+      "Psychic weakness to Mewtwo",
+      "Karate Chop gets weaker as Machoke takes damage",
+      "Submission deals self-damage",
+      "3 retreat cost is expensive"
+    ],
+    "synergies": [
+      "Machop - Required basic",
+      "Machamp - Evolution target"
+    ],
+    "counters": [
+      "Mewtwo - Psychic weakness",
+      "Alakazam - Psychic weakness"
+    ]
+  },
+  "competitiveHistory": "Machoke was used as the middle evolution to reach Machamp. It could deal decent damage on its own but was typically bypassed with Pokemon Breeder.",
+  "rulings": [
+    {
+      "ruling": "Karate Chop does 50 minus 10 for EACH damage counter on Machoke. With 5 damage counters, it does 0 damage.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Submission's self-damage is applied even if the attack does no damage to the Defending Pokemon.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

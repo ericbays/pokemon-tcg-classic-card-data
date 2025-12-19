@@ -1,0 +1,108 @@
+{
+  "id": "rocket-049",
+  "name": "Abra",
+  "number": 49,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Psychic"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Dark Kadabra", "Kadabra"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Vanish",
+      "cost": [],
+      "convertedEnergyCost": 0,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Shuffle Abra into your deck. (Discard all cards attached to Abra.)",
+      "effect": {
+        "effectType": "self_shuffle",
+        "target": "self",
+        "discardAttached": true
+      }
+    },
+    {
+      "name": "Psyshock",
+      "cost": ["Psychic"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+      "effect": {
+        "effectType": "coin_flip_effect",
+        "coinFlip": {
+          "count": 1,
+          "onHeads": {
+            "statusCondition": "Paralyzed"
+          },
+          "onTails": null
+        }
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Psychic",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Psi Pokemon",
+    "height": "2' 11\"",
+    "weight": "43 lbs",
+    "nationalNumber": 63,
+    "level": 14
+  },
+  "flavorText": "It teleports itself away from danger, making it difficult to capture.",
+  "illustrator": "Sumiyoshi Kizuki",
+  "imageUrl": "049_abra-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution Starter",
+    "strengths": [
+      "Vanish costs no energy - can escape danger",
+      "Psyshock can Paralyze on coin flip",
+      "Can evolve into Dark Kadabra"
+    ],
+    "weaknesses": [
+      "Low HP of 40",
+      "Psychic weakness",
+      "Vanish shuffles away progress"
+    ],
+    "synergies": [
+      "Dark Kadabra",
+      "Dark Alakazam"
+    ],
+    "counters": [
+      "Psychic-type Pokemon"
+    ]
+  },
+  "competitiveHistory": "This Team Rocket Abra had Vanish, a free attack that shuffles itself back into the deck. This was useful to deny prizes if Abra was about to be knocked out, though it cost all attached cards and the Pokemon itself.",
+  "rulings": [
+    {
+      "ruling": "Vanish costs no energy and can be used with no energy attached.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "All cards attached to Abra are discarded when Vanish is used.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

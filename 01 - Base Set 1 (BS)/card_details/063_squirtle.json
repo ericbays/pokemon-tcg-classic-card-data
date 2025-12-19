@@ -1,0 +1,90 @@
+{
+  "id": "base1-063",
+  "name": "Squirtle",
+  "number": 63,
+  "set": {
+    "id": "base1",
+    "name": "Base Set",
+    "series": "Original",
+    "releaseDate": "1999-01-09",
+    "totalCards": 102
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Common",
+  "hp": 40,
+  "types": ["Water"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": ["Wartortle"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Bubble",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+    },
+    {
+      "name": "Withdraw",
+      "cost": ["Water", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "Flip a coin. If heads, prevent all damage done to Squirtle during your opponent's next turn. (Any other effects of attacks still happen.)"
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "nationalNumber": 7,
+    "category": "Tiny Turtle Pokemon",
+    "height": "1' 8\"",
+    "weight": "20 lbs.",
+    "level": 8
+  },
+  "flavorText": "After birth, its back swells and hardens into a shell. It powerfully sprays foam from its mouth.",
+  "illustrator": "Mitsuhiro Arita",
+  "imageUrl": "063_squirtle.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Bubble offers energy-efficient damage with potential Paralysis disruption",
+      "Withdraw provides defensive capability to survive tough matchups",
+      "Evolves through Wartortle into the extremely powerful Blastoise",
+      "Low retreat cost of 1 allows flexible positioning",
+      "Strong against Fire-type Pokemon which are common in the format"
+    ],
+    "weaknesses": [
+      "Low 40 HP makes it vulnerable to one-hit knockouts",
+      "Lightning weakness is problematic against popular Electric Pokemon",
+      "Both Bubble's paralysis and Withdraw's protection rely on coin flips",
+      "No resistance to offset defensive vulnerabilities",
+      "Withdraw deals no damage, slowing down game progression"
+    ],
+    "synergies": [
+      "Evolve into Wartortle and then Blastoise for Rain Dance energy acceleration",
+      "Use Defender in combination with Withdraw for maximum damage prevention",
+      "Bubble's paralysis combines well with follow-up switches or additional disruption",
+      "Computer Search can help find Rare Candy for faster evolution paths"
+    ],
+    "counters": [
+      "Pikachu - Lightning weakness means Thunder Jolt is devastating",
+      "Magnemite - Electric typing exploits weakness",
+      "Electabuzz - Can one-shot Squirtle easily"
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "rocket-046",
+  "name": "Dark Wartortle",
+  "number": 46,
+  "set": {
+    "id": "rocket",
+    "name": "Team Rocket",
+    "series": "Original",
+    "releaseDate": "2000-04-24",
+    "totalCards": 83
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Water"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Squirtle",
+  "evolvesTo": ["Dark Blastoise"],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Doubleslap",
+      "cost": ["Water"],
+      "convertedEnergyCost": 1,
+      "damage": "10x",
+      "baseDamage": 10,
+      "text": "Flip 2 coins. This attack does 10 damage times the number of heads.",
+      "effect": {
+        "effectType": "coin_flip_damage",
+        "coinCount": 2,
+        "damagePerHead": 10
+      }
+    },
+    {
+      "name": "Mirror Shell",
+      "cost": ["Water", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "If an attack does damage to Dark Wartortle during your opponent's next turn (even if Dark Wartortle is Knocked Out), Dark Wartortle attacks the Defending Pokémon for an equal amount of damage.",
+      "effect": {
+        "effectType": "reflect_damage",
+        "duration": "opponents_next_turn",
+        "worksOnKO": true,
+        "reflectAmount": "equal"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Lightning",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Turtle Pokemon",
+    "height": "3' 3\"",
+    "weight": "50 lbs",
+    "nationalNumber": 8,
+    "level": 21
+  },
+  "flavorText": "A Pokémon with a negative attitude, it hides in its shell whenever it's in a bad mood—which is often.",
+  "illustrator": "Kagemaru Himeno",
+  "imageUrl": "046_dark-wartortle-team.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Evolution",
+    "strengths": [
+      "Mirror Shell reflects damage back even if knocked out",
+      "Can punish high-damage attacks",
+      "Low retreat cost of 1"
+    ],
+    "weaknesses": [
+      "Low HP of 60",
+      "Doubleslap is unreliable",
+      "Lightning weakness"
+    ],
+    "synergies": [
+      "Squirtle",
+      "Dark Blastoise"
+    ],
+    "counters": [
+      "Lightning-type Pokemon",
+      "Status conditions"
+    ]
+  },
+  "competitiveHistory": "Dark Wartortle was primarily an evolution step but Mirror Shell was interesting - even if knocked out, it would deal equal damage back. This could trade effectively against big attackers.",
+  "rulings": [
+    {
+      "ruling": "Mirror Shell reflects damage even if Dark Wartortle is knocked out by the attack.",
+      "source": "WotC Rulings"
+    },
+    {
+      "ruling": "Mirror Shell reflects the exact damage done to Dark Wartortle, after applying Weakness and Resistance to Dark Wartortle.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

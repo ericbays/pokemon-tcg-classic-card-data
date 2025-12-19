@@ -1,0 +1,96 @@
+{
+  "id": "jungle-041",
+  "name": "Parasect",
+  "number": 41,
+  "set": {
+    "id": "jungle",
+    "name": "Jungle",
+    "series": "Original",
+    "releaseDate": "1999-06-16",
+    "totalCards": 64
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Uncommon",
+  "hp": 60,
+  "types": ["Grass"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Paras",
+  "evolvesTo": [],
+  "abilities": [],
+  "attacks": [
+    {
+      "name": "Spore",
+      "cost": ["Grass", "Grass"],
+      "convertedEnergyCost": 2,
+      "damage": "",
+      "baseDamage": 0,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep",
+        "guaranteed": true
+      }
+    },
+    {
+      "name": "Slash",
+      "cost": ["Colorless", "Colorless", "Colorless"],
+      "convertedEnergyCost": 3,
+      "damage": "30",
+      "baseDamage": 30,
+      "text": "",
+      "effect": {
+        "effectType": "none"
+      }
+    }
+  ],
+  "weakness": {
+    "type": "Fire",
+    "value": "x2"
+  },
+  "resistance": null,
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Mushroom Pokemon",
+    "height": "3' 3\"",
+    "weight": "65 lbs",
+    "nationalNumber": 47,
+    "level": 28
+  },
+  "flavorText": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "041_parasect.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Spore guarantees Sleep with no coin flip",
+      "Low retreat cost"
+    ],
+    "weaknesses": [
+      "60 HP is fragile",
+      "Fire weakness",
+      "Slash damage is low",
+      "No resistance"
+    ],
+    "synergies": [
+      "Sleep lock strategies"
+    ],
+    "counters": [
+      "Fire Pokemon"
+    ]
+  },
+  "competitiveHistory": "Parasect from Jungle was occasionally used for its guaranteed Sleep from Spore. Unlike most Sleep-inflicting attacks, Spore requires no coin flip. However, the low HP and damage output limited its competitive viability.",
+  "rulings": [
+    {
+      "ruling": "Spore guarantees Sleep with no coin flip required.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

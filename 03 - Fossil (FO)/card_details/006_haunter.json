@@ -1,0 +1,132 @@
+{
+  "id": "fossil-006",
+  "name": "Haunter",
+  "number": 6,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Stage 1"],
+  "rarity": "Rare Holo",
+  "hp": 50,
+  "types": ["Psychic"],
+  "stage": "Stage 1",
+  "evolvesFrom": "Gastly",
+  "evolvesTo": ["Gengar"],
+  "abilities": [
+    {
+      "name": "Transparency",
+      "type": "Pokemon Power",
+      "text": "Whenever an attack does anything to Haunter, flip a coin. If heads, prevent all effects of that attack, including damage, done to Haunter. This power stops working while Haunter is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "damage_prevention",
+        "trigger": "on_damage",
+        "timing": "opponents_turn",
+        "target": "self",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "coinFlip": true,
+          "onHeads": "prevent_all_effects",
+          "preventsDamage": true,
+          "preventsEffects": true
+        }
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Nightmare",
+      "cost": ["Psychic", "Colorless"],
+      "convertedEnergyCost": 2,
+      "damage": "10",
+      "baseDamage": 10,
+      "text": "The Defending Pokémon is now Asleep.",
+      "effect": {
+        "effectType": "status_condition",
+        "statusCondition": "Asleep",
+        "parameters": {
+          "guaranteed": true
+        }
+      }
+    }
+  ],
+  "weakness": null,
+  "resistance": {
+    "type": "Fighting",
+    "value": "-30"
+  },
+  "retreatCost": [],
+  "convertedRetreatCost": 0,
+  "pokedex": {
+    "category": "Gas Pokemon",
+    "height": "5' 3\"",
+    "weight": "0.2 lbs",
+    "nationalNumber": 93,
+    "level": 17
+  },
+  "flavorText": "Because of its ability to slip through block walls, it is said to be from another dimension.",
+  "illustrator": "Ken Sugimori",
+  "imageUrl": "006_haunter.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Transparency gives 50% chance to ignore all attack effects",
+      "No weakness is extremely valuable",
+      "Fighting resistance",
+      "Free retreat cost",
+      "Nightmare guarantees Sleep status",
+      "Excellent stepping stone to Gengar"
+    ],
+    "weaknesses": [
+      "Only 50 HP is very fragile",
+      "Transparency is coin flip dependent",
+      "Nightmare only does 10 damage",
+      "Status conditions disable Transparency"
+    ],
+    "synergies": [
+      "Gengar (evolution target with complementary strategy)",
+      "Gastly",
+      "Defender (additional protection)",
+      "Mr. Mime"
+    ],
+    "counters": [
+      "Status conditions disable Transparency",
+      "Multi-hit attacks get multiple coin flips",
+      "Gust of Wind to force out and attack repeatedly",
+      "Aerodactyl prevents evolution to Gengar"
+    ]
+  },
+  "competitiveHistory": "Fossil Haunter was significantly better than the Base Set version due to its Transparency power. The 50% chance to completely negate attacks made it frustrating to deal with and bought time to set up Gengar. Combined with its free retreat, Haunter could stall effectively. It was a key component of Gengar-based spread damage decks and gave the evolution line much-needed survivability.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Transparency triggers for each attack, including multi-target attacks. Flip once per attack that targets Haunter.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Transparency prevents the attack, all effects are prevented including status conditions, damage, and any other effects.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Transparency does not protect against effects that don't do anything 'to' Haunter, such as switching or effects on the attacking player.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Nightmare always causes Sleep regardless of Transparency or other factors.",
+      "source": "WotC Rulings"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "fossil-003",
+  "name": "Ditto",
+  "number": 3,
+  "set": {
+    "id": "fossil",
+    "name": "Fossil",
+    "series": "Original",
+    "releaseDate": "1999-10-10",
+    "totalCards": 62
+  },
+  "cardType": "pokemon",
+  "supertype": "Pokemon",
+  "subtypes": ["Basic"],
+  "rarity": "Rare Holo",
+  "hp": 50,
+  "types": ["Colorless"],
+  "stage": "Basic",
+  "evolvesFrom": null,
+  "evolvesTo": [],
+  "abilities": [
+    {
+      "name": "Transform",
+      "type": "Pokemon Power",
+      "text": "If Ditto is your Active Pokémon, treat it as if it were the same card as the Defending Pokémon, including type, Hit Points, Weakness, and so on, except Ditto can't evolve, always has this Pokémon Power, and you may treat any Energy attached to Ditto as Energy of any type. Ditto isn't a copy of any other Pokémon while Ditto is Asleep, Confused, or Paralyzed.",
+      "effect": {
+        "effectType": "special",
+        "trigger": "passive",
+        "timing": "any_time",
+        "target": "self",
+        "restrictions": ["not_asleep", "not_confused", "not_paralyzed"],
+        "parameters": {
+          "copiesDefender": true,
+          "copiesHP": true,
+          "copiesType": true,
+          "copiesWeakness": true,
+          "copiesResistance": true,
+          "copiesAttacks": true,
+          "copiesRetreatCost": true,
+          "cannotEvolve": true,
+          "energyBecomesAny": true,
+          "onlyWhileActive": true
+        }
+      }
+    }
+  ],
+  "attacks": [],
+  "weakness": {
+    "type": "Fighting",
+    "value": "x2"
+  },
+  "resistance": {
+    "type": "Psychic",
+    "value": "-30"
+  },
+  "retreatCost": ["Colorless"],
+  "convertedRetreatCost": 1,
+  "pokedex": {
+    "category": "Transform Pokemon",
+    "height": "1' 0\"",
+    "weight": "9 lbs",
+    "nationalNumber": 132,
+    "level": 20
+  },
+  "flavorText": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
+  "illustrator": "Keiji Kinebuchi",
+  "imageUrl": "003_ditto.jpg",
+  "legality": {
+    "standard": false,
+    "expanded": false,
+    "unlimited": true
+  },
+  "gameplay": {
+    "role": "Support",
+    "strengths": [
+      "Can copy any opposing Pokemon's attacks and stats",
+      "Energy attached counts as any type needed",
+      "Low retreat cost of 1",
+      "Psychic resistance is useful",
+      "Forces opponents to consider what they make active"
+    ],
+    "weaknesses": [
+      "Only 50 HP when not transformed",
+      "Fighting weakness is problematic against Haymaker",
+      "Has no attacks of its own",
+      "Vulnerable when Asleep, Confused, or Paralyzed",
+      "Only works when Active"
+    ],
+    "synergies": [
+      "Double Colorless Energy (counts as any 2 energy)",
+      "Rainbow Energy",
+      "Switch/Scoop Up (to reset transform)",
+      "Full Heal (to remove status and restore Transform)"
+    ],
+    "counters": [
+      "Status conditions disable Transform",
+      "Hitmonchan and Fighting types exploit weakness",
+      "Gust of Wind to force Ditto active when disadvantageous",
+      "Low-HP Pokemon as your active limits Ditto's copied HP"
+    ]
+  },
+  "competitiveHistory": "Ditto was one of the most unique and skill-testing cards in the early Pokemon TCG. Its Transform power created complex game states where players had to carefully consider what Pokemon to make active. It saw play in various control and disruption strategies. The ability to copy any Pokemon's attacks with flexible energy made it surprisingly versatile, though its low base HP and vulnerability to status conditions limited its effectiveness.",
+  "rulings": [
+    {
+      "date": "1999",
+      "ruling": "Ditto copies the Defending Pokemon's current HP maximum, not damage taken. If the Defending Pokemon has 100 HP, Ditto has 100 HP.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Energy attached to Ditto can be treated as any type when using copied attacks.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If the Defending Pokemon has a Pokemon Power, Ditto does NOT copy that power - only Transform is active.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Ditto cannot evolve even if the Pokemon it's copying could normally evolve.",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "If Ditto is Asleep, Confused, or Paralyzed, it reverts to its printed stats (50 HP, Colorless type, etc.)",
+      "source": "WotC Rulings"
+    },
+    {
+      "date": "1999",
+      "ruling": "Ditto on the Bench is not transformed and has its normal printed characteristics.",
+      "source": "WotC Rulings"
+    }
+  ]
+}
